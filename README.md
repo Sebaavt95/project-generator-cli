@@ -3,6 +3,8 @@
 ![GitHub issues](https://img.shields.io/github/issues/colomfernando/project-generator-cli)
 # <h1 align="center">Welcome to project-generator-cli 👋</h1>
 
+> CLi that creates a new project based on templates
+
 ## Demo
 
 ![alt text](https://github.com/colomfernando/project-generator-cli/blob/main/demo-project-generator.gif?raw=true)
