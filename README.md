@@ -1,6 +1,6 @@
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/colomfernando/project-generator-cli)
-https://img.shields.io/github/issues/colomfernando/project-generator-cli
+![GitHub issues](https://img.shields.io/github/issues/colomfernando/project-generator-cli)
 # <h1 align="center">Welcome to project-generator-cli 👋</h1>
 
 ## Demo
