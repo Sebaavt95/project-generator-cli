@@ -1,0 +1,34 @@
+{
+	"name": "project-generator-cli",
+	"version": "1.0.0",
+	"description": "cli tool to create a new project based in a template",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "tsc && node dist/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/colomfernando/project-generator.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/colomfernando/project-generator-cli/issues"
+	},
+	"homepage": "https://github.com/colomfernando/project-generator-cli#readme",
+	"devDependencies": {
+		"@types/node": "^17.0.21",
+		"@typescript-eslint/eslint-plugin": "^5.13.0",
+		"@typescript-eslint/parser": "^5.13.0",
+		"eslint": "^8.10.0",
+		"typescript": "^4.6.2"
+	},
+	"dependencies": {
+		"@types/node-emoji": "^1.8.1",
+		"chalk": "^4.1.2",
+		"node-emoji": "^1.11.0",
+		"prompts": "^2.4.2"
+	}
+}
