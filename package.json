@@ -11,9 +11,13 @@
 		"type": "git",
 		"url": "git+https://github.com/colomfernando/project-generator.git"
 	},
-	"keywords": [],
+	"keywords": [
+		"cli",
+		"generator",
+		"templates"
+	],
 	"author": "",
-	"license": "ISC",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/colomfernando/project-generator-cli/issues"
 	},
