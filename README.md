@@ -1,6 +1,7 @@
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/colomfernando/project-generator-cli)
 ![GitHub issues](https://img.shields.io/github/issues/colomfernando/project-generator-cli)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # <h1 align="center">Welcome to project-generator-cli 👋</h1>
 
 > Cli that creates a new project based on templates
