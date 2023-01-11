@@ -1,0 +1,132 @@
+{
+    "store.storelocator": {
+      "blocks": ["flex-layout.row#title", "flex-layout.row#container"]
+    },
+    "flex-layout.row#title": {
+        "children": ["rich-text#title-stores"],
+        "props": {
+            "blockClass": "institutional-title-container"
+        }
+    },    
+    "rich-text#title-stores": {
+        "props": {
+            "text": "### Sucursales",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "institutional-title"
+        }
+    },
+    "flex-layout.row#container": {
+      "children": ["store-list"],
+      "props": {
+          "blockClass": "store-list-container"
+      }
+    },
+    "store-list": {
+        "props": {
+            "icon": "assets/img/gps-store-map.svg",
+            "iconWidth": 41,
+            "iconHeight": 41
+        }
+    },
+    "store.storedetail": {
+      "children": [
+        "responsive-layout.desktop#store-detail",
+        "responsive-layout.tablet#store-detail",
+        "responsive-layout.phone#store-detail"
+      ]
+    },
+    "responsive-layout.desktop#store-detail": {
+      "children": ["flex-layout.row#title", "store-group"]
+    },
+
+    "responsive-layout.tablet#store-detail": {
+      "children": ["flex-layout.row#title", "store-group#phone"]
+    },
+
+    "responsive-layout.phone#store-detail": {
+      "children": ["flex-layout.row#title", "store-group#phone"]
+    },
+
+    "store-group#phone": {
+      "children": ["flex-layout.row#containerStorePhone"]
+    },
+    "flex-layout.row#containerStorePhone": {
+      "children": ["flex-layout.col#map-phone", "flex-layout.col#detail"],
+      "props": {
+        "blockClass": "store-detail-container"
+    }
+    },
+
+    "flex-layout.col#map-phone": {
+      "children": ["store-map#phone"],
+      "props": {
+        "preventVerticalStretch": true,
+        "blockClass": "store-map-container"
+      }
+    },
+    "store-map#phone": {
+      "props": {
+          "height": "241px", 
+          "blockClass": "map-store-phone",
+          "icon": "assets/img/gps-store-map.svg",
+          "iconWidth": 41,
+          "iconHeight": 41
+          }
+    },
+    "store-group": {
+      "children": ["flex-layout.row#containerStore"]
+    },
+    "flex-layout.row#containerStore": {
+      "children": ["flex-layout.col#detail", "flex-layout.col#map"],
+      "props": {
+        "blockClass": "store-detail-container"
+    }
+    },
+    "flex-layout.col#detail": {
+      "children": [
+        "store-back-link",
+        "store-name",
+        "store-address",
+        "store-hours"
+      ],
+      "props": {
+        "preventVerticalStretch": true,
+        "blockClass": "store-detail-container"
+      }
+    },
+    "flex-layout.col#map": {
+      "children": ["store-map"],
+      "props": {
+        "preventVerticalStretch": true,
+        "blockClass": "store-map-container"
+      }
+    },
+    "flex-layout.col#store": {
+      "children": ["store-name"],
+      "props": {
+        "width": "70%"
+      }
+    },
+    "store-hours": {
+      "props": {
+        "label": "Dias laborables",
+        "format": "24h"
+      }
+    },
+    "store-back-link": {
+      "props": {
+        "label": "Volver"
+      }
+    },
+    "store-map": {
+        "props": {
+        "width": "859px",
+        "height": "378px",
+        "blockClass": "map-store",
+        "icon": "assets/img/gps-store-map.svg",
+        "iconWidth": 41,
+        "iconHeight": 41
+       }
+    }
+  }

@@ -1,0 +1,9 @@
+{
+	"SPECIFIC": "Sustitutos específicos por producto",
+	"NONE": "Tus productos no seran reemplazados",
+	"SAME_BRAND": "En caso de que uno de tus productos necesite ser sustituido, se reemplazará por otro de la misma marca.",
+	"STORE_BRAND": "En caso de que uno de tus productos necesite ser sustituido, se reemplazará por uno igual de nuestra marca propia.",
+	"SAME_SIZE": "En caso de que uno de tus productos necesite ser sustituido, se reemplazará por uno del mismo tamaño pero distinta marca.",
+	"STORE_CRITERIA": "En caso de que uno de tus productos necesite ser sustituido, se reemplazará a criterio de la tienda.",
+	"PHONE": "En caso de que uno de tus productos necesite ser sustituido, nos contactaremos telefonicamente."
+}

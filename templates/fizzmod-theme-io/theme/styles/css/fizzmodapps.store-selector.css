@@ -1,0 +1,6 @@
+@media (max-width: 1023px) {
+  .storeSelectorButton {
+    border-bottom: 1px solid #eeeeee;
+    box-shadow: 0 5px 9px -2px #00000020;
+  }
+}

@@ -1,0 +1,439 @@
+/*************
+* VTEX RESET *
+**************/
+
+body {
+	margin: 0px;
+	padding: 0px !important;
+	background: $white;
+	-webkit-font-smoothing: antialiased;
+
+	.container.container-main.container-order-form {
+		padding-bottom: 80px;
+		@include responsive('md') {
+			margin: 0;
+			width: 100%;
+		}
+	}
+}
+
+body[data-current='profile'],
+body[data-current='shipping'],
+body[data-current='payment'] {
+	background: $grey200;
+	@include responsive('md') {
+		background: $white;
+	}
+
+	.container.container-main.container-order-form {
+		padding-bottom: 80px;
+		@include responsive('md') {
+			padding-bottom: 0;
+		}
+	}
+
+	#client-profile-data {
+		margin: 0 6px 6px 0;
+		width: calc(50% - 12px);
+		min-height: 112px;
+	}
+	#shipping-data {
+		margin: 0 0 6px 6px;
+		width: calc(50% - 12px);
+		min-height: 112px;
+	}
+
+	#payment-data {
+		margin: 6px 0 0 0;
+		width: calc(100% - 12px);
+		min-height: 112px;
+	}
+	@include responsive('md') {
+		#client-profile-data,
+		#shipping-data,
+		#payment-data {
+			width: 100%;
+			margin: 0;
+			margin-bottom: 2px;
+			box-shadow: none;
+			.accordion-group {
+				padding: 18px 15px;
+			}
+		}
+	}
+}
+
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+b,
+i,
+a,
+header,
+footer,
+button,
+input,
+form,
+fieldset {
+	font-family: $fontFamily;
+}
+
+.container {
+	width: 96vw;
+	max-width: 1440px;
+	margin: auto;
+
+	@include responsive('md') {
+		width: 94vw;
+	}
+
+	@include removeAfterBefore();
+}
+
+form.form-page.client-pre-email,
+div.orderform-template-holder,
+div.cart-template {
+	@include reset();
+	p,
+	h3,
+	ul,
+	li div,
+	label,
+	span,
+	small,
+	form,
+	fieldset,
+	.row-fluid [class*='span'] {
+		@include reset();
+		@include responsive('md') {
+			@include reset();
+		}
+	}
+}
+
+h1#orderform-title,
+#render-cartman {
+	display: none !important;
+}
+
+div#vtexIdContainer .vtexIdUI .modal-header {
+	padding: 0;
+	@include responsive('md') {
+		padding: 9px 15px;
+	}
+	.vtexIdUI-user-email.pull-left.muted {
+		display: none;
+	}
+	h4 {
+		position: absolute;
+	}
+}
+
+.link-box-edit {
+	box-shadow: none !important;
+}
+
+.client-pre-email {
+	border: none;
+}
+
+[class*='span'].pull-right,
+.row-fluid [class*='span'].pull-right {
+	float: inherit;
+}
+
+.cart-template.mini-cart {
+	display: none;
+}
+
+.step,
+.cart,
+.totalizers {
+	border: none;
+}
+
+.row-fluid {
+	@include reset();
+	float: inherit;
+	& .orderform-template-holder {
+		width: calc(100% - 360px);
+		@include responsive('md') {
+			width: 100% !important;
+		}
+	}
+	@include responsive('md') {
+		display: flex;
+		flex-flow: column nowrap;
+		background-color: $white;
+	}
+}
+
+.row-fluid.orderform-template {
+	@include responsive('md') {
+		box-shadow: none;
+		border-bottom: 1px solid $grey100;
+		z-index: 5;
+		margin-bottom: 0;
+	}
+}
+
+select:focus,
+textarea:focus,
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='time']:focus,
+input[type='week']:focus,
+input[type='number']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='color']:focus,
+.uneditable-input:focus {
+	-webkit-appearance: none;
+	box-shadow: none;
+	outline: none;
+}
+
+select,
+textarea,
+input[type='text'],
+input[type='password'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='date'],
+input[type='month'],
+input[type='time'],
+input[type='week'],
+input[type='number'],
+input[type='email'],
+input[type='url'],
+input[type='search'],
+input[type='tel'],
+input[type='color'],
+.uneditable-input {
+	-webkit-appearance: none;
+	/* 	transition: all 0.3s; */
+	box-shadow: none;
+}
+
+*:focus {
+	outline: none;
+}
+
+i[class*='icon-'] {
+	font-family: fontAwesome !important;
+}
+
+i.icon-lock:before {
+	content: '\e919';
+}
+
+i.icon-user:before {
+	content: '\e911';
+}
+
+i.icon-home:before {
+	content: '\e912';
+}
+
+i.icon-credit-card:before {
+	content: '\e913';
+}
+
+i.icon-edit:before {
+	content: '\e910';
+}
+
+input[type='checkbox'] {
+	width: 12px;
+	height: 12px;
+	-webkit-appearance: none;
+	outline: none;
+	border: none !important;
+	@include checkbox-empty-icon;
+}
+input[type='checkbox']:focus {
+	outline: none;
+}
+
+input[type='checkbox']:checked {
+	width: 12px;
+	height: 12px;
+	-webkit-appearance: none;
+	@include checkbox-fill-icon($secondaryMain);
+}
+
+.select,
+.input {
+	width: 100%;
+	position: relative;
+	z-index: 0;
+
+	label {
+		margin-top: 14px;
+		margin-bottom: 6px;
+		@include typographyCaption;
+	}
+
+	&.select,
+	&.text {
+		label {
+			margin-top: 14px;
+			margin-bottom: 6px;
+			color: $grey700 !important;
+			@include typographyCaption;
+		}
+
+		input,
+		select {
+			border-radius: 0px;
+			box-sizing: border-box;
+			padding: 12px 14px;
+			border: solid 1px $grey300;
+			height: 40px;
+			width: 100%;
+			@include inputRenderStyles;
+			@include typographyBody2;
+
+			&.success {
+				color: $grey700;
+				background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjExcHgiIHZpZXdCb3g9IjAgMCAxNiAxMSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT4yOTk3NTczNS01OEYzLTQ1Q0UtQjBDOS0zQTlGNEQxMTA3NzA8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggc2tldGNodG9vbC48L2Rlc2M+ICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8ZyBpZD0iQ2hlY2tvdXQtbW9kYWwtZXJyb3JfZW5fcGFnbyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTUxMy4wMDAwMDAsIC0xOTAuMDAwMDAwKSIgZmlsbD0iIzNCQUE5MiI+ICAgICAgICAgICAgPGcgaWQ9Ii8vLVNVQkhFQURFUiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDEzMi4wMDAwMDApIj4gICAgICAgICAgICAgICAgPGcgaWQ9IlN0ZXBzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MDEuMDAwMDAwLCA0NC4wMDAwMDApIj4gICAgICAgICAgICAgICAgICAgIDxnIGlkPSJJZGVudGlmaWNhY2lvIj4gICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTguMjgxMTkzNSwyMi41MDM1NzM3IEwyNS41ODczNTE2LDE1LjE4Njg3NzkgTDI2Ljc3MjUyMDEsMTQgTDI4LDE1LjI2NzE3NjEgTDI2LjgxNDgzMTUsMTYuNDU0MDUzOSBMMTkuNDY2MzYyLDIzLjgxMzEyMjEgTDE4LjI4MTE5MzUsMjUgTDE3LjA5NjAyNSwyMy44MTMxMjIxIEwxMy4xODUxNjg1LDE5Ljg5NjYyNSBMMTIsMTguNzA5NzQ3MSBMMTMuMjI3NDc5OSwxNy40NDI1NzEgTDE0LjQxMjY0ODQsMTguNjI5NDQ4OSBMMTguMjgxMTkzNSwyMi41MDM1NzM3IFoiIGlkPSJ3aGl0ZS1jaGVjayI+PC9wYXRoPiAgICAgICAgICAgICAgICAgICAgPC9nPiAgICAgICAgICAgICAgICA8L2c+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+);
+				background-repeat: no-repeat;
+				background-position-y: center;
+				background-position-x: calc(100% - 10px);
+			}
+
+			&.error {
+				border-color: $errorMain;
+			}
+
+			&:focus {
+				border: solid 1px $grey300;
+				color: $grey700;
+				outline: none;
+			}
+		}
+		@include responsive('md') {
+			input,
+			select {
+				height: 48px;
+			}
+		}
+
+		input {
+			color: $grey700;
+		}
+
+		select {
+			color: $black;
+			background: $white;
+
+			&:active {
+				background: $white;
+				box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.17);
+				outline-color: $grey200;
+			}
+
+			option {
+				height: 40px;
+				background: $white;
+				outline-color: $grey200;
+			}
+		}
+	}
+}
+
+div.checkbox,
+p.checkbox {
+	margin-top: 25px !important;
+	position: relative;
+	display: flex;
+
+	input[type='checkbox'] {
+		justify-self: start;
+		align-self: start;
+		min-height: inherit;
+		margin: 0px;
+		box-shadow: none;
+		width: 12px;
+		height: 12px;
+	}
+
+	label {
+		font-weight: $bold;
+		margin-bottom: 7px !important;
+	}
+
+	label,
+	span,
+	a {
+		color: $secondaryMain;
+		@include typographyBody2;
+	}
+
+	a {
+		text-decoration: underline;
+
+		&:hover {
+			font-weight: 700;
+		}
+	}
+}
+
+span.error {
+	margin-top: 8px !important;
+	color: $errorMain;
+	width: 100%;
+	@include typographyCaption;
+}
+
+// credit cards logo
+.card-flag {
+	&.Visa {
+		@include visa;
+	}
+	&.Mastercard {
+		@include master;
+	}
+	&.Nativa {
+		@include nativa;
+	}
+	&.Naranja {
+		@include naranja;
+	}
+	&.Diners {
+		@include diners;
+	}
+	&.Shopping {
+		@include shopping;
+	}
+	&.American.Express {
+		@include amex;
+	}
+	&.Maestro {
+		@include maestro;
+	}
+}
+
+//callcenter toolbar
+
+#vtex-callcenter__toolbar {
+	display: none !important;
+}
+
+// Hide VTEX native cart
+
+.container.container-main.container-cart {
+	display: none;
+}

@@ -1,0 +1,13 @@
+.buttonText {
+	@include flexCenter;
+	text-transform: capitalize;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 18px;
+	&::before {
+		content: '\e94a';
+		font-family: 'mercaldas';
+		font-size: 32px;
+		margin-right: 5px;
+	}
+}

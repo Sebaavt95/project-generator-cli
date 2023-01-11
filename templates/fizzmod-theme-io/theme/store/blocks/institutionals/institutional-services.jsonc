@@ -1,0 +1,74 @@
+{
+    "store.custom#institutional-services": {
+        "blocks": ["responsive-layout.desktop#services", 
+            "responsive-layout.tablet#services",
+            "responsive-layout.phone#services"]
+    },
+    "responsive-layout.desktop#services": {
+        "children":["flex-layout.row#header-services", "flex-layout.row#banner-services-desktop"]
+    },
+    "responsive-layout.tablet#services": {
+        "children":["flex-layout.row#header-services", "flex-layout.row#banner-services-desktop"]
+    },
+    "responsive-layout.phone#services": {
+        "children":["flex-layout.row#header-services", "flex-layout.row#banner-services-phone"]
+    },
+    "flex-layout.row#header-services": {
+        "children": ["rich-text#title"],
+        "props": {
+            "blockClass": "institutional-title-container"
+        }
+    },    
+    "rich-text#title": {
+        "props": {
+            "text": "### Servicios",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "institutional-title"
+        }
+    },
+    "flex-layout.row#banner-services-desktop": {
+        "props":{
+            "blockClass": "banner__institutional__desktop",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true
+            },
+          "children": ["flex-layout.col#banner-services-desktop"] 
+    },
+    "flex-layout.col#banner-services-desktop": {
+        "children": ["image#image-services-desktop"],
+          "props": {
+            "blockClass": "banner__institutional__desktop"
+          }
+    },
+    "image#image-services-desktop": {
+        "props": {
+            "src": "https://via.placeholder.com/1240x734.png",
+            "maxWidth": 1240
+          }
+    },
+    "flex-layout.row#banner-services-phone": {
+        "props":{
+            "blockClass": "banner__institutional__phone",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true
+            },
+          "children": ["flex-layout.col#banner-services-phone"]
+    },
+    "flex-layout.col#banner-services-phone": {
+        "children": ["image#image-services-phone"],
+          "props": {
+            "blockClass": "banner__institutional__phone"
+          }
+    },
+    "image#image-services-phone": {
+        "props": {
+            "src": "https://via.placeholder.com/320x188.png"
+        }
+    }
+    
+}
+
+
+
+

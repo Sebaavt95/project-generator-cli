@@ -1,0 +1,61 @@
+.styleguideInput {
+	padding-bottom: 13px;
+}
+
+.toggleBusinessButtonWrapper {
+	margin: 7px 0 12px;
+	border: 2px $primary-main solid;
+	border-radius: 4px;
+	color: $primary-main;
+	& :global(.vtex-button) {
+		background-color: $white;
+		border: 0;
+		border-radius: 0;
+		color: $primary-main;
+		font-family: 'Roboto';
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 18px;
+		text-transform: initial;
+		padding: 15px 0 13px;
+	}
+	&:hover {
+		border: 2px $primary-light solid;
+		color: $primary-light;
+	}
+}
+
+.profileContainer {
+	& :global(.vtex-button) {
+		border-radius: 4px;
+		border: 0;
+		&:global(.vtex-button__label) {
+			border: 0;
+			border-radius: 0;
+			font-family: 'Roboto';
+			font-size: 15px;
+			font-weight: 500;
+			line-height: 18px;
+			text-transform: initial;
+			margin: 14px 0 13px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.toggleBusinessButtonWrapper {
+		& :global(.vtex-button) {
+			padding: 8px 0;
+			font-size: 13px;
+		}
+	}
+
+	.profileContainer :global(.vtex-button) :global(.vtex-button__label),
+	.profile
+		.passwordBoxContainer
+		.boxContainerBody
+		:global(.vtex-button)
+		:global(.vtex-button__label) {
+		font-size: 13px;
+	}
+}

@@ -1,0 +1,11 @@
+.socialNetworkLink {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.paymentMethodIcon {
+  width: 48px;
+  height: 36px;
+}

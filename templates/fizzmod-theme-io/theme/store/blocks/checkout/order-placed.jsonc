@@ -1,0 +1,242 @@
+{
+    "order-placed": {
+        "blocks": [
+            "op-header",
+            "op-order",
+            "op-footer"
+        ]
+    },
+    "op-header": {
+        "children": [
+            "flex-layout.row#order-confirmed", 
+            "op-section#confirmation",
+            "op-summary-section",
+            "op-bank-invoice-section"
+        ]
+    },
+    "flex-layout.row#order-confirmed": {
+        "children":[
+            "rich-text#order-confirmed-text"
+        ],
+        "props": {
+            "blockClass": "order-confirmed-text-container"
+        }
+    },
+    "rich-text#order-confirmed-text": {
+        "props": {
+            "text": "### Pedido confirmado",
+            "blockClass": "order-confirmed"
+        }
+    },
+    "op-section#confirmation": {
+        "props": {
+            "name": "confirmation",
+            "marginBottom": 9,
+            "borderless": true
+            },
+        "children": [
+            "op-confirmation-title",
+            "op-confirmation-message"
+        ]
+    },
+    "op-section#notices": {
+            "props": {
+            "name": "notices",
+            "marginBottom": 9,
+            "borderless": true
+        },
+        "children": ["op-notices"]
+    },
+    // each order section
+    "op-order": {
+        "children": [
+            "flex-layout.row#order-header",
+            "flex-layout.row#order-body",
+            "op-order-split-notice",
+            "op-section#delivery-packages",
+            "op-order-takeaway-packages"
+        ]
+    },
+    // each order header
+    "flex-layout.row#order-header": {
+        "props": {
+            "fullWidth": true,
+            "colSizing": "auto",
+            "colGap": 5,
+            "marginBottom": 5,
+            "blockClass": "order-number"
+        },
+        "children": [
+            "flex-layout.col#order-header-info"
+        ]
+    },
+    "flex-layout.col#order-header-info": {
+        "children": [
+            "op-order-number"
+        ]
+    },
+    "flex-layout.row#order-body": {
+        "children": [
+            "flex-layout.col#order-direction",
+            "flex-layout.col#payments",
+            "flex-layout.col#totals"
+        ],
+        "props": {
+            "blockClass": "orderplaced-body-container",
+            "colGap": 5
+        }
+    },
+    "flex-layout.col#order-direction": {
+        "children": [
+            "op-order-delivery-packages",
+            "op-order-pickup-packages"
+        ],
+        "props": {
+            "blockClass": "order-direction"
+        }
+    },
+    "flex-layout.col#payments": {
+        "children": ["op-section#payments"],
+        "props": {
+            "blockClass": "orderplaced-payments"
+        }
+    },
+    "flex-layout.col#totals": {
+        "children": ["op-section#totals"],
+        "props": {
+            "blockClass": "orderplaced-totals"
+        }
+    },
+    // payment section
+    "op-section#payments": {
+        "props": {
+            "name": "paymentMethods"
+        },
+        "children": [
+            "op-section#title-payments",
+            "op-order-payment"
+        ]
+    },
+    "op-section#title-payments": {
+        "children":["flex-layout.row#title-payments"]
+    },
+    "flex-layout.row#title-payments": {
+        "children": ["rich-text#title-payments"]
+    },
+    "rich-text#title-payments": {
+        "props": {
+            "text": "### Método de pago",
+            "blockClass": "orderplaced-payments-title"
+        }
+    },
+    // totals
+    "op-section#totals": {
+        "children":[
+            "op-section#title-order",
+            "op-order-total"
+        ]
+    },
+    "op-section#title-order": {
+        "children":["flex-layout.row#title-order"]
+    },
+    "flex-layout.row#title-order": {
+        "children": ["rich-text#title-order"]
+    },
+    "rich-text#title-order": {
+        "props": {
+            "text": "### Resumen",
+            "blockClass": "orderplaced-totals-title"
+        }
+    },
+    // bottom of top section of order header
+    "op-section#delivery-packages": {
+        "props": {
+            "name": "deliveryPackages"
+    },
+    "children": [
+        "flex-layout.row#order-list-products"
+        ]
+    },
+    "flex-layout.row#order-list-products": {
+        "children": [
+            "flex-layout.col#orderplaced-delivery-packages",
+            "flex-layout.col#orderplaced-customer"
+        ],
+        "props": {
+            "blockClass": "order-list-products"
+        }
+    },
+    "flex-layout.col#orderplaced-delivery-packages": {
+        "children":[
+            "op-order-delivery-packages",
+            "op-order-pickup-packages"
+        ],
+        "props": {
+            "width": "66%"
+        }
+    },
+    "flex-layout.col#orderplaced-customer": {
+        "children":[
+            "rich-text#order-customer",
+            "op-order-customer"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "orderplaced-customer"
+        }
+    },
+    "rich-text#order-customer": {
+        "props": {
+            "text": "### Recibir",
+            "blockClass": "orderplaced-customer"
+        }
+    },
+    "op-footer": {
+        "children": [
+            "op-section#botones"]
+    },
+    "op-section#botones": {
+        "children":[
+            "flex-layout.row#botones"
+        ]
+    },
+    "flex-layout.row#botones": {
+        "children":[
+            "link#button-home",
+            "link#button-my-account"
+        ],
+        "props": {
+            "blockClass": "buttons-op-container"
+        }
+    },
+    "link#button-home": {
+        "props": {
+          "href": "/",
+          "label": "Hacer nuevas compras",
+          "displayMode": "button",
+          "blockClass": "checkout-orderplaced-return-buy"
+        }
+    },
+    "link#button-my-account": {
+        "props": {
+          "href": "/account#/orders",
+          "label": "Ir a mis pedidos",
+          "displayMode": "anchor",
+          "blockClass": "checkout-orderplaced-my-orders"
+        }
+    },
+    "op-section#mobile-safe": {
+        "children": ["responsive-layout.mobile#safe-mobile"]
+    },
+    "responsive-layout.mobile#safe-mobile": {
+        "children": ["rich-text#checkout-safe-text-mobile"]
+    },
+    "rich-text#checkout-safe-text-mobile": {
+        "props": {
+            "blockClass": "checkout-safe-text",
+            "text": "Compra 100% segura",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    }
+}

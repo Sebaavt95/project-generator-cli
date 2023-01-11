@@ -1,0 +1,42 @@
+.trigger {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  outline: none;
+}
+.trigger--question {
+  border-bottom: 1px #eeeeee solid;
+}
+.trigger--question--visible {
+  border: none;
+}
+.trigger--hidden::after {
+  font-family: "mercaldas";
+  content: "\e921";
+  color: #000000;
+}
+.trigger--visible::after {
+  font-family: "mercaldas";
+  content: "\e922";
+  color: #000000;
+}
+
+.content--answer {
+  transition: opacity 250ms ease-in-out, height 250ms ease-in-out, transform 250ms ease-in-out;
+  opacity: 0;
+  height: 0;
+  transform: translate3d(0, -10%, 0);
+}
+.content--answer--visible {
+  border-bottom: 1px var(--color-grey-300) solid;
+}
+.content--answer[data-enter] {
+  opacity: 1;
+  height: fit-content;
+  transform: translate3d(0, 0, 0);
+}
+.content--answer[data-leave] {
+  height: 0;
+  overflow: hidden;
+}

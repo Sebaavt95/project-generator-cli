@@ -1,0 +1,9 @@
+{
+	"options": {
+		"NONE": "No reemplazar",
+		"SAME_BRAND": "Marca similar",
+		"STORE_BRAND": "Marca propia",
+		"SIMILAR_PRICE": "Distinto tamaño"
+	},
+	"defaultSubstitute": "NONE"
+}

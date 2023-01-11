@@ -1,0 +1,46 @@
+:global(.vtex-store__template) {
+	background-color: $white;
+	overflow: hidden;
+}
+
+.flexRowContent {
+	&--header-main-desktop,
+	&--main-menu-desktop {
+		margin: 0 auto;
+	}
+	&--header-main-desktop {
+		max-width: calc(1220px + 2.5rem);
+		padding: 0 1.25rem;
+		justify-content: space-between;
+	}
+	&--main-menu-desktop {
+		max-width: calc(1220px + 2.5rem);
+	}
+}
+
+.flexRow {
+	&--main-home-desktop,
+	&--main-home-tablet {
+		padding: 0;
+		margin: 0 auto;
+	}
+	&--main-home-desktop {
+		max-width: 1235px;
+	}
+	&--main-home-tablet {
+		max-width: 1024px;
+	}
+	&--main-home-mobile {
+		max-width: 1024px;
+		min-width: 320px;
+		width: 100%;
+	}
+}
+
+.flexCol--container {
+	margin-bottom: 48px;
+}
+
+.flexColChild--container {
+	height: initial !important;
+}

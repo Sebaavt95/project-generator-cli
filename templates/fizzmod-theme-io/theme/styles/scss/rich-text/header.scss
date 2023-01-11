@@ -1,0 +1,8 @@
+.wrapper {
+	&--searchbar-btn-mobile::before {
+		content: '\e94b';
+		font-family: 'mercaldas';
+		font-size: 34px;
+		color: $white;
+	}
+}

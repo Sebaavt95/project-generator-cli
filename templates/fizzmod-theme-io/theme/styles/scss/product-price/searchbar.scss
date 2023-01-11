@@ -1,0 +1,52 @@
+.currencyContainer {
+	&--search-bar-product {
+		&-listprice,
+		&-sellingprice {
+			font-size: 14px;
+			line-height: 16px;
+			font-weight: $medium;
+		}
+
+		&-listprice {
+			color: $grey-600;
+			text-decoration: line-through;
+
+			@include mediaBreaks('tablet') {
+				color: $grey-600;
+			}
+		}
+
+		&-sellingprice {
+			color: $grey-800;
+
+			@include mediaBreaks('tablet') {
+				color: $grey-800;
+			}
+		}
+	}
+}
+
+.listPrice {
+	&--search-bar-product-listprice {
+		text-align: left;
+		font-size: 14px !important;
+		margin-right: 16px;
+		padding-left: 0px !important;
+
+		@include mediaBreaks('tablet') {
+			margin-right: 20px;
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
+.sellingPrice {
+	&--search-bar-product-sellingprice {
+		text-align: left;
+		font-size: 14px !important;
+		@include mediaBreaks('tablet') {
+			margin-top: 2.5px;
+		}
+	}
+}

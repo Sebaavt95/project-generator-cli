@@ -1,0 +1,51 @@
+@import 'variants';
+
+%baseButton {
+	box-sizing: border-box;
+	border: none;
+	border-radius: 0;
+	font-size: 16px;
+	font-weight: $bold;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-shadow: none;
+	transition: all 0.3s;
+	@include flexCenter;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	& > i:before,
+	&:before {
+		@include flexCenter;
+	}
+}
+
+@mixin button(
+	$variant: 'contained',
+	$color: 'primary',
+	$disabled: 'false',
+	$width: 100%,
+	$height: 48px
+) {
+	width: $width;
+	height: $height;
+
+	@extend %baseButton;
+
+	@if $variant == 'contained' {
+		@include contained($color);
+	}
+	@if $variant == 'outlined' {
+		@include outlined($color);
+	}
+	@if $variant == 'text' {
+		@include text($color);
+	}
+	@if $disabled == 'true' {
+		@include disabled;
+	}
+
+	@content;
+}

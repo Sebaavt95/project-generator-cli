@@ -1,0 +1,236 @@
+.biggy-autocomplete {
+	padding: 0;
+	transform: translateY(8px);
+	flex-direction: column !important;
+	max-width: 588px;
+	@include responsive('md') {
+		width: 100vw;
+		max-width: 100vw;
+		transform: translateY(0px);
+	}
+}
+
+.biggy-js-container {
+	&--hidden {
+		@include responsive('tb') {
+			visibility: visible !important;
+			opacity: 1 !important;
+			max-height: 700px !important;
+		}
+	}
+}
+
+.history-and-top-wrapper {
+	background-color: $grey-100;
+}
+
+.itemList {
+	&--top-search,
+	&--history {
+		border-top: 2px solid $grey-300;
+		.itemListTitle,
+		.itemListList {
+			padding-left: 21px;
+			@include responsive('md') {
+				padding-left: 15px;
+			}
+		}
+
+		.itemListList {
+			padding-bottom: 23px;
+			@include responsive('md') {
+				padding-bottom: 16px;
+			}
+		}
+
+		.itemListTitle {
+			text-transform: unset;
+			font-size: 16px;
+			font-weight: 500;
+			margin-top: 19px;
+			margin-bottom: 18px;
+			@include responsive('md') {
+				margin-top: 17px;
+				margin-bottom: 14px;
+			}
+		}
+
+		.itemListItem {
+			min-height: 20px;
+			&:not(:last-child) {
+				margin-bottom: 16px;
+				@include responsive('md') {
+					margin-bottom: 14px;
+				}
+			}
+		}
+	}
+
+	&--history {
+		.itemListItem {
+			.itemListLink {
+				display: flex;
+			}
+		}
+	}
+
+	&--top-search,
+	&--suggestion {
+		.itemListLink {
+			font-size: 14px;
+		}
+	}
+
+	&--suggestion {
+		background-color: $grey-100;
+		padding: 24px 30px 8px;
+		@include responsive('md') {
+			background-color: $grey-100;
+			padding: 19px 15px 0;
+		}
+		.itemListTitle {
+			display: none;
+		}
+		.itemListLinkTitle {
+			text-transform: lowercase;
+		}
+		.itemListLink,
+		.itemListSubItem {
+			margin-bottom: 16px;
+		}
+
+		.itemListLinkTitle,
+		.itemListSubItemLink {
+			@include responsive('md') {
+				color: var(--modal-color-secondary-dark);
+			}
+		}
+	}
+
+	&--top-search {
+		@include responsive('md') {
+			background-color: $grey-100;
+		}
+	}
+}
+
+.itemListLink,
+.itemListLinkTitle,
+.itemListSubItem,
+.itemListSubItemLink {
+	line-height: 16px !important;
+	height: auto !important;
+	padding: 0 !important;
+}
+
+.itemListPrefix {
+	display: none;
+}
+
+.itemListLinkTitle {
+	text-transform: capitalize;
+	color: #6c6c6c;
+	font-size: 14px;
+	&:hover {
+		color: $grey-800;
+	}
+}
+
+.itemListLink {
+	color: #6c6c6c;
+	&:hover {
+		font-size: 14px !important;
+	}
+}
+
+.tileList {
+	@include responsive('md') {
+		border: none;
+	}
+	.tileListTitle {
+		display: none;
+	}
+}
+
+.itemListSubItemLink {
+	padding: 0 !important;
+	margin: 9px 0;
+	text-transform: uppercase !important;
+	font-family: $fontFamily;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #6c6c6c;
+	@include responsive('md') {
+		font-weight: 500;
+		letter-spacing: normal;
+	}
+}
+
+.itemListLink,
+.itemListSubItemLink {
+	&:hover {
+		color: $grey-800;
+		background: none !important;
+	}
+}
+
+.tileListSpinner {
+	padding: 20px 0;
+	background-color: $grey-300;
+}
+
+.tileListList {
+	flex-direction: column !important;
+	margin: 0;
+	@include responsive('tb') {
+		max-height: 244px;
+		overflow-y: auto;
+	}
+}
+
+.tileListFooter {
+	@include flexCenter;
+	height: 54px;
+	@include responsive('tb') {
+		height: 50px;
+	}
+}
+
+.tileListSeeMore {
+	font-family: $fontFamily;
+	font-weight: $medium;
+	line-height: 19px;
+	font-size: 16px;
+	color: $grey-800;
+	text-decoration: none;
+	height: auto;
+	@include responsive('md') {
+		font-size: 14px;
+		color: $grey-800;
+		display: flex;
+		align-items: center;
+	}
+	&::after {
+		content: '\e90a';
+		font-family: 'mercaldas';
+		font-size: 14px;
+		margin-left: 9px;
+		@include responsive('tb') {
+			color: #212121;
+		}
+	}
+}
+
+.close-btn {
+	@include responsive('md') {
+		display: none;
+	}
+}
+
+.itemListLinkTitle,
+.itemListLink,
+.itemListSubItemLink {
+	@include responsive('md') {
+		font-size: 13px;
+	}
+}

@@ -1,0 +1,610 @@
+{
+  "vtex.menu@2.x:menu#footer-contact-us": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#contact-us",
+      "rich-text#phone-atention-title",
+      "rich-text#whatsapp-content",
+      "rich-text#phone-atention-content",
+      "rich-text#phone-atention-pqr",
+      "rich-text#timetable-title",
+      "rich-text#timetable-content",
+      "rich-text#social-title",
+      "flex-layout.row#social-content"
+    ]
+  },
+  "rich-text#contact-us": {
+    "props": {
+      "text": "CONTACTANOS",
+      "blockClass": "link-column-title"
+    }
+  },
+  "rich-text#phone-atention-title": {
+    "props": {
+      "text": "Atención telefónica",
+      "blockClass": "link-section-title"
+    }
+  },
+  "rich-text#phone-atention-content": {
+    "props": {
+      "text": "3226888282",
+      "blockClass": "phone-atention-text"
+    }
+  },
+  "rich-text#phone-atention-pqr": {
+    "props": {
+      "text": "PQR: 123456",
+      "blockClass": "phone-atention-pqr-text"
+    }
+  },
+  "rich-text#whatsapp-content": {
+    "props": {
+      "text": "3226888282555",
+      "blockClass": "whatsapp-text"
+    }
+  },
+  "rich-text#timetable-title": {
+    "props": {
+      "text": "Horarios",
+      "blockClass": "link-section-title"
+    }
+  },
+  "rich-text#timetable-content": {
+    "props": {
+      "text": "L-S: 8:00 am - 8:00 pm \n D-F 9:00AM - 7:00pm",
+      "blockClass": "timetable-text"
+    }
+  },
+  "rich-text#social-title": {
+    "props": {
+      "text": "Seguinos en:",
+      "blockClass": "link-section-title"
+    }
+  },
+  "flex-layout.row#social-content": {
+    "children": ["link#facebook", "link#instagram"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "footer-social-row"
+    }
+  },
+  "link#facebook": {
+    "props": {
+      "href": "/",
+      "blockClass": "facebook-icon"
+    }
+  },
+  "link#instagram": {
+    "props": {
+      "href": "/",
+      "blockClass": "instagram-icon"
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-about-us": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#about-us",
+      "menu-item#about-fizzmod",
+      "menu-item#storages",
+      "menu-item#contact-us",
+      "menu-item#faqs"
+    ]
+  },
+  "rich-text#about-us": {
+    "props": {
+      "text": "NOSOTROS",
+      "blockClass": "link-column-title"
+    }
+  },
+  "menu-item#about-fizzmod": {
+    "props": {
+      "id": "menu-item-about-fizzmod",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/acerca-de-fizzmod",
+        "noFollow": false,
+        "tagTitle": "Acerca de Fizzmod",
+        "text": "Acerca de Fizzmod"
+      },
+      "blockClass": "footer-menu-item-link"
+    }
+  },
+  "menu-item#storages": {
+    "props": {
+      "id": "menu-item-storages",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Almacenes",
+        "text": "Almacenes"
+      },
+      "blockClass": "footer-menu-item-link"
+    }
+  },
+  "menu-item#contact-us": {
+    "props": {
+      "id": "menu-item-contact-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/contacto",
+        "noFollow": false,
+        "tagTitle": "Contactenos",
+        "text": "Contactenos"
+      },
+      "blockClass": "footer-menu-item-link"
+    }
+  },
+  "menu-item#faqs": {
+    "props": {
+      "id": "menu-item-faqs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/preguntas-frecuentes",
+        "noFollow": false,
+        "tagTitle": "Preguntas frecuentes",
+        "text": "Preguntas frecuentes"
+      },
+      "blockClass": "footer-menu-item-link-last"
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-legal": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer-legal"
+    },
+    "children": [
+      "rich-text#legal",
+      "menu-item#privacy-policy",
+      "menu-item#site-terms",
+      "menu-item#virtual-store-app-terms",
+      "menu-item#i-want-share-terms",
+      "menu-item#smartwatch-terms",
+      "menu-item#mercadopago-terms",
+      "menu-item#free-address-terms",
+      "menu-item#merca-online-terms",
+      "menu-item#delivery-and-returns"
+    ]
+  },
+  "rich-text#legal": {
+    "props": {
+      "text": "LEGAL",
+      "blockClass": "link-column-title"
+    }
+  },
+  "menu-item#privacy-policy": {
+    "props": {
+      "id": "menu-item-privacy-policy",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/politica-de-privacidad",
+        "noFollow": false,
+        "tagTitle": "Política de Privacidad",
+        "text": "Política de Privacidad"
+      },
+      "blockClass": "footer-menu-item-link"
+    }
+  },
+  "menu-item#site-terms": {
+    "props": {
+      "id": "menu-item-site-terms",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/terminos-del-portal",
+        "noFollow": false,
+        "tagTitle": "Términos del Portal",
+        "text": "Términos del Portal"
+      },
+      "blockClass": "footer-menu-item-link"
+    }
+  },
+  "menu-item#virtual-store-app-terms": {
+    "props": {
+      "id": "menu-item-virtual-store-app-terms",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/terminos-y-condiciones-tienda-virtual-y-app",
+        "noFollow": false,
+        "tagTitle": "Términos Tienda Virtual y App",
+        "text": "Términos Tienda Virtual y App"
+      },
+      "blockClass": "footer-menu-item-link"
+    }
+  },
+  "menu-item#i-want-share-terms": {
+    "props": {
+      "id": "menu-item-i-want-share-terms",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Términos y Condiciones Yo Quiero Compartir",
+        "text": "Términos y Condiciones Yo Quiero Compartir"
+      },
+      "blockClass": "footer-menu-item-link"
+    }
+  },
+  "menu-item#smartwatch-terms": {
+    "props": {
+      "id": "menu-item-smartwatch-terms",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/terminos-y-condiciones-smartwatch",
+        "noFollow": false,
+        "tagTitle": "Términos y Condiciones Smartwatch",
+        "text": "Términos y Condiciones Smartwatch"
+      },
+      "blockClass": "footer-menu-item-link"
+    }
+  },
+  "menu-item#mercadopago-terms": {
+    "props": {
+      "id": "menu-item-mercadopago-terms",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://www.mercadopago.com.co/ayuda/terminos-y-condiciones_299#_ga=2.47642343.1370178107.1623868167-1821251302.1619454150",
+        "noFollow": false,
+        "tagTitle": "Términos y Condiciones Mercado Pago",
+        "text": "Términos y Condiciones Mercado Pago"
+      },
+      "blockClass": "footer-menu-item-link"
+    }
+  },
+  "menu-item#free-address-terms": {
+    "props": {
+      "id": "menu-item-free-address-terms",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/terminos-y-condiciones-domicilio-gratis",
+        "noFollow": false,
+        "tagTitle": "Términos y Condiciones Domicilio Gratis",
+        "text": "Términos y Condiciones Domicilio Gratis"
+      },
+      "blockClass": "footer-menu-item-link"
+    }
+  },
+  "menu-item#merca-online-terms": {
+    "props": {
+      "id": "menu-item-merca-online-terms",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/terminos-y-condiciones-merca-online",
+        "noFollow": false,
+        "tagTitle": "Términos y Condiciones Merca Online",
+        "text": "Términos y Condiciones Merca Online"
+      },
+      "blockClass": "footer-menu-item-link"
+    }
+  },
+  "menu-item#delivery-and-returns": {
+    "props": {
+      "id": "menu-item-delivery-and-returns",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/envios-y-devoluciones",
+        "noFollow": false,
+        "tagTitle": "Envío y Devoluciones",
+        "text": "Envío y Devoluciones"
+      },
+      "blockClass": "footer-menu-item-link-last"
+    }
+  },
+
+  "vtex.menu@2.x:menu#payment-methods": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#payment-methods",
+      "flex-layout.row#payment-methods-row-1",
+      "flex-layout.row#payment-methods-row-2",
+      "link#more-payment-methods"
+    ]
+  },
+  "rich-text#payment-methods": {
+    "props": {
+      "text": "MEDIOS DE PAGO",
+      "blockClass": "link-column-title"
+    }
+  },
+  "flex-layout.row#payment-methods-row-1": {
+    "children": [
+      "link#mastercard-card",
+      "link#visa-card",
+      "link#mercadopago-card"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "prevenVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "colGap": 3
+    }
+  },
+  "flex-layout.row#payment-methods-row-2": {
+    "children": ["link#diners-card", "link#amex-card", "link#pse-card"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "prevenVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "colGap": 3,
+      "marginTop": 3
+    }
+  },
+  "link#mastercard-card": {
+    "props": {
+      "href": "/",
+      "blockClass": "mastercard-card"
+    }
+  },
+  "link#visa-card": {
+    "props": {
+      "href": "/",
+      "blockClass": "visa-card"
+    }
+  },
+  "link#mercadopago-card": {
+    "props": {
+      "href": "/",
+      "blockClass": "mercadopago-card"
+    }
+  },
+  "link#diners-card": {
+    "props": {
+      "href": "/",
+      "blockClass": "diners-card"
+    }
+  },
+  "link#amex-card": {
+    "props": {
+      "href": "/",
+      "blockClass": "amex-card"
+    }
+  },
+  "link#pse-card": {
+    "props": {
+      "href": "/",
+      "blockClass": "pse-card"
+    }
+  },
+  "link#more-payment-methods": {
+    "props": {
+      "label": "Ver más",
+      "href": "/",
+      "blockClass": "more-payment-methods"
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-vtex-fizzmod": {
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": "footer-vtex-fizzmod"
+    },
+    "children": ["link#vtex-logo", "link#fizzmod-logo"]
+  },
+  "link#vtex-logo": {
+    "props": {
+      "href": "https://vtex.com",
+      "blockClass": "vtex-logo"
+    }
+  },
+  "link#fizzmod-logo": {
+    "props": {
+      "href": "https://www.fizzmod.com",
+      "blockClass": "fizzmod-logo"
+    }
+  },
+
+  /* ---------- MOBILE --------- */
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#contact-us-mobile",
+      "menu-item#about-us-mobile",
+      "menu-item#legal-mobile",
+      "menu-item#payment-methods-mobile"
+    ]
+  },
+  "menu-item#contact-us-mobile": {
+    "props": {
+      "id": "contact-us-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "CONTACTANOS",
+        "text": "CONTACTANOS"
+      },
+      "blockClass": "footer-accordion-item"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#footer-contact-us"]
+  },
+  "vtex.menu@2.x:submenu.accordion#footer-contact-us": {
+    "children": ["vtex.menu@2.x:menu#contact-us-accordion"]
+  },
+  "vtex.menu@2.x:menu#contact-us-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#phone-atention-title",
+      "rich-text#whatsapp-content",
+      "rich-text#phone-atention-content",
+      "rich-text#phone-atention-pqr",
+      "rich-text#timetable-title",
+      "rich-text#timetable-content",
+      "rich-text#social-title",
+      "flex-layout.row#social-content"
+    ]
+  },
+  "menu-item#about-us-mobile": {
+    "props": {
+      "id": "about-us-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "NOSOTROS",
+        "text": "NOSOTROS"
+      },
+      "blockClass": "footer-accordion-item"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#footer-about-us"]
+  },
+  "vtex.menu@2.x:submenu.accordion#footer-about-us": {
+    "children": ["vtex.menu@2.x:menu#about-us-accordion"]
+  },
+  "vtex.menu@2.x:menu#about-us-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#about-fizzmod",
+      "menu-item#storages",
+      "menu-item#contact-us",
+      "menu-item#faqs"
+    ]
+  },
+  "menu-item#legal-mobile": {
+    "props": {
+      "id": "legal-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "LEGAL",
+        "text": "LEGAL"
+      },
+      "blockClass": "footer-accordion-item"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#footer-legal"]
+  },
+  "vtex.menu@2.x:submenu.accordion#footer-legal": {
+    "children": ["vtex.menu@2.x:menu#legal-accordion"]
+  },
+  "vtex.menu@2.x:menu#legal-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#privacy-policy",
+      "menu-item#site-terms",
+      "menu-item#virtual-store-app-terms",
+      "menu-item#i-want-share-terms",
+      "menu-item#smartwatch-terms",
+      "menu-item#mercadopago-terms",
+      "menu-item#free-address-terms",
+      "menu-item#merca-online-terms",
+      "menu-item#delivery-and-returns"
+    ]
+  },
+  "menu-item#payment-methods-mobile": {
+    "props": {
+      "id": "payment-methods",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "MEDIOS DE PAGO",
+        "text": "MEDIOS DE PAGO"
+      },
+      "blockClass": "footer-accordion-item"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#footer-payment-methods"]
+  },
+  "vtex.menu@2.x:submenu.accordion#footer-payment-methods": {
+    "children": ["vtex.menu@2.x:menu#payment-methods-accordion"]
+  },
+  "vtex.menu@2.x:menu#payment-methods-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.row#payment-methods-row-1-mobile",
+      "flex-layout.row#payment-methods-row-2-mobile"
+    ]
+  },
+  "flex-layout.row#payment-methods-row-1-mobile": {
+    "children": [
+      "link#mastercard-card",
+      "link#visa-card",
+      "link#mercadopago-card",
+      "link#diners-card"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "prevenVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "colGap": 3
+    }
+  },
+  "flex-layout.row#payment-methods-row-2-mobile": {
+    "children": ["link#amex-card", "link#pse-card"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "prevenVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "colGap": 3,
+      "marginTop": 3
+    }
+  }
+}

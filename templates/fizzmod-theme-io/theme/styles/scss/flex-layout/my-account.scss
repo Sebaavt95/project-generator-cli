@@ -1,0 +1,33 @@
+.flexRowContent {
+	&--breadcrumb-myaccount-container {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+	&--myaccount-container {
+		@include customMediaBreaks(768) {
+			margin-top: 7px;
+		}
+		& :global(.vtex-account__page) {
+			width: 100%;
+		}
+		& :global(.vtex-account) {
+			max-width: 1280px;
+			margin-top: -52px;
+		}
+		& :global(.vtex-pageHeader__container) {
+			padding: 0;
+
+			@include customMediaBreaks(768) {
+				padding: 45px 18px 0;
+			}
+		}
+	}
+}
+
+.flexRow {
+	&--breadcrumb-myaccount-container {
+		@include customMediaBreaks(768) {
+			display: none;
+		}
+	}
+}

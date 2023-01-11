@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>icn_checkbox-fill</title>
+    <desc>Created with Sketch.</desc>
+    <g id="checkbox-fill-Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,0 L12,0 L12,12 L0,12 L0,0 Z M1,1 L1,11 L11,11 L11,1 L1,1 Z M8.45552592,3.48420162 L9.54447408,4.51579838 L5.2363513,9.06343032 L2.48106154,6.4228522 L3.51893846,5.33988798 L5.18498298,6.93656968 L8.45552592,3.48420162 Z" id="checkbox-fill-icn_checkbox-fill" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

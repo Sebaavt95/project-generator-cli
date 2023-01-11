@@ -1,0 +1,65 @@
+{
+    "store.custom#institutional-smartwatch-terms": {
+        "blocks": [
+			"responsive-layout.desktop#smartwatch-terms",
+			"responsive-layout.tablet#smartwatch-terms",
+			"responsive-layout.phone#smartwatch-terms"
+		]
+    },
+    "responsive-layout.desktop#smartwatch-terms": {
+		"children": ["flex-layout.row#institutional-header-smartwatch-terms", "flex-layout.row#institutional-content-smartwatch-terms"]
+	},
+	"responsive-layout.tablet#smartwatch-terms": {
+		"children": ["flex-layout.row#institutional-header-smartwatch-terms", "flex-layout.row#institutional-content-smartwatch-terms"]
+	},
+	"responsive-layout.phone#smartwatch-terms": {
+		"children": ["flex-layout.row#institutional-header-smartwatch-terms-phone", "flex-layout.row#institutional-content-smartwatch-terms"]
+    },
+    "flex-layout.row#institutional-header-smartwatch-terms": {
+		"children": ["rich-text#institutional-title-smartwatch-terms"],
+		"props": {
+			"blockClass": "institutional-title-container"
+		}
+	},
+    "rich-text#institutional-title-smartwatch-terms": {
+		"props": {
+			"text": "### Terminos y Condiciones: Smartwatch",
+			"textPosition": "CENTER",
+            "textAlignment": "CENTER",
+			"blockClass": "institutional-title"
+		}
+	},
+    "flex-layout.row#institutional-header-smartwatch-terms-phone": {
+		"children": ["rich-text#institutional-title-smartwatch-terms-phone"],
+		"props": {
+			"blockClass": "institutional-title-container"
+		}
+	},
+    "rich-text#institutional-title-smartwatch-terms-phone": {
+		"props": {
+			"text": "### Terminos y Condiciones:\n ### Smartwatch",
+			"textPosition": "CENTER",
+            "textAlignment": "CENTER",
+			"blockClass": "institutional-title-long-extension"
+		}
+	},
+    "flex-layout.row#institutional-content-smartwatch-terms": {
+		"children": ["flex-layout.col#institutional-content-smartwatch-terms"],
+		"props": {
+			"blockClass":"institutional-content"
+		}
+	},
+    "flex-layout.col#institutional-content-smartwatch-terms": {
+		"children": [
+			"rich-text#institutional-content-smartwatch-terms-text-1"
+			]
+	},
+    "rich-text#institutional-content-smartwatch-terms-text-1": {
+		"props": {
+			"text": "Términos y Condiciones: Promoción válida solo en [mercaldas.com](/), Julio 03 al 30 de 2021 o hasta agotar existencias, por compra de un televisor Kalley 50” te obsequiamos un reloj Kalley K-GRMRN 33 mm Ng aplica solo por la compra en la referencia TV KALLEY 50” K-LED50UHDSNBT 4K, PLU 120268 se entregará un obsequio por cada factura de compra 20 unidades disponibles.",
+			"textAlignment": "LEFT",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-text"
+		}
+    }    
+}

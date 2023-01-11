@@ -1,0 +1,225 @@
+{
+ "menu-item#marcas-mercaldas": {
+  "props": {
+   "id": "marcas-mercaldas",
+   "type": "custom",
+   "iconId": null,
+   "highlight": false,
+   "blockClass": ["categoryTreeItem", "department"],
+   "itemProps": {
+    "type": "internal",
+    "href": "/marca-mercaldas",
+    "noFollow": false,
+    "tagTitle": "Marcas Mercaldas",
+    "text": "Marcas Mercaldas"
+   }
+  },
+  "blocks": ["vtex.menu@2.x:submenu#marcas-mercaldas-categories"]
+ },
+ "vtex.menu@2.x:submenu#marcas-mercaldas-categories": {
+  "children": ["vtex.menu@2.x:menu#marcas-mercaldas-categories"]
+ },
+ "vtex.menu@2.x:menu#marcas-mercaldas-categories": {
+  "props": {
+   "orientation": "vertical"
+  },
+  "children": [
+   "menu-item#m-mi-marca",
+   "menu-item#marca-extra",
+   "menu-item#mercaldas-lleve-3-pague-2"
+  ]
+ },
+ "menu-item#m-mi-marca": {
+  "props": {
+   "id": "m-mi-marca",
+   "type": "custom",
+   "iconId": null,
+   "highlight": false,
+   "blockClass": ["categoryTreeItem", "category-level1"],
+   "itemProps": {
+    "type": "internal",
+    "href": "/marca-mercaldas/m-mi-marca",
+    "noFollow": false,
+    "tagTitle": "M Mi Marca",
+    "text": "M Mi Marca"
+   }
+  },
+  "blocks": ["vtex.menu@2.x:submenu#m-mi-marca-categories"]
+ },
+ "vtex.menu@2.x:submenu#m-mi-marca-categories": {
+  "children": ["vtex.menu@2.x:menu#m-mi-marca-categories"]
+ },
+ "vtex.menu@2.x:menu#m-mi-marca-categories": {
+  "props": {
+   "orientation": "vertical"
+  },
+  "children": [
+   "menu-item#alimentos-mi-marca",
+   "menu-item#aseo-limpieza-mi-marca"
+  ]
+ },
+ "menu-item#alimentos-mi-marca": {
+  "props": {
+   "id": "alimentos-mi-marca",
+   "type": "custom",
+   "iconId": null,
+   "highlight": false,
+   "itemProps": {
+    "type": "internal",
+    "href": "/marca-mercaldas/m-mi-marca/alimentos",
+    "noFollow": false,
+    "tagTitle": "Alimentos",
+    "text": "Alimentos"
+   }
+  }
+ },
+ "menu-item#aseo-limpieza-mi-marca": {
+  "props": {
+   "id": "aseo-limpieza-mi-marca",
+   "type": "custom",
+   "iconId": null,
+   "highlight": false,
+   "itemProps": {
+    "type": "internal",
+    "href": "/marca-mercaldas/m-mi-marca/aseo---limpieza",
+    "noFollow": false,
+    "tagTitle": "Aseo - Limpieza",
+    "text": "Aseo - Limpieza"
+   }
+  }
+ },
+ "menu-item#marca-extra": {
+  "props": {
+   "id": "marca-extra",
+   "type": "custom",
+   "iconId": null,
+   "highlight": false,
+   "blockClass": ["categoryTreeItem", "category-level1"],
+   "itemProps": {
+    "type": "internal",
+    "href": "/marca-mercaldas/marca-extra",
+    "noFollow": false,
+    "tagTitle": "Marca Extra",
+    "text": "Marca Extra"
+   }
+  },
+  "blocks": ["vtex.menu@2.x:submenu#marca-extra-categories"]
+ },
+ "menu-item#mercaldas-lleve-3-pague-2": {
+  "props": {
+   "id": "mercaldas-lleve-3-pague-2",
+   "type": "custom",
+   "iconId": null,
+   "highlight": false,
+   "blockClass": ["categoryTreeItem", "category-level1"],
+   "itemProps": {
+    "type": "internal",
+    "href": "/marca-mercaldas/mercaldas-lleve-3-pague-2",
+    "noFollow": false,
+    "tagTitle": "Mercaldas Lleve 3, Pague 2",
+    "text": "Mercaldas Lleve 3, Pague 2"
+   }
+  },
+  "blocks": ["vtex.menu@2.x:submenu#mercaldas-lleve-3-pague-2-categories"]
+ },
+ "vtex.menu@2.x:submenu#marca-extra-categories": {
+  "children": ["vtex.menu@2.x:menu#marca-extra-categories"]
+ },
+ "vtex.menu@2.x:menu#marca-extra-categories": {
+  "props": {
+   "orientation": "vertical"
+  },
+  "children": [
+   "menu-item#alimentos-marca-extra",
+   "menu-item#aseo-limpieza-marca-extra"
+  ]
+ },
+ "menu-item#alimentos-marca-extra": {
+  "props": {
+   "id": "alimentos-marca-extra",
+   "type": "custom",
+   "iconId": null,
+   "highlight": false,
+   "itemProps": {
+    "type": "internal",
+    "href": "/marca-mercaldas/marca-extra/alimentos",
+    "noFollow": false,
+    "tagTitle": "Alimentos",
+    "text": "Alimentos"
+   }
+  }
+ },
+ "menu-item#aseo-limpieza-marca-extra": {
+  "props": {
+   "id": "aseo-limpieza-marca-extra",
+   "type": "custom",
+   "iconId": null,
+   "highlight": false,
+   "itemProps": {
+    "type": "internal",
+    "href": "/marca-mercaldas/marca-extra/aseo---limpieza",
+    "noFollow": false,
+    "tagTitle": "Aseo - Limpieza",
+    "text": "Aseo - Limpieza"
+   }
+  }
+ },
+ "vtex.menu@2.x:submenu#mercaldas-lleve-3-pague-2-categories": {
+  "children": ["vtex.menu@2.x:menu#mercaldas-lleve-3-pague-2-categories"]
+ },
+ "vtex.menu@2.x:menu#mercaldas-lleve-3-pague-2-categories": {
+  "props": {
+   "orientation": "vertical"
+  },
+  "children": [
+   "menu-item#alimentos-3x2",
+   "menu-item#aseo-limpieza-3x2",
+   "menu-item#cuidado-personal-3x2"
+  ]
+ },
+ "menu-item#alimentos-3x2": {
+  "props": {
+   "id": "alimentos-3x2",
+   "type": "custom",
+   "iconId": null,
+   "highlight": false,
+   "itemProps": {
+    "type": "internal",
+    "href": "/marca-mercaldas/mercaldas-lleve-3-pague-2/alimentos",
+    "noFollow": false,
+    "tagTitle": "Alimentos",
+    "text": "Alimentos"
+   }
+  }
+ },
+ "menu-item#aseo-limpieza-3x2": {
+  "props": {
+   "id": "aseo-limpieza-3x2",
+   "type": "custom",
+   "iconId": null,
+   "highlight": false,
+   "itemProps": {
+    "type": "internal",
+    "href": "/marca-mercaldas/mercaldas-lleve-3-pague-2/aseo---limpieza",
+    "noFollow": false,
+    "tagTitle": "Aseo - Limpieza",
+    "text": "Aseo - Limpieza"
+   }
+  }
+ },
+ "menu-item#cuidado-personal-3x2": {
+  "props": {
+   "id": "cuidado-personal-3x2",
+   "type": "custom",
+   "iconId": null,
+   "highlight": false,
+   "itemProps": {
+    "type": "internal",
+    "href": "/marca-mercaldas/mercaldas-lleve-3-pague-2/cuidado-personal",
+    "noFollow": false,
+    "tagTitle": "Cuidado Personal",
+    "text": "Cuidado Personal"
+   }
+  }
+ }
+}

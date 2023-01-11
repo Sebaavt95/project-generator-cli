@@ -1,0 +1,417 @@
+{
+  "store.custom#preguntas-frecuentes": {
+      "blocks": [
+          "flex-layout.row#header-preguntas-frecuentes",
+          "flex-layout.row#preguntas-frecuentes"
+      ]
+  },
+  "flex-layout.row#header-preguntas-frecuentes": {
+      "children": ["rich-text#faq-title"],
+      "props": {
+          "blockClass": "institutional-title-container"
+      }
+  },
+  "flex-layout.row#preguntas-frecuentes": {
+      "children": ["flex-layout.col#faqs-main-container"],
+      "props": {
+          "blockClass": "preguntas-frecuentes"
+      }
+  },
+  "flex-layout.col#faqs-main-container": {
+      "children": [
+          "disclosure-layout-group#group"
+      ],
+      "props": {
+          "blockClass": "faqs-container"
+      }
+  },
+  "rich-text#faq-title": {
+      "props": {
+          "text": "### Preguntas frecuentes",
+          "textPosition": "CENTER",
+          "blockClass": "institutional-title"
+      }
+  },
+
+"disclosure-layout-group#group": {
+    "children": [
+      "disclosure-layout#first",
+      "disclosure-layout#second",
+      "disclosure-layout#third",
+      "disclosure-layout#fourth",
+      "disclosure-layout#five",
+      "disclosure-layout#six",
+      "disclosure-layout#seven",
+      "disclosure-layout#eight",
+      "disclosure-layout#nine",
+      "disclosure-layout#ten",
+      "disclosure-layout#eleven"
+    ]
+  },
+
+  "disclosure-layout#first": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#first", "disclosure-content#first"]
+  },
+  "disclosure-trigger#first": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question1"]
+  },
+  "disclosure-content#first": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer1"]
+  },
+  "rich-text#question1": {
+    "props": {
+      "text": "¿En qué horario está abierto el Hipermercado?",
+      "blockClass": "question-title"
+    }
+  },
+  "rich-text#answer1": {
+    "props": {
+      "text": "De 8:30 a 22 hs todo el año, excepto en aniversario y de diciembre a marzo donde la hora de cierre es las 23 hs.",
+      "blockClass": "question-content"
+    }
+  },
+
+  "disclosure-layout#second": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#second", "disclosure-content#second"]
+  },
+  "disclosure-trigger#second": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question2"]
+  },
+  "disclosure-content#second": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2"]
+  },
+  "rich-text#question2": {
+    "props": {
+      "text": "¿Cuánto demora en llegar mi pedido?",
+      "blockClass": "question-title"
+    }
+  },
+  "rich-text#answer2": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. 2",
+      "blockClass": "question-content"
+    }
+  },
+
+
+  "disclosure-layout#third": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#third", "disclosure-content#third"]
+  },
+  "disclosure-trigger#third": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question3"]
+  },
+  "disclosure-content#third": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer3"]
+  },
+  "rich-text#question3": {
+    "props": {
+      "text": "¿Hacen envío a todo el país?",
+      "blockClass": "question-title"
+    }
+  },
+  "rich-text#answer3": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. 3",
+      "blockClass": "question-content"
+    }
+  },
+
+
+  "disclosure-layout#fourth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#fourth", "disclosure-content#fourth"]
+  },
+  "disclosure-trigger#fourth": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question4"]
+  },
+  "disclosure-content#fourth": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer4"]
+  },
+  "rich-text#question4": {
+    "props": {
+      "text": "¿Cuáles son las formas de pago?",
+      "blockClass": "question-title"
+    }
+  },
+  "rich-text#answer4": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. 4",
+      "blockClass": "question-content"
+    }
+  },
+
+  "disclosure-layout#five": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#five", "disclosure-content#five"]
+  },
+  "disclosure-trigger#five": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question5"]
+  },
+  "disclosure-content#five": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer5"]
+  },
+  "rich-text#question5": {
+    "props": {
+      "text": "¿Con qué tarjetas de crédito puedo abonar?",
+      "blockClass": "question-title"
+    }
+  },
+  "rich-text#answer5": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. 5",
+      "blockClass": "question-content"
+    }
+  },
+
+  "disclosure-layout#six": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#six", "disclosure-content#six"]
+  },
+  "disclosure-trigger#six": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question6"]
+  },
+  "disclosure-content#six": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer6"]
+  },
+  "rich-text#question6": {
+    "props": {
+      "text": "Cambios y devoluciones",
+      "blockClass": "question-title"
+    }
+  },
+  "rich-text#answer6": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. 6",
+      "blockClass": "question-content"
+    }
+  },
+
+  "disclosure-state-indicator": {
+    "props": {
+      "Show": "icon-caret#down",
+      "Hide": "icon-caret#up"
+    }
+  },
+  "icon-caret#down": {
+    "props": {
+      "orientation": "down"
+    }
+  },
+  "icon-caret#up": {
+    "props": {
+      "orientation": "up"
+    }
+  },
+  "disclosure-layout#seven": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#seven", "disclosure-content#seven"]
+  },
+  "disclosure-trigger#seven": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question7"]
+  },
+  "disclosure-content#seven": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer7"]
+  },
+  "rich-text#question7": {
+    "props": {
+      "text": "¿Pregunta numero 7?",
+      "blockClass": "question-title"
+    }
+  },
+  "rich-text#answer7": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. 7",
+      "blockClass": "question-content"
+    }
+  },
+  "disclosure-layout#eight": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#eight", "disclosure-content#eight"]
+  },
+  "disclosure-trigger#eight": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question8"]
+  },
+  "disclosure-content#eight": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer8"]
+  },
+  "rich-text#question8": {
+    "props": {
+      "text": "¿Pregunta numero 8?",
+      "blockClass": "question-title"
+    }
+  },
+  "rich-text#answer8": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. 8",
+      "blockClass": "question-content"
+    }
+  },
+  "disclosure-layout#nine": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#nine", "disclosure-content#nine"]
+  },
+  "disclosure-trigger#nine": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question9"]
+  },
+  "disclosure-content#nine": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer9"]
+  },
+  "rich-text#question9": {
+    "props": {
+      "text": "¿Pregunta numero 9?",
+      "blockClass": "question-title"
+    }
+  },
+  "rich-text#answer9": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. 9",
+      "blockClass": "question-content"
+    }
+  },
+  "disclosure-layout#ten": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#ten", "disclosure-content#ten"]
+  },
+  "disclosure-trigger#ten": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question10"]
+  },
+  "disclosure-content#ten": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer10"]
+  },
+  "rich-text#question10": {
+    "props": {
+      "text": "¿Pregunta numero 10?",
+      "blockClass": "question-title"
+    }
+  },
+  "rich-text#answer10": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. 10",
+      "blockClass": "question-content"
+    }
+  },
+  "disclosure-layout#eleven": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#eleven", "disclosure-content#eleven"]
+  },
+  "disclosure-trigger#eleven": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question11"]
+  },
+  "disclosure-content#eleven": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer11"]
+  },
+  "rich-text#question11": {
+    "props": {
+      "text": "¿Pregunta numero 11?",
+      "blockClass": "question-title"
+    }
+  },
+  "rich-text#answer11": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. 11",
+      "blockClass": "question-content"
+    }
+  }
+}

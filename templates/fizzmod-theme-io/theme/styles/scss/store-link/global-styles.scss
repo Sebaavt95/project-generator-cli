@@ -1,0 +1,9 @@
+.link {
+	text-decoration: none;
+	&--login-btn-mobile::before {
+		content: '\e951';
+		font-family: 'mercaldas';
+		font-size: 34px;
+		color: $grey-800;
+	}
+}

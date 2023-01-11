@@ -1,0 +1,57 @@
+{}
+// {
+//   "flex-layout.col#best-offer": {
+//     "children": [
+//       "rich-text#best-title",
+//       "list-context.image-list#best-offers-list-images"
+//     ],
+//     "props": {
+//       "blockClass": "best-offer"
+//     }
+//   },
+//   "rich-text#best-title": {
+//     "props": {
+//       "textAlignment": "CENTER",
+//       "textPosition": "CENTER",
+//       "text": "### Los más buscados",
+//       "blockClass": "title"
+//     }
+//   },
+//   "list-context.image-list#best-offers-list-images": {
+//     "children": ["slider-layout#best-offers-slider"],
+//     "props": {
+//       "images": [
+//         {
+//           "image": "https://via.placeholder.com/402x257.png",
+//           "mobileImage": "https://via.placeholder.com/442x283.png",
+//           "max-height": 257
+//         },
+//         {
+//           "image": "https://via.placeholder.com/402x257.png/09F/FFF",
+//           "mobileImage": "https://via.placeholder.com/442x283.png/09F/FFF",
+//           "max-height": 257
+//         },
+//         {
+//           "image": "https://via.placeholder.com/402x257.png/08A/FFF",
+//           "mobileImage": "https://via.placeholder.com/442x283.png/08A/FFF",
+//           "max-height": 257
+//         }
+//       ]
+//     }
+//   },
+//   "slider-layout#best-offers-slider": {
+//     "props": {
+//       "blockClass": "best-offers-slider",
+//       "fullWidth": true,
+//       "showNavigationArrows": false,
+//       "showPaginationDots": false,
+//       "centerMode": "to-the-left",
+//       "infinite": false,
+//       "itemsPerPage": {
+//         "desktop": 3,
+//         "tablet": 2,
+//         "phone": 1
+//       }
+//     }
+//   }
+// }

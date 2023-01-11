@@ -1,0 +1,111 @@
+{
+  "store.custom#herramientas": {
+    "blocks": [
+      "responsive-layout.desktop#department--23",
+      "responsive-layout.tablet#department--23",
+      "responsive-layout.phone#department--23"
+    ]
+  },
+  "responsive-layout.desktop#department--23": {
+    "children": [
+      "flex-layout.row#department-container--23"
+    ]
+  },
+  "flex-layout.row#department-container--23": {
+    "props": {
+      "blockClass": "department-container"
+    },
+    "children": [
+      "flex-layout.col#department-content--23"
+    ]
+  },
+  "responsive-layout.tablet#department--23": {
+    "children": [
+      "flex-layout.row#department-container--23"
+    ]
+  },
+  "responsive-layout.phone#department--23": {
+    "children": [
+      "flex-layout.row#department-container--23"
+    ]
+  },
+  "flex-layout.col#department-content--23": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#department-main-banner--23",
+      "rich-text#department-title--23",
+      "flex-layout.row#categories-cards--23"
+    ]
+  },
+  "flex-layout.row#department-main-banner--23": {
+    "props": {
+      "blockClass": "department__main__banner__container",
+      "horizontalAlign": "center",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#department-main-banner-slider--23"
+    ]
+  },
+  "flex-layout.col#department-main-banner-slider--23": {
+    "props": {
+      "blockClass": "department__main__banner__slider__container",
+      "fullWidth": true
+    },
+    "children": [
+      "list-context.image-list#department-main-banner-list-images--23"
+    ]
+  },
+  "list-context.image-list#department-main-banner-list-images--23": {
+    "children": [
+      "slider-layout#department-main-banner-slider--23"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "https://via.placeholder.com/1239x299.png",
+          "mobileImage": "https://via.placeholder.com/1024x420.png"
+        },
+        {
+          "image": "https://via.placeholder.com/1239x299.png/09F/FFF",
+          "mobileImage": "https://via.placeholder.com/1024x420.png/09F/FFF"
+        },
+        {
+          "image": "https://via.placeholder.com/1239x299.png/08A/FFF",
+          "mobileImage": "https://via.placeholder.com/1024x420.png/08A/FFF"
+        }
+      ]
+    }
+  },
+  "slider-layout#department-main-banner-slider--23": {
+    "props": {
+      "blockClass": "department__main__banner__slider",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "infinite": true
+    }
+  },
+  "rich-text#department-title--23": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Herramientas",
+      "blockClass": "department-title"
+    }
+  },
+  "flex-layout.row#categories-cards--23": {
+    "children": [],
+    "props": {
+      "horizontalAlign": "left",
+      "colSizing": "auto",
+      "blockClass": "categories-cards-container"
+    }
+  }
+}

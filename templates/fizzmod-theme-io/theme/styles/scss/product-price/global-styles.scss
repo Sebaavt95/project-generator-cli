@@ -1,0 +1,18 @@
+.listPrice,
+.listPrice--plp-list-price {
+	font-size: 14px;
+	font-weight: 500;
+	color: $grey-800;
+	padding-left: 3px;
+	text-align: left;
+}
+
+.sellingPrice,
+.sellingPrice--plp-selling-price {
+	font-size: 20px;
+	font-family: 'Heebo';
+	color: $secondary-dark;
+	font-weight: $bold;
+	text-align: left;
+	display: flex;
+}

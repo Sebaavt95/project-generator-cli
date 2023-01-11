@@ -1,0 +1,372 @@
+{
+  "store.custom#alimentacion": {
+    "blocks": [
+      "responsive-layout.desktop#department--2",
+      "responsive-layout.tablet#department--2",
+      "responsive-layout.phone#department--2"
+    ]
+  },
+  "responsive-layout.desktop#department--2": {
+    "children": [
+      "flex-layout.row#department-container--2"
+    ]
+  },
+  "flex-layout.row#department-container--2": {
+    "props": {
+      "blockClass": "department-container"
+    },
+    "children": [
+      "flex-layout.col#department-content--2"
+    ]
+  },
+  "responsive-layout.tablet#department--2": {
+    "children": [
+      "flex-layout.row#department-container--2"
+    ]
+  },
+  "responsive-layout.phone#department--2": {
+    "children": [
+      "flex-layout.row#department-container--2"
+    ]
+  },
+  "flex-layout.col#department-content--2": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#department-main-banner--2",
+      "rich-text#department-title--2",
+      "flex-layout.row#categories-cards--2"
+    ]
+  },
+  "flex-layout.row#department-main-banner--2": {
+    "props": {
+      "blockClass": "department__main__banner__container",
+      "horizontalAlign": "center",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#department-main-banner-slider--2"
+    ]
+  },
+  "flex-layout.col#department-main-banner-slider--2": {
+    "props": {
+      "blockClass": "department__main__banner__slider__container",
+      "fullWidth": true
+    },
+    "children": [
+      "list-context.image-list#department-main-banner-list-images--2"
+    ]
+  },
+  "list-context.image-list#department-main-banner-list-images--2": {
+    "children": [
+      "slider-layout#department-main-banner-slider--2"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "https://via.placeholder.com/1239x299.png",
+          "mobileImage": "https://via.placeholder.com/1024x420.png"
+        },
+        {
+          "image": "https://via.placeholder.com/1239x299.png/09F/FFF",
+          "mobileImage": "https://via.placeholder.com/1024x420.png/09F/FFF"
+        },
+        {
+          "image": "https://via.placeholder.com/1239x299.png/08A/FFF",
+          "mobileImage": "https://via.placeholder.com/1024x420.png/08A/FFF"
+        }
+      ]
+    }
+  },
+  "slider-layout#department-main-banner-slider--2": {
+    "props": {
+      "blockClass": "department__main__banner__slider",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "infinite": true
+    }
+  },
+  "rich-text#department-title--2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Alimentación",
+      "blockClass": "department-title"
+    }
+  },
+  "flex-layout.row#categories-cards--2": {
+    "children": [
+      "flex-layout.col#category-card--3",
+      "flex-layout.col#category-card--19",
+      "flex-layout.col#category-card--20",
+      "flex-layout.col#category-card--21"
+    ],
+    "props": {
+      "horizontalAlign": "left",
+      "colSizing": "auto",
+      "blockClass": "categories-cards-container"
+    }
+  },
+  "flex-layout.col#category-card--3": {
+    "children": [
+      "flex-layout.col#category-card-top--3",
+      "flex-layout.col#category-card-bottom--3"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--3": {
+    "children": [
+      "image#category-img--3",
+      "rich-text#category-title--3"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--3": {
+    "children": [
+      "rich-text#subcategories-list--3",
+      "link#category-link--3"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--3": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Frutas y Verduras",
+      "link": "https://fizzmodapps.myvtex.com/alimentacion/frutas-y-verduras",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Frutas y Verduras",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--3": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/alimentacion/frutas-y-verduras",
+      "blockClass": "category-card-cta"
+    }
+  },
+  "flex-layout.col#category-card--19": {
+    "children": [
+      "flex-layout.col#category-card-top--19",
+      "flex-layout.col#category-card-bottom--19"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--19": {
+    "children": [
+      "image#category-img--19",
+      "rich-text#category-title--19"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--19": {
+    "children": [
+      "rich-text#subcategories-list--19",
+      "link#category-link--19"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--19": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Almacén",
+      "link": "https://fizzmodapps.myvtex.com/alimentacion/almacen",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--19": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Almacén",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--19": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--19": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/alimentacion/almacen",
+      "blockClass": "category-card-cta"
+    }
+  },
+  "flex-layout.col#category-card--20": {
+    "children": [
+      "flex-layout.col#category-card-top--20",
+      "flex-layout.col#category-card-bottom--20"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--20": {
+    "children": [
+      "image#category-img--20",
+      "rich-text#category-title--20"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--20": {
+    "children": [
+      "rich-text#subcategories-list--20",
+      "link#category-link--20"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--20": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Bebidas",
+      "link": "https://fizzmodapps.myvtex.com/alimentacion/bebidas",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--20": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Bebidas",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--20": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--20": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/alimentacion/bebidas",
+      "blockClass": "category-card-cta"
+    }
+  },
+  "flex-layout.col#category-card--21": {
+    "children": [
+      "flex-layout.col#category-card-top--21",
+      "flex-layout.col#category-card-bottom--21"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--21": {
+    "children": [
+      "image#category-img--21",
+      "rich-text#category-title--21"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--21": {
+    "children": [
+      "rich-text#subcategories-list--21",
+      "link#category-link--21"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--21": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Carnes",
+      "link": "https://fizzmodapps.myvtex.com/alimentacion/carnes",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--21": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Carnes",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--21": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--21": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/alimentacion/carnes",
+      "blockClass": "category-card-cta"
+    }
+  }
+}

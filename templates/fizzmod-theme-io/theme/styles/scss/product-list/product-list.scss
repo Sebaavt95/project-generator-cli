@@ -1,0 +1,127 @@
+.removeButtonContainer--minicart__remove-button {
+	display: flex;
+	justify-content: flex-end;
+
+	@include mediaBreaks('tablet') {
+		align-items: center;
+	}
+}
+
+.removeButton {
+	&--minicart__remove-button {
+    color: transparent !important;
+    position: relative;
+    padding-right: 7px;
+
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 5px;
+			font-family: "mercaldas";
+			content: "\e90d";
+			font-size: 23px;
+			color: $grey-500;
+		}
+
+		&:hover::after {
+			color: $grey-800;
+		}
+
+		@include mediaBreaks('tablet') {
+			padding: 2px 6px;
+		}
+	}
+}
+
+.productImageContainer--minicart__product-image {
+	width: 75px !important;
+}
+
+.quantitySelectorContainer--minicart__quantity-col {
+	width: auto;
+	max-width: fit-content;
+	@include typographyBody2;
+	font-weight: $medium;
+}
+
+.productPriceContainer--minicart__price {
+	margin-top: 13px;
+	width: initial;
+
+	@include mediaBreaks('tablet') {
+		margin-top: 12px;
+	}
+}
+
+.price--minicart__price {
+	@include typographyBody2;
+	font-weight: $medium;
+	color: $grey-800;
+	letter-spacing: normal;
+	width: initial;
+}
+
+.unitPriceContainer--minicart__unit-price {
+	margin-top: 5px;
+	width: initial;
+	color: $grey-700;
+	font-weight: $medium;
+
+	@include mediaBreaks('tablet') {
+		margin-top: 7px;
+	}
+}
+
+.unitPriceMeasurementUnit--minicart__unit-price {
+	font-family: $fontFamily;
+	font-size: 10px;
+	font-weight: $medium;
+	line-height: 16px;
+	color: $grey-700;
+	letter-spacing: normal;
+	width: initial;
+}
+
+.inputContainer {
+	width: 68px;
+	padding: 0 1rem;
+}
+
+.productBrandName--minicart__product-brand {
+	font-family: $fontFamily;
+	font-size: 12px;
+	font-weight: $medium;
+	line-height: 16px;
+	letter-spacing: 1px;
+	color: $grey-500;
+	margin-bottom: 2px;
+
+	@include mediaBreaks('tablet') {
+		margin-bottom: 3px;
+	}
+}
+
+.productName--minicart__product-name {
+	display: block;
+	width: 240px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-family: $fontFamily;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: $regular;
+	letter-spacing: normal;
+	color: $grey-800;
+
+	@include mediaBreaks('tablet') {
+		font-weight: $medium;
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: normal;
+	}
+}
+
+.productListUnavailableItemsMessage:global(.vtex-product-list-0-x-productListUnavailableItemsMessage) {
+	margin: 0 1.75rem;
+}

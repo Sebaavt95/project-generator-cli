@@ -1,0 +1,238 @@
+.flexRow {
+	// Header General
+
+	&--header-main-desktop,
+	&--header-main-mobile {
+		background-color: $primary-main;
+	}
+
+	// Searchbar
+	&--search-bar-product-info {
+		margin-left: 11px;
+		flex: 1;
+	}
+
+	// Minicart
+
+	&--minicart__footer {
+		box-shadow: 0 -8px 4px -4px rgb(0 0 0 / 6%);
+	}
+
+	// Menu
+
+	&--main-menu-desktop {
+		background-color: $grey-300;
+
+		// Header General
+
+		.stretchChildrenWidth {
+			&:last-child {
+				flex: 1;
+			}
+		}
+	}
+}
+
+.flexRowContent {
+	// Header General
+
+	&--header-main-desktop {
+		align-items: center;
+		justify-content: flex-start;
+
+		& .stretchChildrenWidth {
+			&:not(:last-child) {
+				flex: 1;
+				max-width: 588px;
+			}
+			&:first-child {
+				max-width: 152px;
+				margin-right: 116px;
+				max-height: 80px !important;
+			}
+			&:nth-child(3n),
+			&:last-child {
+				height: 80px;
+				align-self: stretch;
+			}
+			&:nth-child(3n) {
+				max-width: 152px;
+				max-height: 80px !important;
+			}
+			&:last-child {
+				max-width: 150px;
+				margin-left: 36px;
+			}
+		}
+
+		// Searchbar
+
+		& .flexRowContent--search-bar-product-info .stretchChildrenWidth,
+		& .flexRowContent--search-bar-product-prices-container .stretchChildrenWidth {
+			height: auto;
+		}
+	}
+	&--header-main-mobile {
+		height: 54px;
+	}
+	&--header-main-mobile,
+	&--header-main-mobile--left,
+	&--header-main-mobile--right {
+		height: 54px;
+		align-items: center;
+	}
+	&--header-main-mobile--left {
+		justify-content: flex-start;
+
+		& .stretchChildrenWidth {
+			&:first-child {
+				margin-left: 14px;
+			}
+			&:last-child {
+				margin-left: 14px;
+				margin-top: 4px;
+
+				@media (max-width: 480px) {
+					margin-top: 0px;
+				}
+			}
+		}
+	}
+	&--header-main-mobile--right {
+		justify-content: flex-end;
+
+		.stretchChildrenWidth {
+			&:nth-child(2n) {
+				margin-left: 16px;
+
+				@include customMediaBreaks(1024) {
+					margin-left: 20px;
+				}
+			}
+
+			&:last-child {
+				@include mediaBreaks('tablet') {
+					margin-left: -12px;
+					margin-top: 1px;
+				}
+
+				@include customMediaBreaks(766) {
+					margin-left: 12px;
+					margin-top: 1px;
+				}
+			}
+		}
+	}
+
+	// Searchbar
+
+	&--search-bar-product-info .stretchChildrenWidth {
+		margin: 0 !important;
+	}
+	&--search-bar-product-content-mobile {
+		justify-content: flex-start;
+	}
+	&--search-bar-product-prices-container {
+		flex-direction: column;
+
+		@include mediaBreaks('tablet') {
+			justify-content: flex-end;
+			flex-direction: initial;
+		}
+
+		& .stretchChildrenWidth {
+			&:first-child {
+				flex: 0;
+			}
+			&:last-child {
+				flex: 0;
+			}
+		}
+	}
+	&--search-bar-product-content-mobile .stretchChildrenWidth:last-child,
+	&--search-bar-product-prices-container .stretchChildrenWidth:last-child {
+		flex: 1;
+	}
+	&--search-bar-product-action-btns-mobile {
+		& .stretchChildrenWidth {
+			&:first-child {
+				width: 100% !important;
+			}
+			&:last-child {
+				@include mediaBreaks('tablet') {
+					justify-content: flex-end;
+				}
+			}
+		}
+	}
+
+	// Minicart
+
+	&--minicart__footer {
+		height: 264px;
+
+		@include mediaBreaks('tablet') {
+			height: 235px;
+		}
+	}
+	&--minicart__product-description {
+		margin-top: 13px;
+		justify-content: space-between;
+
+		@include mediaBreaks('tablet') {
+			margin-top: 10px;
+		}
+	}
+	&--minicart__image-price-row {
+		justify-content: space-between;
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+		@include mediaBreaks('tablet') {
+			margin-bottom: 12px;
+		}
+	}
+}
+
+.flexCol {
+	// Minicart
+
+	&--minicart__list-col {
+		border-bottom: 1px solid $grey-200;
+		padding: 0 30px;
+
+		@include mediaBreaks('tablet') {
+			padding: 0 14px;
+		}
+	}
+}
+
+.flexColChild {
+	// Minicart
+
+	&--minicart__footer-col {
+		width: 100%;
+
+		& :global(.vtex-button) {
+			@include mediaBreaks('tablet') {
+				margin-top: 0px;
+			}
+		}
+		& :global(.vtex-button__label) {
+			padding-top: 14px !important;
+			padding-bottom: 14px !important;
+			text-transform: initial;
+
+			@include mediaBreaks('tablet') {
+				padding-top: 17px !important;
+				padding-bottom: 17px !important;
+			}
+		}
+	}
+}
+
+.minicartProductListContainer {
+	&--minicart__product-list {
+		padding-left: 30px !important;
+	}
+}

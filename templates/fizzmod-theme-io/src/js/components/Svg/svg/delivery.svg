@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icn_delivery</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M33.5,13.4142136 L32.7928932,12.7071068 L38.5,7 L39.2071068,7.70710678 L33.5,13.4142136 Z M23.8434026,16.267767 L23.8434026,26.1721431 C23.8434026,26.7181777 23.2785508,27.0811942 22.7818556,26.8543736 L18.9989778,25.1268865 L15.3181809,26.851305 C14.8208518,27.084299 14.25,26.7213448 14.25,26.1721431 L14.25,16.267767 L8.5,16.267767 L8.5,37.267767 L29.5,37.267767 L29.5,16.267767 L23.8434026,16.267767 Z M22.3434026,16.267767 L15.75,16.267767 L15.75,24.9925486 L18.6767702,23.6213844 C18.8760625,23.5280179 19.1063056,23.5268959 19.3064982,23.6183158 L22.3434026,25.0051471 L22.3434026,16.267767 Z M31,14.767767 L31,38.767767 L7,38.767767 L7,14.767767 L31,14.767767 Z M34.5,21.4142136 L33.7928932,20.7071068 L39.5,15 L40.2071068,15.7071068 L34.5,21.4142136 Z M25.5,12.4142136 L24.7928932,11.7071068 L30.5,6 L31.2071068,6.70710678 L25.5,12.4142136 Z" id="delivery-path-1"></path>
+    </defs>
+    <g id="delivery-Home-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="delivery-mask-2" fill="white">
+            <use xlink:href="#delivery-path-1"></use>
+        </mask>
+        <use id="delivery-icn_delivery" fill="#000000" fill-rule="nonzero" xlink:href="#delivery-path-1"></use>
+    </g>
+</svg>

@@ -1,0 +1,272 @@
+.ordersList,
+.cancelOrder {
+	padding: 21px 0 0;
+}
+
+.ordersList {
+	.orderCard,
+	.cancelOrder .summary {
+		border: 2px $grey-200 solid;
+	}
+	.orderHeader {
+		background-color: $grey-200;
+		padding: 16px 25px 15px;
+	}
+	.orderHeaderLabel {
+		color: $secondary-light;
+		font-size: 16px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		line-height: 24px;
+	}
+	.orderHeaderValue {
+		color: $grey-700;
+		font-family: 'Roboto';
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;
+	}
+	.orderId {
+		color: $grey-700;
+		font-family: 'Roboto';
+		font-size: 17px;
+		font-weight: 500;
+		letter-spacing: 0.65px;
+		line-height: 25px;
+		text-align: right;
+	}
+	.orderBody {
+		.reorderBtn,
+		.cancelBtn {
+			width: 100%;
+			justify-content: flex-end;
+		}
+		.reorderBtn:hover,
+		.cancelBtn:hover {
+			text-decoration: underline;
+		}
+		background-color: $white;
+		.orderProductName {
+			display: block;
+			padding-right: 180px;
+			color: $secondary-dark;
+			font-family: 'Roboto';
+			font-size: 13px;
+			text-transform: uppercase;
+			font-weight: 500;
+			letter-spacing: 0.5px;
+			line-height: 16px;
+			text-overflow: ellipsis;
+			text-decoration: none;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+		}
+	}
+	.orderProductShipping {
+		color: $grey-700;
+		font-family: 'Roboto';
+		font-size: 11px;
+		letter-spacing: 0.46px;
+		line-height: 16px;
+		margin: 6px 0 4px;
+	}
+	.orderProduct,
+	.summary .summaryProductQuantityValue {
+		margin-top: 10px;
+	}
+	.detailsBtn {
+		background-color: $primary-main;
+		color: $grey-800;
+		font-family: 'Roboto';
+		font-size: 15px;
+		font-weight: 500;
+		letter-spacing: 3px;
+		text-transform: initial;
+		line-height: 18px;
+		text-decoration: none;
+		letter-spacing: initial;
+		padding: 13px;
+		width: max-content;
+		margin-left: auto;
+		justify-content: flex-end;
+		display: flex;
+		position: relative;
+		padding: 15px 60px;
+	}
+	.detailsBtn:hover {
+		background-color: $primary-light;
+	}
+	.orderProductQuantity,
+	.orderProductValue {
+		color: $grey-800;
+		font-family: 'Roboto';
+		font-size: 15px;
+		font-weight: 900;
+		line-height: 22px;
+		margin-bottom: 0;
+	}
+}
+
+.summary .summaryProductName {
+	color: var(--color-secondary-dark);
+	font-family: 'Roboto';
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	line-height: 16px;
+	text-overflow: ellipsis;
+	text-decoration: none;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.summary .summaryProductQuantityValue,
+.productTable .productPrice,
+.productTable .productTotalPrice {
+	color: $grey-800;
+	font-family: 'Roboto';
+	font-size: 15px;
+	font-weight: 900;
+	line-height: 22px;
+	margin-bottom: 0;
+}
+
+.cancelOrder {
+	.summary {
+		background-color: $white;
+	}
+	.optionHeading {
+		color: $grey-800;
+		font-family: 'Roboto';
+		font-size: 13px;
+		letter-spacing: 1px;
+		line-height: 19px;
+		margin: 24px 0 0;
+	}
+	.option {
+		padding: 12px 0;
+		display: flex;
+		align-items: center;
+	}
+	.optionInput {
+		width: 16px !important;
+		height: 16px !important;
+		min-height: 16px !important;
+		margin-top: 3px;
+		cursor: pointer;
+	}
+	.optionInput::after {
+		width: 8px !important;
+		height: 8px !important;
+		top: 2px !important;
+		left: 2px !important;
+	}
+	.optionDisclaimer {
+		background-color: $grey-200;
+		color: $grey-800;
+		font-family: 'Roboto';
+		font-size: 13px;
+		line-height: 17px;
+	}
+}
+
+:global(.vtex-account__order-details) {
+	padding: 55px 0 0;
+}
+
+.productTable {
+	border-collapse: collapse;
+	margin-top: 47px;
+	.productRow {
+		border-bottom: 1px var(--color-grey-200) solid;
+	}
+	.productName {
+		padding-right: 80px;
+		line-height: 19px;
+	}
+	.productPrice,
+	.productQuantity,
+	.productTotalPrice {
+		vertical-align: middle;
+		padding: 20px 0;
+	}
+	.productQuantity {
+		font-size: 12px;
+		line-height: 18px;
+		color: var(--color-secondary-main);
+	}
+	.productName {
+		color: var(--color-secondary-dark);
+		font-family: 'Roboto';
+		font-size: 13px;
+		text-transform: uppercase;
+		font-weight: 500;
+		letter-spacing: 0.5px;
+		line-height: 16px;
+		text-overflow: ellipsis;
+		text-decoration: none;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+	}
+}
+
+@media (max-width: 768px) {
+	:global(.vtex-account__order-details),
+	:global(.vtex-account__orders-list),
+	:global(.vtex-account__cancel-order) {
+		padding: 30px 15px 28px !important;
+	}
+
+	.ordersList {
+		.orderCard {
+			margin-top: 0;
+		}
+		.orderId {
+			text-align: left;
+		}
+		.orderBody {
+			.orderProductName {
+				display: block;
+				padding-right: 15px;
+			}
+			.reorderBtn,
+			.cancelBtn {
+				justify-content: flex-start;
+			}
+		}
+		.detailsBtn {
+			margin-top: 23px;
+			justify-content: center;
+			padding: 15px 40px;
+			width: 100%;
+		}
+		.cancelOrder .optionDisclaimer {
+			padding: 10px 15px 15px;
+		}
+	}
+
+	.productTable {
+		table-layout: fixed;
+		margin-top: 25px;
+		.productName {
+			padding-right: 0;
+		}
+		.productPrice,
+		.productQuantity,
+		.productTotalPrice {
+			text-align: center;
+			font-size: 12px;
+			font-weight: 500;
+		}
+		.productTotalPrice {
+			text-align: right;
+		}
+	}
+}

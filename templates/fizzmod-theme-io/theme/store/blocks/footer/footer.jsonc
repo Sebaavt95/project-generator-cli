@@ -1,0 +1,122 @@
+{
+	"footer": {
+		"blocks": [
+			"footer-layout.desktop",
+			"footer-layout.mobile"
+		]
+	},
+	"footer-layout.desktop": {
+		"children": [
+			"flex-layout.row#newsletter",
+			"flex-layout.row#links",
+			"flex-layout.row#copyright"
+		]
+	},
+	"flex-layout.row#newsletter": {
+		"children": [
+			"rich-text#newsletter-message",
+			"newsletter-form",
+			"back-to-top-button"
+		],
+		"props": {
+			"fullWidth": true,
+			"blockClass": "newsletter",
+			"colSizing": "auto"
+		}
+	},
+	"rich-text#newsletter-message": {
+		"props": {
+			"text": "#### ¡Suscribite a nuestro newsletter! \n Recibí las ofertas y novedades en tu buzón.",
+			"blockClass": "newsletter-message"
+		}
+	},
+	"newsletter-form": {
+		"children": [
+			"newsletter-input-email",
+			"newsletter-submit"
+		],
+		"props": {
+			"blockClass": "form-wrapper"
+		}
+	},
+	"newsletter-input-email": {
+		"props": {
+			"placeholderText": "Ingresa tu e-mail",
+			"errorMessage": "Email inválido"
+		}
+	},
+	"newsletter-submit": {
+		"props": {
+			"submitButtonLabel": "Suscribirme"
+		}
+	},
+	"back-to-top-button": {
+		"props": {
+			"display": "caret-icon",
+			"displayThreshold": 0
+		}
+	},
+	"flex-layout.row#links": {
+		"children": [
+			"flex-layout.col#links-col-1",
+			"flex-layout.col#links-col-2",
+			"flex-layout.col#links-col-3",
+			"flex-layout.col#links-col-4"
+		],
+		"props": {
+			"fullWidth": true,
+			"blockClass": "footer-links"
+		}
+	},
+	"flex-layout.col#links-col-1": {
+		"children": [
+			"vtex.menu@2.x:menu#footer-contact-us"
+		]
+	},
+	"flex-layout.col#links-col-2": {
+		"children": [
+			"vtex.menu@2.x:menu#footer-about-us"
+		]
+	},
+	"flex-layout.col#links-col-3": {
+		"children": [
+			"vtex.menu@2.x:menu#footer-legal"
+		]
+	},
+	"flex-layout.col#links-col-4": {
+		"children": [
+			"vtex.menu@2.x:menu#payment-methods"
+		]
+	},
+	"flex-layout.row#copyright": {
+		"children": [
+			"rich-text#copyright",
+			"vtex.menu@2.x:menu#footer-vtex-fizzmod"
+		],
+		"props": {
+			"fullWidth": true,
+			"preventVerticalStretch": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "copyright"
+		}
+	},
+	"rich-text#copyright": {
+		"props": {
+			"text": "© fizzmod 2021. Todos los derechos reservados.",
+			"blockClass": "copyright"
+		}
+	},
+	/* ---------- MOBILE --------- */
+	"footer-layout.mobile": {
+		"children": [
+			"flex-layout.row#newsletter",
+			"flex-layout.row#links-mobile",
+			"flex-layout.row#copyright"
+		]
+	},
+	"flex-layout.row#links-mobile": {
+		"children": [
+			"vtex.menu@2.x:menu#footer-mobile"
+		]
+	}
+}

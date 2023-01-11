@@ -1,0 +1,68 @@
+/* General */
+
+.container {
+	&--breadcrumb-main,
+	&--pdp-breadcrumb {
+		.link {
+			font-size: 12px;
+			padding: 0;
+			font-weight: 500;
+			line-height: 16px;
+			letter-spacing: 1px;
+			color: $grey-500;
+			&:focus {
+				outline: none;
+			}
+		}
+		.homeIcon {
+			display: none;
+		}
+		.homeLink {
+			&::before {
+				content: 'Inicio';
+				padding: 0.125rem 0.25rem 0.125rem 0;
+			}
+		}
+		.arrow {
+			&::before {
+				content: '/';
+				color: $grey-500;
+				padding: 0.125rem 0.45rem 0.125rem 0;
+				font-size: 11px;
+			}
+		}
+	}
+
+	&--breadcrumb-main {
+		padding-left: 1.25rem;
+
+		.arrow {
+			&:last-child {
+				.link {
+					color: $secondary-dark;
+				}
+			}
+		}
+	}
+
+	&--pdp-breadcrumb {
+		.arrow {
+			.caretIcon {
+				display: none;
+			}
+		}
+
+		.term {
+			color: $secondary-dark;
+		}
+	}
+}
+
+.term {
+	font-size: 12px;
+	padding: 0;
+	font-weight: 500;
+	line-height: 16px;
+	letter-spacing: 1px;
+	color: $grey-500;
+}

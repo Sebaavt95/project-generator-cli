@@ -1,0 +1,25 @@
+.paragraph {
+	&--not-found-product-text {
+		height: 22px;
+		width: 305px;
+		color: $secondary-dark;
+		font-family: $fontFamily;
+		font-size: 18px;
+		font-weight: $medium;
+		letter-spacing: 0;
+		line-height: 20px;
+		margin: 0;
+		margin-top: 20px;
+		margin-bottom: 33px;
+
+		@include mediaBreaks('tablet') {
+			height: 40px;
+			width: 239px;
+			color: $grey-800;
+			text-align: center;
+			margin-bottom: 40px;
+			margin-top: 14px;
+			font-size: 16px;
+		}
+	}
+}

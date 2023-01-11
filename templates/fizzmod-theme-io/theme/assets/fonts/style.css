@@ -1,0 +1,289 @@
+@font-face {
+  font-family: 'mercaldas';
+  src:  url('fonts/mercaldas.eot?ses7c7');
+  src:  url('fonts/mercaldas.eot?ses7c7#iefix') format('embedded-opentype'),
+    url('fonts/mercaldas.woff2?ses7c7') format('woff2'),
+    url('fonts/mercaldas.ttf?ses7c7') format('truetype'),
+    url('fonts/mercaldas.woff?ses7c7') format('woff'),
+    url('fonts/mercaldas.svg?ses7c7#mercaldas') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mercaldas' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-alert:before {
+  content: "\e925";
+}
+.icon-angle-left:before {
+  content: "\e909";
+}
+.icon-angle-right:before {
+  content: "\e90a";
+}
+.icon-angle-up:before {
+  content: "\e908";
+}
+.icon-arrow-log-back:before {
+  content: "\e926";
+}
+.icon-cart:before {
+  content: "\e937";
+}
+.icon-cart-big:before {
+  content: "\e92b";
+}
+.icon-cart-boton:before {
+  content: "\e94a";
+}
+.icon-categoria_checkbox-empty:before {
+  content: "\e930";
+}
+.icon-categoria_checkbox-fill:before {
+  content: "\e931";
+}
+.icon-check:before {
+  content: "\e935";
+}
+.icon-cross-big:before {
+  content: "\e923";
+}
+.icon-cross-big1:before {
+  content: "\e954";
+}
+.icon-cupon:before {
+  content: "\e92d";
+}
+.icon-cupon_lines_left:before {
+  content: "\e92c";
+}
+.icon-cupon_lines_right:before {
+  content: "\e92e";
+}
+.icon-delivery:before {
+  content: "\e934";
+}
+.icon-filter:before {
+  content: "\e932";
+}
+.icon-footer_fizzmod:before {
+  content: "\e91c";
+}
+.icon-footer_newsletter:before {
+  content: "\e90e";
+}
+.icon-footer_phone:before {
+  content: "\e90f";
+}
+.icon-footer_time:before {
+  content: "\e910";
+}
+.icon-footer_vtex:before {
+  content: "\e91b";
+}
+.icon-header_angle-down:before {
+  content: "\e907";
+}
+.icon-header_login_2:before {
+  content: "\e903";
+}
+.icon-header_login:before {
+  content: "\e951";
+}
+.icon-header_menu:before {
+  content: "\e906";
+}
+.icon-header_order-processing:before {
+  content: "\e904";
+}
+.icon-header_search:before {
+  content: "\e902";
+}
+.icon-header_search_mobile:before {
+  content: "\e94b";
+}
+.icon-login_lock:before {
+  content: "\e94c";
+}
+.icon-login_mail:before {
+  content: "\e94d";
+}
+.icon-login_ojo:before {
+  content: "\e94f";
+}
+.icon-login_ojotachado:before {
+  content: "\e94e";
+}
+.icon-favoritos2:before {
+  content: "\e952";
+}
+.icon-favoritos:before {
+  content: "\e953";
+}
+.icon-mediosdepago_americanexpress:before {
+  content: "\e919";
+}
+.icon-mediosdepago_diners:before {
+  content: "\e918";
+}
+.icon-mediosdepago_mastercard:before {
+  content: "\e915";
+}
+.icon-mediosdepago_mercadopago:before {
+  content: "\e917";
+}
+.icon-mediosdepago_pse:before {
+  content: "\e91a";
+}
+.icon-mediosdepago_visa:before {
+  content: "\e916";
+}
+.icon-micarrito_lock:before {
+  content: "\e92f";
+}
+.icon-minus:before {
+  content: "\e90b";
+}
+.icon-minus-light:before {
+  content: "\e922";
+}
+.icon-options:before {
+  content: "\e924";
+}
+.icon-payment:before {
+  content: "\e905";
+}
+.icon-plus:before {
+  content: "\e90c";
+}
+.icon-plus-light:before {
+  content: "\e921";
+}
+.icon-producto_add-list:before {
+  content: "\e91d";
+}
+.icon-producto_share:before {
+  content: "\e91e";
+}
+.icon-radio-button-checked:before {
+  content: "\e939";
+}
+.icon-radio-button-unchecked:before {
+  content: "\e938";
+}
+.icon-redessociales_facebook:before {
+  content: "\e911";
+}
+.icon-redessociales_instagram:before {
+  content: "\e912";
+}
+.icon-redessociales_twitter:before {
+  content: "\e913";
+}
+.icon-redessociales_whatsapp:before {
+  content: "\e914";
+}
+.icon-redessociales_youtube:before {
+  content: "\e950";
+}
+.icon-save:before {
+  content: "\e933";
+}
+.icon-selectordesucursal_check:before {
+  content: "\e929";
+}
+.icon-selectordesucursal_por-codigo-postal:before {
+  content: "\e92a";
+}
+.icon-selectordesucursal_por-direccion:before {
+  content: "\e927";
+}
+.icon-selectordesucursal_por-tienda:before {
+  content: "\e928";
+}
+.icon-ilustracion_contacto:before {
+  content: "\e956";
+}
+.icon-selectorsucursal_edit:before {
+  content: "\e901";
+}
+.icon-selectorsucursal_marker:before {
+  content: "\e900";
+}
+.icon-shipping-truck2:before {
+  content: "\e91f";
+}
+.icon-shipping-truck:before {
+  content: "\e955";
+}
+.icon-square-angle-left:before {
+  content: "\e93a";
+}
+.icon-square-angle-right:before {
+  content: "\e93b";
+}
+.icon-summery:before {
+  content: "\e936";
+}
+.icon-trash:before {
+  content: "\e90d";
+}
+.icon-menu_Carnes:before {
+  content: "\e920";
+}
+.icon-menu_Cuidado-del-bebe:before {
+  content: "\e93c";
+}
+.icon-menu_Cuidado-personal:before {
+  content: "\e93d";
+}
+.icon-menu_Delicatessen:before {
+  content: "\e93e";
+}
+.icon-menu_Frutas-y-verduras:before {
+  content: "\e93f";
+}
+.icon-menu_Despensa:before {
+  content: "\e940";
+}
+.icon-menu_Drogueria:before {
+  content: "\e941";
+}
+.icon-menu_Electrodomesticos:before {
+  content: "\e942";
+}
+.icon-menu_Exclusivo-web:before {
+  content: "\e943";
+}
+.icon-menu_Lacteos-y-refrigerados:before {
+  content: "\e944";
+}
+.icon-menu_Otros:before {
+  content: "\e945";
+}
+.icon-menu_Marcas-mercaldas:before {
+  content: "\e946";
+}
+.icon-menu_Mascotas:before {
+  content: "\e947";
+}
+.icon-menu_Limpieza:before {
+  content: "\e948";
+}
+.icon-menu_Vinos-y-licores:before {
+  content: "\e949";
+}

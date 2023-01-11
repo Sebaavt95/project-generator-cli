@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icn_check</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="success-path-1" points="1.94731732 5.21305866 1 6.17800001 4.89064771 10 11 2.88092035 9.97413288 2 4.80646453 8.02175825"></polygon>
+    </defs>
+    <g id="success-Home-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="success-mask-2" fill="white">
+            <use xlink:href="#success-path-1"></use>
+        </mask>
+        <use id="success-icn_check" fill="#000000" fill-rule="nonzero" xlink:href="#success-path-1"></use>
+    </g>
+</svg>

@@ -1,0 +1,95 @@
+{
+	"shelf.relatedProducts#pdp-similars": {
+		"props": {
+			"recommendation": "similars",
+			"productList": {
+				"titleText": "Productos similares",
+				"gap": "ph3",
+				"scroll": "ONE_BY_ONE",
+				"minItemsPerPage": 2
+			},
+			"blockClass": "related-products-custom-similars"
+		},
+		"blocks": [
+			"product-summary.shelf#pdp_shelf"
+		]
+	},
+	"shelf.relatedProducts#pdp-suggestions": {
+		"props": {
+			"recommendation": "suggestions",
+			"productList": {
+				"titleText": "También te pueden interesar",
+				"gap": "ph3",
+				"scroll": "ONE_BY_ONE",
+				"minItemsPerPage": 2
+			},
+			"blockClass": "related-products-custom-suggestions"
+		},
+		"blocks": [
+			"product-summary.shelf#pdp_shelf"
+		]
+	},
+	/* Tablet */
+	"shelf.relatedProducts#pdp-similars__tablet": {
+		"props": {
+			"recommendation": "similars",
+			"productList": {
+				"titleText": "Productos similares",
+				"gap": "ph3",
+				"scroll": "ONE_BY_ONE",
+				"minItemsPerPage": 2,
+				"arrows": false,
+				"itemsPerPage": 4
+			},
+			"blockClass": "related-products-custom-similars"
+		},
+		"blocks": [
+			"product-summary.shelf#pdp_shelf"
+		]
+	},
+	"shelf.relatedProducts#pdp-suggestions__tablet": {
+		"props": {
+			"recommendation": "suggestions",
+			"productList": {
+				"titleText": "También te pueden interesar",
+				"gap": "ph3",
+				"scroll": "ONE_BY_ONE",
+				"minItemsPerPage": 2,
+				"arrows": false,
+				"itemsPerPage": 4
+			},
+			"blockClass": "related-products-custom-suggestions"
+		},
+		"blocks": [
+			"product-summary.shelf#pdp_shelf"
+		]
+	},
+	"product-summary.shelf#pdp_shelf": {
+		"children": [
+			"product-summary-add-to-list-button",
+			"stack-layout#shelf-img-and-promos",
+			"vtex.product-highlights@2.x:product-highlights#collections--hiper-mas",
+			"vtex.product-highlights@2.x:product-highlights#collections--vida-sana",
+			"vtex.product-highlights@2.x:product-highlights#collections--envio-gratis",
+			"product-summary-brand",
+			"product-summary-name",
+			"flex-layout.row#prices_shelf",
+			"product-summary-quantity#summary-quantity_shelf",
+			"add-to-cart-button"
+		]
+	},
+	"product-summary-quantity#summary-quantity_shelf": {
+		"props": {
+			"blockClass": "summary-quantity_pdp_shelf"
+		}
+	},
+	"flex-layout.row#prices_shelf": {
+		"children": [
+			"product-list-price",
+			"product-selling-price"
+		],
+		"props": {
+			"blockClass": "shelf_prices"
+		}
+	}
+}

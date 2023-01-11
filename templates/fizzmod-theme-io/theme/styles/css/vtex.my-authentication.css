@@ -1,0 +1,325 @@
+/* Authentication Screen  */
+.authenticationScreen_container {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1023px) {
+  .authenticationScreen_container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.authenticationScreen_container .authenticationScreen_passBox :global(.vtex_my-authentication_box_container) {
+  height: auto;
+}
+
+.box_container {
+  box-sizing: border-box;
+  height: 165px;
+  width: 390px;
+  min-width: 390px;
+  min-height: 165px;
+  border: 2px solid #f5f5f5;
+  margin: 34px 10px 0 0;
+}
+@media (max-width: 639px) {
+  .box_container {
+    width: auto;
+    height: 150px;
+    margin: 0;
+  }
+}
+
+.box_content {
+  padding: 26.5px 24.5px;
+}
+@media (max-width: 639px) {
+  .box_content {
+    padding: 16px 17.5px;
+  }
+}
+
+.maskedPassword_title,
+.loginSessionsBox_title {
+  font-size: 13px;
+  color: #212121;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 15px;
+  font-family: "Roboto";
+}
+
+.maskedPassword_content,
+.loginSessionsBox_content {
+  color: #616161;
+  font-family: "Roboto";
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+
+.box_footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+.box_footer :global(.vtex-button) {
+  padding: 25px;
+}
+
+.box_footer :global(.vtex-button__label),
+.resendCodeButton_container :global(.vtex-button__label) {
+  color: #000000;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-align: center;
+  padding: 0;
+  text-decoration: underline;
+}
+
+/* Change Password Screen */
+.createPassword_text {
+  color: #616161;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+.newPassInput_container {
+  margin-bottom: 12px;
+}
+
+.codeInput_container :global(.vtex-input__label),
+.currPassInput_container :global(.vtex-input__label),
+.newPassInput_container :global(.vtex-input__label) {
+  font-family: "Roboto";
+  color: #212121;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.codeInput_container :global(.vtex-input__label)::before,
+.currPassInput_container :global(.vtex-input__label)::before,
+.newPassInput_container :global(.vtex-input__label)::before {
+  content: "*";
+  color: #212121;
+  position: relative;
+}
+
+.codeInput_container :global(.vtex-input__label)::before {
+  left: 46px;
+}
+
+.currPassInput_container :global(.vtex-input__label)::before,
+.newPassInput_container :global(.vtex-input__label)::before {
+  left: 105px;
+}
+.currPassInput_container :global(.vtex-input__suffix),
+.newPassInput_container :global(.vtex-input__suffix) {
+  background: #ffffff;
+  color: #000000;
+  padding: 0 10px;
+}
+
+.codeInput_container :global(.vtex-input-prefix__group),
+.currPassInput_container :global(.vtex-input-prefix__group),
+.newPassInput_container :global(.vtex-input-prefix__group) {
+  background: #ffffff;
+  box-sizing: border-box;
+  width: 339px;
+  height: 40px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+}
+@media (max-width: 639px) {
+  .codeInput_container :global(.vtex-input-prefix__group),
+.currPassInput_container :global(.vtex-input-prefix__group),
+.newPassInput_container :global(.vtex-input-prefix__group) {
+    width: auto;
+    height: 48px;
+  }
+}
+
+.currPassInput_container :global(.vtex__icon-visibility-on), .currPassInput_container :global(.vtex__icon-visibility-off),
+.currPassInput_container :global(.vtex__icon-visibility-on),
+.currPassInput_container :global(.vtex__icon-visibility-off) {
+  opacity: 0.5;
+}
+
+.passValidation_iconFailure,
+.passValidation_iconSuccess {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.passValidation_iconFailure::before,
+.passValidation_iconSuccess::before {
+  font-family: "mercaldas";
+  position: absolute;
+  font-size: 8px;
+  color: #ffffff;
+}
+.passValidation_iconFailure :global(.vtex__icon-failure), .passValidation_iconFailure :global(.vtex__icon-success),
+.passValidation_iconSuccess :global(.vtex__icon-failure),
+.passValidation_iconSuccess :global(.vtex__icon-success) {
+  opacity: 0;
+}
+
+.passValidation_iconFailure {
+  background: #ff0000;
+}
+.passValidation_iconFailure::before {
+  content: "\e923";
+}
+
+.passValidation_iconSuccess {
+  background: #00b517;
+}
+.passValidation_iconSuccess::before {
+  content: "\e935";
+}
+
+.passValidation_title,
+.passValidation_minLength,
+.passValidation_number,
+.passValidation_lower,
+.passValidation_upper {
+  color: #212121;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0;
+}
+
+.savePassButton_container {
+  margin: 0;
+}
+@media (max-width: 639px) {
+  .savePassButton_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.box_footer .savePassButton_container :global(.vtex-button) {
+  background-color: #1db779;
+  width: 340px;
+  height: 48px;
+  border: none;
+  margin: 0 18px 19px 18px;
+  text-transform: capitalize;
+  text-decoration: none;
+  cursor: pointer;
+}
+.box_footer .savePassButton_container :global(.vtex-button):hover {
+  background-color: #41d18c;
+}
+@media (max-width: 639px) {
+  .box_footer .savePassButton_container :global(.vtex-button) {
+    width: 100%;
+    height: 54px;
+  }
+}
+.box_footer .savePassButton_container :global(.vtex-button__label) {
+  letter-spacing: 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Session Screen */
+.loginSessions_box :global(.vtex-my-authentication-1-x-box_container) {
+  min-height: 204px;
+}
+@media (max-width: 639px) {
+  .loginSessions_box :global(.vtex-my-authentication-1-x-box_container) {
+    width: auto;
+    max-width: 380px;
+    max-height: 214px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .loginSessions_list {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.loginSessions_list .loginSessions_box:first-child .box_content {
+  margin: 0 26px 25px;
+}
+@media (max-width: 1023px) {
+  .loginSessions_list .loginSessions_box:first-child .box_content {
+    margin: 0 18px 24px 18px;
+  }
+}
+.loginSessions_list .loginSessions_box:last-child .box_content {
+  margin: 25px 25px 15px;
+}
+@media (max-width: 1023px) {
+  .loginSessions_list .loginSessions_box:last-child .box_content {
+    margin: 0 18px 24px 18px;
+  }
+}
+
+.loginSession_currSession :global(.vtex_my-authentication_loginSession_currSessionIcon) {
+  display: none;
+}
+.loginSession_currSession :global(.vtex_my-authentication_loginSession_currSessionText)::before {
+  content: "\e957";
+  font-family: "mercaldas";
+  font-size: 22px;
+  color: inherit;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.loginSession_currSessionText {
+  font-size: 14px;
+  color: #212121;
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.loginSessions_box .box_container :global(.vtex_my-authentication_box_content) {
+  padding: 10px;
+  margin: 0 26px 25px;
+  width: 339px;
+  background: #f5f5f5;
+}
+@media (max-width: 639px) {
+  .loginSessions_box .box_container :global(.vtex_my-authentication_box_content) {
+    width: auto;
+    max-height: 130px;
+    margin: 0 18px;
+  }
+}
+
+.loginSession_device {
+  padding: 0.5rem 0;
+}
+
+.loginSession_device,
+.loginSession_lastAccess,
+.loginSession_originDetails,
+.loginSession_firstAccess {
+  font-size: 13px;
+}
+
+.box_footer :global(.vtex-button) {
+  margin: 0 25px 15px;
+  padding: 0;
+  border: none;
+}
+.box_footer :global(.vtex-button):hover {
+  background: none;
+  border: none;
+}

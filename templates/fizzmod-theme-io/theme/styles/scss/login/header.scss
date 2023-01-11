@@ -1,0 +1,77 @@
+.container,
+.buttonLink {
+	.label,
+	.profile {
+		@include customMediaBreaks(1024) {
+			width: 34px !important;
+			font-size: 0 !important;
+		}
+	}
+}
+
+.label,
+.profile {
+	width: 145px;
+	color: $white;
+	text-transform: none;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font: {
+		family: $fontFamily;
+		size: 16px;
+		weight: $regular;
+	}
+}
+
+.label::before,
+.profile::before {
+	content: '\e951';
+	font-family: 'mercaldas';
+	font-size: 46px;
+	color: $white;
+}
+
+.label:hover::before,
+.profile:hover::before {
+	content: '\e903';
+	font-weight: $regular;
+}
+
+.label:hover,
+.profile:hover {
+	font-weight: bold;
+}
+
+.profile {
+	min-width: 180px;
+	width: 142px;
+	justify-content: start;
+
+	&::before {
+		margin-right: 6px;
+	}
+}
+
+.profileIcon {
+	display: none;
+}
+
+.buttonLink {
+	.label::before {
+		@include customMediaBreaks(1024) {
+			font-size: 34px;
+		}
+	}
+	& .profile {
+		@include customMediaBreaks(1024) {
+			min-width: 34px;
+		}
+	}
+	& :global(.vtex-button__label) {
+		@include customMediaBreaks(1024) {
+			padding: 0px !important;
+		}
+	}
+}

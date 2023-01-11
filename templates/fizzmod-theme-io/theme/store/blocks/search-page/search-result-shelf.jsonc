@@ -1,0 +1,223 @@
+{
+	"product-summary.shelf#search-result-page": {
+		"children": ["flex-layout.col#plp-shelf--top", "flex-layout.col#plp-shelf--bottom"],
+		"props": {
+			"blockClass": "plp-shelf"
+		}
+	},
+
+	"product-summary.shelf#search-list-result": {
+		"children": ["flex-layout.row#list-product-summary"],
+		"props": {
+			"blockClass": "plp-shelf"
+		}
+	},
+	"flex-layout.row#list-product-summary": {
+		"children": [
+			"add-to-list-btn",
+			"product-summary-image#wishlist-product-image",
+			"flex-layout.col#product-brand-name",
+			"flex-layout.col#product-prices",
+			"product-summary-quantity#list_search",
+			"add-to-cart-button"
+		],
+		"props": {
+			"blockClass": "gallery-list-product-sumary"
+		}
+	},
+	"flex-layout.col#plp-shelf--top": {
+		"children": [
+			// "countdown-event-countdown-component",
+			"flex-layout.row#image-and-flags",
+			"product-summary-brand#plp",
+			"product-summary-name#plp"
+		],
+		"props": {
+			"blockClass": "plp-shelf-top"
+		}
+	},
+	"flex-layout.col#plp-shelf--bottom": {
+		"children": ["flex-layout.row#plp-shelf-bottom", "add-to-cart-button#plp"],
+		"props": {
+			"verticalAlign": "bottom"
+		}
+	},
+	"stack-layout#shelf-img-and-promos": {
+		"children": ["product-summary-image#plp", "flex-layout.row#plp-promotion-highlights"],
+		"props": {
+			"blockClass": "plp-img-and-promos"
+		}
+	},
+	"stack-layout#highlightshelf": {
+		"children": [
+			"product-summary-image#highlightshelf",
+			"flex-layout.row#plp-promotion-highlights"
+		],
+		"props": {
+			"blockClass": "highlightshelf"
+		}
+	},
+	"product-summary-image#plp": {
+		"props": {
+			"showBadge": false,
+			"width": {
+				"desktop": 220,
+				"mobile": 160
+			},
+			"height": {
+				"desktop": 220,
+				"mobile": 160
+			},
+			"blockClass": "plp-product-img"
+		}
+	},
+	"product-summary-image#highlightshelf": {
+		"props": {
+			"showBadge": false,
+			"width": {
+				"desktop": 170,
+				"mobile": 183
+			},
+			"height": {
+				"desktop": 170,
+				"mobile": 183
+			},
+			"blockClass": "highlightShelf"
+		}
+	},
+	"flex-layout.row#plp-promotion-highlights": {
+		"children": ["flex-layout.col#plp-promotion-highlights"]
+	},
+	"flex-layout.col#plp-promotion-highlights": {
+		"children": [
+			"vtex.product-highlights@2.x:product-highlights#promo--2x1",
+			"vtex.product-highlights@2.x:product-highlights#promo--2x1"
+		]
+	},
+	"flex-layout.row#plp-collection-highlights": {
+		"children": ["flex-layout.col#plp-collection-highlights"]
+	},
+	"flex-layout.col#plp-collection-highlights": {
+		"children": [
+			"vtex.product-highlights@2.x:product-highlights#collections--hiper-mas",
+			"vtex.product-highlights@2.x:product-highlights#collections--vida-sana",
+			"vtex.product-highlights@2.x:product-highlights#collections--envio-gratis"
+		],
+		"props": {
+			"verticalAlign": "bottom",
+			"blockClass": "plp-collection-flags-wrapper"
+		}
+	},
+	"product-summary-brand#plp": {
+		"props": {
+			"blockClass": "plp-brand-name"
+		}
+	},
+	"product-summary-name#plp": {
+		"props": {
+			"blockClass": "plp-product-name"
+		}
+	},
+	"flex-layout.row#plp-shelf-bottom": {
+		"children": ["flex-layout.col#plp-shelf-bottom"],
+		"props": {
+			"fullWidth": true
+		}
+	},
+	"flex-layout.col#plp-shelf-bottom": {
+		"children": [
+			"product-list-price#plp",
+			"product-selling-price#plp",
+			"product-summary-quantity#plp"
+		],
+		"props": {
+			"blockClass": "plp-shelf-bottom",
+			"rowGap": 2
+		}
+	},
+	"product-list-price#plp": {
+		"props": {
+			"blockClass": "plp-list-price"
+		}
+	},
+	"product-selling-price#plp": {
+		"props": {
+			"blockClass": "plp-selling-price"
+		}
+	},
+	"product-summary-quantity#plp": {
+		"props": {
+			"showLabel": false,
+			"size": "large",
+			"showUnit": false,
+			"blockClass": "plp-product-quantity"
+		}
+	},
+	"add-to-cart-button#plp": {
+		"props": {
+			"text": "Agregar",
+			"unavailableText": "No disponible",
+			"blockClass": "plp-add-btn"
+		}
+	},
+	"vtex.product-highlights@2.x:product-highlights#collections--hiper-mas": {
+		"children": ["product-highlight-text"],
+		"props": {
+			"type": "collection",
+			"filter": {
+				"type": "show",
+				"highlightNames": ["Hiper Más"]
+			}
+		}
+	},
+	"vtex.product-highlights@2.x:product-highlights#collections--vida-sana": {
+		"children": ["product-highlight-text"],
+		"props": {
+			"type": "collection",
+			"filter": {
+				"type": "show",
+				"highlightNames": ["Vida Sana"]
+			}
+		}
+	},
+	"vtex.product-highlights@2.x:product-highlights#collections--envio-gratis": {
+		"children": ["product-highlight-text"],
+		"props": {
+			"type": "collection",
+			"filter": {
+				"type": "show",
+				"highlightNames": ["Envío gratis"]
+			}
+		}
+	},
+	"vtex.product-highlights@2.x:product-highlights#promo--2x1": {
+		"children": ["product-highlight-text"],
+		"props": {
+			"type": "promotion",
+			"filter": {
+				"type": "show",
+				"highlightNames": ["2x1"]
+			}
+		}
+	},
+	"vtex.product-highlights@2.x:product-highlights#promo--25-off": {
+		"children": ["product-highlight-text"],
+		"props": {
+			"type": "promotion",
+			"filter": {
+				"type": "show",
+				"highlightNames": ["25% OFF"]
+			}
+		}
+	},
+	"product-highlight-text": {
+		"props": {
+			"message": "{highlightName}"
+		}
+	},
+	"product-summary-quantity#list_search": {
+		"props": {
+			"blockClass": ["wishlist-quantity"]
+		}
+	}
+}

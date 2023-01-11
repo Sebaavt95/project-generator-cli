@@ -1,0 +1,225 @@
+.minicartIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.minicartIconContainer::before {
+  content: "\e937";
+  font-family: "mercaldas";
+  font-size: 44px;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .minicartIconContainer::before {
+    content: "";
+  }
+}
+@media (min-width: 1024px) {
+  .minicartIconContainer::before {
+    font-size: 34px;
+  }
+}
+.minicartIconContainer::after {
+  content: "Carrito";
+  font-family: "Roboto";
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-left: 16px;
+  font-weight: 400;
+}
+@media (max-width: 1024px) {
+  .minicartIconContainer::after {
+    content: "";
+  }
+}
+.minicartIconContainer:hover::before, .minicartIconContainer:hover::after {
+  font-weight: bold;
+}
+
+.minicartQuantityBadge {
+  background-color: #ffffff;
+  top: 1px;
+  right: 0;
+  left: 30px;
+  font-size: 10px;
+  font-family: "Roboto";
+  border-radius: 0.75rem;
+  color: #000000;
+}
+@media (max-width: 768px) {
+  .minicartQuantityBadge {
+    display: flex;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+    top: -34px;
+    left: 20px;
+    font-size: 9.5px;
+    font-weight: 500;
+    font-family: "Roboto";
+    padding: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .minicartQuantityBadge {
+    left: 20px;
+    top: -3px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .openIconContainer {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .openIconContainer {
+    padding: 0 !important;
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .openIconContainer :global(.vtex-button__label) {
+    padding: 0 !important;
+  }
+}
+
+.minicartContainer :global(.vtex-button):focus, .minicartContainer :global(.vtex-button):active, .minicartContainer :global(.vtex-button):visited {
+  border-color: transparent;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .minicartContainer :global(.vtex-button) {
+    border: none;
+  }
+}
+@media (max-width: 768px) {
+  .minicartContainer :global(.vtex-button__label) {
+    padding: 0 !important;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .minicartContainer :global(.vtex-button__label)::before {
+    content: "\e937";
+    font-family: "mercaldas";
+    font-size: 34px;
+    color: #ffffff;
+    margin-top: 1px;
+    margin-right: 12px;
+  }
+}
+
+.drawer--minicart {
+  width: 360px !important;
+  background-color: #ffffff;
+}
+@media (max-width: 1023px) {
+  .drawer--minicart {
+    width: 100% !important;
+    max-width: initial !important;
+  }
+}
+
+.drawerContent--minicart {
+  position: relative;
+  overflow-y: unset;
+  max-height: 100vh;
+}
+
+.childrenContainer--minicart {
+  background-color: #ffffff;
+}
+
+.minicartTitle {
+  display: flex;
+  position: absolute;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #ffffff;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.minicartTitle::before {
+  font-family: "mercaldas";
+  content: "\e92b";
+  font-weight: 400;
+  font-size: 44px;
+  margin-right: 14px;
+}
+@media (max-width: 1023px) {
+  .minicartTitle::before {
+    font-size: 35px;
+    margin-right: 12px;
+  }
+}
+@media (max-width: 1023px) {
+  .minicartTitle {
+    top: 14px;
+  }
+}
+
+.closeIconContainer--minicart {
+  height: 80px;
+  background-color: #1db779;
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .closeIconContainer--minicart {
+    height: 54px;
+  }
+}
+
+.closeIconButton--minicart {
+  background: url("assets/img/arrow-right.svg") no-repeat;
+  background-position: 21px 33px;
+  background-size: 16px;
+}
+@media (max-width: 1023px) {
+  .closeIconButton--minicart {
+    background-position: 15px 21px;
+    background-size: 13px;
+  }
+}
+
+.closeIcon--minicart {
+  color: transparent;
+}
+
+.minicartEmptyStateContainer--minicart__empty-state {
+  justify-content: flex-start;
+  margin-top: 74px;
+}
+@media (max-width: 1023px) {
+  .minicartEmptyStateContainer--minicart__empty-state {
+    margin-top: 61px;
+  }
+}
+
+.minicartProductListContainer--minicart__product-list {
+  padding: 0;
+}
+
+.minicartSummary--minicart__footer__summary {
+  padding: 0 30px;
+}
+@media (max-width: 1023px) {
+  .minicartSummary--minicart__footer__summary {
+    padding: 0 21px;
+  }
+}
+
+.minicartCheckoutButton {
+  margin-top: 6px;
+}
+@media (max-width: 1023px) {
+  .minicartCheckoutButton {
+    margin-top: 11px;
+    padding: 0 15px;
+  }
+}

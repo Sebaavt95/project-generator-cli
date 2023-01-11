@@ -1,0 +1,129 @@
+
+		{
+			
+  "menu-item#alimentacion-mobile": {
+   "props": {
+    "id": "2/alimentacion",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "department-mobile",
+    "itemProps": {
+     "type": "internal",
+     "href": "/alimentacion",
+     "noFollow": false,
+     "tagTitle": "Alimentación",
+     "text": "Alimentación"
+    }
+   },
+   "blocks": ["vtex.menu@2.x:submenu.accordion#alimentacion-categories"]
+  }
+	
+			,"vtex.menu@2.x:submenu.accordion#alimentacion-categories": {
+			"children": ["vtex.menu@2.x:menu#alimentacion-categories-mobile"]
+			},
+			"vtex.menu@2.x:menu#alimentacion-categories-mobile": {
+			"props": {
+				"orientation": "vertical"
+				,"blockClass": "menu-categories-accordion"
+			},
+			"children": ["menu-item#ver-todos-alimentacion","menu-item#frutas-y-verduras-mobile","menu-item#almacen-mobile","menu-item#bebidas-mobile","menu-item#carnes-mobile"]
+			}
+			
+		,"menu-item#ver-todos-alimentacion": {
+			"props": {
+				"id": "ver-todos-alimentacion",
+				"type": "custom",
+				"iconId": null,
+				"highlight": false,
+				"blockClass": "menu-categories-see-all",
+				"itemProps": {
+					"type": "internal",
+					"href": "/alimentacion",
+					"noFollow": false,
+					"tagTitle": "Ver todos",
+					"text": "Ver todos"
+				}
+			}
+  	}
+	
+ 		
+ ,
+  "menu-item#frutas-y-verduras-mobile": {
+   "props": {
+    "id": "3/frutas-y-verduras",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "",
+    "itemProps": {
+     "type": "internal",
+     "href": "/alimentacion/frutas-y-verduras",
+     "noFollow": false,
+     "tagTitle": "Frutas y Verduras",
+     "text": "Frutas y Verduras"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#almacen-mobile": {
+   "props": {
+    "id": "19/almacen",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "",
+    "itemProps": {
+     "type": "internal",
+     "href": "/alimentacion/almacen",
+     "noFollow": false,
+     "tagTitle": "Almacén",
+     "text": "Almacén"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#bebidas-mobile": {
+   "props": {
+    "id": "20/bebidas",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "",
+    "itemProps": {
+     "type": "internal",
+     "href": "/alimentacion/bebidas",
+     "noFollow": false,
+     "tagTitle": "Bebidas",
+     "text": "Bebidas"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#carnes-mobile": {
+   "props": {
+    "id": "21/carnes",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "",
+    "itemProps": {
+     "type": "internal",
+     "href": "/alimentacion/carnes",
+     "noFollow": false,
+     "tagTitle": "Carnes",
+     "text": "Carnes"
+    }
+   },
+   "blocks": []
+  }
+	
+ 
+		}
+	

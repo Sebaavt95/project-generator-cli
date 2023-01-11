@@ -1,0 +1,177 @@
+{
+  "store.custom#hogar": {
+    "blocks": [
+      "responsive-layout.desktop#department--6",
+      "responsive-layout.tablet#department--6",
+      "responsive-layout.phone#department--6"
+    ]
+  },
+  "responsive-layout.desktop#department--6": {
+    "children": [
+      "flex-layout.row#department-container--6"
+    ]
+  },
+  "flex-layout.row#department-container--6": {
+    "props": {
+      "blockClass": "department-container"
+    },
+    "children": [
+      "flex-layout.col#department-content--6"
+    ]
+  },
+  "responsive-layout.tablet#department--6": {
+    "children": [
+      "flex-layout.row#department-container--6"
+    ]
+  },
+  "responsive-layout.phone#department--6": {
+    "children": [
+      "flex-layout.row#department-container--6"
+    ]
+  },
+  "flex-layout.col#department-content--6": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#department-main-banner--6",
+      "rich-text#department-title--6",
+      "flex-layout.row#categories-cards--6"
+    ]
+  },
+  "flex-layout.row#department-main-banner--6": {
+    "props": {
+      "blockClass": "department__main__banner__container",
+      "horizontalAlign": "center",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#department-main-banner-slider--6"
+    ]
+  },
+  "flex-layout.col#department-main-banner-slider--6": {
+    "props": {
+      "blockClass": "department__main__banner__slider__container",
+      "fullWidth": true
+    },
+    "children": [
+      "list-context.image-list#department-main-banner-list-images--6"
+    ]
+  },
+  "list-context.image-list#department-main-banner-list-images--6": {
+    "children": [
+      "slider-layout#department-main-banner-slider--6"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "https://via.placeholder.com/1239x299.png",
+          "mobileImage": "https://via.placeholder.com/1024x420.png"
+        },
+        {
+          "image": "https://via.placeholder.com/1239x299.png/09F/FFF",
+          "mobileImage": "https://via.placeholder.com/1024x420.png/09F/FFF"
+        },
+        {
+          "image": "https://via.placeholder.com/1239x299.png/08A/FFF",
+          "mobileImage": "https://via.placeholder.com/1024x420.png/08A/FFF"
+        }
+      ]
+    }
+  },
+  "slider-layout#department-main-banner-slider--6": {
+    "props": {
+      "blockClass": "department__main__banner__slider",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "infinite": true
+    }
+  },
+  "rich-text#department-title--6": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Hogar",
+      "blockClass": "department-title"
+    }
+  },
+  "flex-layout.row#categories-cards--6": {
+    "children": [
+      "flex-layout.col#category-card--26"
+    ],
+    "props": {
+      "horizontalAlign": "left",
+      "colSizing": "auto",
+      "blockClass": "categories-cards-container"
+    }
+  },
+  "flex-layout.col#category-card--26": {
+    "children": [
+      "flex-layout.col#category-card-top--26",
+      "flex-layout.col#category-card-bottom--26"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--26": {
+    "children": [
+      "image#category-img--26",
+      "rich-text#category-title--26"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--26": {
+    "children": [
+      "rich-text#subcategories-list--26",
+      "link#category-link--26"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--26": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Limpieza",
+      "link": "https://fizzmodapps.myvtex.com/hogar/limpieza",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--26": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Limpieza",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--26": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--26": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/hogar/limpieza",
+      "blockClass": "category-card-cta"
+    }
+  }
+}

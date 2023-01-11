@@ -1,0 +1,110 @@
+
+		{
+			
+  "menu-item#indumentaria-mobile": {
+   "props": {
+    "id": "4/indumentaria",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "department-mobile",
+    "itemProps": {
+     "type": "internal",
+     "href": "/indumentaria",
+     "noFollow": false,
+     "tagTitle": "Indumentaria",
+     "text": "Indumentaria"
+    }
+   },
+   "blocks": ["vtex.menu@2.x:submenu.accordion#indumentaria-categories"]
+  }
+	
+			,"vtex.menu@2.x:submenu.accordion#indumentaria-categories": {
+			"children": ["vtex.menu@2.x:menu#indumentaria-categories-mobile"]
+			},
+			"vtex.menu@2.x:menu#indumentaria-categories-mobile": {
+			"props": {
+				"orientation": "vertical"
+				,"blockClass": "menu-categories-accordion"
+			},
+			"children": ["menu-item#ver-todos-indumentaria","menu-item#remeras-mobile","menu-item#asd-mobile","menu-item#camisetas-mobile"]
+			}
+			
+		,"menu-item#ver-todos-indumentaria": {
+			"props": {
+				"id": "ver-todos-indumentaria",
+				"type": "custom",
+				"iconId": null,
+				"highlight": false,
+				"blockClass": "menu-categories-see-all",
+				"itemProps": {
+					"type": "internal",
+					"href": "/indumentaria",
+					"noFollow": false,
+					"tagTitle": "Ver todos",
+					"text": "Ver todos"
+				}
+			}
+  	}
+	
+ 		
+ ,
+  "menu-item#remeras-mobile": {
+   "props": {
+    "id": "27/remeras",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "",
+    "itemProps": {
+     "type": "internal",
+     "href": "/indumentaria/remeras",
+     "noFollow": false,
+     "tagTitle": "Remeras",
+     "text": "Remeras"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#asd-mobile": {
+   "props": {
+    "id": "28/asd",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "",
+    "itemProps": {
+     "type": "internal",
+     "href": "/indumentaria/asd",
+     "noFollow": false,
+     "tagTitle": "asd",
+     "text": "asd"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#camisetas-mobile": {
+   "props": {
+    "id": "31/camisetas",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "",
+    "itemProps": {
+     "type": "internal",
+     "href": "/indumentaria/camisetas",
+     "noFollow": false,
+     "tagTitle": "Camisetas",
+     "text": "Camisetas"
+    }
+   },
+   "blocks": []
+  }
+	
+ 
+		}
+	

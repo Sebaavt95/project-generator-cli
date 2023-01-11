@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>ICON/lock</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9,16.5242799 L9,12 C9,7.581722 12.581722,4 17,4 C21.418278,4 25,7.581722 25,12 L25,16.5242799 L27,16.5242799 L27,29.5242799 L7,29.5242799 L7,16.5242799 L9,16.5242799 Z M8.5,18.0242799 L8.5,28.0242799 L25.5,28.0242799 L25.5,18.0242799 L8.5,18.0242799 Z M10.5,16.5 L23.5,16.5 L23.5,12 C23.5,8.41014913 20.5898509,5.5 17,5.5 C13.4101491,5.5 10.5,8.41014913 10.5,12 L10.5,16.5 Z M16,22 L18,22 L18,24 L16,24 L16,22 Z" id="lock-path-1"></path>
+    </defs>
+    <g id="lock-Home-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="lock-mask-2" fill="white">
+            <use xlink:href="#lock-path-1"></use>
+        </mask>
+        <use id="lock-icn_lock" fill="#000000" fill-rule="nonzero" xlink:href="#lock-path-1"></use>
+    </g>
+</svg>

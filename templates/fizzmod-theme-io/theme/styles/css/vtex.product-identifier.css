@@ -1,0 +1,28 @@
+.product-identifier {
+  display: block;
+  color: #616161;
+  font-size: 14px;
+  margin-top: 15px;
+}
+@media (max-width: 1026px) {
+  .product-identifier {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+.product-identifier__label {
+  font-weight: 500;
+}
+.product-identifier::after {
+  content: "";
+  background-color: #212121;
+  display: block;
+  width: 32px;
+  height: 2px;
+  margin: 21px 0;
+}
+@media (max-width: 1026px) {
+  .product-identifier::after {
+    margin: 14px auto 21px;
+  }
+}

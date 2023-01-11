@@ -1,0 +1,459 @@
+{
+  "flex-layout.col#banners-group": {
+    "children": [
+      "responsive-layout.desktop#banners-group-1",
+      "responsive-layout.tablet#banners-group-1",
+      "responsive-layout.phone#banners-group-1",
+      "responsive-layout.desktop#banners-group-2",
+      "responsive-layout.tablet#banners-group-2",
+      "responsive-layout.phone#banners-group-2",
+      "responsive-layout.desktop#banners-group-3",
+      "responsive-layout.tablet#banners-group-3",
+      "responsive-layout.phone#banners-group-3",
+      "responsive-layout.desktop#banners-group-4",
+      "responsive-layout.tablet#banners-group-4",
+      "responsive-layout.phone#banners-group-4"
+    ],
+    "props": {
+      "blockClass": "banners-group"
+    }
+  },
+  "responsive-layout.desktop#banners-group-1": {
+    "children": ["flex-layout.row#banners-group-1--desktop"]
+  },
+  "responsive-layout.tablet#banners-group-1": {
+    "children": ["flex-layout.col#banners-group-1--tablet"]
+  },
+  "responsive-layout.phone#banners-group-1": {
+    "children": ["flex-layout.col#banners-group-1--phone"]
+  },
+  "responsive-layout.desktop#banners-group-2": {
+    "children": ["flex-layout.row#banners-group-2--desktop"]
+  },
+  "responsive-layout.tablet#banners-group-2": {
+    "children": ["flex-layout.col#banners-group-2--tablet"]
+  },
+  "responsive-layout.phone#banners-group-2": {
+    "children": ["flex-layout.col#banners-group-2--phone"]
+  },
+  "responsive-layout.desktop#banners-group-3": {
+    "children": ["flex-layout.row#banners-group-3--desktop"]
+  },
+  "responsive-layout.tablet#banners-group-3": {
+    "children": ["flex-layout.col#banners-group-3--tablet"]
+  },
+  "responsive-layout.phone#banners-group-3": {
+    "children": ["flex-layout.row#banners-group-3--phone"]
+  },
+  "responsive-layout.desktop#banners-group-4": {
+    "children": ["flex-layout.row#banners-group-4--desktop"]
+  },
+  "responsive-layout.tablet#banners-group-4": {
+    "children": ["flex-layout.col#banners-group-4--tablet"]
+  },
+  "responsive-layout.phone#banners-group-4": {
+    "children": ["flex-layout.row#banners-group-4--phone"]
+  },
+  "flex-layout.row#banners-group-1--desktop": {
+    "children": [
+      "image#group-1-1--desktop",
+      "image#group-1-2--desktop",
+      "image#group-1-3--desktop"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "banners-group-row"
+    }
+  },
+  "flex-layout.col#banners-group-1--tablet": {
+    "children": [
+      "image#group-1-1--tablet",
+      "flex-layout.row#banners-group-1-row--tablet"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "banners-group-col"
+    }
+  },
+  "flex-layout.row#banners-group-1-row--tablet": {
+    "children": ["image#group-1-2--tablet", "image#group-1-3--tablet"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": false,
+      "blockClass": "banners-group-1-row",
+      "colGap": 2
+    }
+  },
+  "flex-layout.col#banners-group-1--phone": {
+    "children": [
+      "image#group-1-1--phone",
+      "flex-layout.row#banners-group-1-row--phone"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "banners-group-col"
+    }
+  },
+  "flex-layout.row#banners-group-1-row--phone": {
+    "children": ["image#group-1-2--phone", "image#group-1-3--phone"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": false,
+      "blockClass": "banners-group-1-row"
+    }
+  },
+  "flex-layout.row#banners-group-2--desktop": {
+    "children": [
+      "image#group-2-1--desktop",
+      "image#group-2-2--desktop",
+      "image#group-2-3--desktop"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "banners-group-row"
+    }
+  },
+  "flex-layout.col#banners-group-2--tablet": {
+    "children": [
+      "image#group-2-1--tablet",
+      "flex-layout.row#banners-group-2-row--tablet"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "banners-group-col"
+    }
+  },
+  "flex-layout.row#banners-group-2-row--tablet": {
+    "children": ["image#group-2-2--tablet", "image#group-2-3--tablet"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": false,
+      "blockClass": "banners-group-2-row",
+      "colGap": 2
+    }
+  },
+  "flex-layout.col#banners-group-2--phone": {
+    "children": [
+      "image#group-2-3--phone",
+      "flex-layout.row#banners-group-2-row--phone"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "banners-group-row"
+    }
+  },
+  "flex-layout.row#banners-group-2-row--phone": {
+    "children": ["image#group-2-1--phone", "image#group-2-2--phone"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": false,
+      "blockClass": "banners-group-2-row"
+    }
+  },
+  "flex-layout.row#banners-group-3--desktop": {
+    "children": ["image#group-3-1--desktop"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "banners-group-row"
+    }
+  },
+  "flex-layout.col#banners-group-3--tablet": {
+    "children": [
+      "image#group-3-1--tablet",
+      "flex-layout.row#banners-group-3-row--tablet"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "banners-group-col"
+    }
+  },
+  "flex-layout.row#banners-group-3-row--tablet": {
+    "children": ["image#group-3-2--tablet", "image#group-3-3--tablet"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": false,
+      "blockClass": "banners-group-3-row",
+      "colGap": 2
+    }
+  },
+  "flex-layout.row#banners-group-3--phone": {
+    "children": ["image#group-3-1--phone"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "banners-group-row"
+    }
+  },
+  "flex-layout.row#banners-group-4--desktop": {
+    "children": ["image#group-4-1--desktop", "image#group-4-2--desktop"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "banners-group-row--last"
+    }
+  },
+  "flex-layout.col#banners-group-4--tablet": {
+    "children": [
+      "image#group-4-1--tablet",
+      "flex-layout.row#banners-group-4-row--tablet"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "banners-group-col"
+    }
+  },
+  "flex-layout.row#banners-group-4-row--tablet": {
+    "children": ["image#group-4-2--tablet", "image#group-4-3--tablet"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": false,
+      "blockClass": "banners-group-4-row",
+      "colGap": 2
+    }
+  },
+  "flex-layout.row#banners-group-4--phone": {
+    "children": ["image#group-4-1--phone", "image#group-4-2--phone"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "banners-group-row--last"
+    }
+  },
+  "image#group-1-1--desktop": {
+    "props": {
+      "src": "https://via.placeholder.com/678x355.png",
+      "height": 355,
+      "width": 678,
+      "blockClass": "group-1-1"
+    }
+  },
+  "image#group-1-2--desktop": {
+    "props": {
+      "src": "https://via.placeholder.com/262x355.png",
+      "height": 355,
+      "width": 262,
+      "blockClass": "group-1-2"
+    }
+  },
+  "image#group-1-3--desktop": {
+    "props": {
+      "src": "https://via.placeholder.com/262x355.png",
+      "height": 355,
+      "width": 262,
+      "blockClass": "group-1-3"
+    }
+  },
+  "image#group-2-1--desktop": {
+    "props": {
+      "src": "https://via.placeholder.com/331x355.png",
+      "height": 355,
+      "width": 331,
+      "blockClass": "group-2-1"
+    }
+  },
+  "image#group-2-2--desktop": {
+    "props": {
+      "src": "https://via.placeholder.com/331x355.png",
+      "height": 355,
+      "width": 331,
+      "blockClass": "group-2-2"
+    }
+  },
+  "image#group-2-3--desktop": {
+    "props": {
+      "src": "https://via.placeholder.com/540x355.png",
+      "height": 355,
+      "width": 540,
+      "blockClass": "group-2-3"
+    }
+  },
+  "image#group-3-1--desktop": {
+    "props": {
+      "src": "https://via.placeholder.com/1235x158.png",
+      "height": 158,
+      "width": 1240,
+      "blockClass": "group-3-1"
+    }
+  },
+  "image#group-4-1--desktop": {
+    "props": {
+      "src": "https://via.placeholder.com/678x355.png",
+      "height": 355,
+      "width": 678,
+      "blockClass": "group-4-1"
+    }
+  },
+  "image#group-4-2--desktop": {
+    "props": {
+      "src": "https://via.placeholder.com/540x355.png",
+      "width": 540,
+      "height": 355,
+      "blockClass": "group-4-2"
+    }
+  },
+  "image#group-1-1--tablet": {
+    "props": {
+      "src": "https://via.placeholder.com/1024x414.png",
+      "width": "100%",
+      "blockClass": "group-1-1"
+    }
+  },
+  "image#group-1-2--tablet": {
+    "props": {
+      "src": "https://via.placeholder.com/500x581.png",
+      "width": "100%",
+      "blockClass": "group-1-2"
+    }
+  },
+  "image#group-1-3--tablet": {
+    "props": {
+      "src": "https://via.placeholder.com/500x581.png",
+      "width": "100%",
+      "blockClass": "group-1-3"
+    }
+  },
+  "image#group-2-1--tablet": {
+    "props": {
+      "src": "https://via.placeholder.com/1024x414.png",
+      "width": "100%",
+      "blockClass": "group-2-1"
+    }
+  },
+  "image#group-2-2--tablet": {
+    "props": {
+      "src": "https://via.placeholder.com/500x581.png",
+      "width": "100%",
+      "blockClass": "group-2-2"
+    }
+  },
+  "image#group-2-3--tablet": {
+    "props": {
+      "src": "https://via.placeholder.com/500x581.png",
+      "width": "100%",
+      "blockClass": "group-2-3"
+    }
+  },
+  "image#group-3-1--tablet": {
+    "props": {
+      "src": "https://via.placeholder.com/1024x414.png",
+      "width": "100%",
+      "blockClass": "group-3-1"
+    }
+  },
+  "image#group-3-2--tablet": {
+    "props": {
+      "src": "https://via.placeholder.com/500x581.png",
+      "width": "100%",
+      "blockClass": "group-3-2"
+    }
+  },
+  "image#group-3-3--tablet": {
+    "props": {
+      "src": "https://via.placeholder.com/500x581.png",
+      "width": "100%",
+      "blockClass": "group-3-3"
+    }
+  },
+  "image#group-4-1--tablet": {
+    "props": {
+      "src": "https://via.placeholder.com/1024x414.png",
+      "width": "100%",
+      "blockClass": "group-4-1"
+    }
+  },
+  "image#group-4-2--tablet": {
+    "props": {
+      "src": "https://via.placeholder.com/500x581.png",
+      "width": "100%",
+      "blockClass": "group-4-2"
+    }
+  },
+  "image#group-4-3--tablet": {
+    "props": {
+      "src": "https://via.placeholder.com/500x581.png",
+      "width": "100%",
+      "blockClass": "group-4-3"
+    }
+  },
+  "image#group-1-1--phone": {
+    "props": {
+      "src": "https://via.placeholder.com/304x172.png",
+      "width": 304,
+      "height": 172,
+      "blockClass": "group-1-1"
+    }
+  },
+  "image#group-1-2--phone": {
+    "props": {
+      "src": "https://via.placeholder.com/148x172.png",
+      "width": 148,
+      "height": 172,
+      "blockClass": "group-1-2"
+    }
+  },
+  "image#group-1-3--phone": {
+    "props": {
+      "src": "https://via.placeholder.com/148x172.png",
+      "width": 148,
+      "height": 172,
+      "blockClass": "group-1-3"
+    }
+  },
+  "image#group-2-1--phone": {
+    "props": {
+      "src": "https://via.placeholder.com/148x172.png",
+      "width": 148,
+      "height": 172,
+      "blockClass": "group-2-1"
+    }
+  },
+  "image#group-2-2--phone": {
+    "props": {
+      "src": "https://via.placeholder.com/148x172.png",
+      "width": 148,
+      "height": 172,
+      "blockClass": "group-2-2"
+    }
+  },
+  "image#group-2-3--phone": {
+    "props": {
+      "src": "https://via.placeholder.com/304x172.png",
+      "width": 304,
+      "height": 172,
+      "blockClass": "group-2-3"
+    }
+  },
+  "image#group-3-1--phone": {
+    "props": {
+      "src": "https://via.placeholder.com/304x60.png",
+      "width": 304,
+      "height": 60,
+      "blockClass": "group-3-1"
+    }
+  },
+  "image#group-4-1--phone": {
+    "props": {
+      "src": "https://via.placeholder.com/304x172.png",
+      "width": 304,
+      "height": 172,
+      "blockClass": "group-4-1"
+    }
+  },
+  "image#group-4-2--phone": {
+    "props": {
+      "src": "https://via.placeholder.com/304x172.png",
+      "width": 304,
+      "height": 172,
+      "blockClass": "group-4-2"
+    }
+  }
+}

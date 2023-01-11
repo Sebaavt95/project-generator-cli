@@ -1,0 +1,114 @@
+.paragraph--checkout-safe-text,
+.heading--orderplaced-delivery-title,
+.heading--orderplaced-payments-title,
+.heading--orderplaced-totals-title {
+	@include typographyCaption;
+	display: flex;
+	align-items: center;
+	color: $secondary-dark;
+	margin-left: 5px;
+}
+
+.paragraph {
+	&--checkout-safe-text {
+		&::before {
+			content: '\e92f';
+			display: block;
+			font-family: 'mercaldas';
+			font-size: 34px;
+			line-height: 16px;
+		}
+	}
+	&--copyright-op-header {
+		@include typographyOverline;
+		color: $secondary-dark;
+		margin: 0px;
+
+		@include mediaBreaks('tablet') {
+			font-size: 11px;
+			line-height: 20px;
+		}
+	}
+}
+
+.heading--orderplaced-delivery-title,
+.heading--orderplaced-totals-title,
+.heading--orderplaced-payments-title,
+:global(.vtex-order-placed-2-x-packageDeliveryTitle),
+.heading--orderplaced-customer,
+:global(.vtex-order-placed-2-x-packageHeader--pickup) {
+	margin: 0;
+	color: $secondary-dark;
+	font-size: 14px;
+	font-weight: $semiBold;
+	line-height: 16px;
+}
+
+.packageDeliveryTitle::before,
+:global(.vtex-order-placed-2-x-packageDeliveryTitle)::before,
+.heading--orderplaced-delivery-title::before,
+.heading--orderplaced-payments-title::before,
+.heading--orderplaced-totals-title::before {
+	display: block;
+	font-family: 'mercaldas';
+	font-size: 24px;
+	font-weight: $regular;
+	line-height: 16px;
+	margin-right: 8px;
+}
+
+.heading {
+	&--orderplaced-customer {
+		padding-bottom: 7px;
+	}
+	&--orderplaced-payments-title {
+		&::before {
+			content: '\e905';
+		}
+	}
+	&--orderplaced-totals-title {
+		&::before {
+			content: '\e936';
+		}
+	}
+}
+
+.packageDeliveryTitle {
+	&::before {
+		content: '\e900';
+	}
+}
+
+.headingLevel3 {
+	&--order-confirmed {
+		@include typographyH6;
+		margin: 0px;
+		color: $secondary-dark;
+
+		@include mediaBreaks('tablet') {
+			font-size: 18px;
+			line-height: 21px;
+		}
+	}
+}
+
+.wrapper {
+	&--order-confirmed {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		&::before {
+			font-family: 'mercaldas';
+			content: '\e92b';
+			font-weight: $regular;
+			font-size: 37px;
+			margin-right: 9px;
+		}
+	}
+	&--copyright-op-header {
+		@include mediaBreaks('tablet') {
+			margin-top: 12px;
+		}
+	}
+}

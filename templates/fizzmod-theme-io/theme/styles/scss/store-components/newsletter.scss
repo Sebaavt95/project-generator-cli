@@ -1,0 +1,28 @@
+.backToTopButtonContainer {
+	position: unset;
+	margin-left: 38px;
+	z-index: unset;
+
+	@include customMediaBreaks(1024) {
+		display: none;
+	}
+
+	& :global(.vtex-button) {
+		width: 38px;
+		height: 38px;
+		background-color: $grey-700;
+		border-color: $grey-700;
+		border-width: 2px;
+		border-radius: 4px;
+		color: $white;
+		transition: .3s linear;
+
+		&:hover {
+			background-color: $grey-600;
+			border-color: $grey-600;
+		}
+	}
+	& :global(.vtex-button__label) {
+		padding: 6px 10px !important;
+	}
+}

@@ -1,0 +1,53 @@
+
+		{
+			
+  "menu-item#deportes": {
+   "props": {
+    "id": "8/deportes",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "department"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/deportes",
+     "noFollow": false,
+     "tagTitle": "Deportes",
+     "text": "Deportes"
+    }
+   },
+   "blocks": ["vtex.menu@2.x:submenu#deportes-categories"]
+  }
+	
+			,"vtex.menu@2.x:submenu#deportes-categories": {
+				"children": ["vtex.menu@2.x:menu#deportes-categories"]
+			},
+			"vtex.menu@2.x:menu#deportes-categories": {
+				"props": {
+				"orientation": "vertical"
+				},
+				"children": ["menu-item#accesorios"]
+			}
+		
+ ,
+  "menu-item#accesorios": {
+   "props": {
+    "id": "13/accesorios",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/deportes/accesorios",
+     "noFollow": false,
+     "tagTitle": "Accesorios",
+     "text": "Accesorios"
+    }
+   },
+   "blocks": []
+  }
+	
+ 
+		}
+	

@@ -1,0 +1,316 @@
+.orderPlacedWrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 0px;
+}
+
+.orderPlacedMainWrapper,
+.totalList {
+	width: 100%;
+	margin: 0;
+}
+
+.totalList {
+	margin-top: 10px;
+}
+
+.confirmationTitle,
+.confirmationMessage {
+	text-align: left;
+}
+
+.packageShippingEstimate,
+.packageSLA,
+.addressContainer,
+.paymentGroup,
+.paymentValue,
+.customerInfoListContainer,
+.package--pickup .packageReceiverName {
+	color: $secondary-main;
+	font-size: 14px;
+	letter-spacing: 0;
+}
+
+.orderPlacedFooter {
+	max-width: 660px;
+	margin: 0 auto;
+	height: 214px;
+	padding-top: 60px;
+
+	@include mediaBreaks('mobile') {
+		height: auto;
+		padding: 20px 0px 5px 0px;
+	}
+}
+
+.section {
+	&-confirmation {
+		margin-bottom: 39px;
+		height: 148px;
+		padding-top: 24px;
+
+		@include mediaBreaks('mobile') {
+			margin-bottom: 18px;
+			height: auto;
+			padding: 18px 15px 0px 15px;
+		}
+	}
+	&--deliveryPackages {
+		margin-top: 40px;
+
+		@include mediaBreaks('mobile') {
+			margin-top: 0px;
+		}
+	}
+}
+
+.confirmationTitle {
+	margin: 0px;
+	width: 100%;
+	padding-top: 24px;
+	background: $confirmation;
+	padding-left: 24px;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 25px;
+	color: $secondary-dark;
+
+	@include mediaBreaks('mobile') {
+		text-align: center;
+		padding: 14px 28px 0px 28px;
+	}
+}
+
+.confirmationMessage {
+	@include typographyBody2;
+	margin: 0px;
+	width: 100%;
+	background: $confirmation;
+	padding: 10px 0px 29px 24px;
+	color: $secondary-main;
+
+	@include mediaBreaks('mobile') {
+		font-size: 13px;
+		letter-spacing: 0;
+		line-height: 15px;
+		padding: 12px 11px 9px 11px;
+	}
+}
+
+.orderNumber {
+	@include typographyBody1;
+	color: $secondary-main;
+	text-transform: uppercase;
+
+	@include mediaBreaks('mobile') {
+		font-size: 13px;
+		letter-spacing: 0;
+		line-height: 15px;
+		font-weight: $regular;
+	}
+}
+
+.package {
+	&--delivery,
+	&--pickup,
+	&--pickup .packageReceiverName {
+		margin: 0;
+	}
+	& .packageShippingEstimate {
+		margin-top: 15px;
+	}
+}
+
+.packageDeliveryTitle,
+.packageHeader--pickup {
+	display: flex;
+	align-items: center;
+}
+
+.packageDeliveryTitle::before,
+.packageHeader--pickup::before {
+	content: '\e900';
+	display: block;
+	font-family: 'mercaldas';
+	font-size: 21px;
+	font-weight: $regular;
+	line-height: 16px;
+	margin-right: 8px;
+}
+
+.packageHeader {
+	&--pickup {
+		flex-wrap: wrap;
+	}
+}
+
+.packageSLA,
+.packageShippingEstimate {
+	margin-top: -10px;
+	display: block;
+}
+
+.packageShippingEstimate,
+.packageSLA,
+.addressContainer,
+.paymentGroup,
+.paymentValue {
+	@include mediaBreaks('mobile') {
+		font-size: 13px;
+	}
+}
+
+.totalListItem {
+	& .packageShippingEstimate {
+		margin-top: 15px;
+	}
+	& .totalListItemLabel {
+		@include typographySubtitle2;
+		color: $secondary-dark;
+		text-transform: uppercase;
+	}
+	&--Items .totalListItemLabel,
+	&--Discounts .totalListItemLabel,
+	&--Shipping .totalListItemLabel {
+		color: $secondary-main;
+		text-transform: none;
+	}
+	&--Shipping {
+		border-bottom: 1px $grey-400 solid;
+		padding-bottom: 21px;
+	}
+	&:last-child {
+		margin-top: 15px;
+	}
+}
+
+.totalListItemValue {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.productList {
+	width: 100%;
+	padding: 0 87px 20px 20px;
+
+	@include mediaBreaks('mobile') {
+		padding: 15px;
+	}
+}
+
+.productListItem {
+	margin: 0;
+	padding-top: 27px;
+	padding-bottom: 0;
+
+	@include mediaBreaks('mobile') {
+		padding-top: 15px;
+	}
+}
+
+.productWrapper {
+	align-items: center;
+	border-bottom: 1px $grey-200 solid;
+
+	@include mediaBreaks('mobile') {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+.productImageWrapper,
+.productImageColumn {
+	@include mediaBreaks('mobile') {
+		width: 65px;
+	}
+}
+
+.productImageWrapper,
+.productWrapper {
+	@include mediaBreaks('mobile') {
+		align-items: flex-start;
+	}
+}
+
+.productImageWrapper {
+	max-width: 100px;
+	display: flex;
+	align-items: center;
+
+	@include mediaBreaks('mobile') {
+		height: 90px;
+	}
+}
+
+.productInfoColumn {
+	flex-direction: row;
+	width: 70%;
+
+	@include mediaBreaks('mobile') {
+		width: 75%;
+		text-align: left;
+		padding-left: 15px;
+	}
+}
+
+.productName {
+	@include typographyBody1;
+	padding: 0 87px 0 15px;
+	width: 65%;
+	color: $secondary-main;
+
+	@include mediaBreaks('mobile') {
+		@include typographySubtitle2;
+		text-align: left;
+		padding: 10px 0 0;
+		display: block;
+		width: 100%;
+		padding-right: 20px;
+	}
+}
+
+.productQuantity {
+	@include flexCenter;
+	margin-right: 20%;
+	background-color: $grey-200;
+	align-self: center;
+	text-align: center;
+	box-sizing: border-box;
+	height: 50px;
+	padding: 5px 15px;
+	width: 15%;
+
+	@include mediaBreaks('mobile') {
+		@include typographyCaption;
+		color: $secondary-dark;
+		width: 100%;
+		text-align: left;
+		display: block;
+		height: auto;
+		background-color: $white;
+		padding: 5px 0 0;
+		margin: 0;
+	}
+}
+
+.productImageColumn {
+	width: 115px;
+
+	@include mediaBreaks('mobile') {
+		margin: 0;
+	}
+}
+
+.productPrice {
+	@include typographyH6;
+	color: $secondary-main;
+	font-weight: $semiBold;
+	width: 15%;
+
+	@include mediaBreaks('mobile') {
+		@include typographySubtitle2;
+		width: 100%;
+		text-align: left;
+		padding-left: 78px;
+		padding-bottom: 10px;
+	}
+}

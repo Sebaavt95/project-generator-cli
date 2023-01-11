@@ -1,0 +1,250 @@
+/* Product page */
+.flexRow {
+	&--pdp {
+		&-main {
+			@include responsive('md', min) {
+				margin-bottom: 65px;
+				margin-top: 45px;
+			}
+			&-wrapper {
+				max-width: 1220px;
+				margin: 0 auto;
+				@include mediaBreaks('mobile') {
+					padding-bottom: 0px;
+				}
+				@include mediaBreaks('tablet') {
+					padding: 15px;
+					margin: 0 auto;
+				}
+			}
+			&-content {
+				margin-left: 9px;
+			}
+			&-controls {
+				@include mediaBreaks('tablet') {
+					display: flex;
+					justify-content: center;
+				}
+			}
+			&-fullwidth-similars {
+				background-color: $grey-200;
+				padding: 0;
+			}
+			&-fullwidth-suggestions {
+				padding: 0;
+			}
+		}
+		&-collection {
+			&-flags {
+				margin-bottom: 13px;
+				@include mediaBreaks('tablet') {
+					margin-bottom: 9px;
+				}
+			}
+		}
+		&-shipping {
+			&-information {
+				width: 425px;
+				background: $white;
+				padding: 20px 46px 0px 46px;
+				height: 85px;
+				@include mediaBreaks('mobile') {
+					width: 320px;
+					height: 83px;
+					padding: 18px 16px 0px 16px;
+				}
+			}
+		}
+	}
+	&--productSpecification {
+		/* Product Specification */
+		min-height: 52px;
+		display: flex;
+		align-items: center;
+		padding: 18px 21px;
+		&:first-child {
+			background: $grey-100;
+		}
+		&:nth-child(2n + 3) {
+			background: $grey-100;
+		}
+		@include mediaBreaks('mobile') {
+			padding: 18px 19px;
+		}
+	}
+	&--productSpecificationGroup {
+		&:not(:first-child) {
+			margin-top: 25px;
+			@include mediaBreaks('mobile') {
+				margin-top: 7px;
+			}
+		}
+	}
+	&--shelf_prices {
+		min-height: 39px;
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-start;
+		text-align: left;
+
+		& :global(.vtex-store-components-3-x-container) {
+			margin: 0px !important;
+		}
+	}
+}
+
+.flexRowContent {
+	&--pdp {
+		&-main {
+			&-controls {
+				justify-content: flex-start;
+				max-width: 448px;
+				margin-top: 37px;
+				@include mediaBreaks('mobile') {
+					margin-top: 27px;
+				}
+				@include mediaBreaks('tablet') {
+					flex-direction: column;
+					max-width: 100% !important;
+				}
+
+				& .stretchChildrenWidth {
+					flex: 1;
+					&:last-child {
+						@include mediaBreaks('mobile') {
+							height: 54px;
+						}
+					}
+					&:first-child {
+						@include mediaBreaks('tablet') {
+							padding-right: 0px !important;
+						}
+					}
+				}
+			}
+			@include mediaBreaks('tablet') {
+				flex-direction: column;
+				align-items: center;
+			}
+			& .stretchChildrenWidth {
+				@include mediaBreaks('tablet') {
+					width: 100% !important;
+				}
+			}
+			@include mediaBreaks('tablet') {
+				position: relative;
+			}
+		}
+		&-collection-flags {
+			@include mediaBreaks('tablet') {
+				justify-content: center;
+			}
+		}
+
+		&-brand-and-wishlist {
+			@include mediaBreaks('tablet') {
+				justify-content: center;
+				text-align: center;
+			}
+			.stretchChildrenWidth {
+				&:first-child {
+					@include mediaBreaks('tablet') {
+						padding-right: 0px !important;
+					}
+				}
+				&:last-child {
+					@include responsive('md', 'min') {
+						max-height: 24px;
+					}
+					@include mediaBreaks('tablet') {
+						position: absolute;
+						top: -10px;
+						z-index: 2;
+						justify-content: flex-end;
+					}
+				}
+			}
+		}
+	}
+
+	&--legal-message {
+		/* Legal Message */
+		background-color: $grey-200;
+		border-radius: 4px;
+		font-weight: 500;
+		margin-top: 32px;
+		max-width: 448px;
+
+		@include mediaBreaks('mobile') {
+			margin-top: 13px;
+		}
+	}
+
+	&--productSpecificationGroupName {
+		min-height: 52px;
+		display: flex;
+		padding: 18px 21px;
+		align-items: flex-end;
+		padding-top: 0px;
+		padding-bottom: 12px;
+
+		@include mediaBreaks('mobile') {
+			padding: 0px 19px 8px 19px;
+		}
+	}
+
+	&--shelf_prices {
+		flex-direction: column !important;
+
+		& .stretchChildrenWidth {
+			width: auto !important;
+		}
+	}
+}
+
+.flexCol {
+	&--pdp {
+		&-main {
+			&-content {
+				margin-left: 9px;
+				@include mediaBreaks('tablet') {
+					margin: 0px;
+				}
+			}
+		}
+		&-shipping {
+			&-information {
+				padding: 14px 20px 13px 39px;
+				border-radius: 4px;
+				background-color: $grey-200;
+				position: relative;
+				@include mediaBreaks('mobile') {
+					padding: 14px 16px 13px 39px;
+				}
+			}
+		}
+	}
+	&--product-highlights-container{
+		@include mediaBreaks('mobile') {
+			height: 0px;
+		}
+	}
+}
+
+.flexColChild {
+	&--productSpecificationName {
+		max-width: 150px;
+		@include mediaBreaks('mobile') {
+			max-width: 94px;
+		}
+	}
+	&--pdp {
+		&-main {
+			&-content {
+				@include mediaBreaks('tablet') {
+					text-align: center;
+				}
+			}
+		}
+	}
+}

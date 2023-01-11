@@ -1,0 +1,734 @@
+#payment-data {
+	background: $white;
+
+	body[data-current='payment'] & {
+		@include responsive('md', 'min') {
+			box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+		}
+	}
+
+	.accordion-group.active {
+		padding: 18px 22px;
+
+		.accordion-heading {
+			height: 40px;
+			padding-bottom: 7px;
+			position: relative;
+			display: flex;
+			align-items: center;
+
+			&:before {
+				content: '';
+				position: absolute;
+				width: 34px;
+				height: 34px;
+				right: 110px;
+				@include icn_lock($grey800);
+				background-repeat: no-repeat;
+				background-size: cover;
+
+				@include responsive('md') {
+					width: 25px;
+					height: 25px;
+					right: 70px;
+					border-right: 1px solid $grey500;
+				}
+			}
+
+			&:after {
+				content: 'Compra 100% segura';
+				position: absolute;
+				top: 0;
+				right: 0;
+				text-align: center;
+				width: 81px;
+				height: 40px;
+				color: $grey800;
+				display: flex;
+				align-items: center;
+				margin-left: 3px;
+				border-left: 1px solid $grey500;
+				padding-left: 16px;
+				@include typographyOverline;
+				@include responsive('md') {
+					padding-left: 0;
+					width: 68px;
+					border-left: none;
+				}
+			}
+
+			@include responsive('md') {
+				padding-bottom: 15px;
+			}
+
+			.accordion-toggle {
+				color: currentColor;
+				display: flex;
+				align-items: center;
+				padding: 0;
+				color: $secondaryLight;
+
+				.icon-credit-card {
+					&:after {
+						content: '';
+						@include icn_payment($secondaryLight);
+						display: inline-block;
+						background-repeat: no-repeat;
+						background-size: cover;
+						margin-right: 7px;
+						height: 37px;
+						width: 37px;
+					}
+
+					&:before {
+						content: '';
+					}
+				}
+
+				a {
+					background: $white;
+					border: none;
+					font-size: 0;
+					opacity: 1;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					padding: 0;
+					display: flex;
+					align-items: center;
+					outline: none;
+
+					i.icon-edit {
+						&:after {
+							content: '';
+							@include icn_edit($secondaryLight);
+							display: inline-block;
+							background-repeat: no-repeat;
+							background-size: cover;
+							height: 22px;
+							width: 22px;
+						}
+
+						&:before {
+							content: '';
+						}
+					}
+				}
+			}
+		}
+
+		.accordion-body {
+			.accordion-inner {
+				padding: 0;
+
+				form {
+					display: flex;
+
+					.payment-group {
+						margin: 0 !important;
+						.payment-group-list-btn {
+							width: auto;
+
+							@include responsive('md') {
+								display: flex;
+								justify-content: flex-start;
+								flex-wrap: wrap;
+							}
+
+							a {
+								width: 175px;
+								height: 44px;
+								background: $grey200;
+								padding: 16px 12px;
+								box-sizing: border-box;
+								border-radius: 0px;
+								margin: 0 0 7px;
+								display: flex;
+								align-items: center;
+								justify-content: space-between;
+								text-decoration: none;
+
+								@include responsive('md') {
+									width: 31.5%;
+									max-width: 130px;
+									text-align: center;
+									height: 60px;
+									padding: 25px 13px;
+									border: none;
+									margin: 0 2px 4px 2px;
+									display: flex;
+									justify-content: center;
+									align-items: center;
+								}
+
+								span {
+									color: $grey600;
+									text-transform: uppercase;
+									background-image: none;
+									@include typographyCaption;
+									@include responsive('md') {
+										text-align: center;
+									}
+								}
+
+								&.pg-pagofacil {
+									padding: 0;
+									padding: 0 12px;
+
+									span {
+										display: block;
+										width: 100%;
+										height: 100%;
+										font-size: 0;
+										position: relative;
+
+										&::before {
+											display: block;
+											position: absolute;
+											content: 'Pagofá' 'cil / Rapipago';
+											text-transform: uppercase;
+											top: 0;
+											left: 0;
+											right: 0;
+											bottom: 0;
+											margin: auto;
+											display: flex;
+											align-items: center;
+											justify-content: flex-start;
+											align-content: center;
+											@include typographyCaption;
+
+											@include responsive('md') {
+												justify-content: center;
+											}
+										}
+									}
+								}
+
+								@include responsive('md', 'min') {
+									&:after,
+									&.active:after {
+										content: '';
+										display: inline-block;
+										@include angle-right($grey600);
+										height: 14px;
+										width: 14px;
+									}
+								}
+
+								&.active {
+									background: $grey300;
+									span {
+										color: $grey700;
+									}
+									&:after {
+										@include angle-right($grey700);
+									}
+									&:hover {
+										span {
+											color: $grey800;
+										}
+										&:after {
+											@include angle-right($grey800);
+										}
+									}
+								}
+
+								&:hover {
+									text-decoration: none;
+									color: $primaryLight;
+								}
+							}
+						}
+					}
+
+					.steps-view {
+						width: 100%;
+						background: #fff;
+						padding: 0 26px 0;
+						@include responsive('md') {
+							padding: 0;
+						}
+					}
+				}
+
+				// TODO PAGO:
+
+				.todoPagoPaymentGroup {
+					.payment-todopago {
+						&-title {
+							margin-bottom: 30px;
+						}
+
+						&-description {
+							margin-bottom: 15px;
+						}
+
+						&-benefits {
+							display: grid;
+							grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+
+							&::before {
+								display: none;
+							}
+						}
+
+						&-benefit {
+							width: 100%;
+
+							@media screen and (min-width: 491px) {
+								min-height: 110px;
+
+								&-payment {
+									background-position: center 30px;
+								}
+								&-interest {
+									background-position: center -120px;
+								}
+								&-safe {
+									background-position: center -265px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.accordion-group {
+		padding: 18px 22px;
+
+		.accordion-heading {
+			.accordion-toggle {
+				font-size: 0;
+				color: $grey500;
+				display: flex;
+				align-items: center;
+				padding: 0;
+				&:after {
+					content: 'Mé' 'todo de pago';
+					@include typographyBody1;
+				}
+
+				.icon-credit-card {
+					&:after {
+						content: '';
+						@include icn_payment($grey500);
+						display: inline-block;
+						background-repeat: no-repeat;
+						background-size: cover;
+						height: 37px;
+						width: 37px;
+						margin-right: 7px;
+					}
+
+					&:before {
+						content: '';
+					}
+				}
+
+				a {
+					display: none;
+				}
+			}
+		}
+
+		.accordion-body {
+			.accordion-inner {
+				padding: 13px 0;
+
+				.notification {
+					@include responsive('md') {
+						padding-left: 47px;
+					}
+				}
+
+				form {
+					display: flex;
+
+					.payment-group-list-btn {
+						width: auto;
+
+						a {
+							width: 175px;
+							height: 44px;
+							background: $grey100;
+							padding: 16px 12px;
+							box-sizing: border-box;
+							border-radius: 0px;
+							margin: 0 0 7px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							text-decoration: none;
+							border: none;
+
+							span {
+								color: $primaryLight;
+								@include typographyCaption;
+								text-transform: uppercase;
+							}
+
+							&.active {
+								background: $grey200;
+							}
+
+							&:hover {
+								text-decoration: none;
+								color: $primaryLight;
+							}
+						}
+					}
+
+					.steps-view {
+						width: 100%;
+						background: #fff;
+						padding: 0 26px 0;
+					}
+				}
+			}
+		}
+	}
+
+	.bank-invoice {
+		&-pagofacil {
+			&::after {
+				display: block;
+				content: '';
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				bottom: 15px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				@include pagofacil;
+			}
+		}
+
+		&-rapipago {
+			&::after {
+				display: block;
+				content: '';
+				width: 75px;
+				height: 28px;
+				position: absolute;
+				bottom: 20px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				@include rapipago;
+			}
+		}
+
+		&-redlink {
+			&::after {
+				display: block;
+				content: '';
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				bottom: 15px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				@include redlink;
+			}
+		}
+	}
+}
+
+#app-container {
+	select {
+		@include arrow-down($primaryDark);
+		background-repeat: no-repeat;
+		background-position: calc(100% - 10px) 50%;
+	}
+
+	input[type='radio'] {
+		-webkit-appearance: none;
+		outline: none;
+		border: none !important;
+		width: 16px;
+		height: 16px;
+		@include icn-radio-unchecked($grey500);
+	}
+	input[type='radio']:checked {
+		@include icn-radio-checked($secondaryMain);
+	}
+	.CardForm {
+		.PaymentCardNumber {
+			label {
+				margin-top: 0;
+				line-height: 14px;
+			}
+
+			input {
+				width: 343px;
+				height: 40px;
+				border: 1px solid $grey200;
+				background: $white;
+			}
+		}
+
+		.PaymentCardValue {
+			.input-prepend {
+				display: flex;
+				max-width: 300px;
+				position: relative;
+				margin-bottom: 30px;
+
+				.add-on {
+					width: 40px;
+					height: 40px;
+					line-height: 40px;
+					border-radius: 0;
+					border: none;
+				}
+
+				input {
+					text-align: left;
+				}
+
+				.help.error {
+					position: absolute;
+					top: 100%;
+					left: 40px;
+				}
+			}
+		}
+
+		.PaymentCardFlags {
+			.card-flags {
+				margin: 12px 0;
+				display: grid;
+				grid-gap: 6px;
+				grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+
+				label {
+					margin: auto;
+					width: 90px;
+					height: 46px;
+					border: 1px solid $grey200;
+					border-radius: 23px;
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 0;
+					border-color: $grey200;
+				}
+			}
+		}
+
+		.PaymentInstallments {
+			select {
+				width: 343px;
+			}
+		}
+
+		.PaymentCardHolderName {
+			label {
+				margin-top: 14px;
+				margin-bottom: 6px;
+				color: $primaryMain !important;
+				@include typographyCaption;
+			}
+
+			input {
+				width: 343px;
+				height: 40px;
+				border: 1px solid $grey200;
+				background: $white;
+				border-radius: 0px;
+				box-sizing: border-box;
+				padding: 12px 14px;
+				@include typographyCaption;
+			}
+		}
+
+		.PaymentCardDueDate {
+			display: flex;
+			align-items: flex-start;
+			margin-top: 12px;
+
+			label {
+				width: auto;
+				padding: 0;
+				margin-top: 12px;
+				margin-bottom: 6px;
+				color: $primaryMain !important;
+				margin-right: 12px;
+				@include typographyCaption;
+			}
+
+			.payment-card-due-month,
+			.payment-card-due-year {
+				height: 40px;
+				width: 85px;
+				margin: 0;
+				@include responsive('md') {
+					height: auto;
+				}
+			}
+
+			.payment-card-lash {
+				margin: 0 7px;
+				@include responsive('md') {
+					line-height: 48px;
+				}
+			}
+		}
+
+		.PaymentCardCVV {
+			display: flex;
+			align-items: center;
+			margin: 12px 0 0;
+			position: relative;
+
+			.PaymentCardCVVHelp {
+				top: 0px;
+				right: initial;
+				left: 240px;
+				top: -100%;
+				margin: 0;
+				height: 25px;
+				width: 108px;
+				text-align: center;
+				@include typographyOverline;
+
+				@include responsive('xs') {
+					left: 135px;
+					top: -120px;
+				}
+			}
+
+			@include responsive('md') {
+				flex-wrap: wrap;
+				margin-bottom: 38px;
+			}
+
+			label {
+				margin: 0 20px 0 0;
+				width: auto;
+			}
+
+			input {
+				width: 85px;
+				height: 40px;
+				border: 1px solid $grey200;
+				background: $white;
+				border-radius: 0px;
+				box-sizing: border-box;
+				padding: 12px 14px;
+				@include typographyCaption;
+			}
+			.help.error {
+				position: absolute;
+				top: 100%;
+				left: 148px;
+				@include responsive('md') {
+					margin-left: 0;
+				}
+			}
+		}
+		.PaymentCardNumber,
+		.PaymentInstallments,
+		.PaymentCardHolderName {
+			input,
+			select {
+				@include responsive('md') {
+					width: 100%;
+					height: 48px;
+				}
+			}
+		}
+	}
+	.SecurityEnvironmentIcon {
+		display: none;
+		@include responsive('md', 'min') {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			margin: 0;
+			background: #fff;
+			border-radius: 0;
+
+			i.icon-lock {
+				margin-right: 10px;
+
+				&:after {
+					content: '';
+					@include icn_lock($primaryMain);
+					display: inline-block;
+					width: 39px;
+					height: 39px;
+					background-repeat: no-repeat;
+					background-size: cover;
+				}
+
+				&:before {
+					content: '';
+				}
+			}
+
+			span {
+				font-size: 0;
+				display: inline-block;
+				border-left: 1px solid $grey500;
+				padding-left: 16px;
+				text-align: center;
+				width: 80px;
+
+				&:after {
+					content: 'Compra 100% segura';
+					color: $grey600;
+					@include typographyCaption;
+				}
+			}
+		}
+	}
+}
+
+body[data-current='profile'],
+body[data-current='shipping'] {
+	#payment-data {
+		box-shadow: none;
+		float: right;
+		margin-right: 12px;
+		width: calc(50% - 12px);
+
+		@include responsive('md') {
+			background: rgba($grey100, 0.5);
+			width: 100%;
+			float: none;
+			clear: both;
+
+			&.payment-data .step {
+				background: transparent;
+			}
+		}
+
+		.accordion-group {
+			.accordion-heading {
+				.accordion-toggle {
+					color: $grey600;
+
+					.icon-credit-card {
+						&:after {
+							@include icn_payment($grey600);
+						}
+					}
+				}
+			}
+
+			.accordion-inner {
+				.notification {
+					color: $grey500;
+					@include typographyBody2;
+				}
+			}
+		}
+	}
+}

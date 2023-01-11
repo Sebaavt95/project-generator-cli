@@ -1,0 +1,66 @@
+{
+    "store.custom#institutional-merca-online-terms": {
+        "blocks": [
+			"responsive-layout.desktop#merca-online-terms",
+			"responsive-layout.tablet#merca-online-terms",
+			"responsive-layout.phone#merca-online-terms"
+		]
+    },
+    "responsive-layout.desktop#merca-online-terms": {
+		"children": ["flex-layout.row#institutional-header-merca-online-terms", "flex-layout.row#institutional-content-merca-online-terms"]
+	},
+	"responsive-layout.tablet#merca-online-terms": {
+		"children": ["flex-layout.row#institutional-header-merca-online-terms", "flex-layout.row#institutional-content-merca-online-terms"]
+	},
+	"responsive-layout.phone#merca-online-terms": {
+		"children": ["flex-layout.row#institutional-header-merca-online-terms-phone", "flex-layout.row#institutional-content-merca-online-terms"]
+    },
+    "flex-layout.row#institutional-header-merca-online-terms": {
+		"children": ["rich-text#institutional-title-merca-online-terms"],
+		"props": {
+			"blockClass": "institutional-title-container"
+		}
+	},
+    "rich-text#institutional-title-merca-online-terms": {
+		"props": {
+			"text": "### Terminos y Condiciones: Merca Online",
+			"textPosition": "CENTER",
+            "textAlignment": "CENTER",
+			"blockClass": "institutional-title"
+		}
+	},
+    "flex-layout.row#institutional-header-merca-online-terms-phone": {
+		"children": ["rich-text#institutional-title-merca-online-terms-phone"],
+		"props": {
+			"blockClass": "institutional-title-container"
+		}
+	},
+    "rich-text#institutional-title-merca-online-terms-phone": {
+		"props": {
+			"text": "### Terminos y Condiciones:\n ### Merca Online",
+			"textPosition": "CENTER",
+            "textAlignment": "CENTER",
+			"blockClass": "institutional-title-long-extension"
+		}
+	},
+    "flex-layout.row#institutional-content-merca-online-terms": {
+		"children": ["flex-layout.col#institutional-content-merca-online-terms"],
+		"props": {
+			"blockClass":"institutional-content"
+		}
+	},
+    "flex-layout.col#institutional-content-merca-online-terms": {
+		"children": [
+			"rich-text#institutional-content-merca-online-terms-text-1"
+			]
+	},
+    "rich-text#institutional-content-merca-online-terms-text-1": {
+		"props": {
+			"text": "Términos y condiciones: “MERCAONLINE” Válido solo en [mercaldas.com](/), vigencia de la actividad junio 26 del 2021 a partir de las 12:01 a.m. hasta las 11:59 p.m. o hasta agotar existencias dentro de esta vigencia (lo que suceda primero). Aplican pagos con tarjetas débito,crédito y contra entrega. Las compras de pequeños electrodomésticos a través de [mercaldas.com](/) se entregarán dentro de los tres (3) días hábiles siguientes, y para productos de supermercado el envío se realizará de acuerdo con la franja horaria seleccionada por el cliente. El costo del domicilio tendrá un cargo adicional dependiendo del peso y el sector, no aplica para el servicio a domicilio gratis si tu pedido no llega en 60 minutos.",
+			"textAlignment": "LEFT",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-text"
+		}
+    }    
+
+}

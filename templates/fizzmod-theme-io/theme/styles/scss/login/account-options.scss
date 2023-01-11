@@ -1,0 +1,35 @@
+.accountOptions {
+	padding: 22px;
+
+	& :global(.b--muted-4) {
+		margin: 0;
+
+		&:last-child {
+			margin: 0;
+			padding-top: 18px;
+			border-top: 2px solid $grey-200;
+		}
+	}
+	& .profile-item,
+	& .logoutButton {
+		font-family: $fontFamily;
+		font-size: 15px;
+		letter-spacing: 0;
+		line-height: 18px;
+		color: $grey-800;
+
+		&:hover {
+			color: $secondary-dark;
+			font-weight: bold;
+		}
+	}
+	& .profile-item {
+		padding: 0;
+		margin-bottom: 20px;
+	}
+}
+
+.accountOptionsSectionTitle,
+.accountOptions :global(hr) {
+	display: none;
+}

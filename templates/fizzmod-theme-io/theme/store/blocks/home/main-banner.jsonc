@@ -1,0 +1,35 @@
+{
+  "flex-layout.row#main-banner": {
+    "children": [
+      "list-context.image-list#main-banner"    
+    ]
+  },
+  "list-context.image-list#main-banner": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      
+      "height": 650,
+      "images": [
+        {
+          "image": "https://via.placeholder.com/1281x401.png",
+          "description": "something something"
+        },
+        {
+          "image": "https://via.placeholder.com/1281x401.png",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "blockClass": "main-slider-banner",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  }
+}

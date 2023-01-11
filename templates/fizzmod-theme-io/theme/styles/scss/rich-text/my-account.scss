@@ -1,0 +1,16 @@
+.container {
+	&--my-account-breadcrumb {
+		@include typographyCaption;
+		padding: 0;
+		margin-left: 30px;
+		margin-top: 5px;
+		color: $secondary-dark;
+	}
+}
+
+.link {
+	&--my-account-breadcrumb {
+		text-decoration: none;
+		color: $grey-500;
+	}
+}

@@ -1,0 +1,101 @@
+{
+  "flex-layout.row#offers2": {
+    "children": [      
+      "responsive-layout.phone#offers2-row"
+    ],
+    "props": {
+      "blockClass": "offer-two-img",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "responsive-layout.phone#offers2-row": {
+    "children": ["flex-layout.col#col1", "flex-layout.col#col2"]    
+  },
+
+  // "flex-layout.row#offer-row--phone": {
+  //   "children": ["image#offer2--phone"],
+  //   "props": {
+  //     "blockClass": "offer-two-img",
+  //     "horizontalAlign": "center",
+  //     "preventHorizontalStretch": true,
+  //     "preventVerticalStretch": true,
+  //     "fullWidth": true
+  //   }
+  // },
+  // "flex-layout.col#offer-row2--phone": {
+  //   "children": ["flex-layout.col#offers2-col1", "flex-layout.col#offers2-col2"]
+    
+  // },
+  
+  
+  // "flex-layout.col#offer-col1-promo": {
+  //   "children": []
+  // },
+
+  "flex-layout.col#offers2-col1": {
+    "children": ["image#img-1-phone"],
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "offers2-col1"
+    }
+  },
+  "flex-layout.col#offers2-col2": {
+    "children": ["image#img-2-phone"],
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "image#img-1-phone": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png"
+    }
+  },
+  "image#img-2-phone": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png"
+    }
+  }
+  // ,
+  //     "image#offer2--desktop": {
+  //       "props": {
+  //         "src": "https://via.placeholder.com/682x414.png",
+  //         "max-height": 414,
+  //         "blockClass": "offer-img-1"
+  //       }
+  //     },
+  //     "image#offer3--desktop": {
+  //       "props": {
+  //         "src": "https://via.placeholder.com/535x414.png",
+  //         "max-height": 414,
+  //         "blockClass": "offer-img-2"
+  //       }
+  //     },
+  //     "image#offer1--tablet": {
+  //       "props": {
+  //         "src": "https://via.placeholder.com/1024x414.png",
+  //         "blockClass": "offer-tablet"
+  //       }
+  //     },
+  //     "image#offer2--tablet": {
+  //       "props": {
+  //         "src": "https://via.placeholder.com/1024x414.png",
+  //         "blockClass": "offer-tablet"
+  //       }
+  //     },
+  //     "image#offer2--phone": {
+  //       "props": {
+  //         "src": "https://via.placeholder.com/400x172.png",
+  //         "max-height": 172,
+  //         "blockClass": "offer-img-1"
+  //       }
+  //     }
+}

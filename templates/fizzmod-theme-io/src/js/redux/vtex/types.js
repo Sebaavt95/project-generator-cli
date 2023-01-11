@@ -1,0 +1,5 @@
+export default {
+	UPDATE_USER: 'vtex/UPDATE_USER',
+	UPDATE_LOADED_SC: 'UPDATE_LOADED_SC',
+	UPDATE_SC: 'UPDATE_SC'
+};

@@ -1,0 +1,36 @@
+.slideChildrenContainer {
+	&--main__banner__slider {
+		max-width: 1024px;
+
+		@include mediaBreaks('mobile') {
+			width: 100% !important;
+		}
+	}
+	&--slider-info-store {
+		padding: 20px 0px 20px 0px;
+	}
+}
+
+.sliderArrows {
+	&--main__banner__slider {
+		width: 50px;
+		height: 63px;
+
+		&:hover {
+			background-color: $transparent-dark !important;
+			border-radius: 4px;
+		}
+	}
+}
+
+.sliderLeftArrow {
+	&--main__banner__slider {
+		margin-left: 36px;
+	}
+}
+
+.sliderRightArrow {
+	&--main__banner__slider {
+		margin-right: 36px;
+	}
+}

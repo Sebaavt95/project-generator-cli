@@ -1,0 +1,76 @@
+.buttonText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.buttonText::before {
+  content: "\e94a";
+  font-family: "mercaldas";
+  font-size: 32px;
+  margin-right: 5px;
+}
+
+@media (max-width: 1023px) {
+  /* Internal product */
+  .buttonDataContainer--pdp-add-to-cart-btn {
+    padding: 11px 0;
+  }
+}
+.buttonDataContainer--plp-add-btn {
+  margin: 9px 0;
+}
+
+.buttonText--plp-add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-transform: initial;
+  height: 18px;
+  font-size: 15px;
+}
+.buttonText--plp-add-btn::before {
+  content: "\e94a";
+  font-family: "mercaldas";
+  font-size: 32px;
+  margin-right: 5px;
+}
+
+@media (max-width: 1023px) {
+  .buttonText--plp-add-btn::before {
+    content: "\e94a";
+    font-family: "mercaldas";
+    font-size: 32px;
+    margin-right: 18px;
+    transform: translateX(0);
+  }
+}
+@media (max-width: 513px) {
+  .buttonText--plp-add-btn::before {
+    margin-right: 5px;
+  }
+}
+
+.buttonText--wishlist::before {
+  display: none;
+}
+@media (max-width: 1160px) {
+  .buttonText--wishlist {
+    font-size: 0;
+  }
+  .buttonText--wishlist::before {
+    display: flex;
+    margin-right: 3px;
+  }
+}
+@media (max-width: 639px) {
+  .buttonText--wishlist {
+    font-size: initial;
+  }
+  .buttonText--wishlist::before {
+    display: none;
+  }
+}

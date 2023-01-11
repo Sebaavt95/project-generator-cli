@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WithErrorBoundary with Error render null 1`] = `""`;
+
+exports[`WithErrorBoundary without Error render ok 1`] = `<ChildComp />`;

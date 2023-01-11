@@ -1,0 +1,46 @@
+{
+    "flex-layout.row#offer-slider-container":{
+        "children": [
+            "list-context.image-list#offer-slider-container"        
+        ]
+    },
+    "list-context.image-list#offer-slider-container": {
+        "children": ["slider-layout#offer-slider"],
+        "props": {
+          "images": [
+            {
+              "image": "https://via.placeholder.com/1235x420.png",
+              "mobileImage": "https://via.placeholder.com/1024x113.png",
+              "max-height": 420
+            },
+            {
+              "image": "https://via.placeholder.com/1235x420.png",
+              "mobileImage": "https://via.placeholder.com/1024x113.png",
+              "max-height": 420
+            },
+            {
+              "image": "https://via.placeholder.com/1235x158.png",
+              "mobileImage": "https://via.placeholder.com/1024x113.png",
+              "max-height": 420
+            }
+          ]
+        }
+      },
+      "slider-layout#offer-slider": {
+        "props": {
+          "blockClass": "offer-slider",
+          
+          "autoplay": {
+            "timeout": 3000,
+            "stopOnHover": true
+          },
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true
+        }
+      }
+      
+}

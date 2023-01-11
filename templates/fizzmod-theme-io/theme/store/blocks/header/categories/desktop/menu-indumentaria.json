@@ -1,0 +1,91 @@
+
+		{
+			
+  "menu-item#indumentaria": {
+   "props": {
+    "id": "4/indumentaria",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "department"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/indumentaria",
+     "noFollow": false,
+     "tagTitle": "Indumentaria",
+     "text": "Indumentaria"
+    }
+   },
+   "blocks": ["vtex.menu@2.x:submenu#indumentaria-categories"]
+  }
+	
+			,"vtex.menu@2.x:submenu#indumentaria-categories": {
+				"children": ["vtex.menu@2.x:menu#indumentaria-categories"]
+			},
+			"vtex.menu@2.x:menu#indumentaria-categories": {
+				"props": {
+				"orientation": "vertical"
+				},
+				"children": ["menu-item#remeras","menu-item#asd","menu-item#camisetas"]
+			}
+		
+ ,
+  "menu-item#remeras": {
+   "props": {
+    "id": "27/remeras",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/indumentaria/remeras",
+     "noFollow": false,
+     "tagTitle": "Remeras",
+     "text": "Remeras"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#asd": {
+   "props": {
+    "id": "28/asd",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/indumentaria/asd",
+     "noFollow": false,
+     "tagTitle": "asd",
+     "text": "asd"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#camisetas": {
+   "props": {
+    "id": "31/camisetas",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/indumentaria/camisetas",
+     "noFollow": false,
+     "tagTitle": "Camisetas",
+     "text": "Camisetas"
+    }
+   },
+   "blocks": []
+  }
+	
+ 
+		}
+	

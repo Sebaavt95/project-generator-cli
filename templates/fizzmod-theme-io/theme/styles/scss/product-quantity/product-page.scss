@@ -1,0 +1,187 @@
+/* Product Page */
+
+.quantitySelectorContainer {
+	&--pdp {
+		&-product {
+			&-quantity {
+				margin: 0;
+				@include mediaBreaks('tablet') {
+					margin-bottom: 9px;
+				}
+			}
+		}
+	}
+}
+
+.quantitySelectorStepper {
+	&--pdp {
+		&-product {
+			&-quantity {
+				& :global(.vtex-numeric-stepper__minus-button),
+				& :global(.vtex-numeric-stepper__plus-button) {
+					border: none !important;
+					border-radius: 4px !important;
+
+					&:focus,
+					&:active,
+					&:visited {
+						border-color: transparent;
+						outline-color: transparent;
+					}
+
+					@include mediaBreaks('tablet') {
+						width: 81px !important;
+					}
+
+					@include responsive('md', 'min') {
+						width: 69px !important;
+					}
+				}
+
+				& :global(.vtex-numeric-stepper__input) {
+					margin: 0;
+					padding: 0;
+					border: none;
+					color: $grey-800;
+					font-weight: 500;
+					width: 84px;
+					font-family: $fontFamily;
+					font-size: 14px;
+
+					&:focus {
+						border: none;
+						border-radius: 0;
+						background-color: transparent;
+						border-color: transparent;
+						outline-color: transparent;
+					}
+
+					@include mediaBreaks('tablet') {
+						flex: 1;
+					}
+				}
+
+				& :global(.vtex-numeric-stepper__minus-button),
+				& :global(.vtex-numeric-stepper__plus-button),
+				& :global(.vtex-numeric-stepper__input) {
+					height: 62px;
+
+					@include mediaBreaks('tablet') {
+						height: 54px;
+					}
+				}
+
+				& :global(.vtex-numeric-stepper__minus-button__text),
+				& :global(.vtex-numeric-stepper__plus-button__text) {
+					font-size: 0;
+				}
+
+				& :global(.vtex-numeric-stepper__minus-button__text) {
+					&::before {
+						content: '\e90b';
+						font-family: 'mercaldas';
+						font-size: 14px;
+						font-weight: 500;
+					}
+				}
+
+				& :global(.vtex-numeric-stepper__plus-button__text) {
+					&::before {
+						content: '\e90c';
+						font-family: 'mercaldas';
+						font-size: 14px;
+						font-weight: 500;
+					}
+				}
+
+				& :global(.vtex-numeric-stepper__minus-button) {
+					background-color: $grey-300;
+
+					&:hover {
+						background-color: $grey-400;
+					}
+				}
+
+				& :global(.vtex-numeric-stepper__plus-button) {
+					background-color: $grey-600;
+					color: $white;
+
+					&:hover {
+						background-color: $grey-700;
+					}
+				}
+
+				& :global(.vtex-numeric-stepper__minus-button__text),
+				&
+					:global(.vtex-numeric-stepper__minus-button):hover
+					:global(.vtex-numeric-stepper__minus-button__text) {
+					color: $grey-700;
+				}
+			}
+		}
+	}
+}
+
+/* Related Product. Internal Product Page */
+
+.quantitySelectorTitle {
+	&--summary {
+		&-quantity {
+			&_pdp {
+				&_shelf {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.quantitySelectorStepper {
+	&--summary {
+		&-quantity {
+			&_pdp {
+				&_shelf {
+					& :global(.vtex-numeric-stepper__input) {
+						margin: auto 0px;
+					}
+
+					& :global(.vtex-numeric-stepper__plus-button) {
+						background-color: $grey-600;
+						border-bottom-left-radius: 4px !important;
+						border-top-left-radius: 4px !important;
+						color: $white;
+						width: 48px;
+						height: 48px;
+					}
+
+					& :global(.vtex-numeric-stepper__minus-button) {
+						border-top-right-radius: 4px !important;
+						border-bottom-right-radius: 4px !important;
+						width: 48px;
+						height: 48px;
+					}
+
+					& :global(.vtex-numeric-stepper__minus-button),
+					& :global(.vtex-numeric-stepper__plus-button) {
+						@include mediaBreaks('mobile') {
+							width: 36px !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.summaryContainer {
+	&--summary {
+		&-quantity {
+			&_pdp {
+				&_shelf {
+					margin: 0px !important;
+					margin-bottom: 6px !important;
+				}
+			}
+		}
+	}
+}

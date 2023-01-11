@@ -1,0 +1,45 @@
+.menuIcon {
+  display: none;
+}
+
+.openIconContainer {
+  padding: 0;
+}
+.openIconContainer::before {
+  content: "\e906";
+  font-family: "mercaldas";
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.closeIconContainer {
+  background-color: #1db779;
+}
+
+.closeIconButton {
+  margin-left: auto;
+}
+.closeIconButton::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  font-family: "mercaldas";
+  font-size: 23px;
+  content: "\e923";
+  color: #ffffff;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.childrenContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer--drawer-header-mobile {
+  background-color: #ffffff;
+}

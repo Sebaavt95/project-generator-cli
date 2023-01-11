@@ -1,0 +1,21 @@
+:global(.vtex-account__page) :global(.vtex-pageHeader__children) :global(.vtex-button) {
+  border-radius: 4px;
+  padding: 15px 25px 12px;
+  margin-bottom: 14px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: $medium;
+  line-height: 18px;
+  text-transform: initial;
+
+  @include mediaBreaks('mobile') {
+    margin: 15px 0 0;
+  }
+}
+
+:global(.vtex-account__page) :global(.vtex-pageHeader__children) {
+  @include mediaBreaks('mobile') {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

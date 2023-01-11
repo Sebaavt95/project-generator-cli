@@ -1,0 +1,294 @@
+/*
+|---------------------------------------------------------------------------------------------------------------------              
+|             2a - MAIN MENU BUTTON       
+|---------------------------------------------------------------------------------------------------------------------
+*/
+.menuItem {
+	&--header-menu-main {
+		height: 48px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: $white;
+		cursor: pointer;
+		position: relative;
+		&:hover {
+			:global(.vtex-menu-2-x-styledLinkContent--header-menu-main)::after {
+				content: '\e908';
+			}
+		}
+	}
+}
+
+.styledLinkContainer {
+	&--header-menu-main {
+		margin-left: 28px;
+		margin-right: 23px;
+	}
+}
+
+.styledLinkContent {
+	&--header-menu-main {
+		display: flex;
+		align-items: center;
+		color: $grey-800;
+		font-size: 14px;
+		line-height: 16px;
+		font-family: $fontFamily;
+		font-weight: $bold;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		&::before {
+			content: '\e906';
+			font-family: 'mercaldas';
+			font-size: 22px;
+			font-weight: $medium;
+			margin-right: 13px;
+		}
+		&::after {
+			content: '\e907';
+			font-family: 'mercaldas';
+			font-size: 14px;
+			font-weight: 100;
+			margin-left: 89px;
+		}
+	}
+}
+
+/*
+|---------------------------------------------------------------------------------------------------------------------              
+|             2b - SECONDARY MENU      
+|---------------------------------------------------------------------------------------------------------------------
+*/
+
+.menuContainer {
+	&--header-menu-secondary-wrapper {
+		justify-content: space-between;
+		padding-left: 8%;
+	}
+}
+
+.styledLinkContainer {
+	&--header-menu-secondary {
+		padding: 14px 0;
+	}
+}
+
+.styledLinkContent {
+	&--header-menu-secondary {
+		font-weight: $medium;
+		font-size: 16px;
+		line-height: 20px;
+		color: $grey-800;
+		transition: all ease 0.2s;
+		&:hover {
+			font-weight: $bold;
+		}
+	}
+}
+
+.menuItem {
+	&--header-menu-secondary {
+		&:last-child .styledLinkContainer--header-menu-secondary {
+			min-width: 67px;
+		}
+	}
+}
+
+/*
+|---------------------------------------------------------------------------------------------------------------------              
+|             2c - DEPARTMENTS/SUBMENU   
+|---------------------------------------------------------------------------------------------------------------------
+*/
+
+.menuContainer {
+	&--menu-categories-mobile {
+		.styledLinkContent::before {
+			font-family: 'mercaldas';
+			width: 28px;
+			height: 28px;
+			font-size: 28px;
+			margin-right: 11px;
+		}
+	}
+}
+
+.submenuContainer {
+	&--menu-departments {
+		position: absolute;
+		bottom: 0;
+		.menuContainerNav {
+			width: 100%;
+			padding: 0px;
+			overflow-y: auto;
+		}
+		:global(.vtex-menu-2-x-styledLinkContainer) {
+			padding: 0;
+			margin: 0;
+		}
+		.styledLinkContent {
+			font-family: $fontFamily;
+			font-size: 14px;
+			letter-spacing: 0;
+			line-height: 16px;
+			color: $secondary-main;
+			white-space: unset;
+		}
+	}
+}
+
+.submenuWrapper {
+	&--menu-departments {
+		height: 0;
+		padding: 0;
+		margin: 0;
+		background-color: transparent;
+		border-bottom: none;
+		cursor: default;
+		transition: height 250ms ease-out 0s;
+		.menuItem {
+			padding: 0;
+			width: 100%;
+			height: 50px;
+			display: flex;
+			align-items: center;
+			white-space: unset;
+			cursor: pointer;
+			padding-bottom: 18px;
+			padding-left: 15px;
+			&:first-child {
+				height: 89px !important;
+				padding-top: 39px !important;
+				padding-bottom: 18px !important;
+			}
+			&:last-child {
+				height: 58px;
+				padding-bottom: 26px;
+			}
+			&::before {
+				font-family: 'mercaldas';
+				width: 28px;
+				height: 28px;
+				font-size: 28px;
+				margin-right: 11px;
+			}
+		}
+	}
+}
+
+.menuItem {
+	&--header-menu-main {
+		&:hover {
+			.submenuWrapper {
+				&--menu-departments {
+					height: 600px;
+				}
+			}
+		}
+	}
+
+	&--department {
+		.menuContainerNav {
+			&::-webkit-scrollbar-track {
+				background: $white;
+			}
+		}
+		:global(.vtex-menu-2-x-submenu) {
+			display: flex;
+			justify-content: flex-start;
+		}
+		:global(.vtex-menu-2-x-menuContainerNav) {
+			width: 274px;
+			padding: 0px;
+			border-right: 1px solid $grey-300;
+			overflow: auto;
+		}
+		:global(.vtex-menu-2-x-menuContainerNav) :global(.vtex-menu-2-x-menuItem) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+
+	&--category-level1 {
+		:global(.vtex-menu-2-x-submenuWrapper) {
+			width: auto;
+			left: -23px;
+			padding: 0;
+			border-bottom: none;
+		}
+	}
+
+	&--category-level2 {
+		:global(.vtex-menu-2-x-submenuWrapper) {
+			width: calc(1280px - (297px + (274px * 2)));
+			border-left: 1px solid $grey-300;
+		}
+	}
+
+	&--category-level1,
+	&--category-level2 {
+		:global(.vtex-menu-2-x-menuContainerNav) {
+			width: 274px;
+			border-right: none;
+			overflow: auto;
+		}
+	}
+
+	&--department,
+	&--category-level1,
+	&--category-level2 {
+		:global(.vtex-menu-2-x-submenuContainer) {
+			position: absolute;
+			top: 0;
+			left: 297px;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	&--department,
+	&--category-level1,
+	&--category-level2 {
+		:global(.vtex-menu-2-x-submenuWrapper) {
+			width: auto;
+			height: 600px;
+			padding: 0;
+			background-color: #fff;
+			border-bottom: none;
+			cursor: default;
+			box-shadow: 10px 1px 7px -9px rgba(0, 0, 0, 0.46);
+		}
+	}
+
+	&--department:hover :global(.vtex-menu-2-x-styledLinkContent--department),
+	&--category-level1:hover :global(.vtex-menu-2-x-styledLinkContent--category-level1),
+	&--category-level2:hover :global(.vtex-menu-2-x-styledLinkContent--category-level2),
+	&--category-level1 :global(.vtex-menu-2-x-styledLinkContent):hover {
+		font-weight: bold !important;
+	}
+}
+
+.submenu {
+	&--menu-departments {
+		width: 297px;
+		background-color: $grey-50;
+		box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.46);
+		.menuContainerNav {
+			direction: rtl;
+			&::-webkit-scrollbar {
+				width: 12px;
+			}
+			&::-webkit-scrollbar-track {
+				background: $grey-50;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: $grey-450;
+				border-radius: 20px;
+				border: 3px solid $grey-50;
+			}
+			.menuContainer {
+				direction: ltr;
+			}
+		}
+	}
+}

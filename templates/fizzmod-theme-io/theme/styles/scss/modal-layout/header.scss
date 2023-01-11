@@ -1,0 +1,17 @@
+.backdropContainer {
+	&--search-bar-modal-mobile {
+		opacity: 0 !important;
+	}
+}
+
+.paper {
+	&--search-bar-modal-mobile {
+		background-color: $grey-100;
+		margin: 0;
+		min-height: 54px;
+		width: 100%;
+		border-radius: 0;
+		position: absolute;
+		top: 54px;
+	}
+}

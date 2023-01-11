@@ -1,0 +1,26 @@
+#!/bin/bash
+DIR=$(git rev-parse --show-toplevel);
+CURRENT_BRANCH=$(git branch | grep '*' | sed 's/* //');
+BRANCH_QA="QA";
+BRANCH_UAT="uat";
+# El set es para que muera si falla internamente el branch check
+Red='\033[1;31m'
+NAME=$(git config user.name)
+
+if [[ $CURRENT_BRANCH != $BRANCH_QA && $CURRENT_BRANCH != $BRANCH_UAT ]]; then
+	if [[ -f ${DIR}/.qa ]]; then
+		echo ""
+		echo ""
+		echo -e "\t${Red}CUIDADO ${NAME}${RCol}, Esta branch fue creada desde de QA!"
+		echo ""
+		echo ""
+		exit 1
+	elif [[ -f ${DIR}/.uat ]]; then
+		echo ""
+		echo ""
+		echo -e "\t${Red}CUIDADO ${NAME}${RCol}, Esta branch fue creada desde de UAT!"
+		echo ""
+		echo ""
+		exit 1
+	fi
+fi

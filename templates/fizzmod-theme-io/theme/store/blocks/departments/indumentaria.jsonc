@@ -1,0 +1,307 @@
+{
+  "store.custom#indumentaria": {
+    "blocks": [
+      "responsive-layout.desktop#department--4",
+      "responsive-layout.tablet#department--4",
+      "responsive-layout.phone#department--4"
+    ]
+  },
+  "responsive-layout.desktop#department--4": {
+    "children": [
+      "flex-layout.row#department-container--4"
+    ]
+  },
+  "flex-layout.row#department-container--4": {
+    "props": {
+      "blockClass": "department-container"
+    },
+    "children": [
+      "flex-layout.col#department-content--4"
+    ]
+  },
+  "responsive-layout.tablet#department--4": {
+    "children": [
+      "flex-layout.row#department-container--4"
+    ]
+  },
+  "responsive-layout.phone#department--4": {
+    "children": [
+      "flex-layout.row#department-container--4"
+    ]
+  },
+  "flex-layout.col#department-content--4": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#department-main-banner--4",
+      "rich-text#department-title--4",
+      "flex-layout.row#categories-cards--4"
+    ]
+  },
+  "flex-layout.row#department-main-banner--4": {
+    "props": {
+      "blockClass": "department__main__banner__container",
+      "horizontalAlign": "center",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#department-main-banner-slider--4"
+    ]
+  },
+  "flex-layout.col#department-main-banner-slider--4": {
+    "props": {
+      "blockClass": "department__main__banner__slider__container",
+      "fullWidth": true
+    },
+    "children": [
+      "list-context.image-list#department-main-banner-list-images--4"
+    ]
+  },
+  "list-context.image-list#department-main-banner-list-images--4": {
+    "children": [
+      "slider-layout#department-main-banner-slider--4"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "https://via.placeholder.com/1239x299.png",
+          "mobileImage": "https://via.placeholder.com/1024x420.png"
+        },
+        {
+          "image": "https://via.placeholder.com/1239x299.png/09F/FFF",
+          "mobileImage": "https://via.placeholder.com/1024x420.png/09F/FFF"
+        },
+        {
+          "image": "https://via.placeholder.com/1239x299.png/08A/FFF",
+          "mobileImage": "https://via.placeholder.com/1024x420.png/08A/FFF"
+        }
+      ]
+    }
+  },
+  "slider-layout#department-main-banner-slider--4": {
+    "props": {
+      "blockClass": "department__main__banner__slider",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "infinite": true
+    }
+  },
+  "rich-text#department-title--4": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Indumentaria",
+      "blockClass": "department-title"
+    }
+  },
+  "flex-layout.row#categories-cards--4": {
+    "children": [
+      "flex-layout.col#category-card--27",
+      "flex-layout.col#category-card--28",
+      "flex-layout.col#category-card--31"
+    ],
+    "props": {
+      "horizontalAlign": "left",
+      "colSizing": "auto",
+      "blockClass": "categories-cards-container"
+    }
+  },
+  "flex-layout.col#category-card--27": {
+    "children": [
+      "flex-layout.col#category-card-top--27",
+      "flex-layout.col#category-card-bottom--27"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--27": {
+    "children": [
+      "image#category-img--27",
+      "rich-text#category-title--27"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--27": {
+    "children": [
+      "rich-text#subcategories-list--27",
+      "link#category-link--27"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--27": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Remeras",
+      "link": "https://fizzmodapps.myvtex.com/indumentaria/remeras",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--27": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Remeras",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--27": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--27": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/indumentaria/remeras",
+      "blockClass": "category-card-cta"
+    }
+  },
+  "flex-layout.col#category-card--28": {
+    "children": [
+      "flex-layout.col#category-card-top--28",
+      "flex-layout.col#category-card-bottom--28"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--28": {
+    "children": [
+      "image#category-img--28",
+      "rich-text#category-title--28"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--28": {
+    "children": [
+      "rich-text#subcategories-list--28",
+      "link#category-link--28"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--28": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "asd",
+      "link": "https://fizzmodapps.myvtex.com/indumentaria/asd",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--28": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### asd",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--28": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--28": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/indumentaria/asd",
+      "blockClass": "category-card-cta"
+    }
+  },
+  "flex-layout.col#category-card--31": {
+    "children": [
+      "flex-layout.col#category-card-top--31",
+      "flex-layout.col#category-card-bottom--31"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--31": {
+    "children": [
+      "image#category-img--31",
+      "rich-text#category-title--31"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--31": {
+    "children": [
+      "rich-text#subcategories-list--31",
+      "link#category-link--31"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--31": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Camisetas",
+      "link": "https://fizzmodapps.myvtex.com/indumentaria/camisetas",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--31": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Camisetas",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--31": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--31": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/indumentaria/camisetas",
+      "blockClass": "category-card-cta"
+    }
+  }
+}

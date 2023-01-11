@@ -1,0 +1,24 @@
+
+		{
+			
+  "menu-item#indumentaria-2-mobile": {
+   "props": {
+    "id": "29/indumentaria-2",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "department-mobile",
+    "itemProps": {
+     "type": "internal",
+     "href": "/indumentaria-2",
+     "noFollow": false,
+     "tagTitle": "Indumentaria 2",
+     "text": "Indumentaria 2"
+    }
+   },
+   "blocks": []
+  }
+	
+ 
+		}
+	

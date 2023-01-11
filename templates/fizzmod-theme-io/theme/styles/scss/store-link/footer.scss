@@ -1,0 +1,46 @@
+.buttonLink {
+	&--checkout-orderplaced-return-buy {
+		height: 48px;
+		width: 319px;
+
+		& .label--checkout-orderplaced-return-buy {
+			@include typographySubtitle2;
+			font-weight: bold;
+			text-align: center;
+			color: $grey-800;
+			border-radius: 0.25rem;
+			text-transform: initial;
+		}
+	}
+}
+
+.link {
+	&--checkout-orderplaced-my-orders {
+		@include flexCenter;
+		height: 48px;
+		width: 319px;
+		border: 2px solid $grey-800;
+		border-radius: 0.25rem;
+
+		& .label--checkout-orderplaced-my-orders {
+			@include typographySubtitle2;
+			font-weight: bold;
+			text-align: center;
+			color: $grey-800;
+		}
+	}
+	&--vtex-logo {
+		&::before {
+			font-size: 60px;
+			top: -5px;
+		}
+	}
+}
+
+.buttonLink--checkout-orderplaced-return-buy,
+.link--checkout-orderplaced-my-orders {
+	@include mediaBreaks('tablet') {
+		height: 54px;
+		width: 290px !important;
+	}
+}

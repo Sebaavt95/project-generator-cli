@@ -1,0 +1,27 @@
+.listPrice {
+	&--list-price-wishlist {
+		color: $grey-600 !important;
+		margin: 0px !important;
+	}
+}
+
+.sellingPrice {
+	&--selling-price-wishlist {
+		margin: 0px !important;
+	}
+}
+
+@media (max-width: 1026px) {
+	.listPrice--list-price-wishlist,
+	.sellingPrice--selling-price-wishlist {
+		font-size: 14px !important;
+		font-family: $fontFamily;
+		font-weight: $medium;
+		line-height: 16px;
+		color: $grey-800 !important;
+	}
+	.listPrice--list-price-wishlist {
+		color: $grey-600 !important;
+		margin-right: 8px !important;
+	}
+}

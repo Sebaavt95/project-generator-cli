@@ -1,0 +1,832 @@
+#shipping-data {
+	background: $white;
+	margin: 0;
+
+	body[data-current='shipping'] & {
+		@include responsive('md', 'min') {
+			box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+		}
+	}
+
+	body[data-current='payment'] &,
+	body[data-current='profile'] & {
+		@include responsive('md') {
+			background: rgba($grey100, 0.5);
+		}
+	}
+
+	.accordion-group.active {
+		padding: 0;
+
+		.accordion-heading {
+			color: $grey400;
+			padding: 18px 22px 0;
+			@include responsive('md') {
+				padding: 0 0 12px;
+			}
+		}
+
+		.accordion-inner {
+			padding: 0px 15px 12px;
+
+			@include responsive('md') {
+				padding: 0;
+			}
+
+			input {
+				& + .help.error {
+					width: 100%;
+				}
+			}
+
+			select {
+				padding: 0 5px;
+				@include angle-down($grey600);
+				border-radius: 0px;
+				height: 40px;
+				&:active {
+					background: $white;
+					box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.17);
+					outline-color: $grey200;
+					@include angle-up($grey600);
+				}
+
+				&,
+				&:active {
+					background-repeat: no-repeat;
+					background-position-y: center;
+					background-position-x: calc(100% - 10px);
+				}
+			}
+
+			/* Store pickup form */
+			.ask-for-geolocation {
+				margin: 22px 0 0;
+				h2 {
+					color: $primaryLight;
+					margin: 0;
+					@include typographyBody2;
+					line-height: 2;
+				}
+
+				h3 {
+					color: $grey400;
+					margin: 0;
+					@include typographyBody2;
+					line-height: 2;
+				}
+
+				.ask-for-geolocation-cta {
+					button {
+						@include button($variant: 'outlined', $color: 'secondary');
+						@include typographySubtitle2;
+						border-radius: initial;
+						margin: 18px 0;
+						box-shadow: none;
+					}
+				}
+			}
+
+			.vtex-omnishipping-1-x-deliveryChannelsWrapper,
+			.vtex-omnishipping-1-x-isLoading {
+				margin: 14px 0 27px;
+				width: 100%;
+				height: 53px;
+				background: $grey200;
+
+				.shipping-method-toggle {
+					background-color: $grey800;
+					border: none;
+					box-shadow: none;
+					height: calc(100% + 1px);
+					top: 0;
+				}
+
+				span {
+					display: inline-block;
+					@include typographySubtitle2;
+					padding-left: 5px;
+					&.shp-method-option-text {
+						@include responsive('md') {
+							@include typographySubtitle2;
+							text-align: center;
+						}
+					}
+					&.shp-method-option-complement {
+						padding-left: 5px;
+
+						@include responsive('md') {
+							@include typographySubtitle2;
+							text-align: center;
+						}
+					}
+				}
+
+				.shp-method-option-inactive {
+					color: $black;
+					@include responsive('md') {
+						padding: 0;
+					}
+				}
+			}
+
+			.vtex-omnishipping-1-x {
+				&-scheduledDeliveryList {
+					border-radius: 0;
+				}
+
+				&-toggleActive {
+					background-color: $secondaryMain;
+				}
+
+				&-scheduledDeliveryOptionsWrapper {
+					margin: 0;
+					border-radius: 0;
+					border: none;
+				}
+
+				&-dateLink {
+					@include button($variant: 'outlined', $color: 'secondary');
+					@include typographySubtitle2;
+					border-radius: initial;
+					margin: 18px 0;
+					box-shadow: none;
+				}
+
+				&-backToAddressList {
+					@include button($color: 'secondary', $variant: 'outlined');
+					@include typographySubtitle2;
+					margin-bottom: 24px;
+					@include responsive('md') {
+						margin-bottom: 20px;
+					}
+				}
+
+				//direcciones
+				&-addressList {
+					margin: 0;
+					.address-item {
+						box-sizing: border-box;
+						min-height: 85px;
+						padding: 13px 0 14px;
+						background-color: $white;
+						box-shadow: none;
+						border-bottom: none;
+						& + .address-item {
+							border-top: 1px solid $grey500;
+						}
+						&:first-child {
+							padding-top: 0;
+						}
+						.shp-option-icon {
+							margin-right: 20px;
+							width: 16px;
+							height: 16px;
+							@include icn-radio-unchecked($grey600);
+							svg {
+								display: none;
+							}
+						}
+						.shp-option-text {
+							color: $grey600;
+							@include typographyBody2;
+							line-height: 19px;
+						}
+						&.vtex-omnishipping-1-x-active {
+							.shp-option-icon {
+								@include icn-radio-checked($primaryMain);
+							}
+							.shp-option-text {
+								color: $grey800;
+							}
+						}
+					}
+					.address-edit button,
+					.address-create button {
+						@include button($color: 'secondary', $variant: 'outlined');
+						@include typographySubtitle2;
+						margin-top: 6px;
+						.icon-edit {
+							display: none;
+						}
+					}
+					.address-create button {
+						margin-top: 8px;
+						@include button($variant: 'outlined');
+						&:hover {
+							.icon-plus:before {
+								@include icn-plus($primaryMain);
+							}
+						}
+						.icon-plus {
+							margin: 0 10px 0 0;
+							&:before {
+								width: 14px;
+								height: 14px;
+								content: '';
+								@include icn-plus($primaryMain);
+								background-size: 14px;
+							}
+							@include responsive('md') {
+								display: none;
+							}
+						}
+					}
+				}
+				&-pickupButton {
+					@include button($variant: 'outlined', $color: 'secondary');
+					@include typographySubtitle2;
+				}
+
+				&-btnDelivery {
+					@include button;
+					@include typographySubtitle2;
+				}
+			}
+
+			.vtex-omnishipping-1-x-content {
+				display: flex;
+				align-items: center;
+			}
+
+			.vtex-omnishipping-1-x-alertPickup {
+				border: none;
+				border-radius: 0px;
+				background-color: rgba(255, 144, 23, 0.1);
+			}
+
+			.vtex-omnishipping-1-x-alertIcon {
+				border: none;
+				&::before {
+					content: '';
+					@include alert($warning);
+					display: inline-block;
+					background-repeat: no-repeat;
+					background-size: cover;
+					margin: 3px 13px 13px 0;
+					height: 17px;
+					width: 17px;
+				}
+				svg {
+					display: none;
+				}
+			}
+
+			.vtex-omnishipping-1-x-text {
+				font-size: 0px;
+				&::before {
+					content: 'Sus í' 'tems no está'
+						'n disponibles para entrega. Usted puede recogerlos en un punto cercano.';
+					color: $warning;
+					padding-right: 10px;
+					display: inline-block;
+					@include typographyCaption;
+				}
+				#shp-unavailable-delivery-available-pickup {
+					display: none;
+				}
+			}
+
+			.vtex-omnishipping-1-x-deliveryChannelsLoader {
+				width: 10px;
+				height: 10px;
+				line-height: 10px;
+				display: block;
+				font-size: 12px;
+				padding: 0 !important;
+				top: calc(50% - 6px);
+				left: 20px;
+			}
+
+			.vtex-omnishipping-1-x-imageAsk.ask-for-geolocation-image-ask,
+			.vtex-omnishipping-1-x-imageAsk.ask-for-geolocation-image-ask {
+				background: $secondaryMain;
+
+				svg {
+					fill: $secondaryMain;
+				}
+			}
+
+			.pickup-point {
+				border: none;
+				padding: 0;
+
+				&-info {
+					background-color: $grey100;
+					padding: 0;
+					svg {
+						display: none;
+					}
+				}
+
+				&-wrapper {
+					padding: 18px 44px;
+
+					button {
+						text-decoration: underline;
+						color: $secondaryLight;
+						@include typographyCaption;
+						padding: 0;
+					}
+				}
+
+				&-name {
+					color: $primaryMain;
+					text-transform: uppercase;
+					@include typographyCaption;
+				}
+
+				&-address {
+					.address-summary {
+						padding: 4px 0;
+
+						span {
+							@include typographyBody2;
+							line-height: 21px;
+							color: $grey500;
+						}
+						.line1-delimiter {
+							display: none;
+						}
+					}
+				}
+
+				button.button-change-pickup-point {
+					@include button($variant: 'outlined', $color: 'secondary');
+					@include typographySubtitle2;
+					border-radius: initial;
+					margin: 18px 0;
+				}
+			}
+
+			.pickup-packages {
+				margin: 0;
+
+				p {
+					color: $primaryMain;
+					@include typographyCaption;
+				}
+
+				#delivery-packages-options {
+					margin: 12px 0 0;
+					border-radius: initial;
+					border: none;
+
+					label {
+						height: 38px;
+						border: none;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						padding: 11px;
+						box-sizing: border-box;
+						border-radius: initial;
+						background: $grey100;
+
+						.shp-option-icon {
+							svg path {
+								fill: $secondaryMain !important;
+							}
+						}
+
+						.shp-option-text {
+							span {
+								@include typographySubtitle2;
+								color: $primaryLight;
+							}
+						}
+
+						.shp-option-text-price {
+							@include typographySubtitle2;
+							color: $primaryLight;
+						}
+					}
+				}
+			}
+
+			/* Delivery form */
+			.ship-postalCode {
+				label {
+					margin-top: 0;
+				}
+
+				input {
+					width: 187px;
+					max-width: none;
+					@include responsive('md') {
+						width: 48%;
+					}
+				}
+
+				small {
+					margin-left: 14px;
+					@include responsive('md') {
+						display: inline-block;
+					}
+					a {
+						display: inline-block;
+						text-transform: lowercase;
+						color: $primaryMain;
+						@include typographyCaption;
+						text-decoration: underline;
+						@include responsive('md') {
+							display: inline-block;
+							width: 90px;
+							vertical-align: middle;
+							margin-bottom: 6px;
+						}
+						&::first-letter {
+							text-transform: capitalize;
+						}
+						&:hover {
+							color: $primaryDark;
+						}
+					}
+				}
+			}
+
+			.vtex-omnishipping-1-x-deliveryGroup {
+				p {
+					color: $grey800;
+					@include typographyCaption;
+					margin: 14px 0 11px;
+				}
+
+				#delivery-packages-options,
+				.vtex-omnishipping-1-x-scheduledDeliveryList {
+					margin: 0;
+					border-radius: initial;
+					border: none;
+
+					.shp-lean-option {
+						height: auto;
+						background: $grey100;
+						padding: 11px;
+						box-sizing: border-box;
+						margin-bottom: 7px;
+
+						svg path {
+							fill: $primaryMain !important;
+						}
+
+						.shp-option-text {
+							span,
+							.shp-option-text-label-single {
+								@include typographySubtitle2;
+								color: $grey500;
+							}
+						}
+
+						.shp-option-text-price {
+							color: $grey500;
+							@include typographySubtitle2;
+						}
+
+						&-active {
+							background: $grey200;
+
+							.shp-option-text {
+								span,
+								.shp-option-text-label-single {
+									color: $grey700;
+								}
+							}
+
+							.shp-option-text-price {
+								color: $grey700;
+							}
+						}
+					}
+				}
+			}
+
+			.vtex-omnishipping-1-x-addressForm {
+				margin-top: 21px;
+
+				p.delivery-address-title {
+					color: $grey800;
+					@include typographyCaption;
+				}
+
+				.vtex-omnishipping-1-x-addressSummaryActive {
+					@include typographyBody2;
+					.address-summary {
+						@include icn-marker($secondaryMain);
+						background-size: 22px;
+						border: none;
+						a {
+							color: $secondaryMain;
+							text-decoration: underline;
+							font-weight: $medium;
+						}
+					}
+				}
+
+				.vtex-omnishipping-1-x-address {
+					.ship {
+						&-number {
+							display: inline-block;
+							position: relative;
+							z-index: 10;
+							max-width: 140px;
+							margin-right: 10px;
+							label {
+								font-size: 0;
+								&::before {
+									content: 'Número *';
+									@include typographyCaption;
+								}
+							}
+						}
+
+						&-checkboxNumberLabel {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							padding-top: 16px;
+
+							label {
+								margin: 28px auto 0 0;
+							}
+
+							input {
+								width: 16px;
+								padding: 0;
+								height: 14px;
+								background-position: center;
+								background-repeat: no-repeat;
+								margin: 30px 5px 3px 5px;
+								border-radius: 15px;
+							}
+						}
+
+						&-street {
+							label {
+								font-size: 0;
+								&::before {
+									content: 'Calle *';
+									@include typographyCaption;
+								}
+							}
+						}
+
+						&-complement {
+							display: inline-block;
+							width: calc(100% - 154px);
+							label[for='ship-complement'] {
+								font-size: 0;
+								margin-bottom: 6px;
+								height: 24px;
+								&:before {
+									content: 'Piso o Dpto(Ej.: 2A)';
+									@include typographyCaption;
+								}
+							}
+						}
+
+						&-state {
+							label {
+								font-size: 0;
+								&::before {
+									content: 'Provincia *';
+									@include typographyCaption;
+								}
+							}
+						}
+
+						&-city {
+							label {
+								font-size: 0;
+								&::before {
+									content: 'Ciudad *';
+									@include typographyCaption;
+								}
+							}
+						}
+
+						&-receiverName {
+							display: flex;
+							flex-flow: column nowrap;
+						}
+					}
+				}
+			}
+
+			.shp-alert {
+				#unavailable-delivery-disclaimer {
+					padding: 0 10px;
+				}
+			}
+
+			.btn-submit-wrapper {
+				margin-top: 19px;
+
+				button {
+					@include button;
+					@include typographySubtitle2;
+					height: 54px;
+				}
+			}
+		}
+	}
+
+	.accordion-group {
+		padding: 18px 22px 22px;
+		margin: 0;
+
+		.accordion-heading {
+			box-sizing: content-box;
+			height: 42px;
+			padding-bottom: 7px;
+
+			.accordion-toggle {
+				display: flex;
+				align-items: center;
+				padding: 0;
+				color: $secondaryLight;
+				font-size: 0;
+				&:after {
+					@include typographyBody1;
+					content: 'Mé' 'todo de entrega';
+					margin-top: 5px;
+				}
+
+				.icon-home {
+					&:after {
+						content: '';
+						@include icn_delivery($secondaryLight);
+						display: inline-block;
+						background-repeat: no-repeat;
+						background-size: cover;
+						margin-right: 7px;
+						height: 37px;
+						width: 37px;
+					}
+
+					&:before {
+						content: '';
+					}
+				}
+
+				a {
+					background: transparent;
+					border: none;
+					font-size: 0;
+					opacity: 1;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					padding: 0;
+					display: flex;
+					align-items: center;
+					outline: none;
+
+					i.icon-edit {
+						&:after {
+							content: '';
+							@include icn_edit($secondaryLight);
+							display: inline-block;
+							background-repeat: no-repeat;
+							background-size: cover;
+							height: 22px;
+							width: 22px;
+						}
+
+						&:before {
+							content: '';
+						}
+					}
+				}
+			}
+		}
+
+		.accordion-inner {
+			padding: 0;
+
+			@include responsive('md') {
+				padding-left: 47px;
+			}
+
+			.box-info {
+				color: $grey600;
+				font-size: 13px;
+				line-height: 16px;
+				font-weight: 300;
+			}
+
+			.shp-summary-group {
+				padding: 0;
+
+				&-info {
+					border: none;
+					padding: 0;
+				}
+
+				&-content {
+					position: relative;
+				}
+
+				&-price {
+					position: absolute;
+					bottom: 0;
+					padding: 0;
+					right: 0;
+					color: $grey500;
+					@include typographySubtitle2;
+					line-height: 21px;
+					text-transform: capitalize;
+					display: none;
+
+					&:before {
+						content: '-';
+						margin: 0 5px;
+					}
+				}
+
+				&-title {
+					color: $grey500;
+					@include typographySubtitle2;
+					line-height: 21px;
+					text-transform: capitalize;
+				}
+
+				&-content {
+					.shp-summary-group-title {
+						color: $grey500;
+						@include typographyBody2;
+						line-height: 21px;
+						margin: 0;
+					}
+				}
+
+				&-address {
+					margin: 0;
+					br.line1-delimiter,
+					br.line3-delimiter,
+					.postalCode {
+						display: none;
+					}
+
+					span {
+						color: $grey700;
+						@include typographyBody2;
+						line-height: 21px;
+					}
+					.complement {
+						margin-left: 8px;
+					}
+				}
+			}
+
+			.shp-summary-package {
+				span {
+					color: $grey700;
+					@include typographyBody2;
+					line-height: 21px;
+					margin: 0;
+				}
+			}
+
+			a.link-change-shipping {
+				display: none;
+			}
+		}
+	}
+
+	.pkpmodal {
+		z-index: 99999;
+
+		&-backdrop {
+			z-index: 99998;
+		}
+	}
+}
+
+body:not([data-current='shipping']) #shipping-data {
+	box-shadow: none;
+
+	.accordion-group {
+		.accordion-heading {
+			.accordion-toggle {
+				color: $grey600;
+
+				.icon-home {
+					&:after {
+						@include icn_delivery($grey600);
+					}
+				}
+			}
+		}
+
+		.accordion-inner {
+			.shipping-summary-info {
+				color: $grey600;
+				@include typographyBody2;
+			}
+		}
+	}
+}
+
+.pac-container.pac-logo {
+	z-index: 999999;
+}

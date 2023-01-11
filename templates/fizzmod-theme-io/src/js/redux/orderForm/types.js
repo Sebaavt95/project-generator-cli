@@ -1,0 +1,5 @@
+export default {
+	UPDATE: 'orderForm/UPDATE',
+	UPDATE_SEARCH_ITEMS: 'orderForm/UPDATE_SEARCH_ITEMS',
+	UPDATE_LOADING: 'orderForm/UPDATE_LOADING'
+};

@@ -1,0 +1,37 @@
+.wishlistIconContainer {
+	&--add-to-list-pdp {
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 36px;
+		.fill::before,
+		.outline::before {
+			font-size: 36px;
+		}
+	}
+}
+
+@include customMediaBreaks(1026) {
+	.wishlistIconContainer--add-to-list-pdp {
+		width: auto;
+		padding: 0;
+		.iconSize {
+			&::after {
+				width: 29px;
+				height: 25px;
+			}
+		}
+		:global(.vtex-button) {
+			width: 100%;
+			max-width: 506px;
+			margin: 0px auto;
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1027px) {
+	.wishlistIconContainer--add-to-list-pdp :global(.vtex-button) {
+		width: 60% !important;
+	}
+}

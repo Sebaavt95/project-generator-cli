@@ -1,0 +1,158 @@
+{
+	"store.custom#institutional-privacy-policy": {
+		"blocks": [
+			"responsive-layout.desktop#privacy-policy",
+			"responsive-layout.tablet#privacy-policy",
+			"responsive-layout.phone#privacy-policy"
+		]
+	},
+	"responsive-layout.desktop#privacy-policy": {
+		"children": ["flex-layout.row#institutional-header-privacy-policy", "flex-layout.row#institutional-content-privacy-policy"]
+	},
+	"responsive-layout.tablet#privacy-policy": {
+		"children": ["flex-layout.row#institutional-header-privacy-policy", "flex-layout.row#institutional-content-privacy-policy"]
+	},
+	"responsive-layout.phone#privacy-policy": {
+		"children": ["flex-layout.row#institutional-header-privacy-policy", "flex-layout.row#institutional-content-privacy-policy"]
+	},
+	"flex-layout.row#institutional-header-privacy-policy": {
+		"children": ["rich-text#institutional-title-privacy-policy"],
+		"props": {
+			"blockClass": "institutional-title-container"
+		}
+	},
+	"rich-text#institutional-title-privacy-policy": {
+		"props": {
+			"text": "### Política de Privacidad",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-title"
+		}
+	},
+	"flex-layout.row#institutional-content-privacy-policy": {
+		"children": ["flex-layout.col#institutional-content-privacy-policy"],
+		"props": {
+			"blockClass":"institutional-content"
+		}
+	},
+	"flex-layout.col#institutional-content-privacy-policy": {
+		"children": [
+			"rich-text#institutional-content-privacy-policy-text-1",
+			"rich-text#institutional-content-privacy-policy-title-1",
+			"rich-text#institutional-content-privacy-policy-text-2",
+			"rich-text#institutional-content-privacy-policy-title-2",
+			"rich-text#institutional-content-privacy-policy-text-3",
+			"rich-text#institutional-content-privacy-policy-title-3",
+			"rich-text#institutional-content-privacy-policy-text-4",
+			"rich-text#institutional-content-privacy-policy-title-4",
+			"rich-text#institutional-content-privacy-policy-text-5",
+			"rich-text#institutional-content-privacy-policy-title-5",
+			"rich-text#institutional-content-privacy-policy-text-6",
+			"rich-text#institutional-content-privacy-policy-title-6",
+			"rich-text#institutional-content-privacy-policy-text-7"
+		]
+	},
+	"rich-text#institutional-content-privacy-policy-text-1": {
+		"props": {
+			"text": "COMERCIALIZADORA MERCALDAS S.A. (en adelante “MERCALDAS” Tienda virtual mercaldas.com) sociedad colombiana con domicilio en Manizales, cuyos datos de ubicación se mencionan más adelante, en cumplimiento de lo dispuesto por la Ley Estatutaria de Protección de Datos Personales No. 1581 de 2012 [LEPD] y su Decreto reglamentario No. 1377 de 2013, adopta las Políticas para el tratamiento de datos personales (en adelante “Política” o “Políticas”) contenidas en este documento.",
+			"textAlignment": "LEFT",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-text"
+		}
+	},
+	"rich-text#institutional-content-privacy-policy-title-1": {
+		"props": {
+			"text": "##### PARTE I - GENERALIDADES",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-title"
+		}
+	},
+	"rich-text#institutional-content-privacy-policy-text-2": {
+		"props": {
+			"text": "Lorem ipsum dolor sit amet consectetur adipiscing elit class augue enim sociis fermentum aptent, fringilla aliquam posuere dis nisi congue eget montes fames imperdiet auctor sollicitudin, vivamus egestas torquent dignissim curae lacinia cubilia varius tristique quis himenaeos quam. Dis ligula vehicula nostra viverra urna pellentesque hac turpis semper, vel nisl sagittis mus volutpat fermentum id sociosqu, aptent purus tristique eu nec ac cubilia vestibulum. Rhoncus scelerisque maecenas cum fames eleifend ad semper lacus aliquam, conubia volutpat ac habitant ut tincidunt feugiat rutrum, iaculis convallis ullamcorper a egestas urna sapien dignissim.",
+			"textAlignment": "LEFT",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-text"
+		}
+	},
+	"rich-text#institutional-content-privacy-policy-title-2": {
+		"props": {
+			"text": "##### PARTE II - TRATAMIENTO DE DATOS PERSONALES - PRINCIPIOS PARA EL TRATAMIENTO DE DATOS PERSONALES",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-title"
+		}
+	},
+	"rich-text#institutional-content-privacy-policy-text-3": {
+		"props": {
+			"text": "Lorem ipsum dolor sit amet consectetur adipiscing elit class augue enim sociis fermentum aptent, fringilla aliquam posuere dis nisi congue eget montes fames imperdiet auctor sollicitudin, vivamus egestas torquent dignissim curae lacinia cubilia varius tristique quis himenaeos quam. Dis ligula vehicula nostra viverra urna pellentesque hac turpis semper, vel nisl sagittis mus volutpat fermentum id sociosqu, aptent purus tristique eu nec ac cubilia vestibulum. Rhoncus scelerisque maecenas cum fames eleifend ad semper lacus aliquam, conubia volutpat ac habitant ut tincidunt feugiat rutrum, iaculis convallis ullamcorper a egestas urna sapien dignissim.",
+			"textAlignment": "LEFT",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-text"
+		}
+	},
+	"rich-text#institutional-content-privacy-policy-title-3": {
+		"props": {
+			"text": "##### POLÍTICAS PARA EL TRATAMIENTO DE DATOS PERSONALES",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-title"
+		}
+	},
+	"rich-text#institutional-content-privacy-policy-text-4": {
+		"props": {
+			"text": "Lorem ipsum dolor sit amet consectetur adipiscing elit class augue enim sociis fermentum aptent, fringilla aliquam posuere dis nisi congue eget montes fames imperdiet auctor sollicitudin, vivamus egestas torquent dignissim curae lacinia cubilia varius tristique quis himenaeos quam. Dis ligula vehicula nostra viverra urna pellentesque hac turpis semper, vel nisl sagittis mus volutpat fermentum id sociosqu, aptent purus tristique eu nec ac cubilia vestibulum. Rhoncus scelerisque maecenas cum fames eleifend ad semper lacus aliquam, conubia volutpat ac habitant ut tincidunt feugiat rutrum, iaculis convallis ullamcorper a egestas urna sapien dignissim.",
+			"textAlignment": "LEFT",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-text"
+		}
+	},
+	"rich-text#institutional-content-privacy-policy-title-4": {
+		"props": {
+			"text": "##### PARTE III - DERECHOS DE LOS TITULARES DE DATOS PERSONALES Y PROCEDIMIENTO PARA SU EJERCICIO",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-title"
+		}
+	},
+	"rich-text#institutional-content-privacy-policy-text-5": {
+		"props": {
+			"text": "Lorem ipsum dolor sit amet consectetur adipiscing elit class augue enim sociis fermentum aptent, fringilla aliquam posuere dis nisi congue eget montes fames imperdiet auctor sollicitudin, vivamus egestas torquent dignissim curae lacinia cubilia varius tristique quis himenaeos quam. Dis ligula vehicula nostra viverra urna pellentesque hac turpis semper, vel nisl sagittis mus volutpat fermentum id sociosqu, aptent purus tristique eu nec ac cubilia vestibulum. Rhoncus scelerisque maecenas cum fames eleifend ad semper lacus aliquam, conubia volutpat ac habitant ut tincidunt feugiat rutrum, iaculis convallis ullamcorper a egestas urna sapien dignissim.",
+			"textAlignment": "LEFT",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-text"
+		}
+	},
+	"rich-text#institutional-content-privacy-policy-title-5": {
+		"props": {
+			"text": "##### RESPONSABLE DEL TRATAMIENTO",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-title"
+		}
+	},
+	"rich-text#institutional-content-privacy-policy-text-6": {
+		"props": {
+			"text": "Lorem ipsum dolor sit amet consectetur adipiscing elit class augue enim sociis fermentum aptent, fringilla aliquam posuere dis nisi congue eget montes fames imperdiet auctor sollicitudin, vivamus egestas torquent dignissim curae lacinia cubilia varius tristique quis himenaeos quam. Dis ligula vehicula nostra viverra urna pellentesque hac turpis semper, vel nisl sagittis mus volutpat fermentum id sociosqu, aptent purus tristique eu nec ac cubilia vestibulum. Rhoncus scelerisque maecenas cum fames eleifend ad semper lacus aliquam, conubia volutpat ac habitant ut tincidunt feugiat rutrum, iaculis convallis ullamcorper a egestas urna sapien dignissim.",
+			"textAlignment": "LEFT",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-text"
+		}
+	},
+	"rich-text#institutional-content-privacy-policy-title-6": {
+		"props": {
+			"text": "##### PROCEDIMIENTO",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-title"
+		}
+	},
+	"rich-text#institutional-content-privacy-policy-text-7": {
+		"props": {
+			"text": "Lorem ipsum dolor sit amet consectetur adipiscing elit class augue enim sociis fermentum aptent, fringilla aliquam posuere dis nisi congue eget montes fames imperdiet auctor sollicitudin, vivamus egestas torquent dignissim curae lacinia cubilia varius tristique quis himenaeos quam. Dis ligula vehicula nostra viverra urna pellentesque hac turpis semper, vel nisl sagittis mus volutpat fermentum id sociosqu, aptent purus tristique eu nec ac cubilia vestibulum. Rhoncus scelerisque maecenas cum fames eleifend ad semper lacus aliquam, conubia volutpat ac habitant ut tincidunt feugiat rutrum, iaculis convallis ullamcorper a egestas urna sapien dignissim.",
+			"textAlignment": "LEFT",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-text"
+		}
+	}
+}

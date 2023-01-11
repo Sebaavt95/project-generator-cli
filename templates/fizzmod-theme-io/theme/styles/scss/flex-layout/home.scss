@@ -1,0 +1,175 @@
+.flexCol {
+	// Main Banner
+
+	&--main__banner__slider__container {
+		max-width: 884px;
+
+		@include mediaBreaks('mobile') {
+			width: 100% !important;
+		}
+	}
+	&--main__banner__offer {
+		@include mediaBreaks('tablet') {
+			display: none;
+		}
+	}
+
+	// Background grey in Banner
+	
+	&--background {
+		background: $grey-300;
+		height: 800px;
+		position: absolute;
+		width: 200vw;
+		top: 0;
+		left: -100vw;
+	}
+
+	// Offers Banners
+
+	&--offer-two-img {
+		@include mediaBreaks('tablet') {
+			align-items: center;
+			padding: 0px 15px;
+		}
+
+		@include mediaBreaks('mobile') {
+			margin-top: 22px;
+			padding: 0px 8px;
+		}
+	}
+
+	// Gallery Banners Group
+
+	&--banners-group {
+		margin-top: 44px;
+
+		@include mediaBreaks('tablet') {
+			align-items: center;
+			padding: 0px 15px;
+		}
+
+		@include mediaBreaks('mobile') {
+			padding: 0px 8px;
+		}
+	}
+}
+
+.flexColChild {
+	// Offers Banners
+
+	&--offer-two-img {
+		@include mediaBreaks('mobile') {
+			width: 100%;
+		}
+	}
+
+	// Gallery Banners Group
+
+	&--banners-group {
+		height: initial !important;
+
+		@include mediaBreaks('tablet') {
+			margin-bottom: 10px;
+		}
+
+		@include mediaBreaks('mobile') {
+			width: 100% !important;
+		}
+	}
+
+	// Highlights
+
+	&--highlightShelfPrices {
+		height: 16px;
+		max-height: 24px;
+		min-height: 16px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+}
+
+.flexRow {
+	// Best Offers Banners
+
+	&--best-offers-slider {
+		margin-bottom: 44px;
+	}
+
+	// Highlights
+
+	&--highlightShelf {
+		margin: 20px auto 24px auto;
+		position: relative;
+
+		@include mediaBreaks('mobile') {
+			max-width: 768px;
+			min-width: 320px;
+			width: auto;
+		}
+	}
+	&--highlightShelfPrices {
+		height: 100px;
+		width: 170px;
+		margin-left: 10px;
+		margin-right: 60px;
+	}
+}
+
+.flexRowContent {
+	// Main Banner
+
+	&--main__banner__container {
+		height: 100%;
+		margin-bottom: 16px;
+
+		@include mediaBreaks('tablet') {
+			margin-bottom: 40px;
+		}
+	}
+
+	// Offers Banners
+
+	&--offer-two-img {
+		justify-content: space-between;
+	}
+	&--tablet-offers {
+		flex-wrap: wrap;
+	}
+	&--tablet-offers .stretchChildrenWidth {
+		padding-right: 0;
+	}
+
+	// Best Offers Banners
+
+	&--best-offers-slider {
+		justify-content: space-between;
+	}
+
+	// Gallery Banners Group
+
+	&--banners-group-row {
+		justify-content: space-between;
+		margin-bottom: 16px;
+
+		@include mediaBreaks('tablet') {
+			margin-bottom: 0;
+		}
+	}
+	&--banners-group-row--last {
+		justify-content: space-between;
+		margin-bottom: 0px;
+	}
+	&--banners-group-1-row,
+	&--banners-group-2-row {
+		@include mediaBreaks('tablet') {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		@include mediaBreaks('mobile') {
+			justify-content: space-between;
+		}
+	}
+}

@@ -1,0 +1,134 @@
+import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import Typography from './Typography';
+
+<Meta
+	title="Componentes/Typography"
+	component={Typography}
+	argTypes={{
+		component: {
+			name: 'Component',
+			control: {
+				type: 'select',
+				options: [
+					'h1',
+					'h2',
+					'h3',
+					'h4',
+					'h5',
+					'h6',
+					'subtitle1',
+					'subtitle2',
+					'body1',
+					'body2',
+					'caption'
+				]
+			}
+		},
+		variant: {
+			name: 'Variant',
+			control: {
+				type: 'select',
+				options: [
+					'h1',
+					'h2',
+					'h3',
+					'h4',
+					'h5',
+					'h6',
+					'subtitle1',
+					'subtitle2',
+					'body1',
+					'body2',
+					'caption'
+				]
+			}
+		}
+	}}
+/>
+
+# Typography
+
+## Usage
+
+```
+import Typography from 'components/Typography';
+
+<Typography>Typography h1</Typography>
+<Typography color="primary" variant="h1" component="h2">Typography h1</Typography>
+```
+
+## Props
+
+<ArgsTable of={Typography} />
+
+<Story name="Typography h1">
+	<Typography variant="h1" component="h1">
+		h1. Typograhy
+	</Typography>
+</Story>
+
+<Story name="Typography h2">
+	<Typography variant="h2" component="h2">
+		h2. Typograhy
+	</Typography>
+</Story>
+
+<Story name="Typography h3">
+	<Typography variant="h3" component="h3">
+		h3. Typograhy
+	</Typography>
+</Story>
+
+<Story name="Typography h4">
+	<Typography variant="h4" component="h4">
+		h4. Typograhy
+	</Typography>
+</Story>
+
+<Story name="Typography h5">
+	<Typography variant="h5" component="h5">
+		h5. Typograhy
+	</Typography>
+</Story>
+
+<Story name="Typography h6">
+	<Typography variant="h6" component="h6">
+		h6. Typograhy
+	</Typography>
+</Story>
+
+<Story name="Typography subtitle1">
+	<Typography variant="subtitle1" component="subtitle1">
+		subtitle1 Heading
+	</Typography>
+</Story>
+
+<Story name="Typography subtitle2">
+	<Typography variant="subtitle2" component="subtitle2">
+		subtitle2 Heading
+	</Typography>
+</Story>
+
+<Story name="Typography body1">
+	<Typography variant="body1" component="body1">
+		body1 Heading
+	</Typography>
+</Story>
+
+<Story name="Typography body2">
+	<Typography variant="body2" component="body2">
+		body2 Heading
+	</Typography>
+</Story>
+
+<Story name="Typography caption">
+	<Typography component="caption">caption Typograhy</Typography>
+</Story>
+
+## Playground
+
+export const Template = args => <Typography {...args} />;
+
+<Story name="Playground" args={{ children: 'Text', component: 'h1', variant: 'h1' }}>
+	{Template.bind({})}
+</Story>

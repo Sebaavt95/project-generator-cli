@@ -1,0 +1,42 @@
+/* Product Page */
+
+.specificationName--pdp-specification,
+.groupName--pdp-groupName {
+	font-family: $fontFamily;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: 16px;
+	color: $secondary-main;
+}
+
+.groupName {
+	&--pdp {
+		&-groupName {
+			font-size: 16px;
+			line-height: 20px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.specificationValue {
+	&--pdp {
+		&-specification {
+			&--last {
+				font-family: $fontFamily;
+				font-size: 14px;
+				font-weight: 400;
+				letter-spacing: 0;
+				line-height: 16px;
+				color: $grey-700;
+
+				@include mediaBreaks('mobile') {
+					font-size: 13px;
+					line-height: 15px;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}

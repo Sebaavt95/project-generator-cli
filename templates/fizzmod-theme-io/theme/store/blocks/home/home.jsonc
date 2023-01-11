@@ -1,0 +1,148 @@
+{
+	"store.home": {
+		"blocks": [
+			"responsive-layout.desktop#home",
+			"responsive-layout.tablet#home",
+			"responsive-layout.phone#home"
+		]
+	},
+	"responsive-layout.desktop#home": {
+		"children": ["flex-layout.row#container-desktop"]
+	},
+	"responsive-layout.tablet#home": {
+		"children": ["flex-layout.row#container-tablet"]
+	},
+	"responsive-layout.phone#home": {
+		"children": ["flex-layout.row#container-mobile"]
+	},
+	"flex-layout.row#container-desktop": {
+		"children": ["flex-layout.col#cont"],
+		"props": {
+			"blockClass": "main-home-desktop",
+			"fullWidth": true
+		}
+	},
+	"flex-layout.row#container-tablet": {
+		"children": ["flex-layout.col#cont"],
+		"props": {
+			"blockClass": "main-home-tablet"
+		}
+	},
+	"flex-layout.row#container-mobile": {
+		"children": ["flex-layout.col#cont"],
+		"props": {
+			"blockClass": "main-home-mobile"
+		}
+	},
+	"flex-layout.col#cont": {
+		"props": {
+			"blockClass": "container"
+		},
+		"children": [
+			"flex-layout.row#main-banner",	
+			"flex-layout.row#info-store",
+			// "countdown-event-home-component",
+			"flex-layout.row#promo",
+			// "flex-layout.row#promo2",
+			"flex-layout.row#offer-slider-container",
+			// "cross-selling-news",
+			"flex-layout.col#offers",
+			"flex-layout.row#offers2",
+			"flex-layout.row#top-3-products-images",
+			"flex-layout.row#shelf",
+			"flex-layout.col#most-wanted"
+		]
+	},
+	"flex-layout.row#shelf": {
+		"children": [
+			"flex-layout.col#our-brands"
+		],
+		"props": {
+			"blockClass": "highlightShelf"
+		}
+	},
+	"flex-layout.col#our-brands": {
+		"children": 
+		[
+			"rich-text#our-brands-title",
+			"slider-layout#our-brands",
+			"flex-layout.col#background"
+		]
+	},
+	"flex-layout.col#background": {
+		"props": {
+			"blockClass": ""
+		}
+	},
+	"rich-text#our-brands-title": {
+		"props": {
+			"text": "Nuestras marcas",
+			"textPosition": "CENTER",
+			"textAlignment": "CENTER",
+			"blockClass": "mostWantedShelf"
+		}
+	},
+	"slider-layout#our-brands": {
+		"props": {
+			"itemsPerPage": {
+			  "desktop": 4,
+			  "tablet": 3,
+			  "phone": 2
+			},
+			"infinite": true,
+			"showNavigationArrows": "always",
+			"blockClass": "carousel"
+		  },
+		"children": [
+			"image#brand1",
+			"image#brand2",
+			"image#brand3",
+			"image#brand4",
+			"image#brand5",
+			"image#brand6"
+
+		]
+	},
+	"image#brand1": {
+		"props": {
+			"src": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Sancor_lact_logo.png",
+			"maxHeight": 100,
+			"maxWidth": 150
+		}
+	},
+	"image#brand2": {
+		"props": {
+			"src": "https://upload.wikimedia.org/wikipedia/commons/6/69/Logo_Milkaut.png",
+			"maxHeight": 100,
+			"maxWidth": 150
+		}
+	},
+	"image#brand3": {
+		"props": {
+			"src": "https://www.zarcam.com.ar/wp-content/uploads/2015/08/Ilolay.png",
+			"maxHeight": 100,
+			"maxWidth": 150
+		}
+	},
+	"image#brand4": {
+		"props": {
+			"src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/La_serenisima_greenlogo.svg/1200px-La_serenisima_greenlogo.svg.png",
+			"maxHeight": 100,
+			"maxWidth": 150
+		}
+	},
+	"image#brand5": {
+		"props": {
+			"src": "https://via.placeholder.com/150x100.png",
+			"maxHeight": 100,
+			"maxWidth": 150
+		}
+	},
+	"image#brand6": {
+		"props": {
+			"src": "https://via.placeholder.com/150x100.png",
+			"maxHeight": 100,
+			"maxWidth": 150
+		}
+	}	
+}

@@ -1,0 +1,212 @@
+{
+	"store.orderplaced": {
+		"blocks": ["order-placed"],
+		"parent": {
+			"header": "header#checkout",
+			"footer": "footer#empty"
+		}
+	},
+
+	"header#checkout": {
+		"blocks": ["header-layout.desktop#checkout", "header-layout.mobile#checkout"]
+	},
+	"header-layout.desktop#checkout": {
+		"children": ["flex-layout.row#checkout-header"]
+	},
+	"header-layout.mobile#checkout": {
+		"children": ["flex-layout.row#checkout-header-mobile"]
+	},
+	"footer#empty": {
+		"blocks": ["footer-layout.desktop#only-copyright", "footer-layout.mobile#only-copyright"]
+	},
+	"footer-layout.desktop#only-copyright": {
+		"children": ["flex-layout.row#copyright-op"],
+		"props": {
+			"blockClass": "copyright-op"
+		}
+	},
+	"footer-layout.mobile#only-copyright": {
+		"children": ["flex-layout.row#copyright-op-mobile"],
+		"props": {
+			"blockClass": "copyright-op"
+		}
+	},
+	"flex-layout.row#copyright-op-mobile": {
+		"children": [
+			"rich-text#checkout-safe-text-mobile",
+			"rich-text#copyright-op-header-mobile",
+			"vtex.menu@2.x:menu#footer-vtex-fizzmod"
+		],
+		"props": {
+			"fullWidth": true,
+			"preventVerticalStretch": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "copyright"
+		}
+	},
+	"flex-layout.row#copyright-op": {
+		"children": ["rich-text#copyright-op-header", "vtex.menu@2.x:menu#footer-vtex-fizzmod"],
+		"props": {
+			"fullWidth": true,
+			"preventVerticalStretch": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "copyright"
+		}
+	},
+	"rich-text#copyright-op-header": {
+		"props": {
+			"text": "© mercaldas 2021. Todos los derechos reservados.[Política​ de Privacidad](/institucional/politica-de-privacidad) - [Términos y Condiciones](/institucional/terminos-y-condiciones-merca-online) ",
+			"blockClass": "copyright-op-header",
+			"textAlignment": "CENTER"
+		}
+	},
+	"rich-text#copyright-op-header-mobile": {
+		"props": {
+			"text": "© mercaldas 2021. Todos los derechos reservados. \n [Política​ de Privacidad](/institucional/politica-de-privacidad) - [Términos y Condiciones](/institucional/terminos-y-condiciones-merca-online) ",
+			"blockClass": "copyright-op-header",
+			"textAlignment": "CENTER"
+		}
+	},
+	"store.account": {
+		"blocks": [
+			"flex-layout.row#header-breadcrumb",
+			"flex-layout.row#header-account",
+			"flex-layout.row#account-main-custom-container"
+		],
+		"parent": {
+			"challenge": "challenge.profile"
+		}
+	},
+
+	"flex-layout.row#header-breadcrumb": {
+		"children": ["rich-text#my-account-breadcrumb"],
+		"props": {
+			"blockClass": "breadcrumb-myaccount-container"
+		}
+	},
+
+	"flex-layout.row#header-account": {
+		"children": ["rich-text#my-account-title"],
+		"props": {
+			"blockClass": "title-myaccount-container"
+		}
+	},
+
+	"flex-layout.row#account-main-custom-container": {
+		"children": ["my-account"],
+		"props": {
+			"blockClass": "myaccount-container"
+		}
+	},
+
+	"rich-text#my-account-breadcrumb": {
+		"props": {
+			"text": "[Inicio /](/) Mi Cuenta",
+			"textPosition": "LEFT",
+			"blockClass": "my-account-breadcrumb"
+		}
+	},
+
+	"rich-text#my-account-title": {
+		"props": {
+			"text": "### Mi Cuenta",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-title"
+		}
+	},
+
+	"store.login": {
+		"blocks": ["login-content#default"]
+	},
+
+	"login-content#default": {
+		"props": {
+			"isInitialScreenOptionOnly": true,
+			"defaultOption": 1,
+			"optionsTitle": "Elija una opción para iniciar sesión",
+			"emailAndPasswordTitle": "Ingrese su mail y contraseña",
+			"accessCodeTitle": "Ingrese su mail",
+			"emailPlaceholder": "example@mail.com",
+			"passwordPlaceholder": "Agrega tu contraseña",
+			"accessCodePlaceholder": "Código",
+			"providerPasswordButtonLabel": "Ingresar con mail y contraseña",
+			"showIconProfile": true,
+			"iconLabel": "Iniciar sesión",
+			"showPasswordVerificationIntoTooltip": true
+		}
+	},
+
+	"product-summary.shelf": {
+		"children": [
+			"product-summary-add-to-list-button",
+			"stack-layout#shelf-img-and-promos",
+			"vtex.product-highlights@2.x:product-highlights#collections--hiper-mas",
+			"vtex.product-highlights@2.x:product-highlights#collections--vida-sana",
+			"vtex.product-highlights@2.x:product-highlights#collections--envio-gratis",
+			"product-summary-brand",
+			"product-summary-name",
+			"product-list-price",
+			"product-selling-price",
+			"product-summary-quantity",
+			"add-to-cart-button"
+		]
+	},
+
+	"product-summary-quantity": {
+		"props": {
+			"showLabel": false,
+			"size": "large",
+			"showUnit": false
+		}
+	},
+	"product-summary.shelf#highlights": {
+		"children": [
+			"flex-layout.row#image-and-flags",
+			"product-summary-brand",
+			"product-summary-name",
+			"flex-layout.row#shelf-price",
+			"product-summary-quantity#shelf-quantity",
+			"add-to-cart-button"
+		],
+		"props": {
+			"blockClass": "HighlightShelf"
+		}
+	},
+	"add-to-list-btn#highlights": {
+		"props": {
+			"blockClass": "add-to-list-highlights"
+		}
+	},
+	"flex-layout.row#shelf-price": {
+		"children": ["flex-layout.col#shelf-price"],
+		"props": {
+			"blockClass": "highlightShelfPrices"
+		}
+	},
+	"flex-layout.col#shelf-price": {
+		"children": ["product-list-price", "product-selling-price"],
+		"props": {
+			"blockClass": "highlightShelfPrices"
+		}
+	},
+	"add-to-cart-button": {
+		"props": {
+			"text": "Agregar"
+		}
+	},
+	"product-summary-quantity#shelf-quantity": {
+		"props": {
+			"blockClass": "highlightShelfQuantity"
+		}
+	},
+	"flex-layout.row#image-and-flags": {
+		"children": [
+			"add-to-list-btn#highlights",
+			"product-summary-image#plp"
+			// "custom-highlight-flags.flags"
+		],
+		"props": {
+			"blockClass": "image-and-flags"
+		}
+	}
+}

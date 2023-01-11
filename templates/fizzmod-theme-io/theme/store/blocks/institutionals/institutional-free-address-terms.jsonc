@@ -1,0 +1,65 @@
+{
+    "store.custom#institutional-free-address-terms": {
+        "blocks": [
+			"responsive-layout.desktop#free-address-terms",
+			"responsive-layout.tablet#free-address-terms",
+			"responsive-layout.phone#free-address-terms"
+		]
+    },
+    "responsive-layout.desktop#free-address-terms": {
+		"children": ["flex-layout.row#institutional-header-free-address-terms", "flex-layout.row#institutional-content-free-address-terms"]
+	},
+	"responsive-layout.tablet#free-address-terms": {
+		"children": ["flex-layout.row#institutional-header-free-address-terms", "flex-layout.row#institutional-content-free-address-terms"]
+	},
+	"responsive-layout.phone#free-address-terms": {
+		"children": ["flex-layout.row#institutional-header-free-address-terms-phone", "flex-layout.row#institutional-content-free-address-terms"]
+    },
+    "flex-layout.row#institutional-header-free-address-terms": {
+		"children": ["rich-text#institutional-title-free-address-terms"],
+		"props": {
+			"blockClass": "institutional-title-container"
+		}
+	},
+    "rich-text#institutional-title-free-address-terms": {
+		"props": {
+			"text": "### Terminos y Condiciones: Domicilio Gratis",
+			"textPosition": "CENTER",
+            "textAlignment": "CENTER",
+			"blockClass": "institutional-title"
+		}
+	},
+    "flex-layout.row#institutional-header-free-address-terms-phone": {
+		"children": ["rich-text#institutional-title-free-address-terms-phone"],
+		"props": {
+			"blockClass": "institutional-title-container"
+		}
+	},
+    "rich-text#institutional-title-free-address-terms-phone": {
+		"props": {
+			"text": "### Terminos y Condiciones:\n ### Domicilio Gratis",
+			"textPosition": "CENTER",
+            "textAlignment": "CENTER",
+			"blockClass": "institutional-title-long-extension"
+		}
+	},
+    "flex-layout.row#institutional-content-free-address-terms": {
+		"children": ["flex-layout.col#institutional-content-free-address-terms"],
+		"props": {
+			"blockClass":"institutional-content"
+		}
+	},
+    "flex-layout.col#institutional-content-free-address-terms": {
+		"children": [
+			"rich-text#institutional-content-free-address-terms-text-1"
+			]
+	},
+    "rich-text#institutional-content-free-address-terms-text-1": {
+		"props": {
+			"text": "SERVICIO A DOMICILIO GRATIS SI TU PEDIDO NO LLEGA EN 60 MINUTOS” Válido solo en [www.mercaldas.com](/). Vigencia de la actividad del 18 al 31 de mayo 2021. Una vez finalizada la compra el cliente deberá seleccionar la franja horaria para recibir el pedido, los 60 minutos transcurrirán en dicha franja seleccionada. Si el pago se efectúa a través de la tienda virtual el tiempo de entrega aplicará una vez la pasarela apruebe la transacción. Debido a la situación de orden público actual se podrán presentar retrasos en el despacho y se reprogramará previo acuerdo con el cliente. En caso de no recibir el pedido en el tiempo establecido “60 minutos” el servicio a DOMICILIO será GRATIS.",
+			"textAlignment": "LEFT",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-text"
+		}
+    }    
+}

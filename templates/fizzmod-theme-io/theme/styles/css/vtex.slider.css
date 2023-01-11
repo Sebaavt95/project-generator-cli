@@ -1,0 +1,17 @@
+@media (max-width: 1026px) {
+  .dotsContainer {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .dotsContainer {
+    display: block;
+    margin-top: -58px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .sliderFrame {
+    padding-bottom: 73px;
+  }
+}

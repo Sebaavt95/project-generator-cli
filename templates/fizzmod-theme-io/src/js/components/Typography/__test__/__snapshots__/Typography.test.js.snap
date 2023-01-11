@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography snapshot render with h1 tag, variant body2 1`] = `
+<styles__Wrapper
+  color="secondary"
+  variant="body2"
+>
+  <h1>
+    typography
+  </h1>
+</styles__Wrapper>
+`;

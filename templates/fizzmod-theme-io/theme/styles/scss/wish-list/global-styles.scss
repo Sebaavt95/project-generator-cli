@@ -1,0 +1,24 @@
+.fill,
+.outline {
+  background: unset;  
+
+  @include mediaBreaks('mobile') {
+    width: 25px;
+    height: 16px;
+  }
+}
+
+.fill::before,
+.outline::before {
+  font-family: 'mercaldas';
+  font-size: 25px;
+  color: $secondary-dark;
+}
+
+.fill::before {
+  content: "\e952";
+}
+
+.outline::before {
+  content: "\e953";
+}

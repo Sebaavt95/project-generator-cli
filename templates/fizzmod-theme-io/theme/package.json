@@ -1,0 +1,33 @@
+{
+	"name": "fizzmod-template",
+	"private": true,
+	"license": "UNLICENSED",
+	"scripts": {
+		"link": "node fizzmod-custom-scripts/vtexLink.js && vtex link",
+		"start": "node fizzmod-custom-scripts/vtexLink.js --login --unlink && vtex link",
+		"watch": "webpack -w",
+		"build": "webpack",
+		"build-release": "node fizzmod-custom-scripts/preRelease.js",
+		"version": "node fizzmod-custom-scripts/setCurrentVersion.js",
+		"version-verbose": "node fizzmod-custom-scripts/setCurrentVersion.js --verbose",
+		"release-patch": "npm run version-verbose && vtex release patch stable",
+		"release-minor": "npm run version-verbose && vtex release minor stable",
+		"release-major": "npm run version-verbose && vtex release major stable",
+		"institutionals": "node fizzmod-custom-scripts/institutionals/institutionals.js",
+		"departments-builder": "node fizzmod-custom-scripts/departments-builder/index.js",
+		"menu": "node fizzmod-custom-scripts/categoriesMenu/index.js"
+	},
+	"dependencies": {
+		"axios": "^0.21.4",
+		"chalk": "^4.1.2",
+		"css-loader": "^6.5.1",
+		"inquirer": "^8.1.2",
+		"mini-css-extract-plugin": "^2.4.4",
+		"sass": "^1.43.4",
+		"sass-loader": "^12.3.0",
+		"style-loader": "^3.3.1",
+		"webpack": "^5.62.2",
+		"webpack-cli": "^4.9.1",
+		"webpack-fix-style-only-entries": "^0.6.1"
+	}
+}

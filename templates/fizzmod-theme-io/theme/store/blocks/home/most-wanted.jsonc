@@ -1,0 +1,57 @@
+{
+  "flex-layout.col#most-wanted": {
+    "children": [
+      "rich-text#most-wanted-title",
+      "list-context.image-list#most-wanted-list-images"
+    ],
+    "props": {
+      "blockClass": "most-wanted-col"
+    }
+  },
+  "rich-text#most-wanted-title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Lo más búscado",
+      "blockClass": "title"
+    }
+  },
+  "list-context.image-list#most-wanted-list-images": {
+    "children": ["slider-layout#most-wanted-slider"],
+    "props": {
+      "images": [
+        {
+          "image": "https://via.placeholder.com/442x283.png",
+          "mobileImage": "https://via.placeholder.com/442x283.png"
+          // "max-height": 283,
+          // "max-width": 442
+        },
+        {
+          "image": "https://via.placeholder.com/442x283.png/09F/FFF",
+          "mobileImage": "https://via.placeholder.com/442x283.png/09F/FFF"
+          // "max-height": 283,
+          // "max-width": 442
+        },
+        {
+          "image": "https://via.placeholder.com/442x283.png/08A/FFF",
+          "mobileImage": "https://via.placeholder.com/442x283.png/08A/FFF"
+        }
+      ]
+    }
+  },
+  "slider-layout#most-wanted-slider": {
+    "props": {
+      "blockClass": "most-wanted-slider",
+      "fullWidth": true,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "mobileOnly",
+      "centerMode": "to-the-left",
+      "infinite": false,
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      }
+    }
+  }
+}

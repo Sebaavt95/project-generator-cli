@@ -1,0 +1,282 @@
+
+		{
+			
+  "menu-item#electro": {
+   "props": {
+    "id": "1/electro",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "department"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/electro",
+     "noFollow": false,
+     "tagTitle": "pagina de Electro",
+     "text": "Electro"
+    }
+   },
+   "blocks": ["vtex.menu@2.x:submenu#electro-categories"]
+  }
+	
+			,"vtex.menu@2.x:submenu#electro-categories": {
+				"children": ["vtex.menu@2.x:menu#electro-categories"]
+			},
+			"vtex.menu@2.x:menu#electro-categories": {
+				"props": {
+				"orientation": "vertical"
+				},
+				"children": ["menu-item#televisores","menu-item#aire-acondicionado-y-ventilacion","menu-item#notebook","menu-item#audio","menu-item#computadora","menu-item#consolas-y-videojuegos","menu-item#heladeras-y-freezers","menu-item#pequenos-electrodomesticos","menu-item#telefonos-y-smartwatch"]
+			}
+		
+ ,
+  "menu-item#televisores": {
+   "props": {
+    "id": "7/televisores",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/electro/televisores",
+     "noFollow": false,
+     "tagTitle": "Televisores",
+     "text": "Televisores"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#aire-acondicionado-y-ventilacion": {
+   "props": {
+    "id": "9/aire-acondicionado-y-ventilacion",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/electro/aire-acondicionado-y-ventilacion",
+     "noFollow": false,
+     "tagTitle": "Aire Acondicionado y Ventilación",
+     "text": "Aire Acondicionado y Ventilación"
+    }
+   },
+   "blocks": ["vtex.menu@2.x:submenu#aire-acondicionado-y-ventilacion-categories"]
+  }
+	
+			,"vtex.menu@2.x:submenu#aire-acondicionado-y-ventilacion-categories": {
+				"children": ["vtex.menu@2.x:menu#aire-acondicionado-y-ventilacion-categories"]
+			},
+			"vtex.menu@2.x:menu#aire-acondicionado-y-ventilacion-categories": {
+				"props": {
+				"orientation": "vertical"
+				},
+				"children": ["menu-item#aire-acondicionado","menu-item#ventilacion"]
+			}
+		
+ ,
+  "menu-item#notebook": {
+   "props": {
+    "id": "12/notebook",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/electro/notebook",
+     "noFollow": false,
+     "tagTitle": "Notebook",
+     "text": "Notebook"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#audio": {
+   "props": {
+    "id": "14/audio",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/electro/audio",
+     "noFollow": false,
+     "tagTitle": "Audio",
+     "text": "Audio"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#computadora": {
+   "props": {
+    "id": "15/computadora",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/electro/computadora",
+     "noFollow": false,
+     "tagTitle": "Computadora",
+     "text": "Computadora"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#consolas-y-videojuegos": {
+   "props": {
+    "id": "17/consolas-y-videojuegos",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/electro/consolas-y-videojuegos",
+     "noFollow": false,
+     "tagTitle": "Consolas y Videojuegos",
+     "text": "Consolas y Videojuegos"
+    }
+   },
+   "blocks": ["vtex.menu@2.x:submenu#consolas-y-videojuegos-categories"]
+  }
+	
+			,"vtex.menu@2.x:submenu#consolas-y-videojuegos-categories": {
+				"children": ["vtex.menu@2.x:menu#consolas-y-videojuegos-categories"]
+			},
+			"vtex.menu@2.x:menu#consolas-y-videojuegos-categories": {
+				"props": {
+				"orientation": "vertical"
+				},
+				"children": ["menu-item#playstation"]
+			}
+		
+ ,
+  "menu-item#heladeras-y-freezers": {
+   "props": {
+    "id": "18/heladeras-y-freezers",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/electro/heladeras-y-freezers",
+     "noFollow": false,
+     "tagTitle": "Heladeras y Freezers",
+     "text": "Heladeras y Freezers"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#pequenos-electrodomesticos": {
+   "props": {
+    "id": "24/pequenos-electrodomesticos",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/electro/pequenos-electrodomesticos",
+     "noFollow": false,
+     "tagTitle": "Pequeños Electrodomésticos",
+     "text": "Pequeños Electrodomésticos"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#telefonos-y-smartwatch": {
+   "props": {
+    "id": "25/telefonos-y-smartwatch",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/electro/telefonos-y-smartwatch",
+     "noFollow": false,
+     "tagTitle": "Teléfonos y SmartWatch",
+     "text": "Teléfonos y SmartWatch"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#aire-acondicionado": {
+   "props": {
+    "id": "10/aire-acondicionado",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level2"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/electro/aire-acondicionado-y-ventilacion/aire-acondicionado",
+     "noFollow": false,
+     "tagTitle": "Aire Acondicionado",
+     "text": "Aire Acondicionado"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#ventilacion": {
+   "props": {
+    "id": "11/ventilacion",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level2"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/electro/aire-acondicionado-y-ventilacion/ventilacion",
+     "noFollow": false,
+     "tagTitle": "Ventilación",
+     "text": "Ventilación"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#playstation": {
+   "props": {
+    "id": "32/playstation",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level2"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/electro/consolas-y-videojuegos/playstation",
+     "noFollow": false,
+     "tagTitle": "Playstation",
+     "text": "Playstation"
+    }
+   },
+   "blocks": []
+  }
+	
+ 
+		}
+	

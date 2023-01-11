@@ -1,0 +1,72 @@
+
+		{
+			
+  "menu-item#hogar-mobile": {
+   "props": {
+    "id": "6/hogar",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "department-mobile",
+    "itemProps": {
+     "type": "internal",
+     "href": "/hogar",
+     "noFollow": false,
+     "tagTitle": "Hogar",
+     "text": "Hogar"
+    }
+   },
+   "blocks": ["vtex.menu@2.x:submenu.accordion#hogar-categories"]
+  }
+	
+			,"vtex.menu@2.x:submenu.accordion#hogar-categories": {
+			"children": ["vtex.menu@2.x:menu#hogar-categories-mobile"]
+			},
+			"vtex.menu@2.x:menu#hogar-categories-mobile": {
+			"props": {
+				"orientation": "vertical"
+				,"blockClass": "menu-categories-accordion"
+			},
+			"children": ["menu-item#ver-todos-hogar","menu-item#limpieza-mobile"]
+			}
+			
+		,"menu-item#ver-todos-hogar": {
+			"props": {
+				"id": "ver-todos-hogar",
+				"type": "custom",
+				"iconId": null,
+				"highlight": false,
+				"blockClass": "menu-categories-see-all",
+				"itemProps": {
+					"type": "internal",
+					"href": "/hogar",
+					"noFollow": false,
+					"tagTitle": "Ver todos",
+					"text": "Ver todos"
+				}
+			}
+  	}
+	
+ 		
+ ,
+  "menu-item#limpieza-mobile": {
+   "props": {
+    "id": "26/limpieza",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "",
+    "itemProps": {
+     "type": "internal",
+     "href": "/hogar/limpieza",
+     "noFollow": false,
+     "tagTitle": "Limpieza",
+     "text": "Limpieza"
+    }
+   },
+   "blocks": []
+  }
+	
+ 
+		}
+	

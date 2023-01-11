@@ -1,0 +1,246 @@
+.link--category-card-cta {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #424242;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 26px;
+}
+@media (max-width: 639px) {
+  .link--category-card-cta {
+    font-size: 14px;
+  }
+}
+.link--category-card-cta:hover {
+  color: #212121;
+}
+@media (max-width: 639px) {
+  .link--category-card-cta:hover {
+    color: #212121;
+  }
+}
+.link--category-card-cta::after {
+  content: "\e90a";
+  font-family: "mercaldas";
+  font-size: 13px;
+  color: #424242;
+  margin-left: 7px;
+}
+@media (max-width: 639px) {
+  .link--category-card-cta::after {
+    content: "\e90a";
+    font-family: "mercaldas";
+    font-size: 14px;
+    color: #424242;
+    margin-left: 7px;
+  }
+}
+.link--facebook-icon::before, .link--facebook-icon:hover::before {
+  content: "\e911";
+}
+.link--instagram-icon::before, .link--instagram-icon:hover::before {
+  content: "\e912";
+}
+.link--instagram-icon:hover::before {
+  font-family: "mercaldas";
+  font-size: 21px;
+  color: #e0e0e0;
+  border-radius: 50%;
+}
+.link--facebook-icon, .link--instagram-icon {
+  text-decoration: none;
+  margin-right: 4px !important;
+}
+.link--facebook-icon::before, .link--instagram-icon::before {
+  background-color: #616161;
+}
+.link--facebook-icon:hover::before, .link--instagram-icon:hover::before {
+  background-color: #424242;
+}
+.link--facebook-icon::before, .link--facebook-icon:hover::before, .link--instagram-icon::before, .link--instagram-icon:hover::before {
+  font-family: "mercaldas";
+  font-size: 21px;
+  color: #e0e0e0;
+  border-radius: 50%;
+}
+.link--more-payment-methods {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+  font-style: normal;
+  margin-top: 12px;
+  text-decoration: none;
+  color: #616161;
+  font-weight: 400;
+}
+.link--more-payment-methods:hover {
+  color: #212121;
+}
+.link--mastercard-card, .link--visa-card, .link--mercadopago-card, .link--diners-card, .link--amex-card, .link--pse-card, .link--vtex-logo, .link--fizzmod-logo {
+  text-decoration: none;
+}
+.link--mastercard-card::before, .link--mastercard-card:hover::before, .link--visa-card::before, .link--visa-card:hover::before, .link--mercadopago-card::before, .link--mercadopago-card:hover::before, .link--diners-card::before, .link--diners-card:hover::before, .link--amex-card::before, .link--amex-card:hover::before, .link--pse-card::before, .link--pse-card:hover::before {
+  font-family: "mercaldas";
+  font-size: 34px;
+  color: #e0e0e0;
+  border-radius: 3px;
+  padding: 1px;
+}
+.link--mastercard-card::before, .link--visa-card::before, .link--mercadopago-card::before, .link--diners-card::before, .link--amex-card::before, .link--pse-card::before {
+  background-color: #616161;
+}
+.link--mastercard-card:hover::before, .link--visa-card:hover::before, .link--mercadopago-card:hover::before, .link--diners-card:hover::before, .link--amex-card:hover::before, .link--pse-card:hover::before {
+  background-color: #424242;
+}
+.link--mastercard-card::before, .link--mastercard-card:hover::before {
+  content: "\e915";
+}
+.link--visa-card::before, .link--visa-card:hover::before {
+  content: "\e916";
+}
+.link--mercadopago-card::before, .link--mercadopago-card:hover::before {
+  content: "\e917";
+}
+.link--diners-card::before, .link--diners-card:hover::before {
+  content: "\e918";
+}
+.link--amex-card::before, .link--amex-card:hover::before {
+  content: "\e919";
+}
+.link--pse-card::before, .link--pse-card:hover::before {
+  content: "\e91a";
+}
+.link--vtex-logo::before, .link--fizzmod-logo::before {
+  font-family: "mercaldas";
+  color: #828282;
+  position: relative;
+}
+.link--fizzmod-logo {
+  margin-left: 25px;
+}
+.link--fizzmod-logo::before {
+  content: "\e91c";
+  font-size: 90px;
+  top: -22px;
+}
+.link--vtex-logo::before {
+  content: "\e91b";
+  font-size: 60px;
+  top: -5px;
+}
+
+.buttonLink--checkout-orderplaced-return-buy {
+  height: 48px;
+  width: 319px;
+}
+.buttonLink--checkout-orderplaced-return-buy .label--checkout-orderplaced-return-buy {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  color: #424242;
+  border-radius: 0.25rem;
+  text-transform: initial;
+}
+
+.link--checkout-orderplaced-my-orders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 319px;
+  border: 2px solid #424242;
+  border-radius: 0.25rem;
+}
+.link--checkout-orderplaced-my-orders .label--checkout-orderplaced-my-orders {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  color: #424242;
+}
+.link--vtex-logo::before {
+  font-size: 60px;
+  top: -5px;
+}
+
+@media (max-width: 1023px) {
+  .buttonLink--checkout-orderplaced-return-buy,
+.link--checkout-orderplaced-my-orders {
+    height: 54px;
+    width: 290px !important;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+.link--login-btn-mobile::before {
+  content: "\e951";
+  font-family: "mercaldas";
+  font-size: 34px;
+  color: #424242;
+}
+
+.link--minicart__link--empty {
+  display: inline-block;
+  margin-top: 59px;
+  padding: 13px 54px;
+  border: 2px solid #1db779;
+  border-radius: 4px;
+}
+@media (max-width: 1023px) {
+  .link--minicart__link--empty {
+    margin-top: 66px;
+    padding: 13px 58px;
+  }
+}
+.link--minicart__link--empty:hover {
+  border: 2px solid #41d18c;
+}
+.link--minicart__link--empty:hover .label--minicart__link--empty {
+  color: #41d18c;
+}
+.link--facebook-icon, .link--instagram-icon {
+  margin-right: 10px;
+}
+@media (max-width: 1023px) {
+  .link--vtex-logo::before {
+    font-size: 45px;
+  }
+}
+.link--fizzmod-logo {
+  margin-left: 25px;
+}
+@media (max-width: 1023px) {
+  .link--fizzmod-logo::before {
+    font-size: 70px;
+  }
+}
+
+.label--minicart__link--empty {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #1db779;
+}
+@media (max-width: 1023px) {
+  .label--minicart__link--empty {
+    line-height: 16px;
+    font-size: 14px;
+  }
+}

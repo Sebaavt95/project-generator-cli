@@ -1,0 +1,15 @@
+.imageElement {
+	&--offer-slider {
+		@include mediaBreaks('mobile') {
+			width: 100% !important;
+		}
+	}
+	&--group-2-3,
+	&--group-1-1,
+	&--group-4-1,
+	&--group-4-2 {
+		width: 100% !important;
+		height: auto !important;
+		margin-bottom: 4px;
+	}
+}

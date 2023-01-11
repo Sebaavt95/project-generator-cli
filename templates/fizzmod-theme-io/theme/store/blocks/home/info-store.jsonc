@@ -1,0 +1,91 @@
+{
+    "flex-layout.row#info-store": {
+        "children": [
+            "slider-layout#info-store"
+            // "flex-layout.col#info-1",
+            // "flex-layout.col#info-2",
+            // "flex-layout.col#info-3"
+        ],
+        "props": {
+            "blockClass": "info-store",
+            "fullWidth": true
+            // "preventHorizontalStretch": true
+        }
+    },
+    // "flex-layout.col#info-1": {
+    //     "children": ["info-card#info-img-1"]
+    // },
+    // "flex-layout.col#info-2": {
+    //     "children": ["info-card#info-img-2"]
+    // },
+    // "flex-layout.col#info-3": {
+    //     "children": ["info-card#info-img-3"]
+    // },
+
+    "slider-layout#info-store": {
+        "props": {
+            "itemsPerPage": {
+              "desktop": 3,
+              "tablet": 2,
+              "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "mobileOnly",
+            "blockClass": "slider-info-store"
+          },
+        "children": [
+            "info-card#info-img-1",
+            "info-card#info-img-2",
+            "info-card#info-img-3"
+        ]
+    },
+   
+    "info-card#info-img-1": {
+        "props": {
+            "id": "info-card-store",
+            "isFullModeStyle": false,
+            "textPosition": "right",
+            "imageUrl": "https://via.placeholder.com/85x84.png",
+            "headline": "Comprá Online",
+            "subhead" : "¡Y retirá en nuestra tienda!",
+            "callToActionText": "",
+            "callToActionMode": "none",
+            // "callToActionUrl": "/sale/d",
+            "blockClass": "info-card-infostore-1",
+            "textAlignment": "center"
+            
+          }
+    },
+    "info-card#info-img-2": {
+        "props": {
+            "id": "info-card-store",
+            "isFullModeStyle": false,
+            "textPosition": "right",
+            "imageUrl": "https://via.placeholder.com/85x84.png",
+            "headline": "Cuotas sin interés",
+            "subhead" : "En todos los productos",
+            "callToActionText": "",
+            "callToActionMode": "none",
+            // "callToActionUrl": "/sale/d",
+            "blockClass": "info-card-infostore-1",
+            "textAlignment": "center"
+            
+          }
+    },
+    "info-card#info-img-3": {
+        "props": {
+            "id": "info-card-store",
+            "isFullModeStyle": false,
+            "textPosition": "right",
+            "imageUrl": "https://via.placeholder.com/85x84.png",
+            "headline": "Ofertas exclusivas",
+            "subhead" : "en nuestra tienda online",
+            "callToActionMode": "none",
+            "callToActionText": "",
+            // "callToActionUrl": "/sale/d",
+            "blockClass": "info-card-infostore-1",
+            "textAlignment": "center"
+            
+          }
+    }
+}

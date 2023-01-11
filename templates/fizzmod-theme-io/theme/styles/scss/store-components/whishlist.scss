@@ -1,0 +1,9 @@
+.imageElement {
+	&--wishlist-empty-state {
+		@include responsive('tb') {
+			width: 143px !important ;
+			height: 143px !important ;
+			margin-top: 29px;
+		}
+	}
+}

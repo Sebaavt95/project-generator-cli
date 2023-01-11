@@ -1,0 +1,106 @@
+$devices: (
+	'mobile': (
+		max-width: (
+			$sm - 1
+		) + px
+	),
+	'mobileLarge': (
+		max-width: (
+			$sm - 127
+		) + px
+	),
+	'tablet': (
+		max-width: (
+			$md - 1
+		) + px
+	),
+	'onlyDesktop': (
+		min-width: $lg + px
+	),
+	'desktopSm': (
+		max-width: (
+			$xl - 1
+		) + px
+	),
+	'desktopLg': (
+		min-width: $xl + px
+	)
+) !default;
+
+@mixin mediaBreaks($size) {
+	@if map-has-key($devices, $size) {
+		@media #{inspect(map-get($devices, $size))} {
+			@content;
+		}
+	}
+}
+
+@mixin customMediaBreaks($size, $type: 'max') {
+	@if $type == 'min' {
+		@media (min-width: $size + 'px') {
+			@content;
+		}
+	} @else {
+		@media (max-width: $size + 'px') {
+			@content;
+		}
+	}
+}
+
+@mixin phone {
+	@media (max-width: 639px) {
+		@content;
+	}
+}
+
+@mixin phone-lg {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: 640px) and (max-width: 1023px) {
+		@content;
+	}
+}
+
+@mixin tablet-lg {
+	@media only screen and (min-width: 640px) and (max-width: 1160px) {
+		@content;
+	}
+}
+
+@mixin tablet-landscape {
+	@media only screen and (min-width: 721px) and (max-width: 1160px) {
+		@content;
+	}
+}
+
+@mixin desk {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}
+
+$breakpoints: (
+	'xs': 320,
+	'sm': 640,
+	'tb': 768,
+	'md': 1024,
+	'lg': 1280,
+	'xl': 1440
+) !default;
+@mixin responsive($breakpoint: 'lg', $type: 'max') {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@if $type == 'min' {
+			@media (min-width: map-get($breakpoints, $breakpoint) + 'px') {
+				@content;
+			}
+		} @else {
+			@media (max-width: map-get($breakpoints, $breakpoint) - 1 + 'px') {
+				@content;
+			}
+		}
+	}
+}

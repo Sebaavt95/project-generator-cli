@@ -1,0 +1,95 @@
+#!/bin/bash
+
+PREVIOUS_HASH=$1
+NEW_HASH=$2
+CHECKOUT_TYPE=$3
+BRANCH_QA="QA"
+BRANCH_UAT="uat"
+NAME=$(git config user.name)
+# Text colors
+Gre='\e[0;32m';
+RCol='\e[0m';
+Red='\033[1;31m'
+Green='\033[00;32m'
+Yellow='\033[01;33m'
+
+if [[ $CHECKOUT_TYPE -ne 1 ]]; then
+	exit 0 # Not a branch checkout
+fi
+
+if [[ $PREVIOUS_HASH != $NEW_HASH ]]; then
+	exit 0 # Just changing from one branch to another
+fi
+
+CURRENT_BRANCH=$(git branch | grep '*' | sed 's/* //')
+if [[ $CURRENT_BRANCH == $BRANCH_QA ]] || [[ $CURRENT_BRANCH == $BRANCH_UAT ]]; then
+	exit 0 # Checkout de una branch especial en si misma
+fi
+
+exec < /dev/tty
+
+isYes() {
+	if [[ $1 =~ (^y(es)? *$) ]]; then
+		return 0
+	fi
+	return 1
+}
+
+
+promptAutofix() {
+
+	echo -e -n "Querés crear la branch ${Yel}$1${RCol} desde master? [Y/n]: "
+	read -p "" AUTOFIX
+
+	AUTOFIX=${AUTOFIX:=yes}
+
+	if isYes $AUTOFIX; then
+		echo -e "- ${Green}Checkout a master${RCol}"
+		git checkout master
+		echo ""
+		echo -e "- ${Green}Borrando branch mal creada${RCol}"
+		git branch -D $1
+		echo ""
+		echo -e "- ${Green}Creando branch nuevamente${RCol}"
+		git checkout -b $1
+
+		echo ""
+		echo -e "Listo! ${Gre}✔${RCol}"
+		echo ""
+		echo ""
+	else
+		echo -e "- ${Green}Checkout a master${RCol}"
+		git checkout master
+		echo ""
+		echo -e "- ${Green}Borrando branch mal creada${RCol}"
+		git branch -D $1
+		echo ""
+		echo -e "Listo! ${Gre}✔${RCol}"
+		echo ""
+		echo ""
+		echo -e "- ${Yellow} Si por error se elimino una branch incorrecta, puedes recuperarla con 'git checkout -b <branch> <sha>'${RCol}"
+		echo ""
+	fi
+}
+
+DIR=$(git rev-parse --show-toplevel);
+
+if [[ -f ${DIR}/.qa ]]; then
+	echo "${LOGs_COUNT}"
+	echo ""
+	echo -e "\t${Red}CUIDADO ${NAME}!!${RCol} Estás sacando una branch de QA!"
+	echo ""
+	echo ""
+	promptAutofix $CURRENT_BRANCH
+	exit 1
+fi
+
+if [[ -f ${DIR}/.uat ]]; then
+	echo "${LOGs_COUNT}"
+	echo ""
+	echo -e "\t${Red}CUIDADO ${NAME}!!${RCol} Estás sacando una branch de UAT!"
+	echo ""
+	echo ""
+	promptAutofix $CURRENT_BRANCH
+	exit 1
+fi

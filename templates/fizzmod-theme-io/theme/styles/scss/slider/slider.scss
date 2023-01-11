@@ -1,0 +1,15 @@
+.dotsContainer {
+	@include customMediaBreaks(1026) {
+		display: none;
+	}
+	@include responsive('tb') {
+		display: block;
+		margin-top: -58px;
+	}
+}
+
+.sliderFrame {
+	@include responsive('md') {
+		padding-bottom: 73px;
+	}
+}

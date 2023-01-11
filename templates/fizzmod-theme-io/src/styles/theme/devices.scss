@@ -1,0 +1,96 @@
+$devices: (
+	'mobile': (
+		max-width: (
+			$sm - 1
+		) + px
+	),
+	'tablet': (
+		max-width: (
+			$md - 1
+		) + px
+	),
+	'tabletLg': (
+		max-width: (
+			$lg - 1
+		) + px
+	),
+	'onlyDesktop': (
+		min-width: $lg + px
+	),
+	'desktopSm': (
+		max-width: (
+			$xl - 1
+		) + px
+	),
+	'desktopLg': (
+		min-width: $xl + px
+	)
+) !default;
+
+@mixin mediaBreaks($size) {
+	@if map-has-key($devices, $size) {
+		@media #{inspect(map-get($devices, $size))} {
+			@content;
+		}
+	}
+}
+
+@mixin miniPhone {
+	@media (max-width: 320px) {
+		@content;
+	}
+}
+
+@mixin phone {
+	@media (max-width: 599px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: 600px) and (max-width: 1023px) {
+		@content;
+	}
+}
+
+@mixin desk {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}
+
+// se usa sólo 2 veces en un archivo, reemplazar por responsive.
+@mixin mobile {
+	@include tablet {
+		@content;
+	}
+
+	@include phone {
+		@content;
+	}
+
+	@include miniPhone {
+		@content;
+	}
+}
+
+$breakpoints: (
+	'xs': 320,
+	'sm': 600,
+	'md': 1024,
+	'lg': 1280,
+	'xl': 1440
+) !default;
+@mixin responsive($breakpoint: 'lg', $type: 'max') {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@if $type == 'min' {
+			@media (min-width: map-get($breakpoints, $breakpoint) + 'px') {
+				@content;
+			}
+		} @else {
+			@media (max-width: map-get($breakpoints, $breakpoint) - 1 + 'px') {
+				@content;
+			}
+		}
+	}
+}

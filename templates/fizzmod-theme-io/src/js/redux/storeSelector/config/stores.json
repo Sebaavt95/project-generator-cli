@@ -1,0 +1,72 @@
+{
+	"states": [
+		{
+			"name": "Buenos Aires",
+			"stores": [1, 2, 3],
+			"latitude": -34.5863259,
+			"longitude": -58.4321134
+		}
+	],
+	"stores": [
+		{
+			"ecommerce": true,
+			"id": 1,
+			"name": "Fizzmod - Palermo",
+			"sc": 1,
+			"ZIP": "1414",
+			"state": "Buenos Aires",
+			"city": "Palermo",
+			"address": "Costa Rica 4988",
+			"phone": "(011) 999999999",
+			"timetable": "Todos los días de 9 a 18 hs.",
+			"opening": "",
+			"latitude": -34.5863259,
+			"longitude": -58.4321134,
+			"services": [],
+			"zipCodes": [1414],
+			"nearby": [],
+			"areas": [],
+			"polygons": []
+		},
+		{
+			"ecommerce": true,
+			"id": 2,
+			"name": "Fizzmod - Recoleta",
+			"sc": 1,
+			"ZIP": "1414",
+			"state": "Buenos Aires",
+			"city": "Recoleta",
+			"address": "Uriburu 1701",
+			"phone": "(011) 999999999",
+			"timetable": "Todos los días de 9 a 18 hs.",
+			"opening": "",
+			"latitude": -34.5848264,
+			"longitude": -58.4138525,
+			"services": [],
+			"zipCodes": [1414],
+			"nearby": [],
+			"areas": [],
+			"polygons": []
+		},
+		{
+			"ecommerce": true,
+			"id": 3,
+			"name": "Fizzmod - Puerto Madero",
+			"sc": 1,
+			"ZIP": "1414",
+			"state": "Buenos Aires",
+			"city": "Puerto Madero",
+			"address": "Villaflor 450",
+			"phone": "(011) 999999999",
+			"timetable": "Todos los días de 9 a 18 hs.",
+			"opening": "",
+			"latitude": -34.611176,
+			"longitude": -58.361957,
+			"services": [],
+			"zipCodes": [1414],
+			"nearby": [],
+			"areas": [],
+			"polygons": []
+		}
+	]
+}

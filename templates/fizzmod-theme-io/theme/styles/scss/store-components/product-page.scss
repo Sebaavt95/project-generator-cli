@@ -1,0 +1,726 @@
+/* Product Page */
+
+.productBrandContainer {
+	&--pdp {
+		&-brand {
+			margin-bottom: 7px;
+			@include mediaBreaks('tablet') {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.productBrandName {
+	&--pdp {
+		&-brand {
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 20px;
+			letter-spacing: normal;
+			color: $grey-600;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.productNameContainer {
+	&--pdp {
+		&-product {
+			&-name {
+				max-width: 355px;
+				display: flex;
+				flex-direction: column;
+				&::after {
+					@include mediaBreaks('tablet') {
+						margin: 14px 0 21px;
+						width: 34px;
+					}
+				}
+
+				@include mediaBreaks('tablet') {
+					align-items: center;
+					margin: 0px auto;
+				}
+			}
+		}
+	}
+}
+
+.productBrand {
+	&--pdp {
+		&-product {
+			&-name {
+				font-size: 32px;
+				font-weight: 400;
+				line-height: 38px;
+				letter-spacing: 2px;
+				color: $secondary-dark;
+
+				@include mediaBreaks('mobile') {
+					font-size: 16px;
+					line-height: 19px;
+					letter-spacing: 1px;
+				}
+				@include mediaBreaks('tablet') {
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+.shareContainer {
+	display: flex;
+	align-items: center;
+	margin-top: 32px;
+
+	@include mediaBreaks('tablet') {
+		justify-content: center;
+		margin: 14px 0 26px;
+	}
+}
+
+.shareLabel {
+	font-family: $fontFamily;
+	font-size: 13px;
+	line-height: 15px;
+	color: $secondary-dark;
+	margin-right: 13px;
+}
+
+.shareSocialIcon {
+	display: none;
+}
+
+.shareSocialButton {
+	width: 34px;
+	height: 34px;
+	background-color: $grey-800 !important;
+	border-radius: 3px;
+	margin: 0 11px 0 0;
+	transition: all 0.2s ease !important;
+	position: relative;
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+
+	&:first-child {
+		&:hover {
+			background-color: #4267b2 !important;
+		}
+		&::before {
+			content: '\e911';
+			font-family: 'mercaldas';
+			font-size: 34px;
+			height: 34px;
+			width: 34px;
+			color: $white;
+			position: absolute;
+			top: -1px;
+			left: 0;
+
+			@include mediaBreaks('tablet') {
+				margin-right: 6px;
+				height: 32px;
+				width: 32px;
+			}
+		}
+	}
+
+	&:last-child {
+		&:hover {
+			background-color: #25d366 !important;
+		}
+		&::before {
+			content: '\e914';
+			font-family: 'mercaldas';
+			font-size: 25px;
+			height: 34px;
+			width: 34px;
+			color: $white;
+			position: absolute;
+			top: 4px;
+			left: 0;
+
+			@include mediaBreaks('tablet') {
+				font-size: 22px;
+				left: -1px;
+			}
+		}
+	}
+
+	@include mediaBreaks('tablet') {
+		margin-right: 6px;
+		height: 32px;
+		width: 32px;
+	}
+}
+
+.subscriberContainer {
+	max-width: 452px;
+
+	:global(.vtex-store-components-3-x-title) {
+		display: none;
+	}
+
+	:global(.vtex-store-components-3-x-form) {
+		margin-top: 20px;
+	}
+
+	:global(.vtex-store-components-3-x-content) {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+
+	:global(.vtex-store-components-3-x-inputName),
+	:global(.vtex-store-components-3-x-inputEmail) {
+		width: 221px;
+
+		@include mediaBreaks('tablet') {
+			width: 49%;
+		}
+	}
+
+	:global(.vtex-store-components-3-x-submit) {
+		margin-top: 22px;
+		min-width: 247px;
+
+		& :global(.vtex-button__label) {
+			&::before {
+				@include mediaBreaks('tablet') {
+					padding: 16px 0;
+				}
+			}
+		}
+
+		@include mediaBreaks('tablet') {
+			margin-bottom: 26px;
+		}
+	}
+
+	:global(.vtex-store-components-3-x-inputName),
+	:global(.vtex-store-components-3-x-inputEmail) {
+		:global(.vtex-input-prefix__group) {
+			border: 1px solid $grey-300;
+
+			@include mediaBreaks('mobile') {
+				height: 48px;
+			}
+		}
+	}
+
+	:global(.vtex-store-components-3-x-error) {
+		font-size: 14px;
+		margin-top: 8px;
+	}
+
+	&,
+	& :global(.vtex-store-components-3-x-content) {
+		@include mediaBreaks('tablet') {
+			max-width: unset;
+		}
+	}
+
+	@include mediaBreaks('tablet') {
+		margin-top: -36px;
+
+		:global(.vtex-store-components-3-x-inputName),
+		& :global(.vtex-store-components-3-x-inputEmail) {
+			:global(.vtex-styleguide-9-x-input) {
+				font-size: 13px;
+			}
+		}
+
+		:global(.vtex-store-components-3-x-form),
+		& :global(.vtex-store-components-3-x-submit) {
+			margin-top: 13px;
+		}
+
+		:global(.vtex-store-components-3-x-submit),
+		& :global(.vtex-store-components-3-x-submit) :global(.vtex-button) {
+			width: 100%;
+		}
+	}
+}
+
+.subscribeLabel {
+	display: flex;
+	align-items: center;
+	background-color: #feeaea;
+	border-radius: 4px;
+	padding: 13px 17px;
+	font-size: 11px;
+	line-height: 16px;
+	font-weight: 500;
+	color: $error;
+
+	&::before {
+		content: '\e925';
+		font-family: 'mercaldas';
+		font-size: 20px;
+		color: $error;
+		margin-right: 10px;
+		transform: translateY(-2px);
+
+		@include mediaBreaks('tablet') {
+			transform: translateY(0);
+		}
+	}
+
+	@include mediaBreaks('tablet') {
+		padding: 8px;
+	}
+}
+
+.submit {
+	:global(.vtex-button__label) {
+		font-family: $fontFamily;
+		font-size: 15px;
+		line-height: 18px;
+		text-transform: initial;
+		padding: 20px 24px;
+	}
+}
+
+.inputEmail {
+	:global(.vtex-input__error) {
+		@include mediaBreaks('tablet') {
+			font-size: 13px;
+			margin-top: 4px;
+		}
+	}
+}
+
+/* Thumbnails Images | Product Page */
+
+.productImagesThumb {
+	&--pdp {
+		&-images {
+			height: 109px;
+			width: 109px;
+			margin-bottom: 18.5px;
+		}
+	}
+}
+
+.productImagesThumbActive {
+	&--pdp {
+		&-images {
+			border: 1px solid $secondary-dark;
+		}
+	}
+}
+
+.carouselContainer {
+	&--pdp {
+		&-images {
+			max-height: 506px;
+
+			:global(.vtex-store-components-3-x-carouselGaleryCursor) {
+				padding: 0;
+				max-width: 506px;
+			}
+
+			.carouselGaleryCursor {
+				@include mediaBreaks('tablet') {
+					margin: 0px auto;
+				}
+			}
+		}
+	}
+}
+
+.productImagesGallerySwiperContainer {
+	&--pdp {
+		&-images {
+			min-height: 231px;
+		}
+	}
+}
+
+.carouselGaleryThumbs {
+	&--pdp {
+		&-images {
+			width: 109px !important;
+			left: 44px;
+
+			:global(.vtex-store-components-3-x-gradientBaseBottom) {
+				width: 100%;
+				height: 45px;
+				background: linear-gradient(transparent, $white, $white);
+				@include flexCenter;
+				padding: 0;
+				padding-top: 10px;
+
+				&::after {
+					content: '\e907';
+					font-family: 'mercaldas' !important;
+					color: $grey-800;
+					font-size: 14px;
+					position: absolute;
+					bottom: 30px;
+				}
+
+				.caretIcon {
+					&--pdp {
+						&-images {
+							display: none;
+						}
+					}
+				}
+			}
+
+			@include mediaBreaks('tablet') {
+				display: none !important;
+			}
+		}
+	}
+}
+
+.productImagesGallerySlide--pdp-images {
+	@include responsive('md', min) {
+		height: 506px;
+	}
+}
+
+/* Arrow Slider | Product Page */
+
+.caretIcon {
+	&--pdp {
+		&-images {
+			color: $grey-800;
+			width: 21px;
+			height: 21px;
+		}
+	}
+}
+
+.swiperCaretPrev {
+	&--pdp {
+		&-images {
+			padding: 30px 0px 30px 24px;
+			position: absolute;
+
+			&::before {
+				content: '\e909';
+				font-family: 'mercaldas' !important;
+				color: $grey-800;
+				font-size: 21px;
+				position: relative;
+				top: 0px;
+			}
+
+			.caretIcon {
+				&--pdp {
+					&-images {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.swiperCaretNext {
+	&--pdp {
+		&-images {
+			padding: 30px 24px 30px 0px;
+			position: absolute;
+
+			&::before {
+				content: '\e90a';
+				font-family: 'mercaldas' !important;
+				color: $grey-800;
+				font-size: 21px;
+				position: relative;
+				top: 0px;
+			}
+
+			.caretIcon {
+				&--pdp {
+					&-images {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.carouselContainer {
+	&--pdp {
+		&-images {
+			.swiperPaginationClickable {
+				bottom: 13px;
+				@include responsive('md', min) {
+					bottom: 11px;
+				}
+
+				:global(.vtex-store-components-3-x-swiperBullet) {
+					@include responsive('md', min) {
+						height: 9px;
+						width: 9px;
+						margin: 0 8px;
+					}
+				}
+
+				.swiperBullet {
+					&--active {
+						color: $secondary-dark;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Shipping Calculator | Product Page */
+
+.shippingContainer {
+	width: 425px;
+	height: auto;
+	@include flexCenter;
+	padding: 20px 15px 29px 15px;
+
+	:global(.vtex-address-form__state),
+	& :global(.vtex-address-form__city) {
+		width: 301px;
+		height: 60px;
+
+		@include mediaBreaks('mobile') {
+			width: 290px;
+			height: 67px;
+		}
+	}
+
+	:global(.vtex-address-form__state) {
+		margin-bottom: 17px;
+
+		@include mediaBreaks('mobile') {
+			margin-bottom: 16px;
+		}
+	}
+
+	:global(.vtex-address-form__city) {
+		margin-bottom: 29px;
+
+		@include mediaBreaks('mobile') {
+			margin-bottom: 18px;
+		}
+	}
+
+	:global(.vtex-address-form-4-x-dropdown) {
+		:global(.vtex-dropdown__label) {
+			display: none;
+		}
+		:global(.vtex-address-form-4-x-container) {
+			width: 100%;
+			height: 40px;
+			margin: 0;
+			border: 1px solid $grey-300;
+			border-radius: 4px;
+			background-color: $white;
+			margin-top: 3px;
+
+			:global(.vtex-dropdown__caption) {
+				height: 16px;
+				margin-top: 11px;
+				color: $grey-600;
+				font-family: $fontFamily;
+				font-size: 14px;
+				letter-spacing: 0;
+				line-height: 16px;
+
+				@include mediaBreaks('mobile') {
+					height: 15px;
+					width: 204px;
+					margin-top: 15px;
+					font-size: 13px;
+					letter-spacing: 0;
+					line-height: 15px;
+				}
+			}
+
+			:global(.vtex-dropdown__button) {
+				padding: 0px 14px;
+				position: relative;
+				background-color: $white;
+			}
+
+			:global(.vtex-dropdown__arrow) {
+				height: 0px;
+				width: 0px;
+
+				&::before {
+					color: $secondary-main;
+					content: '\e907';
+					font-family: 'mercaldas';
+					font-size: 14px;
+					position: absolute;
+					right: 14px;
+					top: 13px;
+
+					@include mediaBreaks('mobile') {
+						top: 15px;
+					}
+				}
+			}
+
+			@include mediaBreaks('mobile') {
+				height: 48px;
+			}
+		}
+	}
+
+	:global(.vtex-input-prefix__group) {
+		height: 40px;
+		border: 1px solid $grey-400;
+		border-radius: 4px;
+		background-color: $white;
+	}
+
+	:global(.vtex-address-form-4-x-input) {
+		font-family: $fontFamily;
+		font-size: 14px;
+		letter-spacing: 0;
+		line-height: 16px;
+		color: $secondary-main;
+		background-color: $white;
+	}
+
+	:global(.vtex-address-form__postalCode) {
+		:global(.vtex-input__suffix) {
+			display: none;
+		}
+	}
+
+	:global(.vtex-button) {
+		height: 48px;
+		width: 206px;
+		cursor: pointer;
+		background-color: $grey-400;
+		border: none;
+		color: $grey-800;
+		transition: all ease-in-out 0.3s;
+
+		&:hover {
+			background-color: $grey-300;
+			color: $grey-700;
+		}
+
+		:global(.vtex-button__label) {
+			font-family: $fontFamily;
+			font-size: 15px;
+			font-weight: 500;
+			letter-spacing: 0;
+			line-height: 18px;
+			text-align: center;
+			text-transform: initial;
+
+			&::before {
+				@include mediaBreaks('mobile') {
+					left: 80px;
+					top: 18px;
+				}
+			}
+		}
+
+		&::after {
+			@include mediaBreaks('mobile') {
+				top: 20px;
+				right: 82px;
+			}
+		}
+
+		@include mediaBreaks('mobile') {
+			height: 54px;
+			width: 290px;
+		}
+	}
+
+	:global(.vtex-button__label) {
+		&::after {
+			content: '\e90a';
+			font-family: 'mercaldas';
+			font-size: 14px;
+			margin-left: 10px;
+		}
+	}
+
+	:global(.vtex-button__spinner-container) {
+		&::after {
+			display: none;
+		}
+	}
+
+	@include mediaBreaks('mobile') {
+		width: 320px;
+		height: 260px;
+		padding-top: 18px;
+		padding-bottom: 18px;
+	}
+}
+
+.shippingNoMessage {
+	width: 425px;
+	padding: 20px 0;
+	margin-top: 0;
+	font-family: $fontFamily;
+	text-align: center;
+	color: $secondary-dark;
+}
+
+/* Tab Layout | Product Page */
+
+.productDescriptionContainer {
+	min-height: 376px;
+	padding: 43px 110px 66px 110px;
+
+	.productDescriptionText {
+		font-family: $fontFamily;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0;
+		line-height: 16px;
+		text-align: center;
+		color: $grey-700;
+	}
+
+	@include mediaBreaks('tablet') {
+		padding: 15px;
+	}
+}
+
+.productDescriptionTitle {
+	display: none;
+}
+
+.showMoreButton {
+	&--pdp {
+		&-description {
+			&-mobile {
+				display: none;
+			}
+		}
+	}
+}
+
+.productDescriptionText {
+	.container {
+		height: auto !important;
+	}
+
+	&--pdp {
+		&-description {
+			&-mobile {
+				.fadeBottom {
+					display: none;
+				}
+			}
+		}
+	}
+}

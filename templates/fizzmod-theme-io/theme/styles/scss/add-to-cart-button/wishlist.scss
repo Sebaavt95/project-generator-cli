@@ -1,0 +1,23 @@
+.buttonText--wishlist {
+	&::before {
+		display: none;
+	}
+
+	@include customMediaBreaks(1160) {
+		font-size: 0;
+
+		&::before {
+			display: flex;
+			margin-right: 3px;
+		}
+
+	}
+
+	@include mediaBreaks('mobile') {
+			font-size: initial;
+
+			&::before {
+				display: none;
+			}
+	}
+}

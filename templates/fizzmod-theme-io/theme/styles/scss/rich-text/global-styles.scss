@@ -1,0 +1,52 @@
+.container {
+	&--title {
+		@include mediaBreaks('tablet') {
+			margin-top: 5px;
+			margin-bottom: 12px;
+		}
+	}
+	&--department-title {
+		@include mediaBreaks('tablet') {
+			margin-top: 35px;
+			margin-bottom: 14px;
+		}
+	}
+	&--title,
+	&--department-title {
+		height: 66px;
+		position: relative;
+		margin-top: 44px;
+		margin-bottom: 32px;
+	}
+}
+
+.headingLevel3 {
+	&--title,
+	&--department-title {
+		font-family: $fontFamily;
+		font-size: 28px;
+		font-weight: bold;
+		line-height: 33px;
+
+		@include mediaBreaks('tablet') {
+			font-size: 20px;
+			line-height: 24px;
+			margin: 0px;
+		}
+	}
+	&--title::after,
+	&--department-title::after {
+		content: '';
+		position: absolute;
+		width: 62px;
+		height: 3px;
+		background-color: $grey-800;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0;
+
+		@include mediaBreaks('tablet') {
+			bottom: 6px;
+		}
+	}
+}

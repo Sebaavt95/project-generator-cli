@@ -1,0 +1,105 @@
+.payment-unauthorized-modal {
+	background: $white;
+	width: 440px !important;
+	border-radius: 0;
+	border: none;
+	@include responsive('sm') {
+		width: 300px !important;
+	}
+	&.fade.in {
+		top: calc(50% - 208px) !important;
+		left: calc(50% - 220px) !important;
+		margin-left: 0;
+		z-index: 999999;
+
+		@include responsive('sm') {
+			top: calc(50% - 222px) !important;
+			left: calc(50% - 150px) !important;
+		}
+	}
+	.modal-body {
+		width: auto !important;
+		padding: 0;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		max-height: none;
+	}
+	.payment-unauthorized-hello {
+		position: relative;
+		color: $black;
+		text-align: center;
+		@include typographyH6;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		background: $grey100;
+		padding-bottom: 21px;
+		height: 124px !important;
+		width: 100%;
+		margin-bottom: 20px;
+		@include responsive('sm') {
+			height: 130px !important;
+			padding: 84px 50px 21px;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			left: 50%;
+			margin-left: -16px;
+			width: 33px;
+			height: 42px;
+			bottom: 58px;
+			@include icn_payment-error-message($secondaryMain);
+			background-repeat: no-repeat;
+			@include responsive('sm') {
+				width: 27px;
+				height: 34px;
+				bottom: 73px;
+			}
+		}
+	}
+	.payment-unauthorized-security {
+		display: none;
+	}
+	.payment-unauthorized-message p {
+		color: $grey800;
+		@include typographyBody2;
+		line-height: 21px;
+		margin-bottom: 12px;
+		padding: 0 32px;
+		text-align: center;
+		@include responsive('sm') {
+			padding: 0 20px;
+		}
+		&:nth-child(3) {
+			margin-top: 15px;
+			@include responsive('sm') {
+				margin-top: 28px;
+			}
+		}
+	}
+	.payment-unauthorized-show-details {
+		> small > a {
+			color: $primaryMain;
+			@include typographyBody2;
+			text-align: center;
+			text-decoration: underline;
+		}
+	}
+	.payment-unauthorized-button {
+		@include button;
+		width: 257px !important;
+		height: 58px;
+		@include typographyCaption;
+		text-align: center;
+		box-shadow: $boxShadow;
+		margin-bottom: 35px;
+		margin-top: 13px;
+		padding: 0 15px;
+		@include responsive('sm') {
+			width: 257px !important;
+			margin-bottom: 23px;
+		}
+	}
+}

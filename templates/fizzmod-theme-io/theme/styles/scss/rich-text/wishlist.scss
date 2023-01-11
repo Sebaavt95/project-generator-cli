@@ -1,0 +1,135 @@
+.headingLevel3 {
+	&--titleWishlist {
+		font-family: $fontFamily;
+		color: $secondary-main;
+		font-size: 23px;
+		font-weight: $bold;
+		letter-spacing: 0;
+		line-height: 27px;
+		margin: 0;
+		@include responsive('tb') {
+			font-size: 18px;
+			margin-left: 18px;
+			margin-top: 0px;
+			margin-bottom: 18px;
+		}
+	}
+}
+
+.paragraph {
+	&--header-wishlist-product {
+		width: 330px;
+	}
+	&--header-wishlist-price {
+		width: 143px;
+	}
+	&--header-wishlist-quantity {
+		width: 177px;
+	}
+}
+
+/*
+|---------------------------------------------------------------------------------------------------------------------
+|           BACK BUTTON
+|---------------------------------------------------------------------------------------------------------------------
+*/
+
+.paragraph {
+	&--button-back {
+		margin: 0;
+		font-family: $fontFamily;
+		font-weight: $medium;
+		text-transform: uppercase;
+		letter-spacing: 0;
+		font-size: 14px;
+		color: $secondary-main;
+	}
+}
+
+.link {
+	&--button-back {
+		text-decoration: none;
+		color: $secondary-main;
+	}
+}
+
+.container {
+	&--button-back {
+		cursor: pointer;
+		&::before {
+			content: '\e909';
+			font-family: 'mercaldas';
+			margin-right: 10px;
+		}
+	}
+}
+
+/*
+|---------------------------------------------------------------------------------------------------------------------
+|           EMPTY PAGE
+|---------------------------------------------------------------------------------------------------------------------
+*/
+
+.paragraph {
+	&--wishlist__title--empty {
+		height: 17px;
+		color: $grey-600;
+		font-family: 'Roboto';
+		font-size: 18px;
+		font-weight: $medium;
+		letter-spacing: 0;
+		line-height: 16px;
+		margin-bottom: 265px;
+		@include customMediaBreaks(1026) {
+			line-height: 20px;
+			text-align: center;
+			margin-bottom: 136px;
+		}
+	}
+
+	&--wishlist-empty-message {
+		color: $white;
+	}
+}
+
+.container {
+	&--wishlist-empty-message {
+		width: 100%;
+		background: $white;
+		left: 0;
+		top: 50px;
+		position: absolute;
+		color: $white;
+		@include customMediaBreaks(1026) {
+			display: none;
+		}
+	}
+}
+
+.wrapper {
+	&--wishlist__title--empty {
+		@include customMediaBreaks(1026) {
+			width: 171px;
+			margin-bottom: 0px;
+		}
+	}
+}
+
+/*
+|---------------------------------------------------------------------------------------------------------------------
+|           WISHLIST HEADER
+|---------------------------------------------------------------------------------------------------------------------
+*/
+
+.paragraph {
+	&--header-wishlist-product,
+	&--header-wishlist-price,
+	&--header-wishlist-quantity,
+	&--header-wishlist-actions {
+		color: $secondary-main;
+		font-family: $fontFamily;
+		font-size: 14px;
+		letter-spacing: 0;
+		line-height: 16px;
+	}
+}

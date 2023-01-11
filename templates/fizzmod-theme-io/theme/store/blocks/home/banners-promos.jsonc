@@ -1,0 +1,73 @@
+{
+  "flex-layout.row#banners-promos": {
+    "props": {
+      "blockClass": "main__banner__container",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "colGap": {
+        "desktop": 5,
+        "mobile": 0
+      }
+    },
+    "children": [
+      "flex-layout.col#main-banner-slider",
+      "flex-layout.col#main-banner-offer"
+    ]
+  },
+  "flex-layout.col#main-banner-offer": {
+    "children": ["image#image-offer2"],
+    "props": {
+      "blockClass": "main__banner__offer"
+    }
+  },
+  "flex-layout.col#main-banner-slider": {
+    "props": {
+      "blockClass": "main__banner__slider__container"
+    },
+    "children": ["image#image-offer"]
+  },
+  "image#image-offer2": {
+    "props": {
+      "src": "https://via.placeholder.com/335x414.png",
+      "max-height": 414,
+      "centerMode": {
+        "mobile": "to-the-left",
+        "desktop": "disabled"
+      },
+      "centerModeSlidesGap": {
+        "mobile": 1
+      }
+    }
+  },
+  // ,
+
+  // "slider-layout#main-banner-slider": {
+  //   "props": {
+  //     "blockClass": "main__banner__slider",
+  //     "itemsPerPage": {
+  //       "desktop": 1,
+  //       "tablet": 1,
+  //       "phone": 1
+  //     },
+  //     "arrowSize": 17,
+  //     "infinite": true,
+  //     "autoplay": {
+  //       "timeout": 6000,
+  //       "stopOnHover": true
+  //     }
+  //   }
+  // },
+  "image#image-offer": {
+    "props": {
+      "src": "https://via.placeholder.com/678x414.png",
+      "max-height": 414,
+      "centerMode": {
+        "mobile": "to-the-left",
+        "desktop": "disabled"
+      },
+      "centerModeSlidesGap": {
+        "mobile": 1
+      }
+    }
+  }
+}

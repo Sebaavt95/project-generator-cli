@@ -1,0 +1,14 @@
+.input {
+	background-color: $white;
+	margin: 0;
+	padding: 0 0 0 14px;
+	font-family: $fontFamily;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0;
+	color: $secondary-main;
+
+	&::placeholder {
+		color: $grey-600;
+	}
+}

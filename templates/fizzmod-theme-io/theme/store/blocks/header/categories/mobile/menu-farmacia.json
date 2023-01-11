@@ -1,0 +1,24 @@
+
+		{
+			
+  "menu-item#farmacia-mobile": {
+   "props": {
+    "id": "5/farmacia",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "department-mobile",
+    "itemProps": {
+     "type": "internal",
+     "href": "/farmacia",
+     "noFollow": false,
+     "tagTitle": "Farmacia",
+     "text": "Farmacia"
+    }
+   },
+   "blocks": []
+  }
+	
+ 
+		}
+	

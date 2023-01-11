@@ -1,0 +1,46 @@
+.container {
+	&--category-card-title {
+		margin: 0 20px;
+	}
+}
+
+.headingLevel4 {
+	&--category-card-title {
+		@include typographyBody1;
+		margin: 11px 0 12px;
+
+		&::before {
+			content: '';
+			display: block;
+			width: 21px;
+			height: 2px;
+			background-color: $grey-800;
+			margin: 0 auto 9px;
+		}
+	}
+}
+
+.list {
+	&--category-card-subcategories {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		font-size: 13px;
+	}
+	&--category-card-subcategories {
+		text-decoration: none;
+		color: $secondary-main;
+		font-size: 13px;
+		line-height: 16px;
+
+		&:hover {
+			font-weight: $medium;
+		}
+	}
+}
+
+.listItem {
+	&--category-card-subcategories {
+		margin-bottom: 8px;
+	}
+}

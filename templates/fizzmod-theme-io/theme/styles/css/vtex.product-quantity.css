@@ -1,0 +1,457 @@
+.quantitySelectorContainer--plp-product-quantity {
+  margin: 0;
+}
+
+.summaryContainer--plp-product-quantity {
+  margin-top: 23px;
+}
+@media (max-width: 479px) {
+  .summaryContainer--plp-product-quantity {
+    height: 48px;
+  }
+}
+
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__minus-button),
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__plus-button) {
+  width: 70px !important;
+  border: none !important;
+  border-radius: 4px !important;
+  transition: 0.2s linear;
+}
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__minus-button):focus, .quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__minus-button):active, .quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__minus-button):visited,
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__plus-button):focus,
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__plus-button):active,
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__plus-button):visited {
+  border-color: transparent;
+  outline-color: transparent;
+}
+@media (max-width: 1023px) {
+  .quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__minus-button),
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__plus-button) {
+    width: 48px !important;
+    height: 54px;
+  }
+}
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__minus-button) {
+  background-color: #eeeeee;
+}
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__minus-button):hover {
+  background-color: #e0e0e0;
+}
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__minus-button):hover :global(.vtex-numeric-stepper__minus-button__text) {
+  color: #616161;
+}
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__plus-button) {
+  background-color: #9e9e9e;
+  color: #ffffff;
+}
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__plus-button):hover {
+  background-color: #616161;
+}
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__input) {
+  width: 84px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #424242;
+  font-weight: 500;
+}
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__input):focus {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  border-color: transparent;
+  outline-color: transparent;
+}
+@media (max-width: 1279px) {
+  .quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__input) {
+    width: 100%;
+  }
+}
+@media (max-width: 1023px) {
+  .quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__input) {
+    width: 100%;
+    height: 54px;
+    color: #424242;
+  }
+}
+@media (max-width: 639px) {
+  .quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__input) {
+    height: auto;
+  }
+}
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__minus-button__text),
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__plus-button__text) {
+  font-size: 0;
+}
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__minus-button__text)::before,
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__plus-button__text)::before {
+  font-family: "mercaldas";
+  font-size: 14px;
+  font-weight: 500;
+}
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__minus-button__text) {
+  color: #bdbdbd;
+}
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__minus-button__text)::before {
+  content: "\e90b";
+}
+.quantitySelectorStepper--plp-product-quantity :global(.vtex-numeric-stepper__plus-button__text)::before {
+  content: "\e90c";
+}
+
+.quantitySelectorStepper--highlightShelfQuantity :global(.vtex-numeric-stepper__minus-button) {
+  background: #f5f5f5;
+}
+.quantitySelectorStepper--highlightShelfQuantity :global(.vtex-numeric-stepper__minus-button):hover {
+  background: #e0e0e0;
+  cursor: pointer;
+}
+.quantitySelectorStepper--highlightShelfQuantity :global(.vtex-numeric-stepper__plus-button) {
+  background: #9e9e9e;
+}
+.quantitySelectorStepper--highlightShelfQuantity :global(.vtex-numeric-stepper__plus-button):hover {
+  background: #616161;
+  cursor: pointer;
+}
+.quantitySelectorStepper--highlightShelfQuantity :global(.vtex-numeric-stepper__plus-button), .quantitySelectorStepper--highlightShelfQuantity :global(.vtex-numeric-stepper__minus-button) {
+  height: 48px;
+  width: 100% !important;
+  border-radius: 4px !important;
+  cursor: pointer;
+  transition: 0.2s linear !important;
+}
+.quantitySelectorStepper--highlightShelfQuantity :global(.vtex-numeric-stepper__plus-button__text) {
+  color: #ffffff;
+}
+.quantitySelectorStepper--highlightShelfQuantity :global(.vtex-numeric-stepper__minus-button__text) {
+  color: #616161;
+}
+
+.quantitySelectorTitle--highlightShelfQuantity {
+  display: none;
+}
+
+.summaryContainer--highlightShelfQuantity {
+  height: 58px !important;
+  width: auto !important;
+  margin: 0 !important;
+  margin-top: 10px;
+}
+@media (max-width: 1023px) {
+  .summaryContainer--highlightShelfQuantity {
+    margin-left: 11.5px !important;
+    margin-right: 11.5px !important;
+    max-width: 100% !important;
+    margin-top: 0px !important;
+    min-width: 0px;
+    width: auto !important;
+  }
+}
+@media (max-width: 639px) {
+  .summaryContainer--highlightShelfQuantity {
+    height: initial !important;
+  }
+}
+
+@media (max-width: 1026px) {
+  .quantitySelectorStepper--wishlist-quantity {
+    margin: 0px !important;
+    margin-top: 10px !important;
+  }
+}
+.quantitySelectorStepper--wishlist-quantity :global(.vtex-numeric-stepper__plus-button),
+.quantitySelectorStepper--wishlist-quantity :global(.vtex-numeric-stepper__minus-button) {
+  height: 45px !important;
+  width: 45px !important;
+  border-radius: 4px !important;
+}
+.quantitySelectorStepper--wishlist-quantity :global(.vtex-numeric-stepper__plus-button) {
+  background-color: #9e9e9e;
+  color: #ffffff;
+}
+.quantitySelectorStepper--wishlist-quantity :global(.vtex-numeric-stepper__plus-button):hover {
+  background-color: #616161;
+  color: #ffffff !important;
+}
+.quantitySelectorStepper--wishlist-quantity :global(.vtex-numeric-stepper__minus-button):hover {
+  background-color: #e0e0e0;
+  color: #616161 !important;
+}
+.quantitySelectorStepper--wishlist-quantity :global(.vtex-numeric-stepper__minus-button__text),
+.quantitySelectorStepper--wishlist-quantity :global(.vtex-numeric-stepper__plus-button__text) {
+  font-size: 0px !important;
+}
+.quantitySelectorStepper--wishlist-quantity :global(.vtex-numeric-stepper__plus-button__text)::after {
+  content: "\e90c";
+  font-family: "mercaldas";
+  font-size: 14px;
+  font-weight: 500;
+}
+.quantitySelectorStepper--wishlist-quantity :global(.vtex-numeric-stepper__minus-button__text)::after {
+  content: "\e90b";
+  font-family: "mercaldas";
+  font-size: 14px;
+  font-weight: 500;
+}
+.quantitySelectorStepper--wishlist-quantity :global(.vtex-numeric-stepper__input) {
+  width: 68px;
+  height: 45px;
+  color: #424242;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+.quantitySelectorStepper--wishlist-quantity :global(.vtex-numeric-stepper__input):active, .quantitySelectorStepper--wishlist-quantity :global(.vtex-numeric-stepper__input):focus {
+  outline: none;
+}
+@media (max-width: 1026px) {
+  .quantitySelectorStepper--wishlist-quantity :global(.vtex-numeric-stepper__input) {
+    width: 60px;
+    height: 45px;
+  }
+}
+
+.quantitySelectorContainer--wishlist-quantity {
+  margin-bottom: 0px !important;
+}
+
+.summaryContainer--wishlist-quantity {
+  min-width: 170px;
+}
+@media (max-width: 639px) {
+  .summaryContainer--wishlist-quantity {
+    min-width: initial !important;
+  }
+}
+
+.quantitySelectorTitle--wishlist-quantity {
+  display: none;
+}
+
+/* Product Page */
+.quantitySelectorContainer--pdp-product-quantity {
+  margin: 0;
+}
+@media (max-width: 1023px) {
+  .quantitySelectorContainer--pdp-product-quantity {
+    margin-bottom: 9px;
+  }
+}
+
+.quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__minus-button), .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__plus-button) {
+  border: none !important;
+  border-radius: 4px !important;
+}
+.quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__minus-button):focus, .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__minus-button):active, .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__minus-button):visited, .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__plus-button):focus, .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__plus-button):active, .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__plus-button):visited {
+  border-color: transparent;
+  outline-color: transparent;
+}
+@media (max-width: 1023px) {
+  .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__minus-button), .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__plus-button) {
+    width: 81px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__minus-button), .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__plus-button) {
+    width: 69px !important;
+  }
+}
+.quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__input) {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #424242;
+  font-weight: 500;
+  width: 84px;
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 14px;
+}
+.quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__input):focus {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  border-color: transparent;
+  outline-color: transparent;
+}
+@media (max-width: 1023px) {
+  .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__input) {
+    flex: 1;
+  }
+}
+.quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__minus-button), .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__plus-button), .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__input) {
+  height: 62px;
+}
+@media (max-width: 1023px) {
+  .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__minus-button), .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__plus-button), .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__input) {
+    height: 54px;
+  }
+}
+.quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__minus-button__text), .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__plus-button__text) {
+  font-size: 0;
+}
+.quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__minus-button__text)::before {
+  content: "\e90b";
+  font-family: "mercaldas";
+  font-size: 14px;
+  font-weight: 500;
+}
+.quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__plus-button__text)::before {
+  content: "\e90c";
+  font-family: "mercaldas";
+  font-size: 14px;
+  font-weight: 500;
+}
+.quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__minus-button) {
+  background-color: #eeeeee;
+}
+.quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__minus-button):hover {
+  background-color: #e0e0e0;
+}
+.quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__plus-button) {
+  background-color: #9e9e9e;
+  color: #ffffff;
+}
+.quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__plus-button):hover {
+  background-color: #616161;
+}
+.quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__minus-button__text), .quantitySelectorStepper--pdp-product-quantity :global(.vtex-numeric-stepper__minus-button):hover :global(.vtex-numeric-stepper__minus-button__text) {
+  color: #616161;
+}
+
+/* Related Product. Internal Product Page */
+.quantitySelectorTitle--summary-quantity_pdp_shelf {
+  display: none;
+}
+
+.quantitySelectorStepper--summary-quantity_pdp_shelf :global(.vtex-numeric-stepper__input) {
+  margin: auto 0px;
+}
+.quantitySelectorStepper--summary-quantity_pdp_shelf :global(.vtex-numeric-stepper__plus-button) {
+  background-color: #9e9e9e;
+  border-bottom-left-radius: 4px !important;
+  border-top-left-radius: 4px !important;
+  color: #ffffff;
+  width: 48px;
+  height: 48px;
+}
+.quantitySelectorStepper--summary-quantity_pdp_shelf :global(.vtex-numeric-stepper__minus-button) {
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+  width: 48px;
+  height: 48px;
+}
+@media (max-width: 639px) {
+  .quantitySelectorStepper--summary-quantity_pdp_shelf :global(.vtex-numeric-stepper__minus-button), .quantitySelectorStepper--summary-quantity_pdp_shelf :global(.vtex-numeric-stepper__plus-button) {
+    width: 36px !important;
+  }
+}
+
+.summaryContainer--summary-quantity_pdp_shelf {
+  margin: 0px !important;
+  margin-bottom: 6px !important;
+}
+
+.quantitySelectorContainer--search-bar-product-quantity,
+.summaryContainer--search-bar-product-quantity {
+  margin: 0;
+}
+
+.summaryContainer--search-bar-product-quantity {
+  margin-right: 4px;
+}
+
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__minus-button),
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__plus-button) {
+  border: none !important;
+  border-radius: 4px !important;
+}
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__minus-button):focus, .quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__minus-button):active, .quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__minus-button):visited,
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__plus-button):focus,
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__plus-button):active,
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__plus-button):visited {
+  border-color: transparent;
+  outline-color: transparent;
+}
+@media (max-width: 1023px) {
+  .quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__minus-button),
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__plus-button) {
+    width: 30px !important;
+  }
+}
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__minus-button) {
+  background-color: #eeeeee;
+  color: #616161;
+}
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__minus-button):hover {
+  background-color: #e0e0e0;
+}
+@media (max-width: 1023px) {
+  .quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__minus-button) {
+    background-color: #eeeeee;
+  }
+}
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__plus-button) {
+  background-color: #9e9e9e;
+  color: #ffffff;
+}
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__plus-button):hover {
+  background-color: #616161;
+}
+@media (max-width: 1023px) {
+  .quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__plus-button) {
+    background-color: #9e9e9e;
+    color: #ffffff;
+  }
+}
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__input) {
+  width: 60px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #424242;
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+}
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__input):focus {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  border-color: transparent;
+  outline-color: transparent;
+}
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__input),
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__minus-button__text),
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__plus-button__text) {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 14px;
+}
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__minus-button__text),
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__plus-button__text) {
+  font-size: 0;
+}
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__minus-button__text)::before,
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__plus-button__text)::before {
+  font-family: "mercaldas";
+  font-size: 14px;
+  font-weight: 500;
+}
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__minus-button__text) {
+  color: #bdbdbd;
+}
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__minus-button__text)::before {
+  content: "\e90b";
+}
+@media (max-width: 1023px) {
+  .quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__minus-button__text) {
+    color: #bdbdbd;
+  }
+}
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper__plus-button__text)::before {
+  content: "\e90c";
+}
+.quantitySelectorStepper--search-bar-product-quantity :global(.vtex-numeric-stepper-container) {
+  justify-content: flex-end !important;
+}

@@ -1,0 +1,22 @@
+.input {
+	color: $secondary-light;
+	font-family: 'Heebo';
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	line-height: 19px;
+	background-color: $white;
+	border: 2px $grey-200 solid;
+	border-radius: 0;
+}
+
+.container {
+	background-color: $white;
+	border: 2px $grey-200 solid;
+	border-radius: 0;
+}
+
+.container {
+	& :global(.vtex-dropdown__arrow) {
+		color: $secondary-dark;
+	}
+}

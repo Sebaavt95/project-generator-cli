@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="94px" height="102px" viewBox="0 0 94 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icn_cart-empty</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icn_cart-empty" transform="translate(0.000000, 1.000000)">
+            <circle id="Oval-Copy-3" fill="#9B9B9B" cx="71.5880282" cy="33.1795775" r="1.32042254"></circle>
+            <path d="M86.5,24.5 L86.5,28.5854521" id="Line-6" stroke="#EB3300" stroke-linecap="square"></path>
+            <path d="M84.5,26.5 L88.4719617,26.5" id="Line-7" stroke="#EB3300" stroke-linecap="square"></path>
+            <circle id="Oval" stroke="#EB3300" cx="40.3380282" cy="8.53169014" r="3.08098592"></circle>
+            <path d="M72.6408451,0.440140845 L72.6408451,5.72183099" id="Line-4" stroke="#979797" stroke-linecap="square"></path>
+            <path d="M16.6408451,21.4401408 L16.6408451,26.721831" id="Line-4-Copy-2" stroke="#979797" stroke-linecap="square"></path>
+            <path d="M72.6408451,0.440140845 L72.6408451,5.72183099" id="Line-4-Copy" stroke="#979797" stroke-linecap="square" transform="translate(72.640845, 3.080986) rotate(-270.000000) translate(-72.640845, -3.080986) "></path>
+            <path d="M16.6408451,21.4401408 L16.6408451,26.721831" id="Line-4-Copy-3" stroke="#979797" stroke-linecap="square" transform="translate(16.640845, 24.080986) rotate(-270.000000) translate(-16.640845, -24.080986) "></path>
+            <path d="M35.4964789,28.778169 L38.1373239,33.1795775" id="Line-5" stroke="#979797" stroke-width="1.3" stroke-linecap="square"></path>
+            <path d="M55.7429577,28.778169 L58.3838028,33.1795775" id="Line-5-Copy" stroke="#979797" stroke-width="1.3" stroke-linecap="square" transform="translate(57.063380, 30.978873) scale(-1, 1) translate(-57.063380, -30.978873) "></path>
+            <path d="M46.9401408,25.2570423 L46.9401408,34.2783265" id="Line-6" stroke="#979797" stroke-width="1.3" stroke-linecap="square"></path>
+            <circle id="Oval-Copy-2" stroke="#979797" cx="58.8239437" cy="16.4542254" r="2.20070423"></circle>
+            <polygon id="Path-2" stroke="#EB3300" stroke-linejoin="round" points="7 2.63855093 10.8379744 0 10.8379744 5.13057828"></polygon>
+            <rect id="Rectangle" fill="#CBCBCB" x="17.4507042" y="42.4225352" width="58.9788732" height="10.5633803"></rect>
+            <polygon id="Path-3" fill="#9B9B9B" points="3.36619718 52.9859155 17.4507042 42.4225352 17.4507042 52.9859155"></polygon>
+            <polygon id="Path-3-Copy" fill="#9B9B9B" transform="translate(83.248346, 47.704225) scale(-1, 1) translate(-83.248346, -47.704225) " points="76.2060929 52.9859155 90.2905999 42.4225352 90.2905999 52.9859155"></polygon>
+            <g id="Rectangle" transform="translate(3.000000, 52.000000)" fill="#F8F8F8" stroke="#979797">
+                <path d="M0.866197183,1.48591549 L0.866197183,39.5211268 C0.866197183,44.2155471 4.67177681,48.0211268 9.36619718,48.0211268 L78.5140845,48.0211268 C83.2085049,48.0211268 87.0140845,44.2155471 87.0140845,39.5211268 L87.0140845,1.48591549 L0.866197183,1.48591549 Z"></path>
+            </g>
+            <rect id="Rectangle" stroke="#979797" fill="#F2F2F2" x="0.5" y="53.5" width="93" height="6"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,86 @@
+{
+    "store.custom#institutional-payment-methods": {
+        "blocks": [
+            "responsive-layout.desktop#payment-methods",
+            "responsive-layout.tablet#payment-methods",
+            "responsive-layout.phone#payment-methods"
+        ]
+    },
+    "responsive-layout.desktop#payment-methods": {
+        "children": [
+            "flex-layout.row#header-payment-methods",
+            "flex-layout.row#banner-payment-methods-desktop"
+        ]
+    },
+    "responsive-layout.tablet#payment-methods": {
+        "children": [
+            "flex-layout.row#header-payment-methods",
+            "flex-layout.row#banner-payment-methods-desktop"
+        ]
+    },
+    "responsive-layout.phone#payment-methods": {
+        "children": [
+            "flex-layout.row#header-payment-methods",
+            "flex-layout.row#banner-payment-methods-phone"
+        ]
+    },
+    "flex-layout.row#header-payment-methods": {
+        "children": [
+            "rich-text#payment-methods-title"
+        ],
+        "props": {
+            "blockClass": "institutional-title-container"
+        }
+    },
+    "rich-text#payment-methods-title": {
+        "props": {
+            "text": "### Medios de pago",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "institutional-title"
+        }
+    },
+    "flex-layout.row#banner-payment-methods-desktop": {
+        "props": {
+            "blockClass": "banner__institutional__desktop",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.col#banner-payment-methods-desktop"
+        ]
+    },
+    "flex-layout.col#banner-payment-methods-desktop": {
+        "children": [
+            "image#image-payment-methods-desktop"
+        ],
+        "props": {
+            "blockClass": "banner__institutional__desktop"
+        }
+    },
+    "image#image-payment-methods-desktop": {
+        "props": {
+            "src": "https://via.placeholder.com/1240x734.png",
+            "maxWidth": 1240
+        }
+    },
+    "flex-layout.row#banner-payment-methods-phone": {
+        "props":{
+            "blockClass": "banner__institutional__phone",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": false
+            },
+          "children": ["flex-layout.col#banner-payment-methods-phone"]
+    },
+    "flex-layout.col#banner-payment-methods-phone": {
+        "children": ["image#image-payment-methods-phone"],
+          "props": {
+            "blockClass": "banner__institutional__phone"
+          }
+    },
+    "image#image-payment-methods-phone": {
+        "props": {
+            "src": "https://via.placeholder.com/320x188.png"
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.link {
+	&--minicart__link--empty {
+		display: inline-block;
+		margin-top: 59px;
+		padding: 13px 54px;
+		border: 2px solid $primary-main;
+		border-radius: 4px;
+
+		@include mediaBreaks('tablet') {
+			margin-top: 66px;
+			padding: 13px 58px;
+		}
+
+		&:hover {
+			border: 2px solid $primary-light;
+		}
+
+		&:hover .label--minicart__link--empty {
+			color: $primary-light;
+		}
+	}
+	&--facebook-icon,
+	&--instagram-icon {
+		margin-right: 10px;
+	}
+	&--vtex-logo::before {
+		@include mediaBreaks('tablet') {
+			font-size: 45px;
+		}
+	}
+	&--fizzmod-logo {
+		margin-left: 25px;
+
+		&::before {
+			@include mediaBreaks('tablet') {
+				font-size: 70px;
+			}
+		}
+	}
+}
+
+.label {
+	&--minicart__link--empty {
+		font-size: 15px;
+		font-weight: $medium;
+		line-height: 18px;
+		letter-spacing: normal;
+		color: $primary-main;
+
+		@include mediaBreaks('tablet') {
+			line-height: 16px;
+			font-size: 14px;
+		}
+	}
+}

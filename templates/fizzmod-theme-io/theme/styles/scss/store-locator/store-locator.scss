@@ -1,0 +1,227 @@
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 39px;
+	margin-bottom: 72px;
+	margin-top: 48px;
+
+	@include customMediaBreaks(768) {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+		height: auto !important;
+	}
+}
+
+.storesListCol {
+	width: 288px;
+	height: 378px;
+	margin-right: 52px;
+
+	@include customMediaBreaks(768) {
+		order: 1;
+		width: 100%;
+		height: auto !important;
+		display: flex;
+		justify-content: center;
+	}
+
+	.storesList {
+		overflow-y: auto;
+		overflow-x: hidden;
+
+		@include customMediaBreaks(768) {
+			overflow-y: hidden;
+			height: auto !important;
+		}
+
+		&::-webkit-scrollbar {
+			width: 24px;
+
+			&-thumb {
+				background-color: $grey-450;
+				border-radius: 20px;
+				height: 10px;
+				border: 9px solid $white;
+			}
+		}
+	}
+
+	.locator-0-x-storesList::-webkit-scrollbar-track {
+		height: 20px;
+	}
+}
+
+.storesMapCol {
+	width: 859px;
+	height: 378px;
+
+	@include customMediaBreaks(768) {
+		order: 0;
+		width: 100%;
+		height: 241px;
+	}
+}
+
+/* Ul element store-locator */
+
+.addressList {
+	width: 100%;
+	padding: 0;
+	border: 0.75px solid $grey-500;
+	border-radius: 5px;
+
+	@include customMediaBreaks(768) {
+		padding: 0;
+		margin-top: 22.63px;
+		margin-bottom: 46.63px;
+		position: relative;
+	}
+}
+
+/* li element store-locator */
+
+.addressListItem {
+	border: none;
+	border-bottom: 1px solid #e6e6e6;
+	height: 146px;
+	padding: 25px 40px 25px 18px;
+	display: flex;
+	flex-direction: column;
+
+	@include customMediaBreaks(768) {
+		height: 130px;
+		padding: 22px 76px 22px 17px;
+	}
+
+	&:last-child {
+		border-bottom: 0px;
+	}
+
+	&:hover {
+		background-color: transparent !important;
+	}
+}
+
+.addressStoreName,
+.storeName {
+	height: 19px;
+	color: $secondary-dark;
+	font-family: $fontFamily;
+	font-size: 16px;
+	font-weight: $medium;
+	letter-spacing: 0;
+	line-height: 19px;
+}
+
+.storeName {
+	margin-bottom: -10px;
+}
+
+.addressStoreName {
+	margin-bottom: -8px;
+
+	@include customMediaBreaks(768) {
+		margin-bottom: -12px;
+	}
+}
+
+.addressLabel {
+	display: none;
+}
+
+.addressLink,
+.addressStoreAddress {
+	height: 32px;
+	width: 172px;
+	color: $secondary-main;
+	font-family: $fontFamily;
+	font-size: 13px;
+	letter-spacing: 0;
+	line-height: 16px;
+}
+
+.addressStoreAddress {
+	margin-bottom: -2px;
+
+	@include customMediaBreaks(768) {
+		margin-bottom: -8px;
+	}
+}
+
+.addressListLink,
+.loadAll {
+	height: 16px;
+	width: 80px;
+	color: $grey-700;
+	font-family: $fontFamily;
+	font-size: 14px;
+	letter-spacing: 0;
+	line-height: 16px;
+	margin: 0;
+	text-decoration: underline;
+}
+
+.loadAll {
+	font-size: 15px;
+	text-align: center;
+	margin-left: 18px;
+
+	@include customMediaBreaks(768) {
+		position: absolute;
+		bottom: -117px;
+		width: auto;
+	}
+}
+
+.hoursLabel {
+	height: 16px;
+	width: 97px;
+	color: $secondary-dark;
+	font-family: $fontFamily;
+	font-size: 14px;
+	font-weight: $medium;
+	letter-spacing: 0;
+	line-height: 16px;
+	margin-bottom: -4px;
+
+	@include customMediaBreaks(768) {
+		margin-bottom: -12px;
+	}
+}
+
+.hoursContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.dayOfWeek,
+.businessHours {
+	color: $secondary-main;
+	font-family: $fontFamily;
+	font-size: 13px;
+	letter-spacing: 0;
+	line-height: 16px;
+}
+
+.backlink {
+	height: 18px;
+	width: 44px;
+	color: $secondary-main;
+	font-family: $fontFamily;
+	font-size: 15px;
+	font-weight: $medium;
+	letter-spacing: 0;
+	line-height: 18px;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&::before {
+		content: '\e909';
+		font-family: 'mercaldas';
+		margin-right: 8px;
+	}
+}

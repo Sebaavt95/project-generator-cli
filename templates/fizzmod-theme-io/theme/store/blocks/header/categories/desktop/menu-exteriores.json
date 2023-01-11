@@ -1,0 +1,24 @@
+
+		{
+			
+  "menu-item#exteriores": {
+   "props": {
+    "id": "22/exteriores",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "department"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/exteriores",
+     "noFollow": false,
+     "tagTitle": "Exteriores",
+     "text": "Exteriores"
+    }
+   },
+   "blocks": []
+  }
+	
+ 
+		}
+	

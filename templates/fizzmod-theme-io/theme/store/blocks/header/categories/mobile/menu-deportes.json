@@ -1,0 +1,72 @@
+
+		{
+			
+  "menu-item#deportes-mobile": {
+   "props": {
+    "id": "8/deportes",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "department-mobile",
+    "itemProps": {
+     "type": "internal",
+     "href": "/deportes",
+     "noFollow": false,
+     "tagTitle": "Deportes",
+     "text": "Deportes"
+    }
+   },
+   "blocks": ["vtex.menu@2.x:submenu.accordion#deportes-categories"]
+  }
+	
+			,"vtex.menu@2.x:submenu.accordion#deportes-categories": {
+			"children": ["vtex.menu@2.x:menu#deportes-categories-mobile"]
+			},
+			"vtex.menu@2.x:menu#deportes-categories-mobile": {
+			"props": {
+				"orientation": "vertical"
+				,"blockClass": "menu-categories-accordion"
+			},
+			"children": ["menu-item#ver-todos-deportes","menu-item#accesorios-mobile"]
+			}
+			
+		,"menu-item#ver-todos-deportes": {
+			"props": {
+				"id": "ver-todos-deportes",
+				"type": "custom",
+				"iconId": null,
+				"highlight": false,
+				"blockClass": "menu-categories-see-all",
+				"itemProps": {
+					"type": "internal",
+					"href": "/deportes",
+					"noFollow": false,
+					"tagTitle": "Ver todos",
+					"text": "Ver todos"
+				}
+			}
+  	}
+	
+ 		
+ ,
+  "menu-item#accesorios-mobile": {
+   "props": {
+    "id": "13/accesorios",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": "",
+    "itemProps": {
+     "type": "internal",
+     "href": "/deportes/accesorios",
+     "noFollow": false,
+     "tagTitle": "Accesorios",
+     "text": "Accesorios"
+    }
+   },
+   "blocks": []
+  }
+	
+ 
+		}
+	

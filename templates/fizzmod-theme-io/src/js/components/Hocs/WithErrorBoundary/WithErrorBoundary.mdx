@@ -1,0 +1,35 @@
+---
+name: WithErrorBoundary
+route: /components/Hocs/WithErrorBoundary
+menu: Hocs
+---
+
+import { Playground, Props } from 'docz';
+import Typography from './WithErrorBoundary';
+
+# WithErrorBoundary
+
+## Usage
+
+```
+import React, { useEffect } from 'react';
+import WithErrorBoundary from 'components/Hocs/WithErrorBoundary';
+
+const ComponentMakeApi = () => {
+const [product, setProduct ] = useState({});
+
+useEffect(() => {
+	getProducts.then((res) => {
+		setProduct(res)
+	})
+});
+return (
+	<div>
+		<p>{product}</p>
+	</div>
+	)
+}
+
+export default WithErrorBoundary(ComponentMakeApi)
+
+```

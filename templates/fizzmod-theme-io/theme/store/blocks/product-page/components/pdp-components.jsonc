@@ -1,0 +1,290 @@
+{
+	// Product Breadcrumb
+	"breadcrumb#pdp-breadcrumb": {
+		"props": {
+			"showOnMobile": false,
+			"blockClass": "pdp-breadcrumb"
+		}
+	},
+	// Images and Flags over image
+	"product-images#pdp": {
+		"props": {
+			"displayThumbnailsArrows": true,
+			"showNavigationArrows": {
+				"desktop": true,
+				"mobile": false
+			}, 
+			"maxHeight": {
+				"desktop": 506,
+				"mobile": 200
+		   },
+			"blockClass": "pdp-images"
+		}
+	},
+	"vtex.product-highlights@2.x:product-highlights#pdp-promo--2x1": {
+    "children": ["product-highlight-text#pdp-promo--2x1"],
+    "props": {
+      "type": "promotion",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["2x1"]
+      }
+    }
+  },
+	"product-highlight-text#pdp-promo--2x1": {
+    "props": {
+      "message": "{highlightName}",
+			"blockClass": "pdp-highlight-promo--2x1"
+    }
+  },
+	// Product Main Blocks
+	"vtex.store-components:product-brand#pdp-brand": {
+		"props": {
+			"blockClass": "pdp-brand"
+		}
+	},
+	"vtex.store-components:product-name#pdp": {
+		"props": {
+			"blockClass": "pdp-product-name"
+		}
+	},
+	"product-list-price#pdp": {
+		"props": {
+			"blockClass": "pdp-list-price"
+		}
+	},
+	"product-selling-price#pdp": {
+		"props": {
+			"blockClass": "pdp-selling-price"
+		}
+	},
+	"product-identifier.product": {
+		"props": {
+			"label": "custom",
+			"customLabel": "PLU"
+		}
+	},
+	"product-quantity#pdp": {
+    "props": {
+      "showLabel": false,
+      "size": "large",
+      "showUnit": false,
+      "blockClass": "pdp-product-quantity"
+    }
+	},
+	"condition-layout.product#add-to-cart": {
+		"props": {
+			"conditions": [
+				{
+					"subject": "isProductAvailable"
+				}
+			],
+			"Then": "add-to-cart-button#pdp"
+		}
+	},
+	"add-to-cart-button#pdp": {
+		"props": {
+			"text": "Agregar",
+			"blockClass": "pdp-add-to-cart-btn"
+		}
+	},
+	"share#pdp": {
+		"props": {
+			"social": {
+				"Facebook": true,
+				"WhatsApp": true
+			},
+			"options": {
+				"size": 34
+			},
+			"className": "pdp-share-container",
+			"shareLabelClass": "pdp-share-labels",
+			"buttonsContainerClass": "pdp-share-btns"
+		}
+	},
+	"condition-layout.product#pdp-ship-sim-share": {
+		"props": {
+			"conditions": [
+				{
+					"subject": "isProductAvailable"
+				}
+			],
+			"Then": "flex-layout.col#pdp-ship-sim-share"
+		}
+	},
+	"flex-layout.col#pdp-ship-sim-share": {
+		"children": [
+			"modal-trigger#pdp-shipping-simulator",
+			"share#pdp"
+		]
+	},
+	// Unavailable Items Blocks
+	"availability-subscriber#pdp": {
+		"props": {
+			"blockClass": "pdp-availability-subscriber"
+		}
+	},
+	// Shipping Simulator
+	"rich-text#pdp-shp-sim-text": {
+		"props": {
+			"text": "Calcular envío",
+			"blockClass": "pdp-shp-sim-text",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER"
+		}
+	},
+	"modal-layout#pdp-shipping-sim-content": {
+		"children":[
+			"responsive-layout.desktop#pdp-shipping-sim-content" 
+      		,"responsive-layout.tablet#pdp-shipping-sim-content",
+      		"responsive-layout.phone#pdp-shipping-sim-content"
+		],
+		"props": {
+			"blockClass" : "shipping-container"
+		} 
+	},
+	"responsive-layout.desktop#pdp-shipping-sim-content": {
+		"children": [
+			"modal-header#pdp-shipping",
+			// "flex-layout.row#pdp-shipping-information",
+			"shipping-simulator#pdp-shipping"
+		]
+	},
+	"responsive-layout.tablet#pdp-shipping-sim-content": {
+		"children": [
+			"modal-header#pdp-shipping",
+			// "flex-layout.row#pdp-shipping-information",
+			"shipping-simulator#pdp-shipping"
+		]
+	},
+	"responsive-layout.phone#pdp-shipping-sim-content": {
+		"children": [
+			"modal-header#pdp-shipping",
+			"flex-layout.row#pdp-shipping-information-phone",
+			"shipping-simulator#pdp-shipping"
+		]
+	},	
+	"modal-header#pdp-shipping": {
+		"children":["rich-text#modal-header"],
+		"props":{
+			"blockClass": "header-shipping-pdp"
+		}
+	},
+	"rich-text#modal-header": {
+		"props": {
+			"text" : "Calculador de envíos",
+			"textAlignment":"CENTER",
+			"textPosition":"CENTER",
+			"blockClass": "shipping-information-header-title"
+		}
+	},
+	"flex-layout.row#pdp-shipping-information" : {
+		"children":["flex-layout.col#pdp-shipping-information"],
+		"props":{
+			"blockClass": "pdp-shipping-information"
+		}
+	},
+	"flex-layout.col#pdp-shipping-information": {
+		"children":["rich-text#pdp-shipping-information-desktop"],
+		"props":{
+			"blockClass": "pdp-shipping-information"
+		}
+	},
+	"rich-text#pdp-shipping-information-desktop": {
+		"props":{
+			"text": "**Envios unicamente en:** \n Departamento **- Caldas**. Municipio **- Manizales**",
+			"blockClass": "shipping-information"
+		}
+	},
+	"flex-layout.row#pdp-shipping-information-phone" : {
+		"children":["flex-layout.col#pdp-shipping-information-phone"],
+		"props":{
+			"blockClass": "pdp-shipping-information"
+		}
+	},
+	"flex-layout.col#pdp-shipping-information-phone": {
+		"children":["rich-text#pdp-shipping-information-phone"],
+		"props":{
+			"blockClass": "pdp-shipping-information"
+		}
+	},
+	"rich-text#pdp-shipping-information-phone": {
+		"props":{
+			"text": "**Envios unicamente en:** Departamento - **Caldas**. Municipio - **Manizales**",
+			"blockClass": "shipping-information"
+		}
+	},
+	"shipping-simulator#pdp-shipping": {
+		"props": {
+			"blockClass": "shipping-simulator-pdp"
+		}
+	},
+	/* menu info mobile*/
+	"vtex.menu@2.x:menu#pdp-product-info-mobile": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": [
+			"menu-item#pdp-description-mobile",
+			"menu-item#pdp-technical-mobile"
+		]
+	},
+	"menu-item#pdp-description-mobile": {
+		"props": {
+			"id": "pdp-description-mobile",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": true,
+				"tagTitle": "Descripción",
+				"text": "Descripción"
+			},
+			"blockClass": "pdp-description-item"
+		},
+		"blocks": [
+			"vtex.menu@2.x:submenu.accordion#pdp-description-content-mobile"
+		]
+	},
+	"vtex.menu@2.x:submenu.accordion#pdp-description-content-mobile": {
+		"props": {
+			"blockClass":"pdp-info-accordionMobile"
+		},
+		"children": [
+			"product-description#pdp-description-mobile"
+		]
+	},
+	"product-description#pdp-description-mobile": {
+		"props": {
+			"blockClass": "pdp-description-mobile"
+		}
+	},
+	"menu-item#pdp-technical-mobile": {
+		"props": {
+			"id": "pdp-technical-mobile",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": true,
+				"tagTitle": "Datos Técnicos",
+				"text": "Datos Técnicos"
+			},
+			"blockClass": "pdp-description-item"
+		},
+		"blocks": [
+			"vtex.menu@2.x:submenu.accordion#pdp-technical-content-mobile"
+		]
+	},
+	"vtex.menu@2.x:submenu.accordion#pdp-technical-content-mobile": {
+		"children": [
+			"product-specification-group#table"
+		] , "props": {
+			"blockClass":"pdp-info-accordionMobile"
+		}
+	}
+}

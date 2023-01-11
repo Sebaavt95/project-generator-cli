@@ -1,0 +1,71 @@
+/* INSTITUTIONALS GENERAL */
+
+.flexRow {
+	/* Institutional Title Container */
+
+	&--institutional-title-container {
+		background-color: $grey-200;
+	}
+
+	/* Institutional Content */
+
+	&--institutional-content {
+		max-width: 1030px;
+		margin: 0 auto;
+		padding: 64px 0 115px;
+
+		@include mediaBreaks('tablet') {
+			max-width: 800px;
+		}
+
+		@include mediaBreaks('mobile') {
+			max-width: 500px;
+			margin: 0 20px;
+		}
+	}
+
+	/* Faqs (Preguntas frecuentes) */
+
+	&--preguntas-frecuentes {
+		& .flexCol--faqs-container {
+			max-width: 1030px;
+			margin: 0 auto;
+			padding: 64px 0 115px;
+			@include mediaBreaks('tablet') {
+				padding: 30px 20px 80px;
+			}
+		}
+	}
+
+	/* Banner-type Institutionals */
+
+	&--banner__institutional {
+		&__phone {
+			margin-top: 4px;
+
+			& :global(.vtex-store-components-3-x-imageElement) {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		&__desktop {
+			margin: 64px auto 60px auto;
+
+			@include mediaBreaks('tablet') {
+				margin: 30px auto 26px auto;
+			}
+		}
+	}
+}
+
+.flexRowContent {
+	&--banner__institutional {
+		&__desktop {
+			& :global(.vtex-store-components-3-x-imageElement) {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}

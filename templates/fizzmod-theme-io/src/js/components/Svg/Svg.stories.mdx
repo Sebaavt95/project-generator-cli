@@ -1,0 +1,46 @@
+import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Svg } from './Svg';
+
+<Meta
+	title="Componentes/Svg"
+	component={Svg}
+	argTypes={{
+		color: { name: 'color', control: 'color' },
+		svgName: {
+			name: 'name Svg file',
+			control: {
+				type: 'select',
+				options: ['newsletter', 'logo']
+			}
+		}
+	}}
+/>
+
+# Svg
+
+**Component for display Svgs**
+
+## Usage
+
+```
+import Svg from 'components/Svg';
+<Svg svgName="newsletter" size={28} type="icon"/>
+```
+
+## Props
+
+<ArgsTable of={Svg} />
+
+export const Template = args => <Svg {...args} />;
+
+<Story name="Icon">
+	<Svg svgName="newsletter" size={40} color="black" />
+</Story>
+
+<Story name="Illustrator">
+	<Svg type="illustration" svgName="logo" size={120} />
+</Story>
+
+<Story name="Playground" args={{ svgName: 'newsletter', size: 40 }}>
+	{Template.bind({})}
+</Story>

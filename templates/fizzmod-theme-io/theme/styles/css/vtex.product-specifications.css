@@ -1,0 +1,32 @@
+/* Product Page */
+.specificationName--pdp-specification,
+.groupName--pdp-groupName {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  color: #212121;
+}
+
+.groupName--pdp-groupName {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.specificationValue--pdp-specification--last {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 16px;
+  color: #616161;
+}
+@media (max-width: 639px) {
+  .specificationValue--pdp-specification--last {
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,65 @@
+{
+    "store.custom#institutional-virtual-store-app-terms": {
+        "blocks": [
+			"responsive-layout.desktop#virtual-store-app-terms",
+			"responsive-layout.tablet#virtual-store-app-terms",
+			"responsive-layout.phone#virtual-store-app-terms"
+		]
+    },
+    "responsive-layout.desktop#virtual-store-app-terms": {
+		"children": ["flex-layout.row#institutional-header-virtual-store-app-terms", "flex-layout.row#institutional-content-virtual-store-app-terms"]
+	},
+	"responsive-layout.tablet#virtual-store-app-terms": {
+		"children": ["flex-layout.row#institutional-header-virtual-store-app-terms", "flex-layout.row#institutional-content-virtual-store-app-terms"]
+	},
+	"responsive-layout.phone#virtual-store-app-terms": {
+		"children": ["flex-layout.row#institutional-header-virtual-store-app-terms-phone", "flex-layout.row#institutional-content-virtual-store-app-terms"]
+    },
+    "flex-layout.row#institutional-header-virtual-store-app-terms": {
+		"children": ["rich-text#institutional-title-virtual-store-app-terms"],
+		"props": {
+			"blockClass": "institutional-title-container"
+		}
+	},
+    "rich-text#institutional-title-virtual-store-app-terms": {
+		"props": {
+			"text": "### Terminos y Condiciones: Tienda virtual y app",
+			"textPosition": "CENTER",
+            "textAlignment": "CENTER",
+			"blockClass": "institutional-title"
+		}
+	},
+    "flex-layout.row#institutional-header-virtual-store-app-terms-phone": {
+		"children": ["rich-text#institutional-title-virtual-store-app-terms-phone"],
+		"props": {
+			"blockClass": "institutional-title-container"
+		}
+	},
+    "rich-text#institutional-title-virtual-store-app-terms-phone": {
+		"props": {
+			"text": "### Terminos y Condiciones:\n ### Tienda virtual y app",
+			"textPosition": "CENTER",
+            "textAlignment": "CENTER",
+			"blockClass": "institutional-title-long-extension"
+		}
+	},
+    "flex-layout.row#institutional-content-virtual-store-app-terms": {
+		"children": ["flex-layout.col#institutional-content-virtual-store-app-terms"],
+		"props": {
+			"blockClass":"institutional-content"
+		}
+	},
+    "flex-layout.col#institutional-content-virtual-store-app-terms": {
+		"children": [
+			"rich-text#institutional-content-virtual-store-app-terms-text-1"
+			]
+	},
+    "rich-text#institutional-content-virtual-store-app-terms-text-1": {
+		"props": {
+			"text": "Estos Términos y Condiciones aquí descritos contienen la información legal y técnica que recomendamos leer para su conocimiento y consentimiento. En consecuencia, si después de leerlos usted no está de acuerdo con los mismos, le sugerimos abstenerse de utilizar LA TIENDA VIRTUAL y APP (en adelante LAS PLATAFORMAS). Si de lo contrario usted decide el uso de LAS PLATAFORMAS, se entenderá que acepta las condiciones de utilización y aprovechamiento de LAS PLATAFORMAS, su contenido y los Servicios ofrecidos dentro de las mismas. Cabe resaltar que estos términos y condiciones están completamente ligados y relacionados con las Políticas de Privacidad y los Términos y Condiciones de Uso del Portal www.mercaldas.com.co.",
+			"textAlignment": "LEFT",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-text"
+		}
+    }    
+}

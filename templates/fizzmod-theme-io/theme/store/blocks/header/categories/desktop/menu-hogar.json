@@ -1,0 +1,53 @@
+
+		{
+			
+  "menu-item#hogar": {
+   "props": {
+    "id": "6/hogar",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "department"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/hogar",
+     "noFollow": false,
+     "tagTitle": "Hogar",
+     "text": "Hogar"
+    }
+   },
+   "blocks": ["vtex.menu@2.x:submenu#hogar-categories"]
+  }
+	
+			,"vtex.menu@2.x:submenu#hogar-categories": {
+				"children": ["vtex.menu@2.x:menu#hogar-categories"]
+			},
+			"vtex.menu@2.x:menu#hogar-categories": {
+				"props": {
+				"orientation": "vertical"
+				},
+				"children": ["menu-item#limpieza"]
+			}
+		
+ ,
+  "menu-item#limpieza": {
+   "props": {
+    "id": "26/limpieza",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/hogar/limpieza",
+     "noFollow": false,
+     "tagTitle": "Limpieza",
+     "text": "Limpieza"
+    }
+   },
+   "blocks": []
+  }
+	
+ 
+		}
+	

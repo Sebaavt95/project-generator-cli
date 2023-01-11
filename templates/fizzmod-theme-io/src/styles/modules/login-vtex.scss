@@ -1,0 +1,499 @@
+// Transitions:
+$defaultTransition: all 250ms cubic-bezier(0.4, 0, 1, 1);
+
+// Login texts:
+$headerInitText: 'Elija una opción para iniciar sesión:';
+$buttonLoginWithAccess: 'Recibir có' 'digo de acceso';
+$withUserAndPassword: 'Ingresar mail y contraseñ' 'a';
+$googleText: 'Ingresar con google';
+$facebookText: 'Ingresar con facebook';
+$forgetPassword: 'Olvidé mi contraseñ' 'a / No tengo contraseñ' 'a';
+$register: 'Registrar';
+$confirm: 'Confirmar';
+$enterBtn: 'Entrar';
+$ok: 'Aceptar';
+
+// Login mixins
+@mixin outlinedButtonStyles($color, $hoverColor, $textChange) {
+	@include button($variant: 'outlined', $color: $color);
+	width: 300px;
+	font-weight: 700;
+	text-align: center;
+	box-shadow: none;
+	font-size: 0;
+	transition: $defaultTransition;
+
+	&:hover {
+		background: $color;
+
+		&::before {
+			color: $white;
+		}
+	}
+
+	&::before {
+		@include typographyCaption;
+		transition: $defaultTransition;
+		display: block;
+		content: $textChange;
+	}
+
+	i,
+	span {
+		display: none;
+	}
+
+	@include responsive('sm') {
+		width: 290px;
+		height: 54px;
+	}
+}
+
+div#vtexIdContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	*:not(.vtexIdUI-close) {
+		font-family: Roboto;
+	}
+
+	.vtexIdUI-loading {
+		background: $secondaryMain;
+	}
+
+	label {
+		@include typographyOverline;
+		color: $secondaryLight;
+		text-transform: uppercase;
+		outline: 0;
+		&[for='inputPassword'] {
+			a {
+				display: none;
+			}
+		}
+	}
+
+	input {
+		border-radius: 0;
+		box-shadow: none;
+		border-color: $grey400;
+		color: $grey700;
+		font-size: 12px;
+		letter-spacing: 0.43px;
+		line-height: 14px;
+		padding: 0 14px;
+		height: 40px;
+		@include inputRenderStyles;
+		@include removeInputOutline;
+
+		&::placeholder {
+			color: $grey500;
+			opacity: 1;
+		}
+	}
+
+	.vtexIdUI {
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+		width: 360px;
+		left: 52%;
+
+		@include responsive('sm') {
+			width: 100%;
+			min-width: 320px;
+			left: 0;
+			margin: 0;
+			height: 100% !important;
+			top: 0 !important;
+		}
+
+		.vtexIdUI-close {
+			top: 0;
+			right: 0;
+			width: 22px;
+			height: 18px;
+			background: $grey500;
+			font-size: 0;
+			cursor: pointer;
+			transition: $defaultTransition;
+			outline: 0;
+
+			&::before {
+				display: block;
+				position: absolute;
+				top: 3px;
+				left: 5px;
+				width: 12px;
+				height: 12px;
+				content: '';
+				@include close($grey800);
+				@include responsive('sm') {
+					top: 6px;
+					left: 9px;
+				}
+			}
+
+			&:hover {
+				opacity: 0.8;
+			}
+
+			@include responsive('sm') {
+				width: 32px;
+				height: 26px;
+			}
+		}
+
+		.modal-header {
+			width: 100%;
+			height: 66px;
+			background: $grey300;
+			text-align: center;
+			border-bottom: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@include responsive('sm') {
+				height: 100px;
+			}
+
+			h4 {
+				margin: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+				font-size: 0;
+				display: block;
+				color: $secondaryLight;
+				@include typographySubtitle2;
+			}
+		}
+	}
+
+	.vtexIdUI-page {
+		background: $white;
+		min-height: auto;
+
+		.modal-body {
+			input {
+				border: 1px solid #eeeeee;
+				border-radius: 0;
+				color: $secondaryMain;
+
+				&::placeholder {
+					color: $grey700;
+					font-family: Roboto;
+					font-size: 12px;
+					letter-spacing: 0.43px;
+					line-height: 18px;
+				}
+			}
+			.control-group {
+				a.dead-link {
+					color: $primaryMain;
+					font-size: 0;
+					outline: 0;
+
+					&::before {
+						text-align: right;
+						transition: $defaultTransition;
+						display: block;
+						content: $forgetPassword;
+						@include typographyOverline;
+					}
+				}
+			}
+		}
+
+		&#vtexIdUI-auth-selector {
+			h4 {
+				margin: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+				font-size: 0;
+
+				&::before {
+					display: block;
+					content: $headerInitText;
+					color: $secondaryLight;
+					@include typographySubtitle2;
+				}
+
+				span {
+					display: none;
+				}
+			}
+
+			.modal-body {
+				display: flex;
+				justify-content: center;
+				align-content: center;
+				align-items: center;
+				padding: 30px 30px 28px;
+
+				.vtexIdUI-providers-list {
+					display: flex;
+					flex-wrap: wrap;
+					flex-direction: column;
+
+					& :nth-child(1) {
+						order: 1;
+					}
+					& :nth-child(2) {
+						order: 3;
+					}
+					& :nth-child(3) {
+						order: 4;
+					}
+					& :nth-child(4) {
+						order: 2;
+					}
+
+					@include responsive('sm') {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+					}
+
+					> li {
+						margin: 0;
+						margin-bottom: 10px;
+
+						button {
+							outline: none;
+						}
+
+						#loginWithAccessKeyBtn {
+							@include outlinedButtonStyles(
+								$secondaryMain,
+								$secondaryLight,
+								$buttonLoginWithAccess
+							);
+						}
+
+						#loginWithUserAndPasswordBtn {
+							@include outlinedButtonStyles($grey600, $grey700, $withUserAndPassword);
+						}
+
+						#vtexIdUI-google-plus {
+							@include outlinedButtonStyles(#c62b00, #890000, $googleText);
+						}
+
+						#vtexIdUI-facebook {
+							@include outlinedButtonStyles(#3b5998, #1c3a78, $facebookText);
+						}
+					}
+				}
+			}
+		}
+
+		&#vtexIdUI-classic-login {
+			.modal-body {
+				padding: 18px 30px 26px;
+
+				#inputEmail {
+					margin-bottom: 17px;
+				}
+			}
+		}
+
+		&#vtexIdUI-email-confirmation {
+			.modal-body {
+				padding: 38px 30px;
+			}
+		}
+
+		&#vtexIdUI-confirm-access-code {
+			.modal-body {
+				padding: 30px;
+
+				label.info-code[for='access-code'] {
+					margin-bottom: 15px;
+
+					strong {
+						margin-top: 10px;
+						display: block;
+						text-transform: initial;
+						color: $secondaryMain;
+						@include typographyCaption;
+					}
+				}
+			}
+		}
+
+		&#vtexIdUI-change-pswd {
+			.vtexIdUI-header {
+				.vtexIdUI-user {
+					display: none;
+				}
+			}
+
+			.info-why {
+				margin-bottom: 10px;
+
+				small {
+					span {
+						@include typographyOverline;
+						letter-spacing: inherit;
+					}
+				}
+			}
+
+			.vtexid-password-requirements {
+				& > span {
+					@include typographySubtitle2;
+				}
+
+				&-list {
+					margin-left: 0;
+
+					> li {
+						.vtexid-icon-checkmark:not(.ng-hide) {
+							background-color: $white;
+							@include typographyBody2;
+						}
+
+						&::before {
+							display: inline-block;
+							content: '\2022';
+							color: $secondaryMain;
+							@include typographyBody1;
+							width: 4px;
+							margin-right: 6px;
+							margin-left: 20px;
+						}
+					}
+				}
+			}
+		}
+
+		.modal-footer {
+			max-width: calc(100% - 60px);
+			margin: auto;
+			background: $white;
+			padding: 0;
+			justify-content: space-between;
+			display: flex;
+			align-items: center;
+			align-content: center;
+			height: 83px;
+			border-color: $grey200;
+
+			&::before,
+			&::after {
+				display: none;
+			}
+
+			.vtexIdUI-back-link {
+				display: flex;
+				align-items: center;
+				align-content: center;
+				transition: $defaultTransition;
+				outline: 0;
+
+				i {
+					display: flex;
+					align-items: center;
+					align-content: center;
+					margin-right: 6px;
+
+					&::before {
+						content: '';
+						display: inline-block;
+						width: 14px;
+						height: 14px;
+						vertical-align: middle;
+						@include angle-left($secondaryMain);
+					}
+				}
+
+				&:hover {
+					text-decoration: none;
+					opacity: 0.8;
+				}
+
+				span {
+					color: $secondaryMain;
+					@include typographyCaption;
+					text-transform: uppercase;
+					outline: 0;
+				}
+			}
+
+			#classicLoginBtn,
+			#sendAccessKeyBtn,
+			#confirmLoginAccessKeyBtn,
+			#tryChangePswdBtn,
+			#changePswdBtn {
+				border-radius: 0;
+				box-shadow: none;
+				border: none;
+				background: $primaryMain;
+				color: $white;
+				font-weight: bold;
+				line-height: 16px;
+				text-align: center;
+				text-transform: uppercase;
+				width: 150px;
+				font-size: 0;
+				height: 48px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+				transition: $defaultTransition;
+				text-shadow: none;
+
+				&:hover {
+					background: $primaryDark;
+				}
+
+				&:active {
+					background: $primaryDark;
+				}
+
+				&::before {
+					@include typographySubtitle2;
+					display: block;
+					content: $enterBtn;
+					text-shadow: none;
+				}
+			}
+
+			#classicLoginBtn {
+				&::before {
+					content: $enterBtn;
+				}
+			}
+			#sendAccessKeyBtn {
+				&::before {
+					content: $enterBtn;
+				}
+			}
+			#confirmLoginAccessKeyBtn {
+				&::before {
+					content: $confirm;
+				}
+			}
+			#tryChangePswdBtn {
+				&::before {
+					content: $register;
+				}
+			}
+			#changePswdBtn {
+				&::before {
+					content: $ok;
+				}
+			}
+		}
+	}
+
+	.vtexid-icon-lock {
+		display: none;
+	}
+}

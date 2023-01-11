@@ -1,0 +1,183 @@
+.link {
+	&--category-card-cta {
+		text-decoration: none;
+		font-size: 13px;
+		font-weight: $medium;
+		line-height: 16px;
+		color: $grey-800;
+		display: flex;
+		align-items: center;
+		margin-top: auto;
+		margin-bottom: 26px;
+
+		@include mediaBreaks('mobile') {
+			font-size: 14px;
+		}
+
+		&:hover {
+			color: $secondary-main;
+
+			@include mediaBreaks('mobile') {
+				color: $secondary-main;
+			}
+		}
+
+		&::after {
+			content: '\e90a';
+			font-family: 'mercaldas';
+			font-size: 13px;
+			color: $grey-800;
+			margin-left: 7px;
+
+			@include mediaBreaks('mobile') {
+				content: '\e90a';
+				font-family: 'mercaldas';
+				font-size: 14px;
+				color: $grey-800;
+				margin-left: 7px;
+			}
+		}
+	}
+	&--facebook-icon {
+		&::before,
+		&:hover::before {
+			content: '\e911';
+		}
+	}
+	&--instagram-icon {
+		&::before,
+		&:hover::before {
+			content: '\e912';
+		}
+		&:hover::before {
+			font-family: 'mercaldas';
+			font-size: 21px;
+			color: $grey-400;
+			border-radius: 50%;
+		}
+	}
+	&--facebook-icon,
+	&--instagram-icon {
+		text-decoration: none;
+		margin-right: 4px !important;
+
+		&::before {
+			background-color: $grey-700;
+		}
+		&:hover::before {
+			background-color: $grey-800;
+		}
+	}
+	&--facebook-icon,
+	&--instagram-icon {
+		&::before,
+		&:hover::before {
+			font-family: 'mercaldas';
+			font-size: 21px;
+			color: $grey-400;
+			border-radius: 50%;
+		}
+	}
+	&--more-payment-methods {
+		@include typographySubtitle2;
+		margin-top: 12px;
+		text-decoration: none;
+		color: $grey-700;
+		font-weight: 400;
+		&:hover {
+			color: $secondary-main;
+		}
+	}
+
+	&--mastercard-card,
+	&--visa-card,
+	&--mercadopago-card,
+	&--diners-card,
+	&--amex-card,
+	&--pse-card,
+	&--vtex-logo,
+	&--fizzmod-logo {
+		text-decoration: none;
+	}
+	&--mastercard-card,
+	&--visa-card,
+	&--mercadopago-card,
+	&--diners-card,
+	&--amex-card,
+	&--pse-card {
+		&::before,
+		&:hover::before {
+			font-family: 'mercaldas';
+			font-size: 34px;
+			color: $grey-400;
+			border-radius: 3px;
+			padding: 1px;
+		}
+		&::before {
+			background-color: $grey-700;
+		}
+		&:hover::before {
+			background-color: $grey-800;
+		}
+	}
+	&--mastercard-card {
+		&::before,
+		&:hover::before {
+			content: '\e915';
+		}
+	}
+	&--visa-card {
+		&::before,
+		&:hover::before {
+			content: '\e916';
+		}
+	}
+	&--mercadopago-card {
+		&::before,
+		&:hover::before {
+			content: '\e917';
+		}
+	}
+	&--diners-card {
+		&::before,
+		&:hover::before {
+			content: '\e918';
+		}
+	}
+	&--amex-card {
+		&::before,
+		&:hover::before {
+			content: '\e919';
+		}
+	}
+	&--pse-card {
+		&::before,
+		&:hover::before {
+			content: '\e91a';
+		}
+	}
+
+	&--vtex-logo,
+	&--fizzmod-logo {
+		&::before {
+			font-family: 'mercaldas';
+			color: #828282;
+			position: relative;
+		}
+	}
+	&--fizzmod-logo {
+		margin-left: 25px;
+		&::before {
+			content: '\e91c';
+			font-size: 90px;
+			top: -22px;
+		}
+	}
+	&--vtex-logo {
+		&::before {
+			content: '\e91b';
+			font-size: 60px;
+			top: -5px;
+		}
+	}
+}

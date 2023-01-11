@@ -1,0 +1,107 @@
+{    
+    "flex-layout.row#top-3-products-images": {
+        "props": {
+            "blockClass": "images-group-post-promo",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true,
+            "colGap": {
+                "desktop": 5,
+                "mobile": 1
+            }
+          },
+          "children": [            
+            "responsive-layout.desktop#top-3",
+            "responsive-layout.phone#top-3"
+        ]
+    },
+
+    "responsive-layout.phone#top-3": {
+      "children": []
+    },
+
+    "responsive-layout.desktop#top-3": {
+      "children": [
+        "flex-layout.row#top-3--desktop"
+        // ,
+        //   "flex-layout.col#image-group-1-promo",
+        //   "flex-layout.col#image-group-2-promo",
+        //   "flex-layout.col#image-group-3-promo"
+      ]
+    },
+
+    "flex-layout.row#top-3--desktop": {
+      "children": [
+          "flex-layout.col#image-group-1-promo",
+          "flex-layout.col#image-group-2-promo",
+          "flex-layout.col#image-group-3-promo"
+      ],
+      "props": {
+        "blockClass": "images-group-post-promo2",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true,
+            "colGap": {
+                "desktop": 5,
+                "mobile": 1
+            }
+      }
+    },
+
+    "flex-layout.col#image-group-1-promo": {
+        "children": [
+            "image#image-1-promos"
+        ]
+    },
+    "flex-layout.col#image-group-2-promo": {
+        "children": [
+            "image#image-2-promos"
+        ]
+    },
+    "flex-layout.col#image-group-3-promo": {
+        "children": [
+            "image#image-3-promos"
+        ]
+    },
+    "image#image-1-promos": {
+        "props": {
+            "src": "https://via.placeholder.com/400x470.png",
+            "maxWidth": 400,
+            "height": 470,
+            "centerMode": {
+              "mobile": "center",
+              "desktop": "disabled"
+            },
+            "centerModeSlidesGap": {
+              "mobile": 1
+            }
+          }
+    },
+    "image#image-2-promos": {
+        "props": {
+            "src": "https://via.placeholder.com/400x470.png",
+            "maxWidth": 400,
+            "height": 470,
+            "centerMode": {
+              "mobile": "center",
+              "desktop": "disabled"
+            },
+            "centerModeSlidesGap": {
+              "mobile": 1
+            }
+          }
+    },
+    "image#image-3-promos": {
+        "props": {
+            "src": "https://via.placeholder.com/400x470.png",
+            "maxWidth": 400,
+            "height": 470,
+            "centerMode": {
+              "mobile": "center",
+              "desktop": "disabled"
+            },
+            "centerModeSlidesGap": {
+              "mobile": 1
+            }
+          }
+    }
+  }
+  

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Svg component without svg name render with size 28 and color white 1`] = `
+<Svg
+  color="#fff"
+  size={28}
+  svgName="newsletter"
+  type="icon"
+/>
+`;

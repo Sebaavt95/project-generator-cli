@@ -1,0 +1,115 @@
+.quantitySelectorContainer,
+.summaryContainer {
+	&--search-bar-product-quantity {
+		margin: 0;
+	}
+}
+
+.summaryContainer {
+	&--search-bar-product-quantity {
+		margin-right: 4px;
+	}
+}
+
+.quantitySelectorStepper {
+	&--search-bar-product-quantity {
+		:global(.vtex-numeric-stepper__minus-button),
+		:global(.vtex-numeric-stepper__plus-button) {
+			border: none !important;
+			border-radius: 4px !important;
+
+			&:focus,
+			&:active,
+			&:visited {
+				border-color: transparent;
+				outline-color: transparent;
+			}
+
+			@include responsive('md') {
+				width: 30px !important;
+			}
+		}
+
+		:global(.vtex-numeric-stepper__minus-button) {
+			background-color: $grey-300;
+			color: $grey-700;
+
+			&:hover {
+				background-color: $grey-400;
+			}
+
+			@include responsive('md') {
+				background-color: $grey-300;
+			}
+		}
+
+		:global(.vtex-numeric-stepper__plus-button) {
+			background-color: $grey-600;
+			color: $white;
+
+			&:hover {
+				background-color: $grey-700;
+			}
+
+			@include responsive('md') {
+				background-color: $grey-600;
+				color: $white;
+			}
+		}
+
+		:global(.vtex-numeric-stepper__input) {
+			width: 60px;
+			margin: 0;
+			padding: 0;
+			border: none;
+			color: $grey-800;
+			font-family: $fontFamily;
+
+			&:focus {
+				border: none;
+				border-radius: 0;
+				background-color: transparent;
+				border-color: transparent;
+				outline-color: transparent;
+			}
+		}
+
+		:global(.vtex-numeric-stepper__input),
+		:global(.vtex-numeric-stepper__minus-button__text),
+		:global(.vtex-numeric-stepper__plus-button__text) {
+			font-family: $fontFamily;
+			font-size: 14px;
+		}
+
+		:global(.vtex-numeric-stepper__minus-button__text),
+		:global(.vtex-numeric-stepper__plus-button__text) {
+			font-size: 0;
+
+			&::before {
+				font-family: 'mercaldas';
+				font-size: 14px;
+				font-weight: $medium;
+			}
+		}
+
+		:global(.vtex-numeric-stepper__minus-button__text) {
+			color: $grey-500;
+
+			&::before {
+				content: '\e90b';
+			}
+
+			@include responsive('md') {
+				color: $grey-500;
+			}
+		}
+
+		:global(.vtex-numeric-stepper__plus-button__text)::before {
+			content: '\e90c';
+		}
+
+		:global(.vtex-numeric-stepper-container) {
+			justify-content: flex-end !important;
+		}
+	}
+}

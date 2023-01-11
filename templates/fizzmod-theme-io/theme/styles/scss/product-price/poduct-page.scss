@@ -1,0 +1,43 @@
+/* Product Page */
+.listPrice {
+	&--pdp {
+		&-list {
+			&-price {
+				font-size: 20px;
+				font-weight: 500;
+				line-height: 24px;
+				color: $grey-600;
+				display: inline-block;
+				margin-bottom: 11px;
+
+				@include mediaBreaks('tablet') {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+.sellingPrice {
+	&--pdp {
+		&-selling-price {
+			font-size: 28px;
+			font-weight: 700;
+			line-height: 33px;
+			color: $secondary-main;
+			display: inline-block;
+			@include mediaBreaks('mobile') {
+				font-size: 20px;
+				line-height: 24px;
+			}
+			@include mediaBreaks('tablet') {
+				margin: 0;
+			}
+			&--hasListPrice {
+				@include customMediaBreaks(1026) {
+					margin-left: 16px;
+				}
+			}
+		}
+	}
+}

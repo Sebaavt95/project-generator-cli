@@ -1,0 +1,56 @@
+/* General */
+.container--breadcrumb-main .link, .container--pdp-breadcrumb .link {
+  font-size: 12px;
+  padding: 0;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #bdbdbd;
+}
+.container--breadcrumb-main .link:focus, .container--pdp-breadcrumb .link:focus {
+  outline: none;
+}
+.container--breadcrumb-main .homeIcon, .container--pdp-breadcrumb .homeIcon {
+  display: none;
+}
+.container--breadcrumb-main .homeLink::before, .container--pdp-breadcrumb .homeLink::before {
+  content: "Inicio";
+  padding: 0.125rem 0.25rem 0.125rem 0;
+}
+.container--breadcrumb-main .arrow::before, .container--pdp-breadcrumb .arrow::before {
+  content: "/";
+  color: #bdbdbd;
+  padding: 0.125rem 0.45rem 0.125rem 0;
+  font-size: 11px;
+}
+.container--breadcrumb-main {
+  padding-left: 1.25rem;
+}
+.container--breadcrumb-main .arrow:last-child .link {
+  color: #000000;
+}
+.container--pdp-breadcrumb .arrow .caretIcon {
+  display: none;
+}
+.container--pdp-breadcrumb .term {
+  color: #000000;
+}
+
+.term {
+  font-size: 12px;
+  padding: 0;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #bdbdbd;
+}
+
+/* Internal Product */
+.container--pdp-breadcrumb {
+  padding: 0px;
+}
+
+.container--breadcrumb-main {
+  padding: 0 0 0 1.25rem;
+  margin-top: 15px;
+}

@@ -1,0 +1,29 @@
+.sliderLayoutContainer {
+	&--offer-slider {
+		margin-bottom: 17px;
+
+		@include mediaBreaks('tablet') {
+			position: relative;
+			margin-bottom: 43px;
+		}
+	}
+}
+
+.sliderArrows {
+	&--offer-slider {
+		height: 18px;
+		width: 18px;
+	}
+}
+
+.sliderLeftArrow {
+	&--offer-slider {
+		margin-left: 54px;
+	}
+}
+
+.sliderRightArrow {
+	&--offer-slider {
+		margin-right: 54px;
+	}
+}

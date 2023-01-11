@@ -1,0 +1,77 @@
+{
+	"store.custom#institutional-services": {
+		"path": "/institucional/servicios"
+	},
+	"store.custom#preguntas-frecuentes": {
+		"path": "/institucional/preguntas-frecuentes"
+	},
+	"store.custom#institutional-privacy-policy": {
+		"path": "/institucional/politica-de-privacidad"
+	},
+	"store.custom#institutional-virtual-store-app-terms": {
+		"path": "/institucional/terminos-y-condiciones-tienda-virtual-y-app"
+	},
+	"store.custom#institutional-free-address-terms": {
+		"path": "/institucional/terminos-y-condiciones-domicilio-gratis"
+	},
+	"store.custom#institutional-site-terms": {
+		"path": "/institucional/terminos-del-portal"
+	},
+	"store.custom#institutional-delivery-and-returns": {
+		"path": "/institucional/envios-y-devoluciones"
+	},
+	"store.custom#institutional-smartwatch-terms": {
+		"path": "/institucional/terminos-y-condiciones-smartwatch"
+	},
+	"store.custom#institutional-merca-online-terms": {
+		"path": "/institucional/terminos-y-condiciones-merca-online"
+	},
+	"store.custom#contact": {
+		"path": "/institucional/contacto"
+	},
+	"store.custom#institutional-about-mercaldas": {
+		"path": "/institucional/acerca-de-mercaldas"
+	},
+	"store.custom#institutional-how-to-buy": {
+		"path": "/institucional/como-comprar"
+	},
+	"store.custom#institutional-payment-methods": {
+		"path": "/institucional/medios-de-pago"
+	},
+	"store.custom#electro": {
+		"path": "electro"
+	},
+	"store.custom#alimentacion": {
+		"path": "alimentacion"
+	},
+	"store.custom#indumentaria": {
+		"path": "indumentaria"
+	},
+	"store.custom#farmacia": {
+		"path": "farmacia"
+	},
+	"store.custom#hogar": {
+		"path": "hogar"
+	},
+	"store.custom#deportes": {
+		"path": "deportes"
+	},
+	"store.custom#bebes-y-ninos": {
+		"path": "bebes-y-ninos"
+	},
+	"store.custom#exteriores": {
+		"path": "exteriores"
+	},
+	"store.custom#herramientas": {
+		"path": "herramientas"
+	},
+	"store.custom#indumentaria-2": {
+		"path": "indumentaria-2"
+	},
+	"store.custom#cocina": {
+		"path": "cocina"
+	},
+	"store.custom#custom-event": {
+		"path": "flash-ofert"
+	}
+}

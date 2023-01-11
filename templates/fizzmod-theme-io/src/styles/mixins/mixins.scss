@@ -1,0 +1,96 @@
+@mixin inputRenderStyles {
+	&:-webkit-autofill {
+		box-shadow: 0 0 0 30px $white inset;
+	}
+}
+
+@mixin removeInputOutline {
+	&:active,
+	&:focus {
+		outline: none;
+	}
+	&::-webkit-contacts-auto-fill-button {
+		visibility: hidden;
+		display: none !important;
+		pointer-events: none;
+		position: absolute;
+		right: 0;
+	}
+}
+
+@mixin scrollbar {
+	scrollbar-width: thin;
+	&::-webkit-scrollbar {
+		width: 5px;
+		background-color: $grey200;
+		border-radius: 20px;
+	}
+
+	&::-moz-scrollbar {
+		width: 5px;
+		background-color: $grey200;
+		border-radius: 20px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $grey400;
+		border-radius: 20px;
+	}
+
+	&::-moz-scrollbar-thumb {
+		background-color: $grey400;
+		border-radius: 20px;
+	}
+}
+
+// Grid mixin
+$grid__cols: 12;
+$grid__spacing: 3%;
+@for $i from 1 through $grid__cols {
+	.#{$i}-columns {
+		flex-basis: (100 / ($grid__cols / $i)) * 1%;
+		margin-right: $grid__spacing;
+	}
+}
+
+// From pixels to rem
+@mixin torem($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) + px;
+	font-size: $sizeValue + rem;
+}
+
+@mixin square($length) {
+	width: $length;
+	height: $length;
+}
+
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin removeAfterBefore {
+	&:before,
+	&:after {
+		content: normal;
+	}
+}
+
+@mixin removeOutline {
+	&:focus,
+	&:active {
+		outline: 0 !important;
+	}
+}
+
+@mixin reset() {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}

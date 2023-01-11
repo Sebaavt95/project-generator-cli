@@ -1,0 +1,175 @@
+$fontFamily: 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif';
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+$extraBold: 800;
+
+@mixin typographyH1 {
+	font-family: $fontFamily;
+	font-weight: $bold;
+	font-size: 43px;
+	line-height: 50px;
+	letter-spacing: 0;
+	font-style: normal;
+
+	@include responsive('md') {
+		font-size: 34px;
+		line-height: 40px;
+	}
+
+	@content;
+}
+
+@mixin typographyH2 {
+	font-family: $fontFamily;
+	font-size: 35px;
+	font-weight: $medium;
+	line-height: 41px;
+	letter-spacing: 3px;
+	font-style: normal;
+
+	@include responsive('md') {
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 1.71px;
+	}
+
+	@content;
+}
+
+@mixin typographyH3 {
+	font-family: $fontFamily;
+	font-size: 32px;
+	font-weight: $bold;
+	line-height: 38px;
+	letter-spacing: 0;
+	font-style: normal;
+
+	@content;
+}
+
+@mixin typographyH4 {
+	font-family: $fontFamily;
+	font-size: 32px;
+	font-weight: $regular;
+	line-height: 38px;
+	letter-spacing: 2px;
+	font-style: normal;
+
+	@include responsive('md') {
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: 1px;
+	}
+
+	@content;
+}
+
+@mixin typographyH5 {
+	font-family: $fontFamily;
+	font-size: 28px;
+	font-weight: $bold;
+	line-height: 33px;
+	letter-spacing: 0;
+	font-style: normal;
+
+	@include responsive('md') {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	@content;
+}
+
+@mixin typographyH6 {
+	font-family: $fontFamily;
+	font-size: 20px;
+	font-weight: $bold;
+	line-height: 24px;
+	letter-spacing: 0;
+	font-style: normal;
+
+	@include responsive('md') {
+		font-size: 18px;
+		line-height: 21px;
+	}
+
+	@content;
+}
+
+@mixin typographySubtitle1 {
+	font-family: $fontFamily;
+	font-size: 18px;
+	font-weight: $regular;
+	line-height: 21px;
+	letter-spacing: 1px;
+	font-style: normal;
+
+	@content;
+}
+
+@mixin typographySubtitle2 {
+	font-family: $fontFamily;
+	font-size: 14px;
+	font-weight: $medium;
+	line-height: 16px;
+	letter-spacing: 0;
+	font-style: normal;
+
+	@content;
+}
+
+@mixin typographyBody1 {
+	font-family: $fontFamily;
+	font-size: 16px;
+	font-weight: $medium;
+	line-height: 20px;
+	letter-spacing: 0;
+	font-style: normal;
+
+	@content;
+}
+
+@mixin typographyBody2 {
+	font-family: $fontFamily;
+	font-size: 14px;
+	font-weight: $regular;
+	line-height: 16px;
+	letter-spacing: 0;
+	font-style: normal;
+
+	@include responsive('md') {
+		font-size: 13px;
+		line-height: 15px;
+	}
+
+	@content;
+}
+
+@mixin typographyCaption {
+	font-family: $fontFamily;
+	font-size: 12px;
+	font-weight: $medium;
+	line-height: 16px;
+	letter-spacing: 1px;
+	font-style: normal;
+
+	@content;
+}
+
+@mixin typographyOverline {
+	font-family: $fontFamily;
+	font-size: 10px;
+	font-weight: $medium;
+	line-height: 16px;
+	letter-spacing: 0;
+	font-style: normal;
+
+	@include responsive('md') {
+		font-size: 11px;
+	}
+
+	@content;
+}

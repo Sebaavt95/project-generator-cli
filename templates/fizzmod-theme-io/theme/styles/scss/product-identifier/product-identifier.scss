@@ -1,0 +1,24 @@
+.product-identifier {
+	display: block;
+	color: $grey-700;
+	font-size: 14px;
+	margin-top: 15px;
+	@include customMediaBreaks(1026) {
+		font-size: 13px;
+		text-align: center;
+	}
+	&__label {
+		font-weight: $medium;
+	}
+	&::after {
+		content: '';
+		background-color: $secondary-main;
+		display: block;
+		width: 32px;
+		height: 2px;
+		margin: 21px 0;
+		@include customMediaBreaks(1026) {
+			margin: 14px auto 21px;
+		}
+	}
+}

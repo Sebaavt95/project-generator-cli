@@ -1,0 +1,89 @@
+/* Store Locator */
+
+.flexRow--store {
+	&-list-container {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	&-detail-container {
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 0 39px;
+		margin-bottom: 72px;
+		margin-top: 48px;
+		position: relative;
+
+		@include mediaBreaks('tablet') {
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
+
+.flexRowContent--store-detail-container {
+	.stretchChildrenWidth {
+		width: auto !important;
+
+		&:first-child {
+			padding-top: 36.63px;
+			display: inline-block;
+
+			@include mediaBreaks('tablet') {
+				padding: 0px;
+				display: block;
+			}
+		}
+	}
+}
+
+.flexCol--store {
+	&-map-container {
+		width: 859px;
+		height: 378px;
+
+		@include mediaBreaks('tablet') {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&-detail-container {
+		height: auto !important;
+		width: 288px !important;
+		max-height: 378px;
+		margin-right: 52px;
+		padding: 27.38px 0px;
+		padding-left: 18.38px;
+		border: 0.75px solid $grey-500;
+		border-radius: 5px;
+
+		@include mediaBreaks('tablet') {
+			width: 100%;
+			margin: 0;
+			margin-top: 58px;
+			margin-bottom: 34px;
+			padding: 22.38px 0;
+			padding-left: 17.38px;
+		}
+	}
+}
+
+.flexColChild--store-detail-container {
+	/* Button back store-locator details */
+	&:first-child {
+		position: absolute;
+		top: 2px;
+		left: 44px;
+
+		@include mediaBreaks('tablet') {
+			top: 264px;
+			left: 20px;
+		}
+	}
+
+	/* Dias laborables container store details */
+	&:last-child {
+		margin-top: 18px;
+	}
+}

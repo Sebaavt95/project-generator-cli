@@ -1,0 +1,177 @@
+{
+  "store.custom#deportes": {
+    "blocks": [
+      "responsive-layout.desktop#department--8",
+      "responsive-layout.tablet#department--8",
+      "responsive-layout.phone#department--8"
+    ]
+  },
+  "responsive-layout.desktop#department--8": {
+    "children": [
+      "flex-layout.row#department-container--8"
+    ]
+  },
+  "flex-layout.row#department-container--8": {
+    "props": {
+      "blockClass": "department-container"
+    },
+    "children": [
+      "flex-layout.col#department-content--8"
+    ]
+  },
+  "responsive-layout.tablet#department--8": {
+    "children": [
+      "flex-layout.row#department-container--8"
+    ]
+  },
+  "responsive-layout.phone#department--8": {
+    "children": [
+      "flex-layout.row#department-container--8"
+    ]
+  },
+  "flex-layout.col#department-content--8": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#department-main-banner--8",
+      "rich-text#department-title--8",
+      "flex-layout.row#categories-cards--8"
+    ]
+  },
+  "flex-layout.row#department-main-banner--8": {
+    "props": {
+      "blockClass": "department__main__banner__container",
+      "horizontalAlign": "center",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#department-main-banner-slider--8"
+    ]
+  },
+  "flex-layout.col#department-main-banner-slider--8": {
+    "props": {
+      "blockClass": "department__main__banner__slider__container",
+      "fullWidth": true
+    },
+    "children": [
+      "list-context.image-list#department-main-banner-list-images--8"
+    ]
+  },
+  "list-context.image-list#department-main-banner-list-images--8": {
+    "children": [
+      "slider-layout#department-main-banner-slider--8"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "https://via.placeholder.com/1239x299.png",
+          "mobileImage": "https://via.placeholder.com/1024x420.png"
+        },
+        {
+          "image": "https://via.placeholder.com/1239x299.png/09F/FFF",
+          "mobileImage": "https://via.placeholder.com/1024x420.png/09F/FFF"
+        },
+        {
+          "image": "https://via.placeholder.com/1239x299.png/08A/FFF",
+          "mobileImage": "https://via.placeholder.com/1024x420.png/08A/FFF"
+        }
+      ]
+    }
+  },
+  "slider-layout#department-main-banner-slider--8": {
+    "props": {
+      "blockClass": "department__main__banner__slider",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "infinite": true
+    }
+  },
+  "rich-text#department-title--8": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Deportes",
+      "blockClass": "department-title"
+    }
+  },
+  "flex-layout.row#categories-cards--8": {
+    "children": [
+      "flex-layout.col#category-card--13"
+    ],
+    "props": {
+      "horizontalAlign": "left",
+      "colSizing": "auto",
+      "blockClass": "categories-cards-container"
+    }
+  },
+  "flex-layout.col#category-card--13": {
+    "children": [
+      "flex-layout.col#category-card-top--13",
+      "flex-layout.col#category-card-bottom--13"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--13": {
+    "children": [
+      "image#category-img--13",
+      "rich-text#category-title--13"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--13": {
+    "children": [
+      "rich-text#subcategories-list--13",
+      "link#category-link--13"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--13": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Accesorios",
+      "link": "https://fizzmodapps.myvtex.com/deportes/accesorios",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--13": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Accesorios",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--13": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--13": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/deportes/accesorios",
+      "blockClass": "category-card-cta"
+    }
+  }
+}

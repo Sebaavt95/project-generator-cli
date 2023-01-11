@@ -1,0 +1,5 @@
+.buttonText--add-to-cart_searchbar::before {
+	@include customMediaBreaks(350) {
+		display: none;
+	}
+}

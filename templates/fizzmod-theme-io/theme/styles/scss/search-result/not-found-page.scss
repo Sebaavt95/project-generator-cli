@@ -1,0 +1,157 @@
+.notFound {
+	&--layout {
+		padding: 123px 290px;
+		max-width: 1280px;
+		margin: 0 auto;
+
+		@include mediaBreaks('tablet') {
+			padding: 29px 0px;
+			width: 100% !important;
+		}
+	}
+}
+
+.searchNotFound {
+	height: 100%;
+
+	&--product-searchNotFound {
+		width: 1200px !important;
+		height: 230px !important;
+		box-shadow: 200px -142px 0px 4px $white;
+		margin-top: 64px;
+		margin-bottom: 24px;
+		z-index: 100;
+
+		@include mediaBreaks('tablet') {
+			box-shadow: 0px 0px 0px 0px $white;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: auto !important;
+			margin-top: 20px !important;
+			padding: 0px;
+		}
+
+		&::before {
+			@include flexCenter;
+			@include typographyH1;
+			width: 117px;
+			height: 114.56px;
+			content: '';
+			text-transform: capitalize;
+			background-image: url('assets/img/empty-search-results.svg');
+			background-repeat: no-repeat;
+			background-size: 124px;
+			order: 1;
+
+			@include mediaBreaks('tablet') {
+				top: 43px;
+			}
+		}
+
+		&::after {
+			content: 'Ops!';
+			margin-left: 16px;
+			margin-right: 85px;
+			font-family: $fontFamily;
+			font-weight: $bold;
+			font-size: 43px;
+			line-height: 50px;
+			color: $grey-800;
+			order: 2;
+
+			@include mediaBreaks('tablet') {
+				display: block;
+				margin: 0 auto;
+				margin-top: 10px;
+				font-size: 34px;
+				line-height: 40px;
+			}
+		}
+	}
+}
+
+.searchNotFoundOops {
+	display: none;
+}
+
+.searchNotFoundInfo,
+.searchNotFoundInfo--product-searchNotFound {
+	@include typographyBody1;
+	color: $grey-800;
+	line-height: 20px;
+	border-left: 1px solid $grey-400;
+	padding: 0;
+	padding-left: 55px;
+	position: relative;
+	padding-top: 19px;
+	padding-bottom: 19px;
+	width: 356px;
+
+	@include mediaBreaks('tablet') {
+		padding: 0px 15px;
+		margin: 0px;
+		margin-top: 14px;
+		text-align: center;
+		border: none;
+	}
+}
+
+.searchNotFoundInfo {
+	&--product-searchNotFound {
+		order: 3;
+		@include mediaBreaks('tablet') {
+			margin-top: 14px;
+		}
+	}
+	&::before {
+		content: '';
+		height: 1px;
+		width: 30px;
+		background-color: $grey-400;
+		position: absolute;
+		top: 62.5px;
+
+		@include mediaBreaks('tablet') {
+			top: 40.5px;
+		}
+	}
+	&--product-searchNotFound .searchNotFoundWhatToDoDotsContainer,
+	& .searchNotFoundWhatToDoDotsContainer {
+		padding-left: 15px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+.searchNotFoundWhatDoIDo {
+	@include typographyBody1;
+	color: $grey-800;
+	margin-bottom: 15px;
+	margin-top: 52.5px;
+
+	@include mediaBreaks('tablet') {
+		margin-top: 39px;
+		margin-bottom: 12px;
+	}
+}
+
+.searchNotFoundWhatDoIDo,
+.searchNotFoundWhatToDoDotsContainer {
+	@include mediaBreaks('tablet') {
+		text-align: left;
+	}
+}
+
+.searchNotFoundWhatToDoDots {
+	@include typographyBody2;
+	color: $grey-700;
+	font-size: 13px;
+
+	&:not(:last-child) {
+		margin-bottom: 6px;
+	}
+	&::marker {
+		color: $secondary-main !important;
+	}
+}

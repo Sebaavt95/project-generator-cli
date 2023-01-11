@@ -1,0 +1,67 @@
+import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import Link from './Link';
+
+<Meta
+	title="Componentes/Link"
+	component={Link}
+	argTypes={{
+		href: {
+			name: 'Href',
+			control: {
+				type: 'text'
+			}
+		},
+        children: {
+            name: 'Children',
+            control: {
+                type: 'text'
+            }
+        },
+        target: {
+            name: 'Target',
+            control: {
+                type: 'text'
+            }
+        }
+	}}
+/>
+
+# Link
+
+## Usage
+
+```
+import Link from 'components/Link';
+
+<Link href="/">Link text</Link>
+
+<Link href="/" target="_blank" rel="noopener noreferrer">Link with target blank</Link>
+
+<Link href="/">
+    <img src="via.placeholder.com/200x200" alt="test image" title="text image" /> 
+</Link>
+```
+
+## Props
+
+<ArgsTable of={Link} />
+
+<Story name="Link with text">
+	<Link href="/">
+		Some Link text
+	</Link>
+</Story>
+
+<Story name="Link with image">
+	<Link href="/">
+		<img src="https://via.placeholder.com/200x200?text=image%20with%20link" alt="Image with link" title="Image with link" /> 
+	</Link>
+</Story>
+
+## Playground
+
+export const Template = args => <Link {...args} />;
+
+<Story name="Playground" args={{ children: 'Some link text', href: '/', target: '_blank', rel: "noopener noreferrer" }}>
+	{Template.bind({})}
+</Story>

@@ -1,0 +1,33 @@
+.buttonDataContainer--plp-add-btn {
+	margin: 9px 0;
+}
+
+.buttonText--plp-add-btn {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	text-transform: initial;
+	height: 18px;
+	font-size: 15px;
+
+	&::before {
+		content: "\e94a";
+    font-family: 'mercaldas';
+    font-size: 32px;
+    margin-right: 5px;
+	}
+}
+
+.buttonText--plp-add-btn::before {
+	@include mediaBreaks('tablet') {
+		content: "\e94a";
+		font-family: 'mercaldas';
+		font-size: 32px;
+		margin-right: 18px;
+		transform: translateX(0);
+	}
+
+	@include mediaBreaks('mobileLarge') {
+		margin-right: 5px;
+	}
+}

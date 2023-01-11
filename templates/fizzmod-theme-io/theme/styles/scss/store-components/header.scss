@@ -1,0 +1,146 @@
+.imageElement {
+	&--minicart__cart {
+		position: absolute;
+		top: 15px;
+		left: 35%;
+		z-index: 0;
+
+		@include mediaBreaks('tablet') {
+			position: absolute;
+			width: 34px !important;
+			height: 33px !important;
+			top: 12px;
+			left: 35%;
+		}
+	}
+}
+
+.logoContainer {
+	&--header-logo {
+		padding: 0;
+	}
+}
+
+.logoLink {
+	&--header-logo {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		height: 40px;
+		width: 152px;
+
+		@include mediaBreaks('tablet') {
+		margin-top: initial;
+		margin-bottom: initial;
+		height: initial;
+		}
+
+		@include customMediaBreaks(480) {
+			margin-top: 13px;
+			margin-bottom: 13px;
+			height: 28px !important;
+		}
+	}
+	&--header-logo-mobile {
+		width: 156px;
+		position: relative;
+		top: -44px;
+	}
+}
+
+.logoImage {
+	&--header-logo {
+		@include mediaBreaks('mobile') {
+			width: 107px;
+			height: 28px;
+		}
+	}
+}
+
+/*
+|---------------------------------------------------------------------------------------------------------------------
+|           SEARCHBAR
+|---------------------------------------------------------------------------------------------------------------------
+*/
+
+.searchBarContainer {
+	@include mediaBreaks('tablet') {
+		padding: 0;
+		height: 100%;
+	}
+
+	& :global(.vtex-input-prefix__group) {
+		border: none;
+		border-radius: 22.5px;
+		height: 45px;
+
+		@include mediaBreaks('tablet') {
+			height: 54px;
+			background-color: $grey-200;
+			border-radius: 0;
+			width: 100vw;
+		}
+	}
+	& :global(.vtex-styleguide-9-x-input) {
+		font-size: 14px;
+		font-family: $fontFamily;
+		color: $grey-600;
+		padding-left: 20px;
+		padding-right: 0;
+		background-color: $white;
+
+		&::placeholder {
+			@include mediaBreaks('tablet') {
+				color: $grey-700;
+			}
+		}
+
+		@include mediaBreaks('tablet') {
+			font-size: 13px;
+			color: $grey-700;
+			padding-left: 12px;
+		}
+	}
+	& :global(.vtex-input__suffix) {
+		padding: 0 7px 0 11px;
+		background-color: $white;
+
+		@include mediaBreaks('tablet') {
+			padding-right: 12px;
+		}
+	}
+}
+
+.searchIcon {
+	display: none;
+}
+
+.closeIcon,
+.searchIcon {
+	@include mediaBreaks('tablet') {
+		display: none;
+	}
+}
+
+.searchBarIcon {
+	&::before {
+		content: '\e902';
+		font-family: 'mercaldas';
+		font-size: 28px;
+		color: $grey-600;
+	}
+	&--search,
+	&--clear {
+		@include mediaBreaks('tablet') {
+			padding: 0;
+		}
+	}
+	&::before,
+	&--clear::before {
+		@include mediaBreaks('tablet') {
+			content: '\e923';
+			font-family: 'mercaldas';
+			font-size: 17px;
+			color: $grey-600;
+		}
+	}
+}

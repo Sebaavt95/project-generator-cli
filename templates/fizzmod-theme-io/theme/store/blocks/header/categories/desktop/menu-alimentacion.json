@@ -1,0 +1,110 @@
+
+		{
+			
+  "menu-item#alimentacion": {
+   "props": {
+    "id": "2/alimentacion",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "department"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/alimentacion",
+     "noFollow": false,
+     "tagTitle": "Alimentación",
+     "text": "Alimentación"
+    }
+   },
+   "blocks": ["vtex.menu@2.x:submenu#alimentacion-categories"]
+  }
+	
+			,"vtex.menu@2.x:submenu#alimentacion-categories": {
+				"children": ["vtex.menu@2.x:menu#alimentacion-categories"]
+			},
+			"vtex.menu@2.x:menu#alimentacion-categories": {
+				"props": {
+				"orientation": "vertical"
+				},
+				"children": ["menu-item#frutas-y-verduras","menu-item#almacen","menu-item#bebidas","menu-item#carnes"]
+			}
+		
+ ,
+  "menu-item#frutas-y-verduras": {
+   "props": {
+    "id": "3/frutas-y-verduras",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/alimentacion/frutas-y-verduras",
+     "noFollow": false,
+     "tagTitle": "Frutas y Verduras",
+     "text": "Frutas y Verduras"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#almacen": {
+   "props": {
+    "id": "19/almacen",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/alimentacion/almacen",
+     "noFollow": false,
+     "tagTitle": "Almacén",
+     "text": "Almacén"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#bebidas": {
+   "props": {
+    "id": "20/bebidas",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/alimentacion/bebidas",
+     "noFollow": false,
+     "tagTitle": "Bebidas",
+     "text": "Bebidas"
+    }
+   },
+   "blocks": []
+  }
+	
+ ,
+  "menu-item#carnes": {
+   "props": {
+    "id": "21/carnes",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "category-level1"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/alimentacion/carnes",
+     "noFollow": false,
+     "tagTitle": "Carnes",
+     "text": "Carnes"
+    }
+   },
+   "blocks": []
+  }
+	
+ 
+		}
+	

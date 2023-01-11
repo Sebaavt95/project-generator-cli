@@ -1,0 +1,50 @@
+{
+    "store.custom#institutional-about-mercaldas": {
+		"blocks": [
+			"responsive-layout.desktop#about-mercaldas",
+			"responsive-layout.tablet#about-mercaldas",
+			"responsive-layout.phone#about-mercaldas"
+		]
+	},
+	"responsive-layout.desktop#about-mercaldas": {
+		"children": ["flex-layout.row#institutional-header-about-mercaldas", "flex-layout.row#institutional-content-about-mercaldas"]
+	},
+	"responsive-layout.tablet#about-mercaldas": {
+		"children": ["flex-layout.row#institutional-header-about-mercaldas", "flex-layout.row#institutional-content-about-mercaldas"]
+	},
+	"responsive-layout.phone#about-mercaldas": {
+		"children": ["flex-layout.row#institutional-header-about-mercaldas", "flex-layout.row#institutional-content-about-mercaldas"]
+	},
+	"flex-layout.row#institutional-header-about-mercaldas": {
+		"children": ["rich-text#institutional-title-about-mercaldas"],
+		"props": {
+			"blockClass": "institutional-title-container"
+		}
+	},
+	"rich-text#institutional-title-about-mercaldas": {
+		"props": {
+			"text": "### Acerca de Mercaldas. Gran tienda de Colombia!",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-title"
+		}
+	},
+	"flex-layout.row#institutional-content-about-mercaldas": {
+		"children": ["flex-layout.col#institutional-content-about-mercaldas"],
+		"props": {
+			"blockClass":"institutional-content"
+		}
+	},
+	"flex-layout.col#institutional-content-about-mercaldas": {
+		"children": [
+			"rich-text#institutional-content-about-mercaldas-text-1"
+		]
+	},
+	"rich-text#institutional-content-about-mercaldas-text-1": {
+		"props": {
+			"text": "Como toda concepción de negocio, ya sea direccionada a la elaboración de productos o a la prestación de servicios, Mercaldas nace como una idea del gremio cafetero para ayudar a los caficultores de la época, durante la bonanza cafetera, en el que se ofrecían productos de la canasta familiar a precios módicos. Su origen se remonta al 02 de noviembre de 1977, durante el congreso cafetero, cuando se crea Mercados Cooperativos Cafeteros de Caldas “Mercaldas”, convirtiéndose en uno de los primeros supermercados de la zona, en momentos en que los precios altos en los productos eran la constante y lo que se pretendía era controlar y regular los precios de dichos artículos en el Departamento de Caldas.<br><br> A través de los años Mercaldas incursionó en nuevos mercados ingresando a diferentes municipios de Caldas hasta completar 32 puntos de venta. Con el transcurrir el tiempo se empezó a establecer grandes entidades comerciales, las cuales crearon una fuerte competencia y la empresa decidió realizar una reestructuración y así reducir el número de almacenes en 1991; ya en 1992 los resultados obtenidos mostró que la reducción fue exitosa. <br><br>En el año 2000, el Comité de Cafeteros decidió poner la cadena de supermercados Mercaldas a la venta. A partir del 01 de diciembre de 2000 la compañía pasa a ser propiedad privada de inversionistas manizaleños. Sociedad integrada por la familia Toro Mejía. <br><br>El reto para este grupo de empresarios es sostener la imagen de la empresa y el posicionamiento que había adquirido a través de 23 años de ofrecer productos de la canasta familiar a precios justos, emprendiéndose en un viaje de constante crecimiento, destacándose tanto por la atención y el servicio brindado en cada uno de los puntos de venta. Actualmente con 15 almacenes y con 40 años de permanecer en el Mercado, Mercaldas se ha consolidado como una organización ampliamente reconocida, especialmente en el Departamento de Caldas, como una de las cadenas de supermercados más importantes de la región. <br><br>Mercaldas está comprometida de una u otra forma con la mejora continua de los procesos a través de la participación activa de los colaboradores y garantizando las competencia del talento humano desde el proceso de la selección; es por esta razón que la compañía es la única en su género, en estar certificada en calidad y todo ello con el fin de mejorar tanto interna como externamente la organización, controlando aspectos concernientes al servicio y atención al cliente.",
+			"textAlignment": "LEFT",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-text"
+		}
+	}
+}

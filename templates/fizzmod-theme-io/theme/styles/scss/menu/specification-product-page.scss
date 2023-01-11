@@ -1,0 +1,87 @@
+/* submenuAccordion */
+.submenuAccordion {
+	&--pdp-info-accordionMobile {
+		flex-direction: column;
+		padding: 0;
+		padding-bottom: 18px;
+
+		& :global(.vtex-store-components-3-x-productDescriptionText) {
+			font-family: $fontFamily;
+			font-size: 13px;
+			line-height: 15px;
+			font-weight: 400;
+			padding: 0 15px;
+			color: $grey-700;
+			text-align: center;
+		}
+
+		& :global(.vtex-store-components-3-x-productDescriptionTitle) {
+			display: none;
+		}
+	}
+}
+
+.menuItemInnerDiv {
+	&--pdp-description-item {
+		height: 59px;
+		padding: 19px 0;
+		border-top: 1px solid $grey-500;
+	}
+}
+
+.styledLinkContent {
+	&--pdp-description-item {
+		font-family: $fontFamily;
+		font-weight: 700;
+		font-size: 20px;
+		padding: 0 15px;
+
+		& :global(.vtex-menu-2-x-accordionIcon--pdp-description-item--isOpen) {
+			font-size: 0;
+			&::before {
+				content: '_';
+				font-size: 34px;
+				position: relative;
+				top: -13px;
+			}
+		}
+	}
+}
+
+.styledLinkContainer {
+	&--pdp-description-item {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.accordionIcon {
+	&--pdp-description-item {
+		margin: 0;
+		@include flexCenter;
+		width: 16px;
+		height: 16px;
+		color: $grey-800;
+		font-family: $fontFamily;
+		font-size: 32px;
+		font-weight: 300;
+	}
+}
+
+.submenu {
+	&--menu-departments {
+		@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+			height: calc(100vh - 128px);
+		}
+	}
+}
+
+.menuItem {
+	&--categoryTreeItem {
+		& .submenuWrapper {
+			@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+				height: calc(100vh - 128px);
+			}
+		}
+	}
+}

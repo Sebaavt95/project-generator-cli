@@ -1,5 +1,5 @@
 {
-	"name": "{{projectName}}",
+	"name": "{{projectVendor}}",
 	"version": "1.0.0",
 	"description": "base project with react and styled component",
 	"main": "index.js",

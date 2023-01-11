@@ -1,0 +1,24 @@
+
+		{
+			
+  "menu-item#bebes-y-ninos": {
+   "props": {
+    "id": "16/bebes-y-ninos",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "blockClass": ["categoryTreeItem", "department"],
+    "itemProps": {
+     "type": "internal",
+     "href": "/bebes-y-ninos",
+     "noFollow": false,
+     "tagTitle": "Bebés y Niños",
+     "text": "Bebés y Niños"
+    }
+   },
+   "blocks": []
+  }
+	
+ 
+		}
+	

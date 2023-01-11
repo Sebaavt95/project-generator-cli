@@ -1,0 +1,146 @@
+{
+    "store.custom#contact": {
+        "children": [
+			"flex-layout.row#header-contact",
+			"flex-layout.row#content-container-contact"
+		]
+    },
+    "flex-layout.row#header-contact": {
+		"children": ["rich-text#contact"],
+		"props": {
+			"blockClass": "institutional-title-container"
+		}
+	},
+    "rich-text#contact": {
+		"props": {
+			"text": "### Contacto",
+			"textPosition": "CENTER",
+            "textAlignment": "CENTER",
+			"blockClass": "institutional-title"
+		}
+	},
+	"flex-layout.row#content-container-contact": {
+		"children": ["flex-layout.row#content-contact"],
+		"props": {
+			"blockClass":"institutional-container-contact"
+		}
+	},
+    "flex-layout.row#content-contact": {
+		"children": ["flex-layout.col#content-contact"],
+		"props": {
+			"blockClass":"institutional-content-contact"
+		}
+	},
+    "flex-layout.col#content-contact": {
+		"children": ["form#contact-form"]
+	},
+    "form#contact-form": {
+		"props": {
+			"entity": "CC",
+			"schema": "person"
+    },
+		"children": [
+			"form-input.text#email",
+			"flex-layout.row#content-contact-name-phone",
+			"form-input.textarea#comments",
+			"form-submit"
+		],
+		"blocks": ["form-success#contactanos"]
+	},
+	"form-input.text#firstname": {
+		"props": {
+			"pointer": "#/properties/clientName",
+			"label": "Nombre *"
+		}
+	},
+	"flex-layout.row#content-contact-name-phone": {
+		"children":[
+			"form-input.text#firstname",
+			"form-input.text#phone"
+		],
+		"props": {
+			"colGap": 6
+		}
+	},
+	"form-input.text#email": {
+		"props": {
+			"pointer": "#/properties/clientEmail",
+			"label": "Mail *"
+		}
+	},
+	"form-input.text#phone": {
+		"props": {
+			"pointer": "#/properties/clientPhone",
+			"label": "Teléfono *"
+		}
+	},
+	"form-input.textarea#comments": {
+		"props": {
+			"pointer": "#/properties/clientComment",
+			"label": "Comentarios *"
+		}
+	},
+	"form-success#contactanos": {
+		"children": [
+			"flex-layout.row#success-message-return",
+			"flex-layout.row#success-message-main-title",
+			"flex-layout.row#success-message-main-message",
+			"flex-layout.row#success-message-main-buttons"
+		]
+	},
+	"flex-layout.row#success-message-return": {
+		"children": [
+			"rich-text#success-message-return"
+		],
+		"props": {
+			"blockClass": "contact-success-message-container-return"
+		}
+	},
+	"rich-text#success-message-return": {
+		"props": {
+			"text": "[Volver  al formulario](/institucional/contacto)",
+			"textPosition": "LEFT",
+            "textAlignment": "LEFT",
+			"blockClass": "contact-success-message-return"
+		}
+	},
+	"flex-layout.row#success-message-main-title": {
+		"children": [
+			"rich-text#success-message-title"
+		]
+	},
+	"rich-text#success-message-title": {
+		"props": {
+			"text": "### ¡Gracias por contactarnos!",
+			"textPosition": "CENTER",
+            "textAlignment": "CENTER",
+			"blockClass": "contact-success-message-title"
+		}
+	},
+	"flex-layout.row#success-message-main-message": {
+		"children": [
+			"rich-text#success-message-text"
+		]
+	},
+	"rich-text#success-message-text": {
+		"props": {
+			"text": "Nuestro equipo se pondrá en contacto con usted muy pronto.",
+			"textPosition": "CENTER",
+            "textAlignment": "CENTER",
+			"blockClass": "contact-success-message-text"
+		}
+	},
+	"flex-layout.row#success-message-main-buttons": {
+		"children": [
+			"rich-text#success-message-button-home"
+		]
+	},
+	"rich-text#success-message-button-home": {
+		"props": {
+			"text": "[Continuar navegando por el sitio](/)",
+			"textPosition": "CENTER",
+            "textAlignment": "CENTER",
+			"blockClass": "contact-success-message-button"
+		}
+	}
+}

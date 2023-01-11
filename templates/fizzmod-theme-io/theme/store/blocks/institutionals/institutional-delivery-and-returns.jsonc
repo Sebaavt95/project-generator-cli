@@ -1,0 +1,59 @@
+{
+    "store.custom#institutional-delivery-and-returns": {
+        "blocks": [
+			"responsive-layout.desktop#delivery-and-returns",
+			"responsive-layout.tablet#delivery-and-returns",
+			"responsive-layout.phone#delivery-and-returns"
+		]
+	},
+    "responsive-layout.desktop#delivery-and-returns": {
+		"children": ["flex-layout.row#institutional-header-delivery-and-returns", "flex-layout.row#institutional-content-delivery-and-returns"]
+	},
+	"responsive-layout.tablet#delivery-and-returns": {
+		"children": ["flex-layout.row#institutional-header-delivery-and-returns", "flex-layout.row#institutional-content-delivery-and-returns"]
+	},
+	"responsive-layout.phone#delivery-and-returns": {
+		"children": ["flex-layout.row#institutional-header-delivery-and-returns", "flex-layout.row#institutional-content-delivery-and-returns"]
+	},
+    "flex-layout.row#institutional-header-delivery-and-returns": {
+		"children": ["rich-text#institutional-title-delivery-and-returns"],
+		"props": {
+			"blockClass": "institutional-title-container"
+		}
+	},
+    "rich-text#institutional-title-delivery-and-returns": {
+		"props": {
+			"text": "### Envios y Devoluciones",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-title"
+		}
+	},
+    "flex-layout.row#institutional-content-delivery-and-returns": {
+		"children": ["flex-layout.col#institutional-content-delivery-and-returns"],
+		"props": {
+			"blockClass":"institutional-content"
+		}
+	},
+    "flex-layout.col#institutional-content-delivery-and-returns": {
+        "children": [
+            "rich-text#institutional-content-delivery-and-returns-title-1",
+			"rich-text#institutional-content-delivery-and-returns-text-1"
+		]
+	},
+    "rich-text#institutional-content-delivery-and-returns-title-1": {
+        "props": {
+			"text": "###### COBERTURA Y HORARIOS DE ENTREGA DONDE SE INCLUYA ELECTRODOMÉSTICOS.",
+			"textAlignment": "left",
+			"textPosition": "left",
+			"blockClass": "institutional-content-title"
+		}
+	},
+    "rich-text#institutional-content-delivery-and-returns-text-1": {
+        "props": {
+			"text": "Quien adquiera un electrodoméstico, deberá verificar los sectores de cobertura y las entregas se realizaran 7 días Hábiles posteriores a la confirmación del pago en los siguientes horarios: lunes a viernes de 8:00 a.m. a 12:00 m. y de 2:00 p.m. a 6:00 p.m.",
+			"textAlignment": "LEFT",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-text"
+		}
+    }
+}

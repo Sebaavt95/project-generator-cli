@@ -1,0 +1,697 @@
+{
+  "store.custom#electro": {
+    "blocks": [
+      "responsive-layout.desktop#department--1",
+      "responsive-layout.tablet#department--1",
+      "responsive-layout.phone#department--1"
+    ]
+  },
+  "responsive-layout.desktop#department--1": {
+    "children": [
+      "flex-layout.row#department-container--1"
+    ]
+  },
+  "flex-layout.row#department-container--1": {
+    "props": {
+      "blockClass": "department-container"
+    },
+    "children": [
+      "flex-layout.col#department-content--1"
+    ]
+  },
+  "responsive-layout.tablet#department--1": {
+    "children": [
+      "flex-layout.row#department-container--1"
+    ]
+  },
+  "responsive-layout.phone#department--1": {
+    "children": [
+      "flex-layout.row#department-container--1"
+    ]
+  },
+  "flex-layout.col#department-content--1": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#department-main-banner--1",
+      "rich-text#department-title--1",
+      "flex-layout.row#categories-cards--1"
+    ]
+  },
+  "flex-layout.row#department-main-banner--1": {
+    "props": {
+      "blockClass": "department__main__banner__container",
+      "horizontalAlign": "center",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#department-main-banner-slider--1"
+    ]
+  },
+  "flex-layout.col#department-main-banner-slider--1": {
+    "props": {
+      "blockClass": "department__main__banner__slider__container",
+      "fullWidth": true
+    },
+    "children": [
+      "list-context.image-list#department-main-banner-list-images--1"
+    ]
+  },
+  "list-context.image-list#department-main-banner-list-images--1": {
+    "children": [
+      "slider-layout#department-main-banner-slider--1"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "https://via.placeholder.com/1239x299.png",
+          "mobileImage": "https://via.placeholder.com/1024x420.png"
+        },
+        {
+          "image": "https://via.placeholder.com/1239x299.png/09F/FFF",
+          "mobileImage": "https://via.placeholder.com/1024x420.png/09F/FFF"
+        },
+        {
+          "image": "https://via.placeholder.com/1239x299.png/08A/FFF",
+          "mobileImage": "https://via.placeholder.com/1024x420.png/08A/FFF"
+        }
+      ]
+    }
+  },
+  "slider-layout#department-main-banner-slider--1": {
+    "props": {
+      "blockClass": "department__main__banner__slider",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "infinite": true
+    }
+  },
+  "rich-text#department-title--1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Electro",
+      "blockClass": "department-title"
+    }
+  },
+  "flex-layout.row#categories-cards--1": {
+    "children": [
+      "flex-layout.col#category-card--7",
+      "flex-layout.col#category-card--9",
+      "flex-layout.col#category-card--12",
+      "flex-layout.col#category-card--14",
+      "flex-layout.col#category-card--15",
+      "flex-layout.col#category-card--17",
+      "flex-layout.col#category-card--18",
+      "flex-layout.col#category-card--24",
+      "flex-layout.col#category-card--25"
+    ],
+    "props": {
+      "horizontalAlign": "left",
+      "colSizing": "auto",
+      "blockClass": "categories-cards-container"
+    }
+  },
+  "flex-layout.col#category-card--7": {
+    "children": [
+      "flex-layout.col#category-card-top--7",
+      "flex-layout.col#category-card-bottom--7"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--7": {
+    "children": [
+      "image#category-img--7",
+      "rich-text#category-title--7"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--7": {
+    "children": [
+      "rich-text#subcategories-list--7",
+      "link#category-link--7"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--7": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Televisores",
+      "link": "https://fizzmodapps.myvtex.com/electro/televisores",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--7": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Televisores",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--7": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--7": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/electro/televisores",
+      "blockClass": "category-card-cta"
+    }
+  },
+  "flex-layout.col#category-card--9": {
+    "children": [
+      "flex-layout.col#category-card-top--9",
+      "flex-layout.col#category-card-bottom--9"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--9": {
+    "children": [
+      "image#category-img--9",
+      "rich-text#category-title--9"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--9": {
+    "children": [
+      "rich-text#subcategories-list--9",
+      "link#category-link--9"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--9": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Aire Acondicionado y Ventilación",
+      "link": "https://fizzmodapps.myvtex.com/electro/aire-acondicionado-y-ventilacion",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--9": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Aire Acondicionado y Ventilación",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--9": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": "- [Aire Acondicionado](https://fizzmodapps.myvtex.com/electro/aire-acondicionado-y-ventilacion/aire-acondicionado) \r- [Ventilación](https://fizzmodapps.myvtex.com/electro/aire-acondicionado-y-ventilacion/ventilacion) \r"
+    }
+  },
+  "link#category-link--9": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/electro/aire-acondicionado-y-ventilacion",
+      "blockClass": "category-card-cta"
+    }
+  },
+  "flex-layout.col#category-card--12": {
+    "children": [
+      "flex-layout.col#category-card-top--12",
+      "flex-layout.col#category-card-bottom--12"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--12": {
+    "children": [
+      "image#category-img--12",
+      "rich-text#category-title--12"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--12": {
+    "children": [
+      "rich-text#subcategories-list--12",
+      "link#category-link--12"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--12": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Notebook",
+      "link": "https://fizzmodapps.myvtex.com/electro/notebook",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--12": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Notebook",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--12": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--12": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/electro/notebook",
+      "blockClass": "category-card-cta"
+    }
+  },
+  "flex-layout.col#category-card--14": {
+    "children": [
+      "flex-layout.col#category-card-top--14",
+      "flex-layout.col#category-card-bottom--14"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--14": {
+    "children": [
+      "image#category-img--14",
+      "rich-text#category-title--14"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--14": {
+    "children": [
+      "rich-text#subcategories-list--14",
+      "link#category-link--14"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--14": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Audio",
+      "link": "https://fizzmodapps.myvtex.com/electro/audio",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--14": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Audio",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--14": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--14": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/electro/audio",
+      "blockClass": "category-card-cta"
+    }
+  },
+  "flex-layout.col#category-card--15": {
+    "children": [
+      "flex-layout.col#category-card-top--15",
+      "flex-layout.col#category-card-bottom--15"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--15": {
+    "children": [
+      "image#category-img--15",
+      "rich-text#category-title--15"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--15": {
+    "children": [
+      "rich-text#subcategories-list--15",
+      "link#category-link--15"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--15": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Computadora",
+      "link": "https://fizzmodapps.myvtex.com/electro/computadora",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--15": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Computadora",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--15": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--15": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/electro/computadora",
+      "blockClass": "category-card-cta"
+    }
+  },
+  "flex-layout.col#category-card--17": {
+    "children": [
+      "flex-layout.col#category-card-top--17",
+      "flex-layout.col#category-card-bottom--17"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--17": {
+    "children": [
+      "image#category-img--17",
+      "rich-text#category-title--17"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--17": {
+    "children": [
+      "rich-text#subcategories-list--17",
+      "link#category-link--17"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--17": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Consolas y Videojuegos",
+      "link": "https://fizzmodapps.myvtex.com/electro/consolas-y-videojuegos",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--17": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Consolas y Videojuegos",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--17": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": "- [Playstation](https://fizzmodapps.myvtex.com/electro/consolas-y-videojuegos/playstation) \r"
+    }
+  },
+  "link#category-link--17": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/electro/consolas-y-videojuegos",
+      "blockClass": "category-card-cta"
+    }
+  },
+  "flex-layout.col#category-card--18": {
+    "children": [
+      "flex-layout.col#category-card-top--18",
+      "flex-layout.col#category-card-bottom--18"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--18": {
+    "children": [
+      "image#category-img--18",
+      "rich-text#category-title--18"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--18": {
+    "children": [
+      "rich-text#subcategories-list--18",
+      "link#category-link--18"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--18": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Heladeras y Freezers",
+      "link": "https://fizzmodapps.myvtex.com/electro/heladeras-y-freezers",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--18": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Heladeras y Freezers",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--18": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--18": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/electro/heladeras-y-freezers",
+      "blockClass": "category-card-cta"
+    }
+  },
+  "flex-layout.col#category-card--24": {
+    "children": [
+      "flex-layout.col#category-card-top--24",
+      "flex-layout.col#category-card-bottom--24"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--24": {
+    "children": [
+      "image#category-img--24",
+      "rich-text#category-title--24"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--24": {
+    "children": [
+      "rich-text#subcategories-list--24",
+      "link#category-link--24"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--24": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Pequeños Electrodomésticos",
+      "link": "https://fizzmodapps.myvtex.com/electro/pequenos-electrodomesticos",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--24": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Pequeños Electrodomésticos",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--24": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--24": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/electro/pequenos-electrodomesticos",
+      "blockClass": "category-card-cta"
+    }
+  },
+  "flex-layout.col#category-card--25": {
+    "children": [
+      "flex-layout.col#category-card-top--25",
+      "flex-layout.col#category-card-bottom--25"
+    ],
+    "props": {
+      "blockClass": "department-page-category-card"
+    }
+  },
+  "flex-layout.col#category-card-top--25": {
+    "children": [
+      "image#category-img--25",
+      "rich-text#category-title--25"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-top"
+    }
+  },
+  "flex-layout.col#category-card-bottom--25": {
+    "children": [
+      "rich-text#subcategories-list--25",
+      "link#category-link--25"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "blockClass": "department-page-category-card-bottom"
+    }
+  },
+  "image#category-img--25": {
+    "props": {
+      "src": "https://via.placeholder.com/200x200.png/09F/FFF",
+      "alt": "Teléfonos y SmartWatch",
+      "link": "https://fizzmodapps.myvtex.com/electro/telefonos-y-smartwatch",
+      "blockClass": "category-card-img"
+    }
+  },
+  "rich-text#category-title--25": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### Teléfonos y SmartWatch",
+      "textColor": "c-on-base",
+      "blockClass": "category-card-title"
+    }
+  },
+  "rich-text#subcategories-list--25": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-muted-2",
+      "blockClass": "category-card-subcategories",
+      "text": ""
+    }
+  },
+  "link#category-link--25": {
+    "props": {
+      "label": "Ver todos",
+      "href": "https://fizzmodapps.myvtex.com/electro/telefonos-y-smartwatch",
+      "blockClass": "category-card-cta"
+    }
+  }
+}

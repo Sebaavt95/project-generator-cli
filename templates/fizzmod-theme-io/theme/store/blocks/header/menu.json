@@ -1,0 +1,179 @@
+{
+  "vtex.menu@2.x:menu#header-desktop": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#categories-main"
+    ]
+  },
+  "menu-item#categories-main": {
+    "props": {
+      "id": "categorias",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-menu-main",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Categorías",
+        "text": "Categorías"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#departments"
+    ]
+  },
+  "vtex.menu@2.x:submenu#departments": {
+    "props": {
+      "blockClass": "menu-departments"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#departments"
+    ]
+  },
+  "vtex.menu@2.x:menu#departments": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#electro",
+      "menu-item#alimentacion",
+      "menu-item#indumentaria",
+      "menu-item#farmacia",
+      "menu-item#hogar",
+      "menu-item#deportes",
+      "menu-item#bebes-y-ninos",
+      "menu-item#exteriores",
+      "menu-item#herramientas",
+      "menu-item#indumentaria-2",
+      "menu-item#cocina"
+    ]
+  },
+  "vtex.menu@2.x:menu#header-secondary": {
+    "children": [
+      "menu-item#secondary-1",
+      "menu-item#secondary-2",
+      "menu-item#secondary-3",
+      "menu-item#secondary-4",
+      "menu-item#secondary-5"
+    ],
+    "props": {
+      "blockClass": "header-menu-secondary-wrapper"
+    }
+  },
+  "menu-item#secondary-1": {
+    "props": {
+      "id": "ofertas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-menu-secondary",
+      "itemProps": {
+        "type": "internal",
+        "href": "/ofertas",
+        "noFollow": false,
+        "tagTitle": "Ofertas",
+        "text": "Ofertas"
+      }
+    }
+  },
+  "menu-item#secondary-2": {
+    "props": {
+      "id": "como-comprar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-menu-secondary",
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/como-comprar",
+        "noFollow": false,
+        "tagTitle": "Cómo comprar",
+        "text": "Cómo comprar"
+      }
+    }
+  },
+  "menu-item#secondary-3": {
+    "props": {
+      "id": "medios-de-pago",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-menu-secondary",
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/medios-de-pago",
+        "noFollow": false,
+        "tagTitle": "Medios de pago",
+        "text": "Medios de pago"
+      }
+    }
+  },
+  "menu-item#secondary-4": {
+    "props": {
+      "id": "sucursales",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-menu-secondary",
+      "itemProps": {
+        "type": "internal",
+        "href": "/stores",
+        "noFollow": false,
+        "tagTitle": "Sucursales",
+        "text": "Sucursales"
+      }
+    }
+  },
+  "menu-item#secondary-5": {
+    "props": {
+      "id": "servicios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-menu-secondary",
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/servicios",
+        "noFollow": false,
+        "tagTitle": "Servicios",
+        "text": "Servicios"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#categories-main-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-categories-mobile"
+    },
+    "children": [
+      "menu-item#electro-mobile",
+      "menu-item#alimentacion-mobile",
+      "menu-item#indumentaria-mobile",
+      "menu-item#farmacia-mobile",
+      "menu-item#hogar-mobile",
+      "menu-item#deportes-mobile",
+      "menu-item#bebes-y-ninos-mobile",
+      "menu-item#exteriores-mobile",
+      "menu-item#herramientas-mobile",
+      "menu-item#indumentaria-2-mobile",
+      "menu-item#cocina-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#header-links-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "header-links-mobile"
+    },
+    "children": [
+      "menu-item#secondary-1",
+      "menu-item#secondary-2",
+      "menu-item#secondary-3",
+      "menu-item#secondary-4",
+      "menu-item#secondary-5"
+    ]
+  }
+}

@@ -1,0 +1,251 @@
+#client-profile-data .client-pre-email {
+	display: flex;
+	flex-direction: column;
+
+	p.link {
+		display: none;
+	}
+
+	@include responsive('md') {
+		width: 100vw;
+		border-bottom: 2px solid $white;
+	}
+
+	fieldset.pre-email {
+		display: flex;
+		flex-direction: column;
+
+		@include responsive('md') {
+			width: 100%;
+		}
+
+		h3.client-pre-email-h {
+			margin: 40px auto 47px;
+
+			&:before {
+				content: ' ';
+				display: block;
+				width: 30px;
+				height: 3px;
+				margin: 0 auto 13px;
+				background-color: $primaryMain;
+			}
+
+			@include responsive('md') {
+				margin: 0px;
+				margin-bottom: 16px;
+
+				label {
+					width: 64%;
+					margin: 0px auto;
+				}
+			}
+
+			label span {
+				color: $secondaryLight;
+				display: block;
+				@include typographyH5;
+			}
+
+			label small {
+				color: $primaryMain;
+				text-transform: uppercase;
+				@include typographyBody1;
+				@include responsive('md') {
+					margin-top: 10px;
+				}
+			}
+		}
+
+		div.client-email {
+			margin: auto auto 57px !important;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			height: 48px;
+
+			@include responsive('md') {
+				height: auto;
+				margin-left: auto;
+				margin-right: auto;
+				justify-content: initial;
+				padding: 0 15px;
+			}
+			input,
+			button {
+				border-radius: 0px;
+				height: 48px;
+			}
+
+			input {
+				width: 360px;
+				background-color: $white;
+				box-shadow: $boxShadow;
+				border-radius: 0px;
+				border: none;
+				padding: 14px 16px 15px;
+				color: $grey700;
+				@include typographyBody1;
+				@include responsive('md') {
+					order: 1;
+					width: 100%;
+				}
+				&::placeholder {
+					color: $grey500;
+				}
+				&.error {
+					border: 1px solid $errorMain !important;
+				}
+				&.success + i + button {
+					background-color: $primaryMain;
+					&:hover {
+						background-color: $primaryDark;
+					}
+				}
+			}
+
+			i.loading-inline {
+				top: 6px;
+				right: 60px;
+			}
+
+			button {
+				@extend %baseButton;
+				box-shadow: $boxShadow;
+				background: $grey500;
+				color: $white;
+				width: 220px;
+				position: relative;
+				right: 0;
+				top: 0;
+				margin-left: 10px;
+				@include typographySubtitle2;
+
+				&:hover {
+					background: $grey600;
+				}
+
+				@include responsive('md') {
+					position: inherit;
+					margin-top: 40px;
+					margin-left: 0;
+					width: 100%;
+					order: 3;
+				}
+			}
+
+			& > span {
+				padding: 0 0 10px 60px;
+				margin: -20px;
+				width: 100%;
+				display: block;
+				color: $errorMain;
+				text-align: left;
+				@include typographyCaption;
+
+				@include responsive('md') {
+					order: 2;
+					padding-left: 20px;
+					padding-bottom: 0;
+				}
+			}
+		}
+
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+
+	div.emailInfo {
+		box-sizing: border-box;
+		min-height: 180px;
+		margin: 0 auto;
+		border: none;
+		border-radius: 0px;
+		padding: 15px 20px 15px;
+		background: $grey100;
+		width: 443px;
+
+		@include responsive('md') {
+			width: 100%;
+			margin: 0;
+			padding: 20px 15px 33px;
+			display: flex;
+			flex-flow: column nowrap;
+			align-items: center;
+		}
+
+		h3 {
+			color: $secondaryMain;
+			text-align: center;
+			padding: 0px;
+			padding-bottom: 9px;
+			@include typographySubtitle2;
+		}
+
+		ul {
+			padding: 0px;
+			height: 116px;
+		}
+
+		ul li {
+			@include typographyBody2;
+			line-height: 29px;
+			color: $grey600;
+
+			@include responsive('md') {
+				line-height: 22px;
+			}
+
+			i {
+				margin-right: 9px;
+
+				@include responsive('md') {
+					margin-right: 7px;
+				}
+			}
+		}
+
+		i.icon-lock:before {
+			content: '';
+			display: none;
+		}
+
+		i.icon-ok:before {
+			content: '';
+			@include check($secondaryMain);
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: 15px;
+			height: 12px;
+		}
+	}
+
+	fieldset.pre-email div.client-email {
+		width: 668px;
+
+		@include responsive('md') {
+			width: 100%;
+		}
+	}
+}
+
+body[data-current='profile'] .checkout-container,
+body[data-current='shipping'] .checkout-container,
+body[data-current='payment'] .checkout-container {
+	@include responsive('md', 'min') {
+		position: relative;
+		left: 5px;
+	}
+}
+
+body[data-current='email'] .checkout-container.row-fluid {
+	height: auto;
+	transition: 0.3s ease;
+
+	@include responsive('md') {
+		height: 480px;
+		overflow: hidden;
+	}
+}

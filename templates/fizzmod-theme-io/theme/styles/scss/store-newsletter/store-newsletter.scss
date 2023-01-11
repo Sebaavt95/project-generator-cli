@@ -1,0 +1,98 @@
+.newsletterForm {
+	&--form-wrapper {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+
+		@include customMediaBreaks(768) {
+			width: auto !important;
+		}
+	}
+}
+
+.emailInputContainer {
+	margin-right: 12px;
+	border-radius: 0;
+	background-color: $white;
+
+	@include customMediaBreaks(768) {
+		margin-right: 8px;
+	}
+
+	& :global(.vtex-input-prefix__group) {
+		width: 466px;
+		border: none;
+		outline: none;
+		border-radius: 0;
+
+		@include customMediaBreaks(1175) {
+			width: 395px;
+		}
+
+		@include customMediaBreaks(1125) {
+			width: 327px;
+		}
+
+		@include customMediaBreaks(877) {
+			width: 161px;
+		}
+	}
+
+	& :global(.vtex-styleguide-9-x-input) {
+		@include typographyBody2;
+		color: $secondary-main;
+		background-color: $white;
+
+		@include customMediaBreaks(768) {
+			font-size: 13px;
+		}
+	}
+
+	&--invalid {
+		position: relative;
+
+		& :global(.vtex-input__error) {
+			display: none;
+		}
+	}
+}
+.formSubmitContainer {
+	& :global(.vtex-button) {
+		width: 192px;
+		box-sizing: border-box;
+		background-color: transparent;
+		border: 2px solid $grey-400;
+		border-radius: 4px;
+
+		@include customMediaBreaks(768) {
+			width: 132px;
+			border-color: $white;
+		}
+	}
+	& :global(.vtex-button__label) {
+		font-family: $fontFamily;
+		font-weight: $medium;
+		padding: 0;
+		color: $grey-400;
+		font-size: 15px;
+		letter-spacing: 0;
+		text-transform: capitalize;
+		line-height: 18px;
+		text-align: center;
+
+		@include customMediaBreaks(768) {
+			color: $white;
+			font-size: 14px;
+		}
+	}
+}
+
+.defaultSuccessMessage {
+	font-family: $fontFamily;
+	color: $white;
+
+	@include customMediaBreaks(768) {
+		text-align: center;
+		font-size: 14px;
+	}
+}

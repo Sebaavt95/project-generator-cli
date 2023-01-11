@@ -1,0 +1,17 @@
+.listItem {
+	color: $grey-800;
+	&:global(.vtex-button) {
+		background-color: transparent;
+		color: $grey-800;
+		border: none;
+		border-radius: 0;
+	}
+}
+
+.listItemActive :global(.vtex-button) {
+	border-bottom: 2px solid $grey-800;
+	&:focus,
+	&:active {
+		outline: none;
+	}
+}

@@ -1,0 +1,899 @@
+@charset "UTF-8";
+.accountOptions {
+  padding: 22px;
+}
+.accountOptions :global(.b--muted-4) {
+  margin: 0;
+}
+.accountOptions :global(.b--muted-4):last-child {
+  margin: 0;
+  padding-top: 18px;
+  border-top: 2px solid #f5f5f5;
+}
+.accountOptions .profile-item, .accountOptions .logoutButton {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 18px;
+  color: #424242;
+}
+.accountOptions .profile-item:hover, .accountOptions .logoutButton:hover {
+  color: #000000;
+  font-weight: bold;
+}
+.accountOptions .profile-item {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.accountOptionsSectionTitle,
+.accountOptions :global(hr) {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .container .label,
+.container .profile,
+.buttonLink .label,
+.buttonLink .profile {
+    width: 34px !important;
+    font-size: 0 !important;
+  }
+}
+
+.label,
+.profile {
+  width: 145px;
+  color: #ffffff;
+  text-transform: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.label::before,
+.profile::before {
+  content: "\e951";
+  font-family: "mercaldas";
+  font-size: 46px;
+  color: #ffffff;
+}
+
+.label:hover::before,
+.profile:hover::before {
+  content: "\e903";
+  font-weight: 400;
+}
+
+.label:hover,
+.profile:hover {
+  font-weight: bold;
+}
+
+.profile {
+  min-width: 180px;
+  width: 142px;
+  justify-content: start;
+}
+.profile::before {
+  margin-right: 6px;
+}
+
+.profileIcon {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .buttonLink .label::before {
+    font-size: 34px;
+  }
+}
+@media (max-width: 1024px) {
+  .buttonLink .profile {
+    min-width: 34px;
+  }
+}
+@media (max-width: 1024px) {
+  .buttonLink :global(.vtex-button__label) {
+    padding: 0px !important;
+  }
+}
+
+.portalWrapper--login-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  margin-top: 112px;
+}
+
+.arrowUp {
+  display: none;
+}
+
+.box {
+  width: 360px;
+  top: 7px !important;
+  right: 0 !important;
+  left: -98px;
+}
+
+.portalContainer--login-wrapper form {
+  padding-top: 18px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.contentContainer {
+  width: 360px;
+  border-radius: 0 0 5px 5px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.15);
+  margin-top: 0;
+}
+
+.contentForm {
+  width: 100%;
+  padding: 0;
+}
+
+.content {
+  height: 100%;
+  padding: 0;
+  background-color: #ffffff;
+  border-radius: 0 0 5px 5px;
+}
+@media (max-width: 1024px) {
+  .content--emailAndPassword, .content--emailVerification, .content--codeConfirmation, .content--recoveryPassword, .content--beginCreatePass {
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .content--emailAndPassword :global(form), .content--emailVerification :global(form), .content--codeConfirmation :global(form), .content--recoveryPassword :global(form), .content--beginCreatePass :global(form) {
+    width: 290px;
+    margin: 0 auto;
+    margin-top: 32px;
+    padding-bottom: 76px;
+  }
+}
+@media (max-width: 1024px) {
+  .content--emailAndPassword :global(.vtex-input-prefix__group), .content--emailVerification :global(.vtex-input-prefix__group), .content--codeConfirmation :global(.vtex-input-prefix__group), .content--recoveryPassword :global(.vtex-input-prefix__group), .content--beginCreatePass :global(.vtex-input-prefix__group) {
+    width: 290px;
+    height: 48px;
+  }
+}
+@media (max-width: 1024px) {
+  .content--emailAndPassword :global(.vtex-styleguide-9-x-input), .content--emailVerification :global(.vtex-styleguide-9-x-input), .content--codeConfirmation :global(.vtex-styleguide-9-x-input), .content--recoveryPassword :global(.vtex-styleguide-9-x-input), .content--beginCreatePass :global(.vtex-styleguide-9-x-input) {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .content--emailVerification .contentForm, .content--codeConfirmation .contentForm, .content--recoveryPassword .contentForm, .content--beginCreatePass .contentForm {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .content--emailVerification .formFooter, .content--codeConfirmation .formFooter, .content--recoveryPassword .formFooter, .content--beginCreatePass .formFooter {
+    margin-top: 18px;
+    padding-top: 32px;
+  }
+}
+@media (max-width: 1024px) {
+  .content--recoveryPassword .formTitle {
+    border-bottom: 2px solid #eeeeee;
+    height: auto;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 11px;
+  }
+}
+@media (max-width: 1024px) {
+  .content--recoveryPassword .formTitle::before {
+    display: block;
+    width: 56%;
+    height: 32px;
+    border: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .content--recoveryPassword :global(form) {
+    padding: 0;
+    margin-bottom: 171px;
+  }
+}
+@media (max-width: 1024px) {
+  .content--emailVerification :global(form), .content--codeConfirmation :global(form), .content--recoveryPassword :global(form) {
+    padding-bottom: 211px;
+  }
+}
+.content--emailVerification .formError, .content--codeConfirmation .formError, .content--recoveryPassword .formError {
+  font-size: 10px !important;
+}
+.content--emailAndPassword .inputContainerPassword {
+  padding: 0;
+  margin-bottom: 8px;
+}
+.content--emailAndPassword .inputContainerPassword::before {
+  content: "Contraseña *";
+}
+.content--emailAndPassword .inputContainerEmail {
+  margin-bottom: 12px;
+}
+@media (max-width: 1024px) {
+  .content--emailAndPassword :global(form) {
+    z-index: 1;
+  }
+}
+@media (max-width: 1024px) {
+  .content--emailAndPassword .inputContainer {
+    width: 290px;
+    margin-bottom: 16px;
+  }
+  .content--emailAndPassword .inputContainer:nth-child(2) {
+    margin-bottom: 13px;
+  }
+}
+@media (max-width: 1024px) {
+  .content--emailAndPassword .formFooter {
+    margin-top: 18px;
+    padding-top: 31px;
+  }
+}
+
+.formTitle {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 19px;
+  color: #424242;
+  padding: 0;
+  margin: 23px 0 24px 0;
+}
+
+.optionsList {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  padding: 28px 24px 38px 24px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.inputContainerEmail::before,
+.inputContainerPassword::before,
+.inputContainer::before {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  font-style: normal;
+  display: block;
+  letter-spacing: 0;
+  color: #212121;
+  margin-bottom: 4px;
+}
+
+.inputContainerEmail::before {
+  content: "Mail *";
+}
+
+.inputContainerEmail :global(.vtex-input-prefix__group),
+.inputContainerPassword :global(.vtex-input-prefix__group),
+.inputContainerAccessCode :global(.vtex-input-prefix__group) {
+  height: 40px;
+  width: 300px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.content--emailAndPassword .formError::before,
+.content--codeConfirmation .formError::before,
+.forgotPasswordForm .formError::before {
+  font-family: "mercaldas";
+  content: "\e923";
+  margin: 0 12px;
+  color: #ff0000;
+  font-size: 18px;
+}
+@media (max-width: 1024px) {
+  .content--emailAndPassword .formError,
+.content--codeConfirmation .formError,
+.forgotPasswordForm .formError {
+    width: 290px !important;
+    padding: 9px;
+  }
+}
+
+.sendButton button {
+  width: 141px;
+  height: 48px;
+  background-color: #1db779;
+  outline: none;
+  border: none;
+}
+.sendButton button:hover {
+  background-color: #41d18c;
+}
+.sendButton button > div::after {
+  font-family: "mercaldas";
+  content: "\e90a";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  margin-left: 5px;
+}
+.sendButton :global(.vtex__icon-spinner) {
+  color: #ffffff;
+}
+.sendButton :global(.t-small) {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-align: center;
+}
+
+.backButton {
+  margin-left: 40px;
+}
+.backButton button {
+  display: flex;
+  align-items: center;
+  width: 62px;
+  height: 15px;
+  border: none;
+}
+.backButton button::before {
+  font-family: "mercaldas";
+  content: "\e909";
+  font-size: 15px;
+  font-weight: 500;
+  color: #424242;
+  margin-right: 5px;
+}
+.backButton button > div {
+  height: 15px;
+}
+.backButton :global(.t-small) {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-align: center;
+  color: #424242;
+  margin-left: 0;
+}
+
+.backButton button > div,
+.sendButton button > div {
+  padding: 0 !important;
+}
+
+.arrowBackIcon {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .contentInitialScreen {
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .contentInitialScreen .options {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .contentInitialScreen .optionsList {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 43px;
+    padding-bottom: 153px;
+  }
+}
+@media (max-width: 1024px) {
+  .contentInitialScreen :global(.vtex-button) {
+    display: block;
+    width: 290px;
+    height: 54px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contentInitialScreen .formTitle,
+.content--emailAndPassword .formTitle,
+.content--emailVerification .formTitle,
+.content--codeConfirmation .formTitle,
+.content--recoveryPassword .formTitle,
+.content--beginCreatePass .formTitle {
+    padding: 0;
+    margin-top: 24px;
+    margin-bottom: 0;
+    line-height: 16px;
+    color: #424242;
+    padding-bottom: 27px;
+    border-bottom: 2px solid #eeeeee;
+  }
+}
+
+.inputContainerAccessCode {
+  padding: 0;
+}
+.inputContainerAccessCode::before {
+  content: "Código de acceso *";
+}
+
+.emailVerification {
+  width: 300px;
+  margin: 1.75rem auto;
+}
+.emailVerification .inputContainerEmail::before {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  font-style: normal;
+  display: block;
+  content: "Mail *";
+  letter-spacing: 0;
+  color: #212121;
+  margin-bottom: 4px;
+}
+
+.codeConfirmation {
+  width: 300px;
+  margin: 1.75rem auto;
+  text-align: unset;
+}
+.codeConfirmation .formError {
+  margin-top: 16px;
+}
+
+.emailVerification .formFooter,
+.codeConfirmation .formFooter {
+  padding-top: 17px;
+  margin-top: 23px;
+  border-top: 2px solid #f5f5f5;
+}
+.emailVerification .backButton, .emailVerification .sendButton :global(.t-small),
+.codeConfirmation .backButton,
+.codeConfirmation .sendButton :global(.t-small) {
+  display: flex;
+  align-items: center;
+}
+
+.emailForm .formError {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+  font-style: normal;
+  background: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  color: #616161;
+  text-align: left;
+}
+@media (max-width: 1023px) {
+  .emailForm .formError {
+    font-size: 11px;
+  }
+}
+
+.inputContainerPassword :global(.vtex-input__suffix) {
+  background-color: #ffffff;
+}
+.inputContainerPassword .eyeIcon--invisible, .inputContainerPassword .eyeIcon--visible {
+  display: flex;
+}
+.inputContainerPassword .eyeIcon--invisible::after, .inputContainerPassword .eyeIcon--visible::after {
+  font-family: "mercaldas";
+  font-size: 20px;
+}
+.inputContainerPassword .eyeIcon--invisible::after {
+  content: "\e94f";
+}
+.inputContainerPassword .eyeIcon--visible::after {
+  content: "\e94e";
+}
+.inputContainerPassword :global(.mt2) {
+  margin-top: 0;
+}
+.inputContainerPassword :global(.w-20) {
+  width: 13%;
+}
+.inputContainerPassword :global(.t-small) {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 17px;
+}
+.inputContainerPassword :global(.c-danger) {
+  color: #ff0000;
+}
+.inputContainerPassword :global(.c-success) {
+  color: #00b517;
+}
+
+.eyeSightIcon {
+  display: none;
+}
+
+.emailAndPasswordForm .formError,
+.codeConfirmation .formError,
+.forgotPasswordForm .formError {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 47px;
+  width: 300px;
+  border-radius: 4px;
+  background-color: #feeaea;
+  padding-left: 11px;
+  padding-right: 18px;
+  margin: 10px 0 18px 0;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: left;
+  color: #616161;
+}
+
+.emailAndPasswordForm .formError {
+  font-size: 0 !important;
+}
+.emailAndPasswordForm .formError::after {
+  content: 'Mail o contraseña incorrecta. Vuelve a intentarlo o haz clic en "Olvidé mi contraseña”.';
+  font-size: 10px;
+}
+
+.formLinkContainer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.forgotPasswordLink {
+  color: #000000;
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 16px;
+}
+.forgotPasswordLink:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.content--emailAndPassword .formFooter,
+.forgotPasswordForm .formFooter {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  border-top: 2px solid #f5f5f5;
+  padding-top: 17px;
+  margin-top: 13px;
+  margin-bottom: 20px;
+}
+
+.dontHaveAccount {
+  color: #000000;
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 16px;
+}
+.dontHaveAccount::after {
+  content: "Registrate";
+  font-weight: 500;
+  margin-left: 5px;
+}
+.dontHaveAccount:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.forgotPasswordForm .formTitle {
+  margin: 23px auto 19px auto;
+}
+.forgotPasswordForm .formSubtitle {
+  display: none;
+}
+.forgotPasswordForm form {
+  padding-top: 29px;
+}
+.forgotPasswordForm .inputContainer {
+  padding: 0;
+  padding-bottom: 12px;
+}
+.forgotPasswordForm .inputContainer:nth-child(3) {
+  padding-bottom: 14px;
+}
+.forgotPasswordForm .inputContainerAccessCode::before {
+  content: "Ingrese su código de acceso *";
+}
+.forgotPasswordForm .inputContainerPassword:nth-child(2)::before {
+  content: "Crea tu Contraseña *";
+}
+.forgotPasswordForm .inputContainerPassword::before {
+  content: "Confirma tu Contraseña *";
+}
+.forgotPasswordForm :global(.vtex-input__suffix) {
+  padding-right: 14px;
+}
+.forgotPasswordForm .formFooter {
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+.forgotPasswordForm .formError {
+  height: 40px;
+  justify-content: flex-start;
+  color: #616161;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: left;
+  margin-bottom: 14px;
+}
+.forgotPasswordForm .formError::before {
+  margin-right: 14px;
+}
+
+.tooltipContainer {
+  width: 290px;
+  background-color: #f5f5f5;
+  border-radius: 0;
+  padding: 13px 18px 5px 19px;
+  bottom: -133px;
+}
+@media (max-width: 1024px) {
+  .tooltipContainer::after {
+    left: 12px;
+    top: -15px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #f5f5f5 transparent;
+  }
+}
+.tooltipContainer :global(.pa2) {
+  width: 253px;
+  padding: 0;
+}
+.tooltipContainer :global(.mb3) {
+  height: 16px;
+  margin-bottom: 5px;
+}
+.tooltipContainer :global(.mb3 span) {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1px;
+  font-style: normal;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 0;
+  color: #616161;
+  margin-bottom: 5px;
+}
+@media (max-width: 1024px) {
+  .tooltipContainer :global(.t-small), .tooltipContainer :global(.mt2:last-child .w-80 .t-small)::before {
+    font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.92px;
+    line-height: 17px;
+  }
+}
+@media (max-width: 1024px) {
+  .tooltipContainer :global(.c-on-base) {
+    color: #9e9e9e;
+  }
+}
+@media (max-width: 1024px) {
+  .tooltipContainer :global(.c-danger) {
+    color: #ff0000;
+  }
+}
+@media (max-width: 1024px) {
+  .tooltipContainer :global(.c-success) {
+    color: #00b517;
+  }
+}
+
+.optionsListItem {
+  margin: 0;
+}
+.optionsListItem:first-of-type {
+  order: 1;
+}
+.optionsListItem:nth-of-type(2) {
+  order: 2;
+}
+.optionsListItem:nth-of-type(3) {
+  order: 4;
+}
+.optionsListItem:nth-of-type(4) {
+  order: 3;
+}
+
+.accessCodeOptionBtn :global(.vtex-button__label)::before {
+  content: "\e94c";
+  margin-right: 30px;
+}
+
+.emailPasswordOptionBtn :global(.vtex-button__label)::before {
+  content: "\e94d";
+  margin-right: 10px;
+}
+@media (max-width: 1024px) {
+  .emailPasswordOptionBtn :global(.vtex-button__label) .oauthLabel {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.facebookOptionBtn :global(.vtex-button) {
+  width: 313px;
+  height: 48px;
+  background-color: #3b5998;
+}
+.facebookOptionBtn :global(svg) {
+  margin-right: 30px;
+}
+
+.googleOptionBtn :global(.vtex-button) {
+  width: 313px;
+  height: 48px;
+  background-color: #db4a39;
+}
+.googleOptionBtn :global(svg) {
+  margin-right: 40px;
+}
+
+.accessCodeOptionBtn,
+.emailPasswordOptionBtn,
+.facebookOptionBtn {
+  margin-bottom: 10px;
+}
+
+.accessCodeOptionBtn :global(.vtex-button),
+.emailPasswordOptionBtn :global(.vtex-button) {
+  width: 313px;
+  height: 48px;
+  background-color: #eeeeee;
+  border-radius: 4px;
+}
+.accessCodeOptionBtn :global(.vtex-button__label),
+.emailPasswordOptionBtn :global(.vtex-button__label) {
+  padding: 0 !important;
+  color: #424242;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-align: center;
+  text-transform: initial;
+}
+.accessCodeOptionBtn :global(.vtex-button__label)::before,
+.emailPasswordOptionBtn :global(.vtex-button__label)::before {
+  font-family: "mercaldas";
+  width: 32px;
+  font-size: 32px;
+  color: #424242;
+  margin-left: 12px;
+}
+
+.accessCodeOptionBtn :global(.vtex-button__label),
+.emailPasswordOptionBtn :global(.vtex-button__label),
+.facebookOptionBtn :global(.vtex-button__label),
+.googleOptionBtn :global(.vtex-button__label) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.accessCodeOptionBtn :global(.vtex-button):hover,
+.emailPasswordOptionBtn :global(.vtex-button):hover,
+.facebookOptionBtn :global(.vtex-button):hover,
+.googleOptionBtn :global(.vtex-button):hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.facebookOptionBtn :global(.vtex-button__label),
+.googleOptionBtn :global(.vtex-button__label) {
+  padding: 0 !important;
+}
+.facebookOptionBtn :global(svg),
+.googleOptionBtn :global(svg) {
+  width: 32px;
+  margin-left: 12px;
+}
+.facebookOptionBtn :global(path),
+.googleOptionBtn :global(path) {
+  fill: #ffffff !important;
+}
+
+.oauthLabel,
+.oauthProvider {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-align: center;
+  text-transform: initial;
+}
+
+.oauthLabel {
+  margin: 0 !important;
+}
+
+.accountOptions {
+  padding: 22px;
+}
+.accountOptions :global(.b--muted-4) {
+  padding-bottom: 18px;
+}
+.accountOptions :global(.b--muted-4):last-child {
+  padding-bottom: 0;
+  padding-top: 18px;
+  border-top: 2px solid #f5f5f5;
+}
+.accountOptions :global(.b--muted-4) a[href="/account"] button {
+  background-color: transparent;
+}
+.accountOptions .profile-item, .accountOptions .logoutButton {
+  font-family: "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 18px;
+  color: #424242;
+}
+.accountOptions .profile-item:hover, .accountOptions .logoutButton:hover {
+  color: #000000;
+  font-weight: bold;
+}
+.accountOptions .profile-item {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.accountOptionsSectionTitle,
+.accountOptions :global(hr) {
+  display: none;
+}
+
+.loading {
+  background-color: #ffffff;
+}
+
+.content {
+  background-color: #ffffff;
+}

@@ -1,0 +1,65 @@
+{
+    "store.custom#institutional-site-terms": {
+        "blocks": [
+			"responsive-layout.desktop#site-terms",
+			"responsive-layout.tablet#site-terms",
+			"responsive-layout.phone#site-terms" 
+		]
+    },
+    "responsive-layout.desktop#site-terms": {
+		"children": ["flex-layout.row#institutional-header-site-terms", "flex-layout.row#institutional-content-site-terms"]
+	},
+	"responsive-layout.tablet#site-terms": {
+		"children": ["flex-layout.row#institutional-header-site-terms", "flex-layout.row#institutional-content-site-terms"]
+	},
+	"responsive-layout.phone#site-terms": {
+		"children": ["flex-layout.row#institutional-header-site-terms-phone", "flex-layout.row#institutional-content-site-terms"]
+    },
+    "flex-layout.row#institutional-header-site-terms": {
+		"children": ["rich-text#institutional-title-site-terms"],
+		"props": {
+			"blockClass": "institutional-title-container"
+		}
+	},
+    "rich-text#institutional-title-site-terms": {
+		"props": {
+			"text": "### Terminos y Condiciones: Uso del Portal",
+			"textPosition": "CENTER",
+            "textAlignment": "CENTER",
+			"blockClass": "institutional-title"
+		}
+	},
+    "flex-layout.row#institutional-header-site-terms-phone": {
+		"children": ["rich-text#institutional-title-site-terms-phone"],
+		"props": {
+			"blockClass": "institutional-title-container"
+		}
+	},
+    "rich-text#institutional-title-site-terms-phone": {
+		"props": {
+			"text": "### Terminos y Condiciones:\n ### Uso del Portal",
+			"textPosition": "CENTER",
+            "textAlignment": "CENTER",
+			"blockClass": "institutional-title-long-extension"
+		}
+	},
+    "flex-layout.row#institutional-content-site-terms": {
+		"children": ["flex-layout.col#institutional-content-site-terms"],
+		"props": {
+			"blockClass":"institutional-content"
+		}
+	},
+    "flex-layout.col#institutional-content-site-terms": {
+		"children": [
+			"rich-text#institutional-content-site-terms-text-1"
+			]
+	},
+    "rich-text#institutional-content-site-terms-text-1": {
+		"props": {
+			"text": "El portal [www.mercaldas.com.co](/) (en adelante el Portal) es de propiedad de COMERCIALIZADORA MERCALDAS S.A., (en adelante MERCALDAS y/o COMERCIALIZADORA MERCALDAS S.A). El acceso, participación y uso del Portal es gratuito y está regido por los siguientes términos y condiciones, los cuales se entienden conocidos y aceptados por los (las) usuarios(as) del Portal (en adelante el Usuario) por el uso y consulta del Portal. A continuación, el Usuario conocerá toda la información legal, técnica y comercial por la cual se regirá el uso y participación del Portal.",
+			"textAlignment": "LEFT",
+			"textPosition": "CENTER",
+			"blockClass": "institutional-content-text"
+		}
+    }    
+}

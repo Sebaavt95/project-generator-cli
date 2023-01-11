@@ -1,0 +1,706 @@
+/*
+|---------------------------------------------------------------------------------------------------------------------
+|           1 - MY ACCOUNT GENERAL
+|---------------------------------------------------------------------------------------------------------------------
+*/
+
+.profile {
+	& .newsletterBoxContainer .boxContainer {
+		padding: 26px 25px;
+	}
+	& .boxContainerFooter {
+		& :global(.vtex-button__label) {
+			color: $secondary-main !important;
+			text-decoration: underline;
+		}
+	}
+	& :global(.vtex-checkbox__box-wrapper) {
+		border: 1px $grey-700 solid;
+		border-radius: 2px;
+		width: 12px;
+		height: 12px;
+		margin-top: 3px;
+	}
+	& .passwordBox {
+		& :global(.vtex-checkbox__line-container) {
+			margin-top: 15px;
+
+			& :global(.vtex-checkbox__label) {
+				color: $secondary-main;
+				font-family: 'Heebo';
+				font-size: 12px;
+				letter-spacing: 0.5px;
+				line-height: 18px;
+			}
+		}
+	}
+	& :global(.vtex-checkbox__inner-container) {
+		border-radius: 2px;
+		width: 12px;
+		height: 12px;
+		margin-top: 3px;
+	}
+	& .profile {
+		& :global(.vtex-button__label) {
+			font-family: 'Heebo';
+			font-size: 14px;
+			font-weight: $medium;
+			letter-spacing: 1px;
+			line-height: 21px;
+			padding: 0;
+			text-decoration: underline;
+		}
+	}
+	& .lastNameSubContainer,
+	& .firstNameSubContainer,
+	& .emailContainer,
+	& .documentsSubContainer,
+	& .genderSubContainer,
+	& .dateOfBirthSubContainer {
+		margin-bottom: 20px;
+	}
+	& .dateOfBirthSubContainer,
+	& .phoneNumberSubContainer {
+		width: 100%;
+	}
+	& .phoneNumberSubContainer {
+		margin: 0;
+	}
+	& .passwordBoxContainer {
+		& .boxContainerFooter {
+			margin-top: 43px;
+		}
+		& :global(.vtex-input-prefix__group) {
+			border: 1px $grey-400 solid;
+			border-radius: 0;
+
+			& :global(.vtex-input__suffix) {
+				background-color: $white;
+			}
+			& :global(.vtex-styleguide-9-x-input) {
+				font-size: 12px;
+			}
+		}
+		& :global(.vtex__icon-failure) {
+			color: $grey-600;
+		}
+		& .boxContainerBody {
+			& :global(.vtex-button) {
+				border-radius: 0;
+				padding: 15px 0 10px;
+				margin-bottom: 14px;
+
+				& :global(.vtex-button__label) {
+					font-family: $fontFamily;
+					font-size: 15px;
+					font-weight: $medium;
+					letter-spacing: 3px;
+					text-transform: initial;
+					line-height: 22px;
+					text-decoration: none;
+					letter-spacing: initial;
+				}
+			}
+		}
+	}
+	& .newsletterContainerMessage {
+		display: none;
+	}
+}
+
+.profile,
+.profileEdit {
+	padding: 37px 0 0;
+
+	@include customMediaBreaks(768) {
+		padding: 17px 20px;
+	}
+
+	& .boxContainer {
+		border: 2px $grey-200 solid;
+		border-radius: 0;
+		padding: 26px 25px 10px;
+
+		@include customMediaBreaks(768) {
+			padding: 20px;
+		}
+	}
+}
+
+.userInfo {
+	align-items: center;
+	margin-bottom: 47px;
+	flex-wrap: nowrap;
+
+	@include customMediaBreaks(768) {
+		margin-bottom: 3px;
+	}
+}
+
+.userGreeting {
+	color: $grey-700;
+	font-family: $fontFamily;
+	font-size: 18px;
+	font-weight: $light;
+	letter-spacing: 0;
+	line-height: 21px;
+}
+
+.menuLinks :global(.vtex-account_menu-link),
+.menuLink {
+	font-weight: 500;
+	margin: 0;
+	padding: 13px 0px 12px 10px;
+
+	@include customMediaBreaks(768) {
+		padding: 0;
+		margin: 25px 0 0 15px;
+		color: $secondary-main;
+	}
+}
+
+.menu {
+	@include mediaBreaks('mobile') {
+		padding: 50px 15px 66px;
+	}
+
+	& :global(.vtex-pageHeader-link__container) {
+		text-align: right;
+
+		@include customMediaBreaks(768) {
+		}
+	}
+}
+
+:global(.vtex-account) :global(.vtex-pageHeader-link__container) {
+	& :global(.vtex__icon-arrow-back) {
+		display: none;
+	}
+	& :global(.vtex-button)::before {
+		content: '\e909';
+		display: inline-block;
+		font-family: 'mercaldas';
+	}
+}
+
+.addressEdit {
+	& :global(.vtex-address-form-4-x-container),
+	& :global(.vtex-address-form-4-x-input) {
+		background-color: $grey-300;
+	}
+	& .boxContainerBody {
+		@include customMediaBreaks(768) {
+			padding: 20px;
+		}
+	}
+}
+
+.profile .boxContainerBody,
+.profileEdit .boxContainerBody,
+.profile .boxContainerFooter {
+	padding: 0;
+}
+
+.profile .dataEntryLabel,
+.profile .newsletterContainerTitle,
+.profileEdit :global(.vtex-input__label),
+.profileEdit :global(.vtex-dropdown__label),
+.profile .passwordBoxContainer :global(.vtex-input__label) {
+	color: $secondary-main;
+	font-family: 'Heebo';
+	font-size: 12px;
+	font-weight: $medium;
+	letter-spacing: 1px;
+	line-height: 18px;
+}
+
+.profile .dataEntryChildren,
+.profileEdit :global(.vtex-input-prefix__group) {
+	color: $secondary-light;
+	font-family: 'Heebo';
+	font-size: 12px;
+	letter-spacing: 0.5px;
+}
+
+.boxContainerBody {
+	@include customMediaBreaks(768) {
+		padding: 20px 5px;
+	}
+}
+
+:global(.vtex-account__page) :global(.vtex-pageHeader__title) {
+	@include customMediaBreaks(768) {
+		margin-top: 0;
+		font-size: 32px;
+		line-height: 47px;
+	}
+}
+
+:global(.vtex-pageHeader-link__container) :global(.vtex-button) {
+	@include mediaBreaks('mobile') {
+		justify-content: flex-start;
+	}
+}
+
+:global(.vtex-account__page-body) {
+	@include customMediaBreaks(768) {
+		padding: 30px 20px 45px;
+	}
+}
+
+:global(.vtex-account__page) :global(.vtex-account__cards-list) {
+	@include customMediaBreaks(768) {
+		font-size: 12px;
+	}
+}
+
+/*
+|---------------------------------------------------------------------------------------------------------------------
+|           1a - PROFILE
+|---------------------------------------------------------------------------------------------------------------------
+*/
+
+:global(.vtex-account__page) {
+	& :global(.vtex-pageHeader-link__container) :global(.vtex-button) {
+		color: $secondary-main !important;
+		display: flex;
+		width: 100%;
+	}
+	& :global(.vtex-pageHeader__title) {
+		color: $secondary-main;
+		font-family: $fontFamily;
+		font-size: 32px;
+		font-weight: bold;
+		letter-spacing: 0;
+		line-height: 27px;
+	}
+}
+
+.profileEdit {
+	& .boxContainer {
+		padding: 26px 25px 24px;
+	}
+	& :global(.vtex-dropdown__caption):after {
+		content: '\e907';
+		font-family: 'mercaldas';
+		text-align: right;
+		right: 12px;
+		position: absolute;
+	}
+	& :global(.vtex-dropdown__arrow) {
+		display: none;
+	}
+	& :global(.vtex-input__label) {
+		margin-bottom: 3px;
+	}
+}
+
+/*
+|---------------------------------------------------------------------------------------------------------------------
+|           2b - ADDRESS
+|---------------------------------------------------------------------------------------------------------------------
+*/
+
+.addressCreate {
+	padding: 37px 0 0;
+
+	@include customMediaBreaks(768) {
+		padding: 17px 20px;
+	}
+
+	& .boxContainer {
+		border: 2px $grey-200 solid;
+		border-radius: 0;
+		padding: 26px 25px 24px;
+	}
+	& .boxContainerBody {
+		padding: 0;
+
+		& :global(.vtex-button) :global(.vtex-button__label) {
+			border: 0;
+			border-radius: 4px;
+			font-family: $fontFamily;
+			font-size: 15px;
+			font-weight: $medium;
+			line-height: 18px;
+			text-transform: initial;
+			margin: 14px 0 13px;
+		}
+	}
+	& :global(.vtex-address-form__postalCode) :global(.vtex-input__suffix) {
+		display: none;
+	}
+	& :global(.vtex-dropdown__caption) {
+		color: $secondary-light;
+		font-family: 'Heebo';
+		font-size: 12px;
+		letter-spacing: 0.5px;
+		line-height: 19px;
+	}
+	& :global(.vtex-address-form__country),
+	& :global(.vtex-address-form__state),
+	& :global(.vtex-address-form__city),
+	& :global(.vtex-address-form__postalCode),
+	& :global(.vtex-address-form__street),
+	& :global(.vtex-address-form__complement),
+	& :global(.vtex-address-form__neighborhood),
+	& :global(.vtex-address-form__receiverName) {
+		padding-bottom: 20px;
+	}
+	& :global(.vtex-pageHeader__title) {
+		font-size: 32px;
+	}
+}
+
+.addressList {
+	& :global(.t-heading-4) {
+		padding-top: 52px;
+		display: block;
+	}
+	& .addressBox {
+		max-width: 390px;
+		color: $secondary-light;
+		font-family: 'Heebo';
+		font-size: 13px;
+		font-weight: $regular;
+		line-height: 19px;
+
+		& :global(.pb5) {
+			@include customMediaBreaks(768) {
+				width: 100%;
+			}
+		}
+	}
+	& .boxContainerBody {
+		padding: 13px 24px 8px;
+	}
+	& .boxContainer {
+		& :global(.h4) {
+			height: auto;
+		}
+	}
+	& .boxContainerFooter {
+		padding: 0 24px 18px 0;
+
+		& :global(.vtex-button__label) {
+			font-family: 'Heebo';
+			font-size: 14px;
+			font-weight: 500;
+			letter-spacing: 1px;
+			color: $secondary-main;
+			line-height: 21px;
+			padding: 0;
+			text-decoration: underline;
+		}
+	}
+	& :global(.t-heading-4) {
+		@include customMediaBreaks(768) {
+			padding: 0;
+			display: block;
+		}
+	}
+}
+
+.addressList,
+.addressEdit {
+	@include customMediaBreaks(768) {
+		padding: 35px !important;
+	}
+}
+
+.addressCreate,
+.addressEdit .boxContainerBody {
+	& :global(.vtex-dropdown__label),
+	& :global(.vtex-input__label) {
+		color: $secondary-main;
+		font-family: 'Heebo';
+		font-size: 12px;
+		font-weight: $medium;
+		letter-spacing: 1px;
+		margin-bottom: 3px;
+		line-height: 18px;
+	}
+}
+
+.addressCreate .boxContainerBody,
+.addressEdit {
+	& :global(.vtex-button) {
+		border-radius: 4px;
+		border: 0;
+	}
+}
+
+.addressList .boxContainer,
+.addressEdit .boxContainerBody {
+	border: 2px $grey-200 solid;
+}
+
+.addressEdit {
+	& :global(.vtex-dropdown__button),
+	& :global(.address-summary) {
+		color: $secondary-light;
+		font-family: 'Heebo';
+		font-size: 13px;
+		letter-spacing: 0.5px;
+		line-height: 19px;
+	}
+	& :global(.vtex-address-form__postalCode) :global(.vtex-input__suffix) {
+		display: none;
+	}
+	& :global(.vtex-address-form__country),
+	& :global(.vtex-address-form__state),
+	& :global(.vtex-address-form__city),
+	& :global(.vtex-address-form__postalCode),
+	& :global(.vtex-address-form__street),
+	& :global(.vtex-address-form__complement),
+	& :global(.vtex-address-form__neighborhood),
+	& :global(.vtex-address-form__receiverName) {
+		padding-bottom: 20px;
+	}
+	& :global(.vtex-button) :global(.vtex-button__label) {
+		border: 0;
+		border-radius: 0;
+		font-family: 'Heebo';
+		font-size: 14px;
+		font-weight: $semiBold;
+		letter-spacing: 3px;
+		line-height: 21px;
+		margin: 14px 0 13px;
+	}
+}
+
+/*
+|---------------------------------------------------------------------------------------------------------------------
+|           2c - ORDERS
+|---------------------------------------------------------------------------------------------------------------------
+*/
+
+:global(.vtex-my-orders-app-3-x-ordersList) {
+	& :global(.vtex-my-orders-app-3-x-orderBody) {
+		& :global(.w-70-ns) {
+			width: 60%;
+		}
+		& :global(.w-30-ns) {
+			width: 40%;
+		}
+		& :global(.w-70-ns),
+		& :global(.w-30-ns) {
+			@include customMediaBreaks(768) {
+				width: 100%;
+			}
+		}
+	}
+	& :global(.w-20) {
+		text-align: center;
+	}
+}
+
+:global(.vtex-my-orders-app-3-x-cancelOrder) {
+	& :global(.vtex-my-orders-app-3-x-optionDisclaimer) {
+		& :global(.dim) {
+			background-color: $primary-main;
+			color: $grey-800;
+			font-family: $fontFamily;
+			font-size: 15px;
+			font-weight: $medium;
+			letter-spacing: 3px;
+			text-transform: initial;
+			line-height: 18px;
+			text-decoration: none;
+			letter-spacing: initial;
+			padding: 13px;
+
+			&:hover {
+				background-color: $primary-light;
+				opacity: 1;
+			}
+
+			@include customMediaBreaks(768) {
+				width: 100%;
+				padding: 15px 0;
+			}
+		}
+	}
+
+	& :global(.vtex-my-orders-app-3-x-summary) {
+		& :global(.bt-0) {
+			background-color: $white;
+		}
+	}
+
+	& :global(.vtex-my-orders-app-3-x-option) {
+		& :global(.lh-copy) {
+			font-size: 13px !important;
+			line-height: 19px;
+			padding-left: 9px;
+			cursor: pointer;
+		}
+	}
+
+	& :global(.pr9) {
+		@include customMediaBreaks(768) {
+			padding-right: 0;
+		}
+	}
+}
+
+:global(.vtex-account__order-details) :global(.myo-progress-bar__title-font) {
+	font-size: 13px;
+	line-height: 19px;
+	letter-spacing: 1.08px;
+	margin-top: 0px;
+}
+
+:global(.vtex-my-orders-app-3-x-productTable) {
+	& :global(.pa0) {
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: 1px;
+		color: $grey-800;
+		font-weight: 500;
+		text-transform: uppercase;
+
+		@include customMediaBreaks(768) {
+			font-size: 12px;
+			letter-spacing: 0.86px;
+			line-height: 18px;
+		}
+	}
+	& :global(.w-60) {
+		@include customMediaBreaks(768) {
+			width: 35%;
+		}
+	}
+	& :global(.w-30) {
+		@include customMediaBreaks(768) {
+			width: 35%;
+			text-align: right;
+		}
+	}
+	& :global(.w-20) {
+		@include customMediaBreaks(768) {
+			width: 20%;
+			text-align: center;
+		}
+	}
+}
+
+:global(.myo-progress-bar) {
+	@include customMediaBreaks(768) {
+		padding-bottom: 0;
+		height: auto;
+		padding-bottom: 15px;
+	}
+}
+
+:global(.myo-progress-bar__title-font) {
+	@include customMediaBreaks(768) {
+		margin-bottom: 0 !important;
+	}
+}
+
+:global(.myo-progress-bar__mobile-text) {
+	& :global(.flex) {
+		@include customMediaBreaks(768) {
+			display: block;
+		}
+	}
+	& :global(.c-link--visited) {
+		@include customMediaBreaks(768) {
+			color: $grey-800;
+		}
+	}
+}
+
+/*
+|---------------------------------------------------------------------------------------------------------------------
+|           2d - CREDIT CARDS
+|---------------------------------------------------------------------------------------------------------------------
+*/
+
+:global(.vtex-account__page) {
+	& :global(.vtex-account__create-card) {
+		padding: 65px 0 0;
+
+		@include customMediaBreaks(768) {
+			padding: 39px 10px 45px;
+		}
+	}
+	& :global(.vtex-account__cards-list) {
+		& :global(.t-heading-4) {
+			padding-top: 52px;
+			display: block;
+
+			@include customMediaBreaks(768) {
+				padding-top: 22px;
+				display: block;
+			}
+		}
+	}
+}
+
+/*
+|---------------------------------------------------------------------------------------------------------------------
+|           2e - EXIT MODAL
+|---------------------------------------------------------------------------------------------------------------------
+*/
+
+:global(.vtex-styleguide-9-x-mh100) {
+	max-width: 390px;
+
+	@include customMediaBreaks(768) {
+		max-width: 100%;
+		padding: 0 !important;
+	}
+
+	& :global(.vtex-modal__close-icon) {
+		color: $grey-600;
+		padding: 10px;
+
+		& :global(.vtex__icon-close) {
+			width: 22px;
+			height: 22px;
+		}
+	}
+
+	& :global(.vtex-styleguide-9-x-scrollBar) {
+		text-align: center;
+		padding: 55px 52px 49px;
+
+		@include customMediaBreaks(768) {
+			padding: 51px 17px 48px;
+		}
+
+		& :global(.t-heading-5) {
+			font-size: 22px;
+			line-height: 32px;
+			color: $secondary-light;
+			font-family: 'Heebo';
+			padding: 0;
+		}
+		& :global(.vtex-modal__confirmation) {
+			justify-content: space-between;
+
+			& :global(.vtex-button) {
+				padding: 12px 0 8px;
+				width: 50%;
+
+				@include customMediaBreaks(768) {
+					width: 65%;
+				}
+
+				& :global(.vtex-button__label) {
+					font-family: 'Heebo';
+					font-size: 14px;
+					font-weight: $semiBold;
+					letter-spacing: 3px;
+					line-height: 21px;
+					padding: 14px 0 13px;
+				}
+			}
+			& :global(.mr4) {
+				width: 50%;
+			}
+		}
+	}
+}

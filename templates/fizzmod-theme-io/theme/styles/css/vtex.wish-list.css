@@ -1,0 +1,103 @@
+.wishlistIconContainer--add-to-list-highlights {
+  width: unset !important;
+  transform: scale(1.3);
+}
+.wishlistIconContainer--add-to-list-highlights :global(.vtex-button) {
+  height: unset !important;
+  margin: 0 !important;
+  border: none;
+}
+.wishlistIconContainer--add-to-list-highlights :global(.vtex-button) :global(.vtex-button__label) {
+  height: unset !important;
+  padding: 0 !important;
+}
+
+.fill,
+.outline {
+  background: unset;
+}
+@media (max-width: 639px) {
+  .fill,
+.outline {
+    width: 25px;
+    height: 16px;
+  }
+}
+
+.fill::before,
+.outline::before {
+  font-family: "mercaldas";
+  font-size: 25px;
+  color: #000000;
+}
+
+.fill::before {
+  content: "\e952";
+}
+
+.outline::before {
+  content: "\e953";
+}
+
+.wishlistIconContainer--add-to-list-pdp {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 36px;
+}
+.wishlistIconContainer--add-to-list-pdp .fill::before,
+.wishlistIconContainer--add-to-list-pdp .outline::before {
+  font-size: 36px;
+}
+
+@media (max-width: 1026px) {
+  .wishlistIconContainer--add-to-list-pdp {
+    width: auto;
+    padding: 0;
+  }
+  .wishlistIconContainer--add-to-list-pdp .iconSize::after {
+    width: 29px;
+    height: 25px;
+  }
+  .wishlistIconContainer--add-to-list-pdp :global(.vtex-button) {
+    width: 100%;
+    max-width: 506px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1027px) {
+  .wishlistIconContainer--add-to-list-pdp :global(.vtex-button) {
+    width: 60% !important;
+  }
+}
+.wishlistIconContainer--wishlist_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px !important;
+  margin-right: 15px;
+  margin-bottom: 56px;
+  margin-top: 56px;
+  margin-left: 24px;
+}
+@media (max-width: 767px) {
+  .wishlistIconContainer--wishlist_page {
+    margin: 0;
+    width: 35px !important;
+    height: 17px;
+    transform: translateY(10px);
+  }
+}
+@media (max-width: 639px) {
+  .wishlistIconContainer--wishlist_page {
+    transform: translateY(0px);
+  }
+}
+.wishlistIconContainer--wishlist_page :global(.vtex-button__label) {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}

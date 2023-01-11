@@ -1,0 +1,72 @@
+.modal.identified-user-modal {
+	z-index: 999999;
+	position: absolute;
+	background: #fff;
+	top: 0 !important;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	box-shadow: none;
+	box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.15);
+	border-radius: 0;
+	box-sizing: border-box;
+	width: calc(100% - 20px);
+	max-width: 560px;
+	height: 200px !important;
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.identified-user-modal {
+		&-body {
+			background: #fff;
+			color: $primaryMain;
+			border: none;
+			border-radius: 0;
+			height: auto;
+			width: 100%;
+			padding: 15px 20px;
+
+			.identified-user-hello {
+				text-align: center;
+				color: $black;
+				@include typographyH6;
+			}
+
+			.identified-user-message {
+				text-align: center;
+				margin-bottom: 20px;
+				width: 100%;
+				color: $grey800;
+				@include typographyBody2;
+			}
+		}
+	}
+
+	.icon-lock::before {
+		content: '\f023';
+		color: $primaryMain;
+		display: none;
+	}
+
+	#btn-identified-user-button {
+		@include button;
+		@include typographySubtitle2;
+		max-width: 335px;
+		margin-top: 0;
+
+		&:focus {
+			outline: none;
+		}
+
+		@include responsive('sm') {
+			height: 54px;
+		}
+	}
+}

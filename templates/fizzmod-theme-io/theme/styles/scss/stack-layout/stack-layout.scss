@@ -1,0 +1,25 @@
+/* Product Page */
+
+.stackItem {
+	&--pdp {
+		&-image {
+			&-and {
+				&-discount {
+					&-stack {
+						&:last-child {
+							right: 10px;
+							top: 10px;
+							left: unset;
+
+							@include mediaBreaks('mobile') {
+								right: 0;
+								top: 0;
+								left: 25px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

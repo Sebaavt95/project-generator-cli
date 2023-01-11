@@ -1,0 +1,54 @@
+$buttonColors: (
+	'primary': (
+		main: $primary-main,
+		hover: $primary-light
+	)
+);
+
+@mixin contained($color: 'primary') {
+	color: $white;
+	@if map-has-key($buttonColors, $color) {
+		background: map-get(map-get($buttonColors, $color), 'main');
+		&:hover {
+			background: map-get(map-get($buttonColors, $color), 'hover');
+		}
+	} @else {
+		&,
+		&:hover {
+			background: $color;
+		}
+	}
+}
+
+@mixin outlined($color: 'primary') {
+	background: $white;
+	@if map-has-key($buttonColors, $color) {
+		border: 2px solid map-get(map-get($buttonColors, $color), 'main');
+		color: map-get(map-get($buttonColors, $color), 'main');
+	} @else {
+		border: 2px solid $color;
+		color: $color;
+	}
+}
+
+@mixin text($color: 'primary') {
+	background: $white;
+	@if map-has-key($buttonColors, $color) {
+		color: map-get(map-get($buttonColors, $color), 'main');
+	} @else {
+		&,
+		&:hover {
+			color: $color;
+		}
+	}
+}
+
+@mixin disabled($color: $grey-600) {
+	box-shadow: none;
+	background: $color;
+	color: $white;
+
+	&:hover {
+		background: $color;
+	}
+}

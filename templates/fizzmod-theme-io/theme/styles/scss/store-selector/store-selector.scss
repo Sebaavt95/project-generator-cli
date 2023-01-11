@@ -1,0 +1,6 @@
+.storeSelectorButton {
+	@include mediaBreaks('tablet') {
+		border-bottom: 1px solid $grey-300;
+		box-shadow: 0 5px 9px -2px #00000020;
+	}
+}

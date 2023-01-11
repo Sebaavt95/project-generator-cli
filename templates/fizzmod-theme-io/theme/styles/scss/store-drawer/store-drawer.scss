@@ -1,0 +1,45 @@
+.menuIcon {
+	display: none;
+}
+
+.openIconContainer {
+	padding: 0;
+	&::before {
+		content: '\e906';
+		font-family: 'mercaldas';
+		font-size: 22px;
+		color: $white;
+	}
+}
+
+.closeIconContainer {
+	background-color: $primary-main;
+}
+
+.closeIconButton {
+	margin-left: auto;
+	&::before {
+		@include flexCenter;
+		height: 30px;
+		width: 30px;
+		font-family: 'mercaldas';
+		font-size: 23px;
+		content: '\e923';
+		color: #ffffff;
+	}
+}
+
+.closeIcon {
+	display: none;
+}
+
+.childrenContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.drawer {
+	&--drawer-header-mobile {
+		background-color: #ffffff;
+	}
+}

@@ -1,0 +1,85 @@
+{
+  "flex-layout.row#promo": {
+    "children": [      
+      "responsive-layout.desktop#promo-row",
+      "responsive-layout.tablet#promo-row",
+      "responsive-layout.phone#promo-row"
+    ],
+    "props": {
+      "blockClass": "promo-col",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "colGap": {
+        "desktop": 5,
+        "mobile": 1
+      }
+    }
+  },
+  "responsive-layout.desktop#promo-row": {
+    "children": ["flex-layout.row#promo-row--desktop"]
+  },
+  "responsive-layout.tablet#promo-row": {
+    "children": ["flex-layout.row#promo-row--tablet"]
+  },
+  "responsive-layout.phone#promo-row": {
+    "children": ["flex-layout.row#promo-row--phone"]
+  },
+  "flex-layout.row#promo-row--desktop": {
+    "children": ["image#offer3--desktop", "image#offer2--desktop"],
+    "props": {
+      "blockClass": "offer-two-img",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "rowGap": 4,
+      "colGap": 4
+    }
+  },
+  "flex-layout.row#promo-row--tablet": {
+    "children": [
+      "flex-layout.col#tablet-promo-img-2",
+      "flex-layout.col#tablet-promo-img-1"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false,
+      "fullWidth": true,
+      "blockClass": "tablet-offers"
+    }
+  },
+  "flex-layout.col#tablet-promo-img-1": {
+    "children": ["image#offer1--tablet"],
+    "props": {
+      "blockClass": "tablet-offers",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#tablet-promo-img-2": {
+    "children": ["image#offer2--tablet"],
+    "props": {
+      "blockClass": "tablet-offers",
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#promo-row--phone": {
+    "children": ["image#promo-1--phone"],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false,
+      "fullWidth": true,
+      "blockClass": "phone-offers",
+      "rowGap": 2,
+      "colGap": 2
+    }
+  },
+ 
+  "image#promo-1--phone": {
+    "props": {
+      "src": "https://via.placeholder.com/400x170.png"
+    }
+  }
+  
+}

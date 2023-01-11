@@ -1,0 +1,74 @@
+{
+    "store.custom#institutional-how-to-buy": {
+        "blocks": ["responsive-layout.desktop#how-to-buy", 
+            "responsive-layout.tablet#how-to-buy",
+            "responsive-layout.phone#how-to-buy"]
+    },
+    "responsive-layout.desktop#how-to-buy": {
+        "children":["flex-layout.row#header-how-to-buy", "flex-layout.row#banner-how-to-buy-desktop"]
+    },
+    "responsive-layout.tablet#how-to-buy": {
+        "children":["flex-layout.row#header-how-to-buy", "flex-layout.row#banner-how-to-buy-desktop"]
+    },
+    "responsive-layout.phone#how-to-buy": {
+        "children":["flex-layout.row#header-how-to-buy", "flex-layout.row#banner-how-to-buy-phone"]
+    },
+    "flex-layout.row#header-how-to-buy": {
+        "children": ["rich-text#title-how-to-buy"],
+        "props": {
+            "blockClass": "institutional-title-container"
+        }
+    },    
+    "rich-text#title-how-to-buy": {
+        "props": {
+            "text": "### ¿Cómo comprar?",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "institutional-title"
+        }
+    },
+    "flex-layout.row#banner-how-to-buy-desktop": {
+        "props":{
+            "blockClass": "banner__institutional__desktop",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true
+            },
+          "children": ["flex-layout.col#banner-how-to-buy-desktop"] 
+    },
+    "flex-layout.col#banner-how-to-buy-desktop": {
+        "children": ["image#image-how-to-buy-desktop"],
+          "props": {
+            "blockClass": "banner__institutional__desktop"
+          }
+    },
+    "image#image-how-to-buy-desktop": {
+        "props": {
+            "src": "https://via.placeholder.com/1240x734.png",
+            "maxWidth": 1240
+          }
+    },
+    "flex-layout.row#banner-how-to-buy-phone": {
+        "props":{
+            "blockClass": "banner__institutional__phone",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true
+            },
+          "children": ["flex-layout.col#banner-how-to-buy-phone"]
+    },
+    "flex-layout.col#banner-how-to-buy-phone": {
+        "children": ["image#image-how-to-buy-phone"],
+          "props": {
+            "blockClass": "banner__institutional__phone"
+          }
+    },
+    "image#image-how-to-buy-phone": {
+        "props": {
+            "src": "https://via.placeholder.com/320x188.png"
+        }
+    }
+    
+}
+
+
+
+
